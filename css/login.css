@@ -1,0 +1,63 @@
+
+/* 로그인 */
+.login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 140px, #023a63 140px); background-image:-webkit-linear-gradient( #fff 140px, #023a63 140px); background-image:-moz-linear-gradient( #fff 140px, #023a63 140px); background-image:-o-linear-gradient( #fff 140px, #023a63 140px)}
+.login_page #header {box-sizing:border-box; margin:0 auto; width:1300px; height:140px; background:#fff}
+.login_page #header .logo {float:left; padding:65px 0 0 2px}
+.login_page #container {margin:0 auto; padding-top:74px; width:1300px}
+
+.mem_login {float:left; padding-right:99px; width:553px}
+.mem_login > div, .service > ul > li {box-shadow:5px 5px 7px 0.05em rgba(0,0,0,0.8)} /* box-shadow spread %대신 em으로 적용하면 비슷하게는 나오는것 같아요. */
+.login {margin-bottom:18px; padding:20px 25px 19px 26px; background:#c5dfe7}
+.login form {box-sizing:border-box; padding:15px 50px 20px; width:502px; border:2px solid #fff}
+.login h2 {padding-left:2px; font-size:25px; color:#000918}
+.login .type {padding:3px 4px 3px 0; text-align:right; font-size:14px}
+.login dl {overflow:hidden; padding:15px 0 0 4px}
+.login dl dt, .login dl dd {float:left; margin-bottom:4px; height:37px; line-height:2.65}
+.login dl dt {clear:both; width:85px; text-align:center; background:#0071bc; color:#fff}
+.login dl dd {margin-left:10px; width:295px; background:#eee}
+.login dl dd input {box-sizing:border-box; padding:0 10px; width:100%; height:100%; line-height:2.65; background:none}
+.login dl dd input:hover, .login dl dd input:focus {background:#fff}
+.login .save {padding:7px 4px 10px 0; text-align:right; font-size:12px}
+.login .save label {padding-left:25px}
+.login .login_btn {display:block; box-sizing:border-box; width:100%; height:44px; line-height:44px; background:#0071bc; color:#fff; font-weight:bold; font-size:16.67px}
+.login .caution {padding-top:11px; font-size:11px}
+
+.center {padding:22px 0 19px; background:#fff}
+.center h2 {float:left; padding:65px 5px 0 0; width:221px; text-align:center; background:url(/img/login/bg_center.png) center 2px no-repeat; color:#000918}
+.center .time {padding-bottom:15px}
+.center .time li {line-height:1.95em}
+.center dl {overflow:hidden}
+.center dl dt, .center dl dd {float:left; line-height:18px; font-size:15px; font-weight:bold}
+.center dl dd {padding:0 20px 0 5px}
+
+.service {float:right; width:648px}
+.service ul:after {clear:both; display:block; content:""}
+.service ul li {float:left}
+.service ul li a {display:block; box-sizing:border-box; width:100%; height:100%; text-align:center; background:#fff; font-size:16px}
+.service ul li.join {margin:0 0 14px; width:294px; height:233px}
+.service ul li.join a {padding:17px 16px 16px 16px; background:#c5dfe7 url(/img/login/bg_srvJoin.png) center 123px no-repeat}
+.service ul li.join a h3 {box-sizing:border-box; padding-top:27px; width:100%; height:100%; border:2px solid #fff; font-size:22px; font-weight:bold; color:#222}
+.service ul li.join a:hover, .service ul li.join a:focus {background-color:#fff}
+.service ul li.join a:hover h3, .service ul li.join a:focus h3 {border-color:#023a63}
+.service ul li.flasystem {margin:0 0 18px 18px; width:336px; height:151px}
+.service ul li.flasystem a {padding-top:28px}
+.service ul li.out_customer {margin:0 0 14px 18px; width:336px; height:64px}
+.service ul li.out_customer a {padding:20px 40px 0 0; background:#fff url(/img/login/bg_srvOut.png) 251px 19px no-repeat}
+.service ul li.system {margin:0 0 18px; width:294px; height:136px}
+.service ul li.system h3 {padding:21px 0 13px; font-size:18px}
+.service ul li.system p {padding-top:10px; font-size:12px}
+.service ul li.region_navi {margin:0 0 18px 18px; width:336px; height:136px}
+.service ul li.region_navi a {padding-left:25px; text-align:left; background:#fff url(/img/login/bg_srvRegion.png) 263px 64px no-repeat}
+.service ul li.region_navi h3 {padding:21px 0 4px; font-size:18px}
+.service ul li.region_navi p {font-size:12px}
+.service ul li.region_navi img {padding:20px 0 0}
+.service ul li.certification {box-sizing:border-box; padding:35px 0 0 30px; width:100%; height:124px; line-height:1.625em; background:#fff; font-size:16px; color:#181842}
+.service ul li.certification h3 {display:inline-block}
+
+/* login popup */
+.layer_pop.login {margin:-250px 0 0 -237px; box-sizing:border-box; padding:25px;  width:500px; height:475px; background:#fff}
+.layer_pop.login h2 {margin-bottom:15px; padding:0; line-height:30px; font-size:25px}
+.layer_pop.login form {padding:0; width:100%; border:0}
+.layer_pop.login dl {padding:27px 0 26px}
+.layer_pop.login dl dt, .layer_pop.login dl dd {margin-bottom:6px}
+.layer_pop.login dl dd {width:285px}
