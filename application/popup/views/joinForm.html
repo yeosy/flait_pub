@@ -14,18 +14,6 @@
 <link rel="stylesheet" type="text/css" href="/css/popup.css" /> <!-- 팝업 화면에서만 사용하는 CSS -->
 <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 </head>
-<!-- 
-	1. 소스 정리해서 전달해주세요.
-	2. ul class="terms_list"는 필요하지 않습니다. (이 경우에는 단독으로 사용되어질 가능성이 높으므로, terms_box가 더 적합해 보여요.)
-	3. 버튼 기능들에 대해서 하단에 적어두었습니다. 확인버튼이나 취소버튼은 가장 많이 사용하는 버튼이므로, a링크로 수정 부탁드려요.
-	
-		버튼 종류 (시멘틱 마크업 기준)
-		a : 링크    >>>>> 가장 많이 사용함 (링크, 버튼, 폼전송 등 다양하게 사용 가능함)
-		button, input[type="button] : display:none/block 같은 아코디언 메뉴 등의 버튼 기능으로만 사용
-		input[type="submit"], input[type="image"] : 폼 전송(form 태그와 거의 같이 사용함)
-
-		input,a,button 을 함께 사용 시 호환성 테스트 필수(각각 다르게 보임)
- -->
 <body>
 	<div id="wrap" class="popup">
 		<header id="header">
@@ -45,39 +33,44 @@
 
 		<hr />
 
-		<div id="content"><!-- lnb, qnb 없이 컨텐츠가 하나인 경우에는 container, content로 나누지 않음 -->
+		<div id="content">
 			<div class="join_content">
 				<form action="" name="" method="">
 					<fieldset>
 						<legend>협회가맹 가입신청서</legend>
-						<ul class="terms_list">
+						<ul class="terms_box">
+							<!-- 회원약관 -->
 							<li class="terms_Mem">
 								<h3 class="terms_title">회원약관</h3>
 								<div class="terms_content" tabindex="0">내용</div>
 								<input type="checkbox" name="" id="termsMember">
 								<label for="termsMember">전국플라워센터 이용약관에 동의합니다. (필수)</label>
 							</li>
-							<li>
+							<!-- 개인정보 수집 -->
+							<li class="terms_Per">
 									<h3 class="terms_title">개인정보 수집 및 이용에 관한 동의</h3>
 									<div class="terms_content"  tabindex="0">내용</div>
 									<input type="checkbox" name="" id="termsPersonal">
 									<label for="termsPersonal">개인정보 수집 및 이용에 동의합니다. (필수)</label>
 							</li>
-							<li>
+							<!-- 개인정보 취급위탁 -->
+							<li class="terms_Han">
 									<h3 class="terms_title">개인정보 취급위탁 동의</h3>
 									<div class="terms_content"  tabindex="0">내용</div>
 									<input type="checkbox" name="" id="termsHandling">
 									<label for="termsHandling">개인정보 취급위탁에 동의합니다. (필수)</label>
 							</li>
 						</ul>
+						<!-- 전체동의 체크박스 -->
 						<p class="terms_chk_all">
 							<input type="checkbox" name="" id="chk_all">
 							<label for="chk_all">
 								전체 동의
-							</label></p>		
+							</label></p>	
+							<!-- 가입신청 버튼	 -->
 							<div class="bnt_area">
-								<input type="submit" value="확인" class="btn_confirm">
-								<input type="button" value="취소" class="btn_cancel"> <!-- 취소 버튼은 input이 아닌 a로 해도 됩니다 -->
+								<a href="#" class="btn_confirm" role="button">확인</a>
+								<a href="#" class="btn_cancel" role="button">취소</a>
 							</div>				
 					</fieldset>
 				</form>
