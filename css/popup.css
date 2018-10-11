@@ -1,29 +1,29 @@
 /* 협회가맹 가입신청서-1 */
 
 /* header영역 */
-.popup#wrap{margin:0 auto; width:100%; height: 100%; background: #fff;}
-.popup #header{box-sizing:border-box; margin:0 auto; margin-top: 23px; width:920px; height:198px; background: linear-gradient(#fff 92px, #023a63 92px); background: -webkit-linear-gradient(#fff 92px, #023a63 92px); background: -moz-linear-gradient(#fff 92px, #023a63 92px); background: -o-linear-gradient(#fff 92px, #023a63 92px); border: 1px solid #000; border-bottom: 0;}
+.popup#wrap{width:100%; min-width:auto; height: 100%; background: #fff;}
+.popup #header{box-sizing:border-box; width:100%; height:198px; background: linear-gradient(#fff 92px, #023a63 92px); background: -webkit-linear-gradient(#fff 92px, #023a63 92px); background: -moz-linear-gradient(#fff 92px, #023a63 92px); background: -o-linear-gradient(#fff 92px, #023a63 92px); border: 1px solid #000; border-bottom: 0;}
 .popup #header .logo{float: left; padding: 28px 0 14px 60px;}
 .popup #header .logo img{width: 245px; height: 50px;}
-.popup #header .title{float:left; padding: 27px 0 0 60px; width: 100%;}
+.popup #header .title{box-sizing:border-box; clear:both; padding: 27px 0 0 60px; width: 100%;}
 .popup #header .title h2{margin-bottom:12px; height:25px; color: #fff; font-size: 25px; font-weight: 800;}
 .popup #header .title dt,
 .popup #header .title dd{color: #fff; float: left;}
 .popup #header .title dt{margin-right: 16px; font-weight: 800;}
 
 /* content영역 */
-.popup #content{box-sizing:border-box; margin:0 auto; margin-bottom: 23px; padding:51px 80px 0 80px; width: 920px; height: 838px; border:1px solid #000; border-top: 0;}
+.popup #content{box-sizing:border-box; padding:51px 80px 0 80px; width:100%; height: 838px; border:1px solid #000; border-top: 0;}
 .popup #content .terms_box h3{margin-bottom:12px; font-size: 18px; font-weight: 800;}
-.popup #content .terms_box .terms_content{box-sizing:border-box; margin-bottom: 17px; padding: 0 5px; height: 100px; border: 1px solid #7d7d7d;}
+.popup #content .terms_box .terms_content{overflow:hidden; overflow-y:scroll; box-sizing:border-box; margin-bottom: 17px; padding:5px; height:100px; line-height:1.5em; border: 1px solid #7d7d7d}
 .popup #content .terms_box > div{height: 200px;}
 .popup #content .terms_box .terms_chk{ text-align: center;}
 .popup #content .terms_chk_all{margin-bottom:49px; text-align:center; color:#e60012; font-size: 14px; font-weight: 800;}
 
 /* 확인, 취소 버튼 */
-.popup #content .btn_area{margin:0 auto; width:420px; height: 50px;}
-.popup #content .btn_area a{float:left; display: block;}
+.popup #content .btn_area {overflow:hidden; text-align:center}
+.popup #content .btn_area a {display:inline-block}
 .popup #content .btn_area .btn_confirm,
-.popup #content .btn_area .btn_cancel{box-sizing: border-box; width: 200px; height: 50px; line-height: 50px; text-align: center; border-radius: 15px; font-size: 18px; font-weight: 800;}
+.popup #content .btn_area .btn_cancel{box-sizing: border-box; padding:0 100px; line-height: 50px; text-align: center; border-radius: 15px; font-size: 18px; font-weight: 800;}
 .popup #content .btn_area .btn_confirm{margin-right: 20px;background: #023a63; border: 1px solid #023a63; color: #fff;}
 .popup #content .btn_area .btn_confirm:hover{background: transparent; color: #023a63;}
 .popup #content .btn_area .btn_cancel{border: 1px solid #7d7d7d;}
