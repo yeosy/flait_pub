@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>배송가능지역 상품설정</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+<meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+<meta property="og:title" content="전국플라워센터">
+<meta property="og:url" content="https://www.flowercenter.co.kr/">
+<link rel="stylesheet" type="text/css" href="/css/common.css" /> <!-- 공통으로 사용하는 CSS -->
+<link rel="stylesheet" type="text/css" href="/css/popup.css" /> <!-- 팝업 화면에서만 사용하는 CSS -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+	<div id="wrap" class="popup">
+		<header id="header">
+			<div class="title">
+                <h2>배송가능지역 상품설정</h2>
+		    </div>
+		</header><!-- /header -->
+
+		<hr />
+
+		<div id="content">
+            <section class="maching_group">
+                <div class="sub_search">
+                    <select title="지역선택">
+                        <option value="" selected="selected">전체</option>
+                        <option value="">서울</option>
+                    </select>
+                    <a href="#" class="btn btn_search">검색</a>
+                </div>
+                <div class="sub_ctrl">
+                    선택된 지역의 
+                    <select title="상품 종류">
+                        <option value="">축하</option>
+                        <option value="">근조</option>
+                        <option value="">동양란</option>
+                        <option value="">서양란</option>
+                        <option value="">관엽</option>
+                        <option value="">꽃</option>
+                        <option value="">쌀화환</option>
+                    </select>를
+                    <select title="가능 정도">
+                        <option value="">미취급</option>
+                        <option value="">50</option>
+                        <option value="">55</option>
+                        <option value="">60</option>
+                        <option value="">65</option>
+                        <option value="">70</option>
+                        <option value="">75</option>
+                        <option value="">80</option>
+                    </select>으로
+                    <a href="#" class="btn btn_change">일괄변경</a>
+                </div>
+            </section>
+            <div class="region_content">
+                <div class="map_area">
+                    <h3>지도로 검색</h3>
+                    <div>
+                        지도 API
+                    </div>
+                </div>
+                <div class="table_area">
+                    <table summary="지역별 상품종류 양 정보" class="">
+                        <caption>지역별 상품종류</caption>
+                        <colgroup>
+                            <col width="5%" />
+                            <col width="20%" />
+                            <col width="*" scope="7" />
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <input type="checkbox" name="" value="" title="전체선택" />
+                                </th>
+                                <th scope="col">지역명(인근)</th>
+                                <th scope="col">축하</th>
+                                <th scope="col">근조</th>
+                                <th scope="col">동양란</th>
+                                <th scope="col">서양란</th>
+                                <th scope="col">관엽</th>
+                                <th scope="col">꽃</th>
+                                <th scope="col">쌀화환</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="" value="" title="해당 지역 선택"></td>
+                                <td>서울 강남구</td>
+                                <td>
+                                    <select title="축하 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="근조 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="동양란 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="서양란 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="관엽 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="꽃 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select title="쌀화환 가능 양">
+                                        <option value="">미취급</option>
+                                        <option value="">50</option>
+                                        <option value="">55</option>
+                                        <option value="">60</option>
+                                        <option value="">65</option>
+                                        <option value="">70</option>
+                                        <option value="">75</option>
+                                        <option value="">80</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+                <div class="bnt_area">
+                    <a href="#" class="btn_confirm">저장</a>
+                    <a href="#" class="btn_cancel">닫기</a>
+                </div>			
+            </div>
+        </div><!-- /content-->
+	</div>
+</body>
+</html>
