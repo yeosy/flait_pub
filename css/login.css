@@ -1,4 +1,3 @@
-
 /* 로그인 */
 .login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 140px, #023a63 140px); background-image:-webkit-linear-gradient( #fff 140px, #023a63 140px); background-image:-moz-linear-gradient( #fff 140px, #023a63 140px); background-image:-o-linear-gradient( #fff 140px, #023a63 140px)}
 .login_page #header {box-sizing:border-box; margin:0 auto; width:1300px; height:140px; background:#fff}
@@ -15,7 +14,8 @@
 .login dl dt, .login dl dd {float:left; margin-bottom:4px; height:37px; line-height:2.65}
 .login dl dt {clear:both; width:85px; text-align:center; background:#0071bc; color:#fff}
 .login dl dd {margin-left:10px; width:295px; background:#eee}
-.login dl dd input {box-sizing:border-box; padding:10px; width:100%; height:100%; line-height:17px; background:none}
+.login dl dd input {padding:10px; width:100%; height:100%; line-height:17px}
+.login dl dd input:hover, .login dl dd input:focus {background:#fff; color:#000}
 .login .save {padding:7px 4px 10px 0; text-align:right; font-size:12px}
 .login .save label {padding-left:25px}
 .login .login_btn {display:block; box-sizing:border-box; width:100%; height:44px; line-height:44px; background:#0071bc; color:#fff; font-weight:bold; font-size:16.67px}
@@ -33,11 +33,11 @@
 .service ul:after {clear:both; display:block; content:""}
 .service ul li {float:left}
 .service ul li a {display:block; box-sizing:border-box; width:100%; height:100%; text-align:center; background:#fff; font-size:16px}
+.service ul li a:hover, .service ul li a:focus {box-shadow:none; animation-name:pull-up; animation-duration:.5s}
+
 .service ul li.join {margin:0 0 14px; width:294px; height:233px}
 .service ul li.join a {padding:17px 16px 16px 16px; background:#c5dfe7 url(/img/login/bg_srvJoin.png) center 123px no-repeat}
 .service ul li.join a h3 {box-sizing:border-box; padding-top:27px; width:100%; height:100%; border:2px solid #fff; font-size:22px; font-weight:bold; color:#222}
-.service ul li.join a:hover, .service ul li.join a:focus {background-color:#fff}
-.service ul li.join a:hover h3, .service ul li.join a:focus h3 {border-color:#023a63}
 .service ul li.flasystem {margin:0 0 18px 18px; width:336px; height:151px}
 .service ul li.flasystem a {padding-top:28px}
 .service ul li.out_customer {margin:0 0 14px 18px; width:336px; height:64px}
@@ -56,7 +56,15 @@
 /* login popup */
 .layer_pop.login {margin:-250px 0 0 -237px; box-sizing:border-box; padding:25px;  width:500px; height:475px; background:#fff}
 .layer_pop.login h2 {margin-bottom:15px; padding:0; line-height:30px; font-size:25px}
-.layer_pop.login form {padding:0; width:100%; border:0}
+.layer_pop.login form {padding:0; width:100%;  border:0}
 .layer_pop.login dl {padding:27px 0 26px}
 .layer_pop.login dl dt, .layer_pop.login dl dd {margin-bottom:6px}
 .layer_pop.login dl dd {width:285px}
+.layer_pop .login_btn {margin-bottom:28px}
+
+/* animation */
+@keyframes pull-up {
+    0% {transform:scale(1)}
+    50% {transform:scale(.98)}
+    100% {transform:scale(1)}  
+   }

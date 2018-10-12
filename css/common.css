@@ -1,33 +1,63 @@
-*, img,button,a,input, fieldset {margin:0; padding:0; border:0; font-size:inherit; color:inherit}
+@import url("contents.css");
+*, img,button,a,input,form,fieldset {margin:0; padding:0; border:0; font-size:inherit; color:inherit; vertical-align:middle; font-family:"맑은고딕", Malgun Gothic, Verdana, Arial, sans-serif}
 html {width:100%; height:100%}
 body {margin:0; padding:0; border:0; display:block; width:100%; height:100%; min-height:881px}
-legend {display:none}
+table, th, td {border-collapse:collapse; border-spacing:0}
+caption, legend {display:none}
+textarea, input[type="text"], input[type="password"] {box-sizing:border-box; margin:0; padding:0 5px; background:#eee}
 input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
-input[type="text"]:hover, input[type="text"]:focus, input[type="password"]:hover, input[type="password"]:focus {background:#fff; color:#000}
 input::placeholder {color:#aaa}
 ul, ol, dl, li, dt, dd {list-style:none; margin:0; padding:0; border:0}
 a {text-decoration:none}
-a,a:visited,a:hover,a:focus {color:inherit}
 img {vertical-align:middle}
 
 /* common */
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
 
 /* margin, padding */
-.mt10 {margin-top:10px}
-.mt20 {margin-top:20px}
-.mb10 {margin-bottom:10px}
-.mr50 {margin-right: 50px;}
+.mt10 {margin-top:10px !important}
+.mt15 {margin-top:15px !important}
+.mt20 {margin-top:20px !important}
+.mb10 {margin-bottom:10px !important}
 
-.pt10 {padding-top:10px}
-.pb10 {padding-bottom:10px}
+.pt10 {padding-top:10px !important}
+.pb10 {padding-bottom:10px !important}
 
 /* font */
-.text_14 {font-size:14px}
-.text_warning {color:#e60012}
+.text_14 {font-size:14px !important}
+.text_warning {color:#e60012 !important}
+
+/* button */
+.btn_area .btn {display:inline-block; box-sizing:border-box; margin-left:16px; border-radius:15px; font-size:18px; font-weight:800}
+.btn_area .btn:first-child {margin-left:0}
+
+.btn_confirm {background:#023a63; border:1px solid #023a63; color:#fff}
+.btn_cancel {background:#fff; border:1px solid #7d7d7d}
+
+/* table */
+.input_table {margin:20px 0 25px 0; width:100%}
+.input_table th, .input_table td {border:1px solid #000}
+.input_table th {background:#ccc; font-weight:normal}
+.input_table td {padding:10px; line-height:30px}
+.input_table input[type="text"], .input_table input[type="password"] {padding:5px; width:100%; line-height:20px}
+.input_table .input_list:after {clear:both; display:block; content:""}
+.input_table .input_list.two label {float:left; margin-left:5px; width:calc(50% - 6px)}         /* radio or checkbox : 2 */
+.input_table .input_list.three label {float:left; margin-left:5px; width:calc(33.33% - 6px)}    /* radio or checkbox : 3 */
+.input_table .input_list.four label {float:left; margin-left:5px; width:calc(25% - 6px); letter-spacing:-1px}        /* radio or checkbox : 4 */
+.input_table textarea {padding:5px; width:100%}
+.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
+.input_table .btn_delivery {width:150px}
+.input_table .btn_address {width:90px}
+
+/* layer popup */
+.layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:10}
+.layer .layer_bg {width:100%; height:100%; background-color:rgba(0,0,0,0.7)}
+.layer .layer_pop {position:absolute; top:50%; left:50%; box-sizing:border-box; padding:25px; width:500px; background:#fff}
+.layer .layer_pop .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7}
+.layer .layer_pop .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
 
 /* layout */
-#wrap {min-width:1300px; height:100%; line-height:1.46; font-family:"맑은고딕", Malgun Gothic, Verdana, Arial, sans-serif; font-size:13px; color:#000}
+#wrap {min-width:1300px; height:100%; line-height:1.46; font-size:13px; color:#000}
 #header, #container, #footer {position:relative}
 #container {padding-bottom:45px}
 #header:after, #container:after, #footer:after {display:block; content:""; clear:both}
@@ -35,32 +65,3 @@ img {vertical-align:middle}
 #footer .browser {overflow:hidden; padding:12px 0}
 #footer .browser li {float:left; margin-right:10px}
 #footer address {font-style:normal}
-
-/* layer popup */
-.layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.7); z-index:10}
-.layer_pop {position:absolute; top:50%; left:50%; box-sizing:border-box; padding:25px; width:500px; background:#fff}
-.layer_pop .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7;}
-.layer_pop .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
-
-/* table */
-.popup .table_title h2{display:inline-block; font-size: 18px; font-weight: 800;}
-.popup .table_title span{float: right; color:#e60012; font-size: 16px;}
-.popup#wrap .input_table{border-collapse:collapse; margin:20px 0 25px 0; width:100%; border-spacing: 0;}
-.popup .input_table caption{display:none; margin-bottom:20px; text-align: left; font-size: 18px; font-weight: 800;}
-.popup .input_table th,
-.popup .input_table td{border-collapse:collapse; box-sizing: border-box; height:50px; border: 1px solid #000; border-spacing: 0;}
-.popup .input_table th{background: #cccccc; font-weight: normal;}
-.popup .input_table td{padding: 10px; width:300px; line-height: 30px;}
-.popup .input_table input{box-sizing:border-box; margin: 0; padding:5px; width:100%; line-height: 20px; background: #eeeeee;}
-.popup .input_table .col_2{width: 297px;}
-.popup .input_table .point{display: none;}
-.popup .input_table .btn{display:inline-block; background: #c5dfe7; line-height: 30px; text-align:center; font-size: 13px;}
-.popup .input_table .btn_delivery{width: 150px;}
-.popup .input_table .btn_address{width:90px;}
-.popup .input_table .product_chk label{margin-right: 20px;}
-.popup .input_table .product_chk input{width:10px; font-size: 13px;}
-.popup .radio_table input,
-.popup .input_table .radio_btn{margin-right:5px; width: 10px;}
-.popup .input_table .mr17 label{margin-right: 17px;}
-.popup .radio_table td{padding-left:15px; text-align: left;}
-.popup .input_table textarea{width: 100%; vertical-align: middle; background: #eeeeee;}

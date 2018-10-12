@@ -14,14 +14,23 @@
 <link rel="stylesheet" type="text/css" href="/css/login.css" /> <!-- 로그인 화면에서만 사용하는 CSS -->
 <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 <script>
-	//layer popup close btn
-	$(document).ready(function(){
-		var layerPop = $('.layer'),
-			layerClose	= $('.layer .close');
-		layerClose.click(function(){
-			layerPop.hide();
+	//layer popup
+	$(document).ready(function(){	
+
+		$('.layerOpen').click(function(){
+			var layerNm = $(this).attr('data');
+			$('#'+layerNm).fadeIn();
 		})
+		
+		$('.layer .close, .layer_bg').click(function(){
+			$('.layer').fadeOut();
+		})
+		
 	})
+	
+	function joinLayer (){
+		window.open('/application/popup/views/joinForm.html', 'joinForm', 'width=1000, height=650, left=540, top=150, scrollbars=yes');
+	}
 </script>
 </head>
 <body>
@@ -118,7 +127,7 @@
 				<h2 class="ir">제공 서비스</h2>
 				<ul>
 					<li class="join">
-						<a href="javascript:window.open('/application/popup/views/joinForm.html', 'joinForm', 'width=1000, height=600, left=540, top=50')" title="가입신청 새창" >
+						<a href="#" onclick="joinLayer(); return false;" title="가입신청 새창" >
 							<h3>신규 가맹점<br />가입신청</h3>
 						</a>
 					</li>
@@ -128,7 +137,7 @@
 						</a>
 					</li>
 					<li class="out_customer">
-						<a href="javascript:$('#outLoginLayer').show();" class="bill_check" title="탈퇴회원 로그인 새창">
+						<a href="#" class="layerOpen" data="outLoginLayer" title="탈퇴회원 로그인 새창">
 							탈퇴회원사 계산서 확인
 						</a>
 					</li>
@@ -157,6 +166,7 @@
 				
 				<!-- 탈퇴회원 로그인 레이어 팝업 -->
 				<div class="layer" id="outLoginLayer">
+					<div class="layer_bg"></div>
 					<div class="layer_pop login">
 						<div class="inner">
 							<h2>탈퇴회원 로그인</h2>
@@ -180,8 +190,8 @@
 									</dd>
 								</dl>
 								<input type="submit" name="" value="로그인" class="login_btn" />
-								<p class="mt20 mb10">계산서 발행내역 조회 및 정산내역만 확인가능합니다.</p>
-								<p class="mt10">기타문의는 고객센터 (1544-6487)로 문의바랍니다.</p>
+								<p>계산서 발행내역 조회 및 정산내역만 확인가능합니다.</p>
+								<p class="mt15">기타문의는 고객센터 (1544-6487)로 문의바랍니다.</p>
 							</fieldset>
 							</form>
 						</div>
