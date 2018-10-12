@@ -17,13 +17,14 @@ img {vertical-align:middle}
 .mt10 {margin-top:10px}
 .mt20 {margin-top:20px}
 .mb10 {margin-bottom:10px}
+.mr50 {margin-right: 50px;}
 
 .pt10 {padding-top:10px}
 .pb10 {padding-bottom:10px}
 
 /* font */
-.font14 {font-size:14px}
-.point {color:#e60012}
+.text_14 {font-size:14px}
+.text_warning {color:#e60012}
 
 /* layout */
 #wrap {min-width:1300px; height:100%; line-height:1.46; font-family:"맑은고딕", Malgun Gothic, Verdana, Arial, sans-serif; font-size:13px; color:#000}
@@ -40,3 +41,26 @@ img {vertical-align:middle}
 .layer_pop {position:absolute; top:50%; left:50%; box-sizing:border-box; padding:25px; width:500px; background:#fff}
 .layer_pop .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7;}
 .layer_pop .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
+
+/* table */
+.popup .table_title h2{display:inline-block; font-size: 18px; font-weight: 800;}
+.popup .table_title span{float: right; color:#e60012; font-size: 16px;}
+.popup#wrap .input_table{border-collapse:collapse; margin:20px 0 25px 0; width:100%; border-spacing: 0;}
+.popup .input_table caption{display:none; margin-bottom:20px; text-align: left; font-size: 18px; font-weight: 800;}
+.popup .input_table th,
+.popup .input_table td{border-collapse:collapse; box-sizing: border-box; height:50px; border: 1px solid #000; border-spacing: 0;}
+.popup .input_table th{background: #cccccc; font-weight: normal;}
+.popup .input_table td{padding: 10px; width:300px; line-height: 30px;}
+.popup .input_table input{box-sizing:border-box; margin: 0; padding:5px; width:100%; line-height: 20px; background: #eeeeee;}
+.popup .input_table .col_2{width: 297px;}
+.popup .input_table .point{display: none;}
+.popup .input_table .btn{display:inline-block; background: #c5dfe7; line-height: 30px; text-align:center; font-size: 13px;}
+.popup .input_table .btn_delivery{width: 150px;}
+.popup .input_table .btn_address{width:90px;}
+.popup .input_table .product_chk label{margin-right: 20px;}
+.popup .input_table .product_chk input{width:10px; font-size: 13px;}
+.popup .radio_table input,
+.popup .input_table .radio_btn{margin-right:5px; width: 10px;}
+.popup .input_table .mr17 label{margin-right: 17px;}
+.popup .radio_table td{padding-left:15px; text-align: left;}
+.popup .input_table textarea{width: 100%; vertical-align: middle; background: #eeeeee;}
