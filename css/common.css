@@ -55,8 +55,8 @@ img {vertical-align:middle}
 .popup .input_table .col_2{width: 41.176%;}
 .popup .input_table .point{display: none;}
 .popup .input_table .btn{display:inline-block; background: #c5dfe7; line-height: 30px; text-align:center; font-size: 13px;}
-.popup .input_table .btn_delivery{width: 150px;}
-.popup .input_table .btn_address{width:90px;}
+.popup .input_table .btn_delivery{width:53.57%;}
+.popup .input_table .btn_address{width:13.23%;}
 .popup .input_table .product_chk label{margin-right: 20px;}
 .popup .input_table .product_chk input{width:10px; font-size: 13px;}
 .popup .radio_table input,
