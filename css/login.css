@@ -18,8 +18,8 @@
 .login dl dd input:hover, .login dl dd input:focus {background:#fff; color:#000}
 .login .save {padding:7px 4px 10px 0; text-align:right; font-size:12px}
 .login .save label {padding-left:25px}
-.login .login_btn {display:inline-block; box-sizing:border-box; width:100%; height:44px; line-height:44px; background-color:#0071bc; background-size:200% 200%; background-position:0 0; color:#fff; font-weight:bold; font-size:16.67px; transition:all 0.5s ease-in-out;}
-.login .login_btn:hover{background-image:linear-gradient(90deg, #0d598c 25%, #3ca4e9 50%, #0071bc 150%); background-image: -webkit-linear-gradient(to left, 25% 50% 150%, #0d598c, #3ca4e9, #0071bc); background-image: -o-linear-gradient(90deg, #0d598c 25%, #3ca4e9 50%, #0071bc 150%); background-image:-moz-linear-gradient(left,#0d598c 25%, #3ca4e9 50%, #0071bc 150%); animation:hover-gradient 2s infinite ease-in-out; -o-animation: hover-gradient 2s infinite ease-in-out; -webkit-animation: hover-gradient 2s infinite ease-in-out;}
+.login .login_btn {display:inline-block; box-sizing:border-box; width:100%; height:44px; line-height:44px; background-color:#0071bc; background-size:200% 200%; background-position:0 0; color:#fff; font-weight:bold; font-size:16.67px;}
+.login .login_btn:hover{background-image: -webkit-linear-gradient(left, #0d598c 25%, #3ca4e9 50%, #0071bc 150%); background-image:linear-gradient(90deg, #0d598c 25%, #3ca4e9 50%, #0071bc 150%); -webkit-animation: gradient-hover 2s infinite ease-in-out; animation: gradient-hover 2s infinite ease-in-out;}
 .login .caution {padding-top:11px; font-size:11px}
 
 .center {padding:22px 0 19px; background:#fff}
@@ -74,7 +74,11 @@
     50% {-webkit-transform:scale(.98)}
     100% {-webkit-transform:scale(1)}  
    }
-@keyframes hover-gradient{
+@keyframes gradient-hover{
     from{background-position:0 0;}
     to{background-position:100% 0;}
+}
+@-webkit-keyframes gradient-hover{
+    from{background-position:0 0;}
+    to{background-position: 100% 0;}
 }
