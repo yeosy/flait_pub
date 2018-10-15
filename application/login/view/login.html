@@ -28,6 +28,7 @@
 		
 	})
 	
+	// 신규 가맹점 가입신청 window popup
 	function joinLayer (){
 		window.open('/application/popup/views/joinForm.html', 'joinForm', 'width=1000, height=650, left=540, top=150, scrollbars=yes');
 	}
@@ -38,10 +39,10 @@
 		<header id="header">
 			<h1 class="logo">
 				<a href="http://flowercenter.roseweb.co.kr/">
-					<img src="/img/common/logo.png" alt="전국플라워센터" />
+					<img src="/img/login/logo.png" alt="전국플라워센터" />
 				</a>
 			</h1>
-		</header>
+		</header><!-- /header -->
 
 		<hr />
 
@@ -127,7 +128,7 @@
 				<h2 class="ir">제공 서비스</h2>
 				<ul>
 					<li class="join">
-						<a href="#" onclick="joinLayer(); return false;" title="가입신청 새창" >
+						<a href="Javascript:void(0);" onclick="joinLayer(); return false;" title="가입신청 새창" >
 							<h3>신규 가맹점<br />가입신청</h3>
 						</a>
 					</li>
@@ -162,57 +163,59 @@
 						<img src="/img/login/img_iso9001.gif" alt="ISO 9001 인증 마크" />
 						<img src="/img/login/img_iso9001.gif" alt="ISO 14001 인증 마크" />
 					</li>
-				</ul>
-				
-				<!-- 탈퇴회원 로그인 레이어 팝업 -->
-				<div class="layer" id="outLoginLayer">
-					<div class="layer_bg"></div>
-					<div class="layer_pop login">
-						<div class="inner">
-							<h2>탈퇴회원 로그인</h2>
-							<p class="text_warning text_14">탈퇴회원사만 로그인 가능</p>
-							<a href="#" class="close">닫기</a>
-							<form name="" method="" action="">
-							<fieldset>
-								<legend>탈퇴회원 로그인 폼</legend>
-								<dl>
-									<dt><label for="outUserId">ID</label></dt>
-									<dd>
-										<input type="text" id="outUserId" name="" value="" title="아이디 입력" />
-									</dd>
-									<dt><label for="outUserPw">PW</label></dt>
-									<dd>
-										<input type="password" id="outUserPw" name="" value="" title="비밀번호 입력" />
-									</dd>
-									<dt><label for="outUserKey">KEY</label></dt>
-									<dd>
-										<input type="password" id="outUserKey" name="" value="" title="키 입력" />
-									</dd>
-								</dl>
-								<input type="submit" name="" value="로그인" class="login_btn" />
-								<p>계산서 발행내역 조회 및 정산내역만 확인가능합니다.</p>
-								<p class="mt15">기타문의는 고객센터 (1544-6487)로 문의바랍니다.</p>
-							</fieldset>
-							</form>
-						</div>
-					</div>
-				</div>
-				<!-- /탈퇴회원 로그인 레이어 팝업 -->
+				</ul>				
 	
 			</section>
 			<!-- /제공 서비스 -->
 		</div><!-- /container -->
 
 		<hr />
-
+<div id="box1"></div>
 		<footer id="footer">
 			<p>본 웹사이트는 ie11이상 또는 크롬에 최적화 되어 있습니다. 윈도우xp 사용자께서는 크롬을 설치하여 이용하여 주시기 바랍니다.</p>
 			<ul class="browser">
-				<li><a href="#"><img src="/img/login/btn_chrome.png" alt="크롬 설치" /></a></li>
-				<li><a href="#"><img src="/img/login/btn_ieRecent.png" alt="IE 최신 버전 설치" /></a></li>
+				<li><a href="https://www.google.com/chrome/" target="_blank"><img src="/img/login/btn_chrome.png" alt="크롬 설치" /></a></li>
+				<li><a href="https://support.microsoft.com/ko-kr/help/17621/internet-explorer-downloads" target="_blank"><img src="/img/login/btn_ieRecent.png" alt="IE 최신 버전 설치" /></a></li>
 			</ul>
 			<address>대표자 김태진 / TEL <a href="tel:1544-6487">1544-6487</a> / FAX 070-8224-6861 / 부산광역시 사상구 모라로 22 부산벤처타워 1501호 Copyright (주)플라시스템 ©  All rights reserved.</address>
-		</footer>
-	</div>
+		</footer><!-- /footer -->
+		
+	
+		<!-- 탈퇴회원 로그인 레이어 팝업 -->
+		<div class="layer" id="outLoginLayer">
+			<div class="layer_bg"></div>
+			<div class="layer_pop login">
+				<div class="inner">
+					<h2>탈퇴회원 로그인</h2>
+					<p class="text_warning text_14">탈퇴회원사만 로그인 가능</p>
+					<a href="#" class="close">닫기</a>
+					<form name="" method="" action="">
+					<fieldset>
+						<legend>탈퇴회원 로그인 폼</legend>
+						<dl>
+							<dt><label for="outUserId">ID</label></dt>
+							<dd>
+								<input type="text" id="outUserId" name="" value="" title="아이디 입력" />
+							</dd>
+							<dt><label for="outUserPw">PW</label></dt>
+							<dd>
+								<input type="password" id="outUserPw" name="" value="" title="비밀번호 입력" />
+							</dd>
+							<dt><label for="outUserKey">KEY</label></dt>
+							<dd>
+								<input type="password" id="outUserKey" name="" value="" title="키 입력" />
+							</dd>
+						</dl>
+						<input type="submit" name="" value="로그인" class="login_btn" />
+						<p>계산서 발행내역 조회 및 정산내역만 확인가능합니다.</p>
+						<p class="mt15">기타문의는 고객센터 (1544-6487)로 문의바랍니다.</p>
+					</fieldset>
+					</form>
+				</div>
+			</div>
+		</div><!-- /layer -->
+		<!-- /탈퇴회원 로그인 레이어 팝업 -->
+
+	</div><!-- /wrap -->
 </body>
 </html>
