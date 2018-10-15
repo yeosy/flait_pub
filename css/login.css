@@ -1,6 +1,6 @@
 /* 로그인 */
 .login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 140px, #023a63 140px); background-image:-webkit-linear-gradient( #fff 140px, #023a63 140px); background-image:-moz-linear-gradient( #fff 140px, #023a63 140px); background-image:-o-linear-gradient( #fff 140px, #023a63 140px)}
-.login_page #header {box-sizing:border-box; margin:0 auto; padding-bottom:17px; width:1300px; background:#fff}
+.login_page #header {box-sizing:border-box; margin:0 auto; padding:0 0 17px; width:1300px; background:#fff}
 .login_page #header .logo {float:left; padding:65px 0 0 2px}
 .login_page #container {margin:0 auto; padding-top:74px; width:1300px}
 
