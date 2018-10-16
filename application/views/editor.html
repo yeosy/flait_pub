@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>에디터 프로그램(summer N</title>
+    <!-- include libraries(jQuery, bootstrap) -->
+    <link href="/summernote/bootstrap.css" rel="stylesheet">
+    <script src="/js/jquery-3.3.1.min.js"></script> 
+    <script src="/summernote/bootstrap.js"></script> 
+    <!-- include summernote css/js-->
+    <link href="/summernote/summernote.css" rel="stylesheet">
+    <script src="/summernote/summernote.js"></script>
+    <link href="/css/contents.css" rel="stylesheet">
+    <script>
+        $(document).ready(function() {
+            
+            $('#summernote').summernote({
+                height: 500,                 // set editor height
+                minHeight: null,             // set minimum height of editor
+                maxHeight: null,             // set maximum height of editor
+                focus: true                  // set focus to editable area after initializing summernote
+            });
+        });
+    </script>
+    <style>
+        /* 에디터 수정 */
+        .note-editor.note-frame .note-statusbar .note-resizebar, .btn-fullscreen {display:none !important}
+    </style>
+</head>
+<body>  
+    <form method="post">
+        <textarea id="summernote" name="editordata"></textarea>
+        <button type="button" onclick="showContent();">작성</button>
+        <div class="output"></div>
+    </form>
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote();
+        });
+
+        function showContent() {
+            $('.output').html($('#summernote').summernote('code'))
+        };
+    </script>
+</body>
+</html>

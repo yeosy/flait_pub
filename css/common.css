@@ -27,6 +27,14 @@ img {vertical-align:top}
 .text_14 {font-size:14px !important}
 .text_warning {color:#e60012 !important}
 
+/* align, float */
+.text_left, .text_left th, .text_left td {text-align:left !important}
+.text_center, .text_center th, .text_center td {text-align:center !important}
+.text_right, .text_right th, .text_right td {text-align:right !important}
+
+.float_left {float:left !important}
+.float_right {float:right !important}
+
 /* button */
 .btn_area .btn {display:inline-block; box-sizing:border-box; margin-left:16px; border-radius:15px; font-size:18px; font-weight:800}
 .btn_area .btn:first-child {margin-left:0}
@@ -34,32 +42,17 @@ img {vertical-align:top}
 .btn_confirm {background:#023a63; border:1px solid #023a63; color:#fff}
 .btn_cancel {background:#fff; border:1px solid #7d7d7d}
 
-/* table */
-.input_table {margin:20px 0 25px 0; width:100%}
-.input_table th, .input_table td {border:1px solid #000}
-.input_table th {background:#ccc; font-weight:normal}
-.input_table td {padding:10px; line-height:30px}
-.input_table input[type="text"], .input_table input[type="password"] {padding:5px; width:100%; line-height:20px}
-.input_table .input_list:after {clear:both; display:block; content:""}
-.input_table .input_list.two label {float:left; margin-left:5px; width:calc(50% - 6px)}         /* radio or checkbox : 2 */
-.input_table .input_list.three label {float:left; margin-left:5px; width:calc(33.33% - 6px)}    /* radio or checkbox : 3 */
-.input_table .input_list.four label {float:left; margin-left:5px; width:calc(25% - 6px); letter-spacing:-1px}        /* radio or checkbox : 4 */
-.input_table textarea {padding:5px; width:100%}
-.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
-.input_table .btn_delivery {width:150px}
-.input_table .btn_address {width:90px}
-
 /* layer popup */
 .layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:10}
-.layer .layer_bg {width:100%; height:100%; background-color:rgba(0,0,0,0.7)}
+.layer .overlay {width:100%; height:100%; background-color:rgba(0,0,0,0.7)}
 .layer .layer_pop {position:absolute; top:50%; left:50%; box-sizing:border-box; padding:25px; width:500px; background:#fff}
 .layer .layer_pop .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7}
 .layer .layer_pop .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
 
 /* layout */
-#wrap {min-width:1300px; height:100%; line-height:1.46; font-size:13px; color:#000}
+#wrap {min-width:1300px; min-height:100%; line-height:1.46; font-size:13px; color:#000}
 #header, #container, #footer {position:relative; margin:0 auto}
-#wrap:after, #header:after, #container:after, #footer:after {display:block; content:""; clear:both}
+#wrap:after, #header:after, #container:after {display:block; content:""; clear:both}
 #header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
 #header h1 {float:left; padding-top:30px; width:296px}
 #header .unb {position:absolute; top:10px; right:0; min-width:250px; border-right:1px solid #ccc}
@@ -78,15 +71,15 @@ img {vertical-align:top}
 #header .mng_btn a {display:block; float:left; box-sizing:border-box; margin-left:10px; padding:0 27px; height:40px; line-height:40px; border:1px solid #ccc; font-weight:bold}
 #header .mng_btn a strong {padding:0 10px}
 
-.gnb {width:100%; min-width:1920px; background:#023a63}
+.gnb {width:100%; min-width:1880px; background:#023a63}
 .gnb ul {box-sizing:border-box; margin:0 auto; padding:5px 0; width:1880px}
 .gnb ul:after {display:block; content:""; clear:both}
 .gnb ul li {float:left; width:273px; height:40px; line-height:40px; text-align:center; border-left:1px solid #fff; font-size:18px; color:#fff; font-weight:bold}
 .gnb ul li:first-child {box-sizing:border-box; padding-right:20px; width:255px; border:0}
 .gnb ul li:last-child {box-sizing:border-box; padding-left:20px; width:254px}
 
-#container {padding:20px 0 0; width:1880px}
-.lnb {float:left; margin-right:20px; width:256px; height:100%; background:#edf1f2; font-size:14px}
+#container {margin-top:20px; padding:0; width:1880px; background-image:linear-gradient(to right, #edf1f2 256px, #fff 256px); background-image:-webkit-linear-gradient(left, #edf1f2 256px, #fff 256px)}
+.lnb {float:left; width:256px; height:100%; background:#edf1f2; font-size:14px}
 .lnb h2 {padding:6px 0 6px 30px; line-height:2.0em; background:#ccc}
 .lnb ul {padding:10px}
 .lnb ul li a {display:block; padding:5px 30px 4px; line-height:1.5em}
@@ -95,11 +88,13 @@ img {vertical-align:top}
 .lnb .my_menu li {padding:5px 30px 4px; line-height:1.5em}
 .lnb .my_menu li a {padding:0; float:right}
 .lnb .my_menu li a span {color:#e60012; font-weight:bold}
+#content {position:relative; float:left;box-sizing:border-box; padding:0 0 110px 20px; width:1624px}
 
-#footer {box-sizing:border-box; padding:0 0 20px 672px; width:1880px; color:#000}
-#footer .bank {position:absolute; top:14px; left:296px; width:376px; font-size:14px}
+#footer {position:absolute; bottom:0; left:0; width:100%; border-top:1px solid #eee; color:#000}
+#footer .bank {float:left; padding:14px 0 0 20px; width:376px; font-size:14px}
 #footer .bank dt {font-weight:bold}
 #footer .bank dt, #footer .bank dd {height:25px; line-height:25px}
-#footer address {display:block; height:25px; line-height:25px; padding-top:14px; font-style:normal}
+#footer .address {float:left; padding-top:14px}
+#footer address {height:25px; line-height:25px; font-style:normal}
 #footer .copyright {height:25px; line-height:25px}
 #footer .copyright.v2 {color:#e60012}

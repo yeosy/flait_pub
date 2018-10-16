@@ -22,7 +22,7 @@
 			$('#'+layerNm).fadeIn();
 		})
 		
-		$('.layer .close, .layer_bg').click(function(){
+		$('.layer .close, .overlay').click(function(){
 			$('.layer').fadeOut();
 		})
 		
@@ -183,7 +183,7 @@
 	
 		<!-- 탈퇴회원 로그인 레이어 팝업 -->
 		<div class="layer" id="outLoginLayer">
-			<div class="layer_bg"></div>
+			<div class="overlay"></div>
 			<div class="layer_pop login">
 				<div class="inner">
 					<h2>탈퇴회원 로그인</h2>
