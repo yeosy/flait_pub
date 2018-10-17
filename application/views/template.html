@@ -14,7 +14,7 @@
         <!-- 공통으로 사용하는 CSS -->
         <!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> 로그인 화면에서만
         사용하는 CSS -->
-        <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
         <script src="/js/jquery-ui.js"></script>
         <!-- datepicker -->
         <script type="text/javascript">
@@ -104,6 +104,24 @@
                             </tr>
                         </tbody>
                     </table>
+                    
+
+                    <!-- select box -->
+                    <script type="text/javascript">
+                        $(function(){
+                            $('select').selectmenu();
+                        });
+                    </script>  
+                    
+                    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+                    <select title="필수">
+                        <option class="no_check">미확인</option>
+                        <option class="order">주문접수</option>
+                        <option class="reject">주문거절</option>
+                        <option class="shipping">배송중</option>
+                        <option class="delivery">배송완료</option>
+                    </select>
+                    <!-- //select box -->
 
                     <!-- SUMMERNOTE <iframe src="/application/views/editor.html" width="900"
                     height="600" scrolling="no"></iframe> -->

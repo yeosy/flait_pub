@@ -2,9 +2,10 @@
 *, img,button,a,input,form,fieldset {margin:0; padding:0; border:0; font-size:inherit; color:inherit; vertical-align:0; font-family:"맑은고딕", Malgun Gothic, Verdana, Arial, sans-serif}
 html {width:100%; height:100%}
 body {margin:0; padding:0; border:0; display:block; width:100%; height:100%; min-height:881px}
-table, th, td {border-collapse:collapse; border-spacing:0}
+table, th, td {border-collapse:collapse; border-spacing:0; vertical-align:middle}
 caption, legend {display:none}
-textarea, input[type="text"], input[type="password"] {box-sizing:border-box; margin:0; padding:0 5px; background:#eee}
+textarea, input[type="text"], input[type="password"] {box-sizing:border-box; margin:0; padding:5px; background:#eee}
+textarea:hover, textarea:focus, input[type="text"]:hover,input[type="text"]:focus , input[type="password"]:hover, input[type="password"]:focus {padding:4px 5px; background:#fff; border:1px solid #eee}
 input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
 input::placeholder {color:#aaa}
 ul, ol, dl, li, dt, dd {list-style:none; margin:0; padding:0; border:0}
@@ -98,3 +99,14 @@ img {vertical-align:top}
 #footer address {height:25px; line-height:25px; font-style:normal}
 #footer .copyright {height:25px; line-height:25px}
 #footer .copyright.v2 {color:#e60012}
+
+/* selectbox */
+.ui-selectmenu-menu {font-size:12px}
+.ui-selectmenu-button.ui-button {padding:0 !important; width:76px !important; border:0 !important; background:0 !important}
+.ui-selectmenu-icon {display:none !important}
+.ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; font-size:12px; background:url(/img/common/bg_select.png) 62px center no-repeat}
+.ui-selectmenu-text.no_check {background-color:#d0e1e8}
+.ui-selectmenu-text.order {background-color:#8bc4ce}
+.ui-selectmenu-text.reject {background-color:#0086b5; color:#fff}
+.ui-selectmenu-text.shipping {background-color:#004378; color:#fff}
+.ui-selectmenu-text.delivery {background-color:#001a40; color:#fff}

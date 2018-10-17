@@ -13815,7 +13815,7 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/selectmenu.css, ../../themes/base/button.css
 //>>css.theme: ../../themes/base/theme.css
-
+//여소영
 
 
 var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
@@ -14087,6 +14087,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 
 		this._setText( buttonItem, item.label );
 		this._addClass( buttonItem, "ui-selectmenu-text" );
+		this._addClass( buttonItem, item.labelClass );
 
 		return buttonItem;
 	},
@@ -14130,6 +14131,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 			this._addClass( li, null, "ui-state-disabled" );
 		}
 		this._setText( wrapper, item.label );
+		this._addClass( wrapper, item.labelClass);      //option class값 추가
 
 		return li.append( wrapper ).appendTo( ul );
 	},
@@ -14446,6 +14448,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 			index: index,
 			value: option.val(),
 			label: option.text(),
+			labelClass: option.attr("class"), //option class값 가져오기
 			optgroup: optgroup.attr( "label" ) || "",
 			disabled: optgroup.prop( "disabled" ) || option.prop( "disabled" )
 		};
