@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 /* 로그인 */
 .login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 141px, #023a63 141px); background-image:-webkit-linear-gradient( #fff 141px, #023a63 141px); background-image:-moz-linear-gradient( #fff 141px, #023a63 141px); background-image:-o-linear-gradient( #fff 141px, #023a63 141px)}
 .login_page #header {box-sizing:border-box; margin:0 auto; padding:0 0 13px; width:1300px; background:#fff}

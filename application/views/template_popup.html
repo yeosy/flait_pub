@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
     <head>
-        <title>전국플라워센터 - template</title>
+        <title>협회가맹 가입신청서</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
         <meta http-equiv="Content-Style-Type" content="text/css">
@@ -11,150 +11,357 @@
         <meta property="og:title" content="전국플라워센터">
         <meta property="og:url" content="https://www.flowercenter.co.kr/">
         <link rel="stylesheet" type="text/css" href="/css/common.css"/>
-        <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="/js/jquery-ui.js"></script>        
         <script type="text/javascript" src="/js/common.js"></script>
     </head>
     <body>
-        <div id="wrap">
-            <header id="header"></header>
-            <!-- /header -->
+        <div id="wrap" class="popup">
+            <header id="header">
+            </header><!-- /header -->
 
-            <hr/>
-
-            <nav class="gnb"></nav>
-            <!-- /gnb -->
-
-            <hr/>
-
-            <div id="container">
-                <div class="lnb"></div>
-
-                <div id="content">
-
-                    <h3 class="con_tit">SMS 관리</h3>
-                    
-                    <!-- 상세 테이블 -->
-                    <table class="list_table">
-                        <caption> 상세 테이블</caption>
-                        <colgroup>
-                            <col width="12%"/>
-                            <col width="*"/>
-                        </colgroup>
-                        <tbody class="text_left">
-                            <tr>
-                                <th scope="col">전송건수 / 전송금액</th>
-                                <td>2,000건 / 100,000원</td>
-                            </tr>
-                            <tr>
-                                <th scope="col">전송건수 / 전송금액</th>
-                                <td>2,000건 / 100,000원</td>
-                            </tr>
-                            <tr>
-                                <th scope="col">전송건수<br /> / 전송금액</th>
-                                <td>2,000건 / 100,000원</td>
-                            </tr>
-                            <tr>
-                                <th scope="col">전송건수 / 전송금액</th>
-                                <td>2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- //상세 테이블 -->
-
-                    <!-- 목록 테이블 -->
-                    <table class="list_table mt20">
-                        <caption>목록 테이블</caption>
-                        <colgroup>
-                            <col width="5%"/>
-                            <col width="5%"/>
-                            <col width="5%"/>
-                            <col width="*"/>
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col">NO</th>
-                                <th scope="col">구분</th>
-                                <th scope="col"><input type="checkbox" name="" value="" title="전체선택" /></th>
-                                <th scope="col" class="text_left">메시지 내용</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>10</td>
-                                <td>test</td>
-                                <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                            </tr>
-                            <tr>
-                                <td>9</td>
-                                <td>test</td>
-                                <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>test</td>
-                                <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터 본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- //목록 테이블 -->
-
-                    <select title="필수">
-                        <option class="no_check">미확인</option>
-                        <option class="order">주문접수</option>
-                        <option class="reject">주문거절</option>
-                        <option class="shipping">배송중</option>
-                        <option class="delivery">배송완료</option>
-                    </select>
-                    <!-- //select box -->
-
-                    <div class="date_pick">
-                        Date: <input type="text" id="datepicker" />
-                    </div>
-                    <!-- //date_pick -->
-
-                    <style>
-                        .box1, .box2 {float:left; width:300px; margin-right:30px}
-                        .sortable li {padding:5px;}
-                    </style>
-                    <div class="box1">
-                    <ul class="sortable">
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-                    </ul></div>
-
-                    <div class="box2">
-                    <ul class="sortable">
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
-                        <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
-                    </ul></div>
-
-                    <!-- SUMMERNOTE <iframe src="/summernote/editor.html" width="900"
-                    height="600" scrolling="no"></iframe> -->
-                    <!-- //SUMMERNOTE -->
-
-
-                    <footer id="footer"></footer>
-                    <!-- /footer -->
+            <div id="content">
+                <div class="tit">
+                    <h2>가맹점 가입신청</h2>
+                    <span>*필수입력</span>
                 </div>
+                <table summary="가맹점 가입신청 정보" class="input_table">
+                    <caption>가맹점 가입신청</caption>
+                    <colgroup>
+                        <col width="12.5%"/>
+                        <col width="37.5%"/>
+                        <col width="12.5%"/>
+                        <col width="300px"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>아이디</th>
+                            <td>
+                                <input type="text" name="" value="" title="아이디" style="width:72%" />
 
+                                <!-- [AD] : 불가능 or 가능 선택되어 display:none; display:inline 처리 -->
+                                <span class="text_warning" style="display:inlnie">가입불가</span>
+                                <span style="display:none">&nbsp;&nbsp;&nbsp;가입가능</span>
+                            </td>
+                            <th scope="row">
+                                <span title="필수">*</span>비밀번호</th>
+                            <td>
+                                <input type="password" name="" value="" title="비밀번호"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>화원명</th>
+                            <td>
+                                <input type="text" name="" value="" title="화원명"/>
+                            </td>
+                            <th scope="row">
+                                <span title="필수">*</span>보안키
+                                <br/>
+                                <span class="font11">(추가비밀번호)</span>
+                            </th>
+                            <td>
+                                <input type="password" name="" value="" title="보안키" placeholder="비밀번호와 다르게 입력"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>대표자명</th>
+                            <td><input type="text" name="" value="" title="대표자명"/></td>
+                            <th scope="row">
+                                <span title="필수">*</span>사업자번호</th>
+                            <td><input type="text" name="" value="" title="사업자 번호" placeholder="숫자만 입력"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>대표전화</th>
+                            <td colspan="3"><input type="text" name="" value="" title="전화번호" placeholder="숫자만 입력" style="width:41%" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>핸드폰1</th>
+                            <td colspan="3"><input type="text" name="" value="" title="핸드폰1 번호" placeholder="숫자만 입력" style="width:41%" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>핸드폰2</th>
+                            <td colspan="3"><input type="text" name="" value="" title="핸드폰2 번호" placeholder="숫자만 입력" style="width:41%" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>대표팩스</th>
+                            <td><input type="text" name="" value="" title="팩스번호" placeholder="숫자만 입력"/></td>
+                            <th scope="row">
+                                <span title="필수">*</span>배송가능지역</th>
+                            <td>
+                                <a
+                                    href="javascript:window.open('/application/popup/shipItemSet.html','shipItemSet','width=500, height=500, top=100, left=540')"
+                                    class="btn btn_delivery">배송가능지역 설정</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">080전화</th>
+                            <td><input type="text" name="" value="" title="080전화번호" placeholder="숫자만 입력"/></td>
+                            <th scope="row">080팩스</th>
+                            <td><input type="text" name="" value="" title="080팩스번호" placeholder="숫자만 입력"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">홈페이지</th>
+                            <td>http://&nbsp;
+                                <input type="text" name="" value="" title="도메인주소" placeholder="www.flower.co.kr" style="width:84%" /></td>
+                            <th scope="row">이메일주소</th>
+                            <td><input type="text" name="" value="" title="이메일 주소" placeholder="test@flowercenter.co.kr" /></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>계좌번호</th>
+                            <td colspan="3">
+                                <input type="text" name="" value="" title="은행명" style="width:29%" placeholder="은행명" />&nbsp;&nbsp;
+                                <input type="text" name="" value="" title="계좌번호" style="width:38%" placeholder="계좌번호 (숫자만 입력)" />&nbsp;&nbsp;
+                                <input type="text" name="" value="" title="예금주" style="width:29%" placeholder="예금주" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <span title="필수">*</span>화원소재지</th>
+                            <td colspan="3">
+                                <p>
+                                    <a href="#" class="btn btn_address">우편번호검색</a>&nbsp;
+                                    <input type="text" name="" value="" title="우편번호" placeholder="우편번호" style="width:23%" disabled="disabled" />&nbsp;
+                                    <input type="text" name="" value="" title="주소" placeholder="주소" style="width:61.8%" disabled="disabled" />
+                                </p>
+                                <p class="mt15">
+                                    <input type="text" name="" value="" title="상세주소" placeholder="상세주소" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">제작가능상품</th>
+                            <td colspan="3">
+                                <label><input type="checkbox" name="" value=""/> 축하</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 근조</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 동양란</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 서양란</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 관엽</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 꽃</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 쌀화환</label>&nbsp;&nbsp;&nbsp;
+                                <label><input type="checkbox" name="" value=""/> 기타</label>&nbsp;&nbsp;&nbsp;
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table summary="가맹점 가입신청 정보2" class="input_table">
+                    <caption>가맹점 가입신청 2</caption>
+                    <colgroup>
+                        <col width="12.5%"/>
+                        <col width="12.5%"/>
+                        <col width="25%"/>
+                        <col width="12.5%"/>
+                        <col width="12.5%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="colgroup" rowspan="4">
+                                <span title="필수">*</span>수주시</th>
+                            <th scope="row">팩스수신</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                            <th scope="colgroup" rowspan="4">
+                                <span title="필수">*</span>발주시</th>
+                            <th scope="row">배송완료팩스</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">문자수신</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                            <th scope="row">배송완료문자</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">메일수신</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                            <th scope="row">배송완료메일</th>
+                            <td>
+                                <div class="input_list two">   
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">취소팩스</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                            <th scope="row">주문접수문자</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 수신</label>
+                                    <label><input type="radio" name="" value=""/> 미수신</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2">
+                                <span title="필수">*</span>휴일배송</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value="" checked="checked"/> 가능</label>
+                                    <label><input type="radio" name="" value=""/> 불가능</label>
+                                </div>
+                            </td>
+                            <th scope="row" colspan="2">
+                                <span title="필수">*</span>야간배송</th>
+                            <td>
+                                <div class="input_list two">
+                                    <label><input type="radio" name="" value=""/> 가능</label>
+                                    <label><input type="radio" name="" value="" checked="checked"/> 불가능</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2">배송사진촬영 및 업로드</th>
+                            <td colspan="4">
+                                <div class="input_list two" style="width:30%">
+                                    <label><input type="radio" name="" value=""/> 가능</label>
+                                    <label><input type="radio" name="" value="" checked="checked"/> 불가능</label>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table summary="가맹점 가입신청 정보3" class="input_table">
+                    <caption>가맹점 가입신청 3</caption>
+                    <colgroup>
+                        <col width="12.5%"/>
+                        <col width="37.5%"/>
+                        <col width="12.5%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">화원경력</th>
+                            <td>
+                                <input type="text" name="" value="" style="width:32.14%" title="경력 년수" />  &nbsp;년
+                            </td>
+                            <th scope="row">직원수</th>
+                            <td>
+                                <input type="text" name="" value="" style="width:32.14%" title="직원수"/>
+                                &nbsp;명
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">매장면적</th>
+                            <td>
+                                <input type="text" name="" value="" style="width:32.14%" title="매장면적"/>
+                                &nbsp;평
+                            </td>
+                            <th scope="row">매장형태</th>
+                            <td>
+                                <div class="input_list four">
+                                    <label><input type="radio" name="" value="" checked="checked" /> 점포상가</label>
+                                    <label><input type="radio" name="" value="" /> 하우스</label>
+                                    <label><input type="radio" name="" value="" /> 단체</label>
+                                    <label><input type="radio" name="" value="" /> 독립</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">인터넷</th>
+                            <td>
+                                <div class="input_list three">
+                                    <label><input type="radio" name="" value="" checked="checked" /> 가능</label>
+                                    <label><input type="radio" name="" value="" /> 불가능</label>
+                                </div>
+                            </td>
+                            <th scope="row">수발주<br />전용팩스</th>
+                            <td>
+                                <div class="input_list three">
+                                    <label><input type="radio" name="" value="" checked="checked" /> 보유</label>
+                                    <label><input type="radio" name="" value="" /> 미보유</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">리본출력</th>
+                            <td>
+                                <div class="input_list three">
+                                    <label><input type="radio" name="" value="" checked="checked" /> 가능</label>
+                                    <label><input type="radio" name="" value="" />불가능</label>
+                                </div>
+                            </td>
+                            <th scope="row">꽃냉장고</th>
+                            <td>
+                                <div class="input_list three">
+                                    <label><input type="radio" name="" value="" checked="checked" /> 보유</label>
+                                    <label><input type="radio" name="" value="" /> 미보유</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">배송차량</th>
+                            <td>
+                                <input type="text" name="" value="" title="배송차량 갯수" style="width:32.14%"/>
+                                &nbsp;대
+                            </td>
+                            <th scope="row">월 발주<br />가능금액</th>
+                            <td>
+                                <input type="text" name="" value="" title="월 발주 가능 금액" style="width:32.14%"/>
+                                &nbsp;만원
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">화원소개</th>
+                            <td colspan="3">
+                                <textarea cols="100" rows="9" title="화원소개"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">요청사항</th>
+                            <td colspan="3">
+                                <textarea cols="100" rows="5" title="요청사항"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_area">
+                    <a href="#" class="btn btn_confirm">가입승인요청</a>
+                    <a href="javascript:window.close();" class="btn btn_cancel">취소</a>
+                </div>
             </div>
-            <!-- /container -->
         </div>
     </body>
 </html>

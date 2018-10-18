@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/* reset */
+*, img,button,a,input,form,fieldset {margin:0; padding:0; border:0; font-size:inherit; color:inherit; vertical-align:0; font-family:"맑은고딕", Malgun Gothic, Verdana, Arial, sans-serif}
+html {width:100%; height:100%}
+body {margin:0; padding:0; border:0; display:block; width:100%; height:100%; min-height:881px}
+table, th, td {border-collapse:collapse; border-spacing:0; vertical-align:middle}
+caption, legend {display:none}
+textarea, input[type="text"], input[type="password"] {box-sizing:border-box; margin:0; padding:5px; background:#eee}
+textarea:hover, textarea:focus, input[type="text"]:hover,input[type="text"]:focus , input[type="password"]:hover, input[type="password"]:focus {padding:4px 5px; background:#fff; border:1px solid #eee}
+input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
+input::placeholder {color:#aaa}
+ul, ol, dl, li, dt, dd {list-style:none; margin:0; padding:0; border:0}
+a {text-decoration:none}
+img {vertical-align:top}
+
+/* main, sub 공통 */
+#wrap {min-width:1300px; min-height:100%; line-height:1.46; font-size:13px; color:#000}
+#header, #container, #footer {position:relative; margin:0 auto}
+#wrap:after, #header:after, #container:after {display:block; content:""; clear:both}
+#header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
+#header h1 {float:left; padding-top:30px; width:296px}
+#header .unb {position:absolute; top:10px; right:0; min-width:250px; border-right:1px solid #ccc}
+#header .unb li {float:left; padding:0 15px; height:15px; line-height:15px; text-align:center; border-left:1px solid #ccc; font-size:11px}
+#header .unb li strong {padding:0 6px}
+#header .tel {float:left; padding-top:40px; width:234px; font-weight:bold; font-size:16px}
+#header .tel dt {float:left; padding-right:5px}
+#header .user_info {padding-top:40px; overflow:hidden}
+#header .user_info > div {float:left; min-width:70px; padding-right:15px}
+#header .user_info p {height:20px; line-height:20px; font-size:14px}
+#header .user_info .login_time {font-size:12px}
+#header .user_info .login_time span {padding-left:6px}
+#header .adnim_btn {float:left}
+#header .adnim_btn a {display:block; margin:1px 0 2px; width:70px; height:18px; line-height:18px; text-align:center; border:1px solid #ccc; border-radius:1em; font-size:11px}
+#header .mng_btn {position:absolute; bottom:10px; right:0}
+#header .mng_btn a {display:block; float:left; box-sizing:border-box; margin-left:10px; padding:0 27px; height:40px; line-height:40px; border:1px solid #ccc; font-weight:bold}
+#header .mng_btn a strong {padding:0 10px}
+
+.gnb {width:100%; min-width:1880px; background:#023a63}
+.gnb ul {box-sizing:border-box; margin:0 auto; padding:5px 0; width:1880px}
+.gnb ul:after {display:block; content:""; clear:both}
+.gnb ul li {float:left; width:273px; height:40px; line-height:40px; text-align:center; border-left:1px solid #fff; font-size:18px; color:#fff; font-weight:bold}
+.gnb ul li:first-child {box-sizing:border-box; padding-right:20px; width:255px; border:0}
+.gnb ul li:last-child {box-sizing:border-box; padding-left:20px; width:254px}
+
+#container {margin-top:20px; padding:0; width:1880px; background-image:linear-gradient(to right, #edf1f2 256px, #fff 256px); background-image:-webkit-linear-gradient(left, #edf1f2 256px, #fff 256px)}
+.lnb {float:left; width:256px; height:100%; background:#edf1f2; font-size:14px}
+.lnb h2 {padding:6px 0 6px 30px; line-height:2.0em; background:#ccc}
+.lnb ul {padding:10px}
+.lnb ul li a {display:block; padding:5px 30px 4px; line-height:1.5em}
+.lnb ul li.on a {background:#fff}
+.lnb ul li a:hover, .lnb ul li a:focus {font-weight:bold}
+.lnb .my_menu li {padding:5px 30px 4px; line-height:1.5em}
+.lnb .my_menu li a {padding:0; float:right}
+.lnb .my_menu li a span {color:#e60012; font-weight:bold}
+#content {position:relative; float:left;box-sizing:border-box; padding:0 0 140px 20px; width:1624px}
+#content .con_tit {padding:10px 0 7px; height:21px; line-height:1.5em; border-bottom:2px solid #7d7d7d; font-size:14px}
+
+#footer {position:absolute; bottom:0; left:0; width:100%; border-top:1px solid #eee; color:#000}
+#footer .bank {float:left; padding:14px 0 0 20px; width:376px; font-size:14px}
+#footer .bank dt {font-weight:bold}
+#footer .bank dt, #footer .bank dd {height:25px; line-height:25px}
+#footer .address {float:left; padding-top:14px}
+#footer address {height:25px; line-height:25px; font-style:normal}
+#footer .copyright {height:25px; line-height:25px}
+#footer .copyright.v2 {color:#e60012}

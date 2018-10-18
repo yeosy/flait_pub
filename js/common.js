@@ -1,5 +1,13 @@
 /*! common.js - 2018-10-18 === yeosoyeong */
 
+// window popup(header-login history)
+function loginList() {
+    window.open(
+        '/application/popup/views/loginHistory.html',
+        'loginList',
+        'width=500, height=500, top=100, left=540, scrollbars=yes'
+    );
+}
 //layer popup
 $(document).ready(function () {
     // data="layerNm(해당 레이어 팝업 id값)
@@ -12,12 +20,15 @@ $(document).ready(function () {
     })
 })
 
-//select menu (jquery ui)
+/* jquery ui */
 $(function(){
-    $('select').selectmenu();
-});
+    //select menu
+    $('select').selectmenu(); 
 
-//datepicker (jquery ui)
-$( function() {
-    $( "#datepicker" ).datepicker();
-} );
+    //datepicker
+    $( "#datepicker" ).datepicker(); 
+
+    //sortable(SMS 주소록)
+    $( ".sortable" ).sortable();
+    $( ".sortable" ).disableSelection();
+});

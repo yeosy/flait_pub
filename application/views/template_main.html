@@ -16,28 +16,17 @@
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript" src="/js/jquery-ui.js"></script>        
         <script type="text/javascript" src="/js/common.js"></script>
-        <script type="text/javascript">
-            //로그인 이력 팝업
-            function loginList() {
-                window.open(
-                    '/application/popup/loginList.html',
-                    'loginList',
-                    'width=500, height=500, top=100, left=540, scrollbars=yes'
-                );
-            }
-        </script>
     </head>
     <body>
-
-    <script type="text/javascript">
-        // 레이아웃용
-        $(document).ready(function () {
-            $('#header').load('/application/views/header.html');
-            $('.gnb').load('/application/views/gnb.html');
-            $('.lnb').load('/application/views/lnb.html');
-            $('#footer').load('/application/views/footer.html');
-        })
-    </script>
+<script type="text/javascript">
+    // 레이아웃용
+    $(document).ready(function () {
+        $('#header').load('/application/views/header.html');
+        $('.gnb').load('/application/views/gnb.html');
+        $('.lnb').load('/application/views/lnb.html');
+        $('#footer').load('/application/views/footer.html');
+    })
+</script>
 
         <div id="wrap">
             <header id="header"></header>
@@ -59,7 +48,7 @@
                     </div><!-- /Main Page -->
 
                     <hr />
-                    
+
                     <footer id="footer"></footer>
                     <!-- /footer -->
                 </div>
