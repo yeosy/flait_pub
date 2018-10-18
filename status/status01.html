@@ -1,0 +1,63 @@
+    <style>
+        .developStatus {border:1px solid #555; background:#fff}
+        .developStatus * {font-size:12px; font-family:malgun gothic, sans-serif; color:#000; text-decoration:none}
+        .developStatus #developStatus {display:none; padding-top:20px; width:420px; max-height:400px; overflow-y:scroll}
+        .developStatus table {margin:10px auto; width:380px; border-spacing:0; border-collapse:collapse}
+        .developStatus table caption {display:block; height:25px; line-height:25px; font-weight:bold; text-align:center}
+        .developStatus table caption:before {content:"< "}
+        .developStatus table caption:after {content:" >"}
+        .developStatus th, #developStatus td {margin:0; padding:5px; text-align:left; border:1px solid #ccc}
+        .developStatus .btn_pub {position:absolute; top:0; right:0; padding:5px; width:100px; background:#555; color:#fff; font-weight:bold}
+        .developStatus th {background:#eee}
+    </style>
+
+    <button type="button" class="btn_pub" onclick="$('#developStatus').toggle();">퍼블리싱 가이드</button>
+    <div id="developStatus">
+        <table>
+            <caption>메인, 로그인</caption>
+            <colgroup>
+                <col width="80%" />
+                <col width="20%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">Page Name</th>
+                    <th scope="row">Date</th>
+                </tr>
+                <tr>
+                    <td><a href="/application/login/views/login.html">로그인페이지</a></td>
+                    <td>2018-10-18</td>
+                </tr>
+                <tr>
+                    <td><a href="/application/main/views/main.html">메인페이지</a></td>
+                    <td>2018-10-18</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <caption>템플릿 </caption>
+            <colgroup>
+                <col width="80%" />
+                <col width="20%" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">Page Name</th>
+                    <th scope="row">Date</th>
+                </tr>
+                <tr>
+                    <td><a href="/application/views/template_main.html">메인페이지 템플릿</a></td>
+                    <td>2018-10-18</td>
+                </tr>
+                <tr>
+                    <td><a href="/application/views/template_sub.html">서브페이지 템플릿</a></td>
+                    <td>2018-10-18</td>
+                </tr>
+                <tr>
+                    <td><a href="javascript:window.open('/application/views/template_popup.html','loginList','width=850, height=500, top=100, left=540, scrollbars=yes');">팝업 템플릿(850*500)</a></td>
+                    <td>2018-10-18</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

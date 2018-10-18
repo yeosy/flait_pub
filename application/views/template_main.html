@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
     <head>
         <title>전국플라워센터 - template</title>
         <meta charset="UTF-8">
@@ -56,5 +56,14 @@
             </div>
             <!-- /container -->
         </div>
+        
+	<!-- 개발자 가이드 -->
+	<script>
+        $(document).ready(function(){
+            $('.developStatus').load('/status/status01.html');
+        })
+    </script>
+    <div class="developStatus" style="position:absolute; top:5px; right:10px"></div>
+    <!-- //개발자 가이드 -->
     </body>
 </html>
