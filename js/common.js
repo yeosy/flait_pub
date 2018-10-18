@@ -18,3 +18,6 @@ $(function(){
 });
 
 //datepicker (jquery ui)
+$( function() {
+    $( "#datepicker" ).datepicker();
+} );
