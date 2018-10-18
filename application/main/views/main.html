@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>전국플라워센터-메인</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/common.js"></script>
+        <script type="text/javascript">
+            //로그인 이력 팝업
+            function loginList() {
+                window.open(
+                    '/application/popup/loginList.html',
+                    'loginList',
+                    'width=500, height=500, top=100, left=540, scrollbars=yes'
+                );
+            }
+        </script>
+    </head>
+    <body>
+        
+    <script type="text/javascript">
+        // 레이아웃용
+        $(document).ready(function () {
+            $('#header').load('/application/views/header.html');
+            $('.gnb').load('/application/views/gnb.html');
+            $('.lnb').load('/application/views/lnb.html');
+            $('#footer').load('/application/views/footer.html');
+        })
+    </script>
+        <div id="wrap">
+            <header id="header"></header>
+            <!-- /header -->
+
+            <hr/>
+
+            <nav class="gnb"></nav>
+            <!-- /gnb -->
+
+            <hr/>
+
+            <div id="container">
+                <div class="lnb"></div>
+
+                <div id="content" class="main"> <!-- 메인페이지 일때 class="main" -->
+                    <div class="main_column">
+                        <div class="main_info">
+                            <!-- main_info , import_info -->
+                            <div class="weather">
+                                <ul class="date text_14">
+                                    <li>2018년 </li>
+                                    <li>04월 </li>
+                                    <li>23일</li>
+                                </ul>
+                                <div class="weather_api">지역 및 날씨 정보</div>
+                            </div>
+                            <table class="main_info_table">
+                                <caption>나의 주요 정보 목록</caption>
+                                <colgroup>
+                                    <col width="18%">
+                                    <col span="5" width="16.414141%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="colgroup" rowspan="2" class="bg_th text_14">오늘의 수발주</th>
+                                        <th scope="row">미확인</th>
+                                        <th scope="row">미배송</th>
+                                        <th scope="row">배송완료</th>
+                                        <th scope="row">수주</th>
+                                        <th scope="row">발주</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">1</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">3</strong>건
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup" rowspan="2" class="bg_th text_14">이달의 수발주</th>
+                                        <th scope="row" colspan="2">수주</th>
+                                        <th scope="row" colspan="2">발주</th>
+                                        <th scope="row">발주율</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td colspan="2">
+                                            <a href="#">
+                                                <strong class="text_point">3</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">1</strong>%
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup" class="bg_th text_14">공지사항</th>
+                                        <td colspan="4">
+                                            <ul class="notice_list">
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#">
+                                                        화원사 계산서 발행안내
+                                                    </a>
+                                                    <span class="text_right">2018-01-01</span>
+                                                </li>
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#">
+                                                        화원사 계산서 발행안내 계산서 발행안내계산서 발행안내계산서 발행안내계산서 발행안내계산서 발행안내
+                                                    </a>
+                                                    <span class="text_right">2018-01-01</span>
+                                                </li>
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#">
+                                                        화원사 계산서 발행안내
+                                                    </a>
+                                                    <span class="text_right">2018-01-01</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="bl0">
+                                            <a href="#" class="btn btn_more">더보기</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="personal_note">
+                            <form action="" name="">
+                                <fieldset>
+                                    <legend>개인 메모장</legend>
+                                    <h2>개인 메모장</h2>
+                                    <textarea name="" cols="30" rows="10" title="">개인메모장 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, laudantium adipisci? Culpa maiores nobis veniam sequi sapiente inventore quos non atque mollitia omnis magni a explicabo quas nisi, autem repudiandae? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ipsa, a provident architecto sapiente aperiam officiis adipisci? Ab debitis tempora quis modi aliquam placeat nobis. Recusandae doloribus adipisci molestias perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam et similique repudiandae commodi harum dolorem quod at earum assumenda impedit quasi unde quibusdam incidunt tenetur, perspiciatis inventore voluptate quidem adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. A accusantium, veritatis et numquam saepe exercitationem impedit mollitia, velit repellendus perferendis atque. Laborum eos, quaerat sequi iusto dolor consequuntur nobis aut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum porro minus ad inventore accusantium? Illum nobis exercitationem ipsam fugiat et numquam adipisci aperiam accusantium. Quibusdam, quisquam ab! Eos, voluptate explicabo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi neque doloribus, nostrum officia dolore dicta itaque consequatur aut quibusdam ipsum dolorum accusantium saepe laudantium fuga rerum ad delectus iste! Nam!</textarea>
+                                    <input type="submit" value="저장" class="btn btn_save"/>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- SUMMERNOTE <iframe src="/application/views/editor.html" width="900"
+                    height="600" scrolling="no"></iframe> -->
+                    <!-- //SUMMERNOTE -->
+
+                    <!-- //DATEPICKER-->
+
+                    <footer id="footer"></footer>
+                    <!-- /footer -->
+                </div>
+
+            </div>
+            <!-- /container -->
+        </div>
+    </body>
+</html>
