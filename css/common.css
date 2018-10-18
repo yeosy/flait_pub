@@ -37,11 +37,6 @@ img {vertical-align:top}
 .float_right {float:right !important}
 
 /* button */
-.btn_area .btn {display:inline-block; box-sizing:border-box; margin-left:16px; border-radius:15px; font-size:18px; font-weight:800}
-.btn_area .btn:first-child {margin-left:0}
-
-.btn_confirm {background:#023a63; border:1px solid #023a63; color:#fff}
-.btn_cancel {background:#fff; border:1px solid #7d7d7d}
 
 /* layer popup */
 .layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:10}

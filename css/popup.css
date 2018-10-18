@@ -15,5 +15,10 @@
 .popup .tit h2 {display:inline-block; font-size:18px; font-weight:800}
 .popup .tit span {float:right; color:#e60012; font-size:16px}
 
-.popup .btn_area {overflow:hidden; text-align:center; margin:30px 0}
-.popup .btn_area .btn {min-width:200px; line-height:50px; text-align:center}
+
+.btn_area {overflow:hidden; text-align:center; margin:30px 0}
+.btn_area .btn {display:inline-block; box-sizing:border-box; margin-left:16px; min-width:200px; line-height:50px; text-align:center; border-radius:15px; font-size:18px; font-weight:800}
+.btn_area .btn:first-child {margin-left:0}
+
+.btn_confirm {background:#023a63; border:1px solid #023a63; color:#fff}
+.btn_cancel {background:#fff; border:1px solid #7d7d7d}

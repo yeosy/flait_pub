@@ -12,22 +12,11 @@
 <meta property="og:url" content="https://www.flowercenter.co.kr/">
 <link rel="stylesheet" type="text/css" href="/css/common.css" /> <!-- 공통으로 사용하는 CSS -->
 <link rel="stylesheet" type="text/css" href="/css/login.css" /> <!-- 로그인 화면에서만 사용하는 CSS -->
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
 <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-<script>
-	//layer popup
-	$(document).ready(function(){	
-
-		$('.layerOpen').click(function(){
-			var layerNm = $(this).attr('data');
-			$('#'+layerNm).fadeIn();
-		})
-		
-		$('.layer .close, .overlay').click(function(){
-			$('.layer').fadeOut();
-		})
-		
-	})
-	
+<script type="text/javascript" src="/js/jquery-ui.js"></script>        
+<script type="text/javascript" src="/js/common.js"></script>
+<script>	
 	// 신규 가맹점 가입신청 window popup
 	function joinLayer (){
 		window.open('/application/popup/views/joinForm.html', 'joinForm', 'width=1000, height=650, left=540, top=150, scrollbars=yes');
