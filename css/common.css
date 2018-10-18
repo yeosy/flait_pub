@@ -15,7 +15,7 @@ img {vertical-align:top}
 /* common */
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
 
-/* margin, padding */
+/* margin, padding, border */
 .mt10 {margin-top:10px !important}
 .mt15 {margin-top:15px !important}
 .mt20 {margin-top:20px !important}
@@ -24,9 +24,12 @@ img {vertical-align:top}
 .pt10 {padding-top:10px !important}
 .pb10 {padding-bottom:10px !important}
 
+.bl0 {border-left:0 !important}
+
 /* font */
 .text_14 {font-size:14px !important}
 .text_warning {color:#e60012 !important}
+.text_point {color:#ff0000 !important}
 
 /* align, float */
 .text_left, .text_left th, .text_left td {text-align:left !important}

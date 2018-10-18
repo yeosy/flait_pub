@@ -26,37 +26,3 @@
 .list_table tbody th {padding:15px 5px}
 .list_table td {padding:8px 5px 8px}
 .list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
-
-/*main_1column*/
-.main_1column .main_info, .main_1column .personal_note{float:left; width:790px; overflow: hidden}
-
-/* 수발주 정보 */
-.main_1column .main_info{margin-right:20px;}
-.weather{border:1px solid #7d7d7d; border-bottom:0}
-.weather .date{float:left; padding:9px 13px; line-height:1.5em; background:#c5dfe7; border-right:1px solid #7d7d7d}
-.weather .date li{float:left; margin-right:5px; font-weight:800}
-.weather .date li:last-child{margin-right:0}
-.weather .weather_api{display:inline-block; padding:10px; line-height:1.5em}
-.main_info_table{width:100%; border-bottom:1px solid #7d7d7d; border-right:1px solid #7d7d7d}
-.main_info_table th,
-.main_info_table td{font-size:12px; padding:5px; line-height:1.15em; text-align:center; vertical-align:middle; border-top:1px solid #7d7d7d; border-left:1px solid #7d7d7d}
-.main_info_table th{background:#eee}
-.main_info_table .main_info th{background:#eee}
-.main_info_table .bg_th{background:#ccc}
-.main_info_table .notice_list{display:inline-block; margin:4px 0  9px 15px; text-align:left}
-.main_info_table .notice_list li{float:left; padding:2.5px 5px; width:470px; line-height: 12px; border-bottom:1px solid #ccc}
-.main_info_table .notice_list li a{display:inline-block; overflow:hidden; white-space:nowrap; width:374px; text-overflow:ellipsis}
-.main_info_table a:hover, .main_info_table a:focus{font-weight:800}
-.main_info_table .btn_more{padding:2.5px 17.5px; background:#fff; border:1px solid #eee; font-size:11px}
-.main_info_table .btn_more:hover, .main_info_table .btn_more:focus{font-weight:500}
-
-/* 개인메모장 */
-.main_1column .personal_note{position:relative; padding-bottom:19px; border:1px solid #ccc}
-.main_1column .personal_note h2{display:inline-block; padding: 10px 0 10px 31px; line-height:1.45em; font-size: 14px; font-weight:800}
-.main_1column .personal_note textarea{display:block; margin:0 auto; padding:5px; width:750px; height:160px; background:#f7f7f7; border:1px solid #ccc}
-.main_1column .personal_note .btn_save{position:absolute; top:10px; right:20px; padding:4px 8px; line-height:0.99em; background:#fff; border:1px solid #ccc; font-size:11px}
-
-
-/* 공통 */
-.bl0 {border-left:0 !important}
-.text_point {color:#ff0000 !important}
