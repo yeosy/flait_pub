@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>전국플라워센터 - template</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> 로그인 화면에서만 사용 -->
+        <!-- <link rel="stylesheet" type="text/css" href="/css/popup.css" /> 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/common.js"></script>
+        <script type="text/javascript">
+            //로그인 이력 팝업
+            function loginList() {
+                window.open(
+                    '/application/popup/loginList.html',
+                    'loginList',
+                    'width=500, height=500, top=100, left=540, scrollbars=yes'
+                );
+            }
+        </script>
+    </head>
+    <body>
+
+    <script type="text/javascript">
+        // 레이아웃용
+        $(document).ready(function () {
+            $('#header').load('/application/views/header.html');
+            $('.gnb').load('/application/views/gnb.html');
+            $('.lnb').load('/application/views/lnb.html');
+            $('#footer').load('/application/views/footer.html');
+        })
+    </script>
+
+        <div id="wrap">
+            <header id="header"></header>
+            <!-- /header -->
+
+            <hr/>
+
+            <nav class="gnb"></nav>
+            <!-- /gnb -->
+
+            <hr/>
+
+            <div id="container">
+                <div class="lnb"></div>
+
+                <div id="content">
+                    <div class="sub">
+                        <h3 class="con_tit">SMS 관리</h3>
+                        
+                        <!-- 상세 테이블 -->
+                        <table class="list_table">
+                            <caption> 상세 테이블</caption>
+                            <colgroup>
+                                <col width="12%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tbody class="text_left">
+                                <tr>
+                                    <th scope="col">전송건수 / 전송금액</th>
+                                    <td>2,000건 / 100,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">전송건수 / 전송금액</th>
+                                    <td>2,000건 / 100,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">전송건수<br /> / 전송금액</th>
+                                    <td>2,000건 / 100,000원</td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">전송건수 / 전송금액</th>
+                                    <td>2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //상세 테이블 -->
+
+                        <!-- 목록 테이블 -->
+                        <table class="list_table mt20">
+                            <caption>목록 테이블</caption>
+                            <colgroup>
+                                <col width="5%"/>
+                                <col width="5%"/>
+                                <col width="5%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">구분</th>
+                                    <th scope="col"><input type="checkbox" name="" value="" title="전체선택" /></th>
+                                    <th scope="col" class="text_left">메시지 내용</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
+                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
+                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>test</td>
+                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
+                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터 본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //목록 테이블 -->
+
+                        <select title="필수">
+                            <option class="no_check">미확인</option>
+                            <option class="order">주문접수</option>
+                            <option class="reject">주문거절</option>
+                            <option class="shipping">배송중</option>
+                            <option class="delivery">배송완료</option>
+                        </select>
+                        <!-- //select box -->
+
+                        <div class="date_pick">
+                            Date: <input type="text" id="datepicker" />
+                        </div>
+                        <!-- //date_pick -->
+
+                        <style>
+                            .box1, .box2 {float:left; width:300px; margin-right:30px}
+                            .sortable li {padding:5px;}
+                        </style>
+                        <div class="box1">
+                        <ul class="sortable">
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+                        </ul></div>
+
+                        <div class="box2">
+                        <ul class="sortable">
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6</li>
+                            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7</li>
+                        </ul></div>
+
+                        <!-- SUMMERNOTE <iframe src="/summernote/editor.html" width="900"
+                        height="600" scrolling="no"></iframe> -->
+                        <!-- //SUMMERNOTE -->
+
+                    </div><!-- /Sub Page -->
+
+                    <hr />
+                    
+                    <footer id="footer"></footer>
+                    <!-- /footer -->
+                </div>
+
+            </div>
+            <!-- /container -->
+        </div>
+    </body>
+</html>
