@@ -21,11 +21,18 @@
 .mb10 {margin-bottom:10px !important}
 .mb30 {margin-bottom:30px !important}
 
+.ml05 {margin-left:5px !important}
 .ml15 {margin-left:15px !important}
 .ml20 {margin-left:20px !important}
 
 .pt10 {padding-top:10px !important}
+
+.pr10 {padding-right:10px !important} 
+ 
+.pb00 {padding-bottom:0px !important}
 .pb10 {padding-bottom:10px !important}
+
+.pl10 {padding-left:10px !important}
 
 .bl0 {border-left:0 !important}
 
@@ -54,10 +61,13 @@
 .btn_m {width:127px; height:30px; line-height:2.33333em; font-size:1.0em}
 .btn_l {min-width:200px; line-height:50px; border-radius:15px; font-size:18px; font-weight:bold}
 
-.btn_basic {background:#eee; border:1px solid #ccc; border-radius:4px;}
-.btn_cancel {background:#fff; border:1px solid #ccc; border-radius:4px;}
+.btn_basic {background:#eee; border:1px solid #ccc; border-radius:4px}
+.btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
+.btn_cancel {background:#fff; border:1px solid #ccc; border-radius:4px}
 .btn_confirm {background:#023a63; border-radius:4px; color:#fff}
+.btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
 .btn_blue {padding:0 3px; background:#c5dfe7; border:1px solid #ccc; border-radius:4px}
+.btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
 
 /* tab */
 .tab_menu {margin-bottom:10px; overflow:hidden}
@@ -68,6 +78,7 @@
 .tab_menu li a:hover, .tab_menu li a:focus {font-weight:800}
 
 /* selectbox */
+.ui-selectmenu-menu {font-size:12px}
 .ui-selectmenu-button.ui-button.ui-widget {padding:3px 6px 4px 10px; width:auto; height:16px; border:1px solid #ccc; background-color:#fff; border-radius:0}
 .ui-selectmenu-button.ui-button .ui-selectmenu-text {margin-right:0 !important}
 .ui-selectmenu-button.ui-button .ui-selectmenu-icon.ui-icon {padding-left:10px; background:url(/img/common/bg_select.png) right center no-repeat}

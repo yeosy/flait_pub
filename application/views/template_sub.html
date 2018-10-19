@@ -1,25 +1,25 @@
 <!doctype html>
 <html lang="ko">
-    <head>
-        <title>전국플라워센터 - template</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="Content-Script-Type" content="text/javascript">
-        <meta http-equiv="Content-Style-Type" content="text/css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
-        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
-        <meta property="og:title" content="전국플라워센터">
-        <meta property="og:url" content="https://www.flowercenter.co.kr/">
-        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
-        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
-        <!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> 로그인 화면에서만 사용 -->
-        <!-- <link rel="stylesheet" type="text/css" href="/css/popup.css" /> 팝업 화면에서만 사용 -->
-        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
-        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
-        <script type="text/javascript" src="/js/common.js"></script>
-    </head>
-    <body>
+<head>
+    <title>전국플라워센터 - template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+    <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+    <meta property="og:title" content="전국플라워센터">
+    <meta property="og:url" content="https://www.flowercenter.co.kr/">
+    <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+    <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> 로그인 화면에서만 사용 -->
+    <!-- <link rel="stylesheet" type="text/css" href="/css/popup.css" /> 팝업 화면에서만 사용 -->
+    <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+    <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+    <script type="text/javascript" src="/js/common.js"></script>
+</head>
+<body>
 <script type="text/javascript">
     // 레이아웃용
     $(document).ready(function () {
@@ -30,176 +30,318 @@
     })
 </script>
 
-        <div id="wrap">
-            <header id="header"></header>
-            <!-- /header -->
-
-            <hr/>
-
-            <nav class="gnb"></nav>
-            <!-- /gnb -->
-
-            <hr/>
-
-            <div id="container">
-                <div class="lnb"></div>
-
-                <div id="content">
-                    <div class="sub">
-                        <h3 class="con_tit">SMS 관리</h3>
-                        
-                        <p class="mt20"></p>
-                        
-                        <!-- 탭메뉴 -->
-                        <ul class="tab_menu">
-                            <li class="active"><a href="#">문자보내기</a></li>
-                            <li><a href="#">보낸 메세지함</a></li>
-                            <li><a href="#">예약 메세지함</a></li>
-                            <li><a href="#">화원별 전체내역</a></li>
-                        </ul>
-                        <!-- /탭메뉴 -->
-
-                        <!-- 상세 테이블 -->
-                        <table class="list_table">
-                            <caption> 상세 테이블</caption>
-                            <colgroup>
-                                <col width="12%"/>
-                                <col width="*"/>
-                            </colgroup>
-                            <tbody class="text_left">
-                                <tr>
-                                    <th scope="col">전송건수 / 전송금액</th>
-                                    <td>2,000건 / 100,000원</td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">전송건수 / 전송금액</th>
-                                    <td>2,000건 / 100,000원</td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">전송건수<br /> / 전송금액</th>
-                                    <td>2,000건 / 100,000원</td>
-                                </tr>
-                                <tr>
-                                    <th scope="col">전송건수 / 전송금액</th>
-                                    <td>2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- //상세 테이블 -->
-
-                        <!-- 목록 테이블 -->
-                        <table class="list_table mt20">
-                            <caption>목록 테이블</caption>
-                            <colgroup>
-                                <col width="5%"/>
-                                <col width="5%"/>
-                                <col width="5%"/>
-                                <col width="*"/>
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="row">NO</th>
-                                    <th scope="row">구분</th>
-                                    <th scope="row"><input type="checkbox" name="" value="" title="전체선택" /></th>
-                                    <th scope="row" class="text_left">메시지 내용</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>10</td>
-                                    <td>test</td>
-                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>test</td>
-                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>test</td>
-                                    <td><input type="checkbox" name="" value="" title="선택" /></td>
-                                    <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터 본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- //목록 테이블 -->
-
-                        <!-- 페이징 -->
-                        <div class="paging">
-                            <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
-                            <a href="#" class="btn" title="이전 페이지">&lt;</a>
-                            <ol>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#">4</a></li>
-                                <li><a href="#">5</a></li>
-                                <li><a href="#">6</a></li>
-                                <li><a href="#">7</a></li>
-                                <li><a href="#">8</a></li>
-                                <li><a href="#">9</a></li>
-                                <li><a href="#">10</a></li>
-                            </ol>
-                            <a href="#" class="btn" title="다음 페이지">&gt;</a>
-                            <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
-                        </div>
-                        <!-- //페이징 -->
-
-                        <select title="필수" class="ship_select">
-                            <option class="no_check">미확인</option>
-                            <option class="order">주문접수</option>
-                            <option class="reject">주문거절</option>
-                            <option class="shipping">배송중</option>
-                            <option class="delivery">배송완료</option>
-                        </select>
-                        <!-- //select box -->
-
-                        <select>
-                            <option>2018</option>
-                            <option>2017</option>
-                            <option>2016</option>
-                            <option>2015</option>
-                            <option>2014</option>
-                        </select>
-                        <!-- //select box -->
-
-                        <div class="date_pick">
-                            Date: <input type="text" id="datepicker" />
-                        </div>
-                        <!-- //date_pick -->
-
-                        <style>
-                            .box1, .box2 {float:left; width:300px; margin-right:30px}
-                            .sortable li {padding:5px;}
-                        </style>
-
-                        <!-- SUMMERNOTE 
-                        <iframe src="/summernote/editor.html" width="900" height="600" scrolling="no"></iframe>-->
-                        <!-- //SUMMERNOTE -->
-
-                    </div><!-- /Sub Page -->
-
-                    <hr />
-
-                    <footer id="footer"></footer>
-                    <!-- /footer -->
-                </div>
-
+<div id="wrap">
+    <header id="header">
+        <h1 class="logo">
+            <a href="http://flowercenter.roseweb.co.kr/">
+                <img src="/img/common/logo.png" alt="전국플라워센터" />
+            </a>
+        </h1>
+        <ul class="unb">
+            <li><a href="/application/main/views/main.html" target="_self">HOME</a></li>
+            <li><a href="http://flasystem.com/" target="_blank"><strong>본부홈페이지</strong></a></li>
+            <li><a href="javascript:alert('ctrl + d키를 누르시면 즐겨찾기에 추가하실 수 있습니다.')">즐겨찾기</a></li>
+        </ul>
+        <div class="tel">
+            <dl>
+                <dt>TEL.</dt>
+                <dd>1544-6487</dd>
+                <dt>FAX.</dt>
+                <dd>070-8224-6861</dd>
+            </dl>
+        </div>
+        <div class="user_info">
+            <div>
+                <p><strong>전국플라워센터</strong>님 안녕하세요.</p>
+                <p class="login_time">
+                    이전로그인
+                    <span>2018-04-23</span>
+                    <span>13:00:00</span>
+                </p>
             </div>
-            <!-- /container -->
+            <div class="adnim_btn">
+                <a class="btn" href="javascript:void(0)" onclick="loginList(); return false;" >로그인이력</a>
+                <a href="/application/sms/views/" class="btn">SMS</a>
+            </div>
         </div>
 
-        <!-- 개발자 가이드 -->
-        <script>
-            $(document).ready(function(){
-                $('.developStatus').load('/status/status01.html');
-            })
-        </script>
-        <div class="developStatus" style="position:absolute; top:5px; right:10px"></div>
-        <!-- //개발자 가이드 -->
-        
-    </body>
+        <div class="mng_btn">
+            <a href="/application/member/views/modify.html"><strong>회원정보</strong></a>
+            <a href="#">로그아웃</a>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <hr/>
+
+    <nav class="gnb">
+        <ul>
+            <li><a href="#">본부발주</a></li>
+            <li><a href="#">화원간직발주</a></li>
+            <li><a href="#">수주리스트</a></li>
+            <li><a href="#">발주리스트</a></li>
+            <li><a href="#">배송사진리스트</a></li>
+            <li><a href="#">정산내역</a></li>
+            <li><a href="#">플라트상품</a></li>
+        </ul>
+    </nav>
+    <!-- /gnb -->
+
+    <hr/>
+
+    <div id="container">
+        <div class="lnb">
+            <!-- 나의 메뉴 -->
+            <div class="my_menu">
+                <h2>나의 메뉴</h2>
+                <ul>
+                    <li>미확인건 <a href="#"><span>0</span>건</a></li>
+                    <li>미배송건 <a href="#"><span>0</span>건</a></li>
+                    <li>배송사진 미등록건 <a href="#"><span>0</span>건</a></li>
+                    <li>받은쪽지 <a href="#"><span>0</span>건</a></li>
+                </ul>
+            </div>
+            <!-- /나의 메뉴 -->
+
+            <!-- 관리자 수발주 -->
+            <div>
+                <h2>관리자 수발주</h2>
+                <ul>
+                    <li class="on"><a href="#">협회전체 수발주</a></li>
+                    <li><a href="#">본부중계창</a></li>
+                    <li><a href="#">취소주문리스트</a></li>
+                    <li><a href="#">직접발주리스트</a></li>
+                    <li><a href="#">미확인리스트</a></li>
+                    <li><a href="#">클레임리스트</a></li>
+                    <li><a href="#">주문거절리스트</a></li>
+                    <li><a href="#">배송사진 미등록 리스트</a></li>
+                    <li><a href="#">지정주문건통계</a></li>
+                    <li><a href="#">취약지역발주통계</a></li>
+                    <li><a href="#">전국파트너사업자발주통계</a></li>
+                    <li><a href="#">본부발주물량통계</a></li>
+                    <li><a href="#">꽃사기타주문통계</a></li>
+                    <li><a href="#">입출금처리</a></li>
+                    <li><a href="#">회원검색</a></li>
+                    <li><a href="#">로그인이력</a></li>
+                </ul>
+            </div>
+            <!-- /관리자 수발주 -->
+
+            <!-- 관리자 메뉴 -->
+            <div>
+                    <h2>관리자 메뉴</h2>
+                    <ul>
+                        <li><a href="#">입금관리</a></li>
+                        <li><a href="#">정산관리</a></li>
+                        <li><a href="#">회원관리</a></li>
+                        <li><a href="#">회원가입신청</a></li>
+                        <li><a href="#">디카벌금내역</a></li>
+                        <li><a href="#">계산서발행</a></li>
+                        <li><a href="#">계산서발행2</a></li>
+                        <li><a href="#">계산서신고</a></li>
+                        <li><a href="#">예치금내역</a></li>
+                        <li><a href="#">당일최고발주액</a></li>
+                        <li><a href="#">전체수발주순위</a></li>
+                        <li><a href="#">환경설정</a></li>
+                        <li><a href="#">메뉴관리</a></li>
+                        <li><a href="#">옵션상품관리</a></li>
+                        <li><a href="#">지역별/상품별 통계</a></li>
+                        <li><a href="#">로그인관리</a></li>
+                        <li><a href="#">팝업관리</a></li>
+                        <li><a href="#">회원약관 동의여부</a></li>
+                        <li><a href="#">입출금처리팝업</a></li>
+                    </ul>
+                </div>
+                <!-- /관리자 메뉴 -->
+
+                <!-- 수발주 메뉴 -->
+                <div>
+                    <h2>수발주메뉴</h2>
+                    <ul>
+                        <li><a href="#">본부발주</a></li>
+                        <li><a href="#">회원간발주</a></li>
+                        <li><a href="#">지난주문입력</a></li>
+                        <li><a href="#">전체발주리스트</a></li>
+                        <li><a href="#">전체수주리스트</a></li>
+                        <li><a href="#">주문미확인리스트</a></li>
+                        <li><a href="#">디카벌금내역</a></li>
+                        <li><a href="#">수발주일정표</a></li>
+                    </ul>
+                </div>
+                <!-- /수발주 메뉴 -->
+
+                <!-- 수발주 메뉴 -->
+                <div>
+                    <h2>수발주메뉴</h2>
+                    <ul>
+                        <li><a href="#">본부발주</a></li>
+                        <li><a href="#">회원간발주</a></li>
+                        <li><a href="#">지난주문입력</a></li>
+                        <li><a href="#">전체발주리스트</a></li>
+                        <li><a href="#">전체수주리스트</a></li>
+                        <li><a href="#">주문미확인리스트</a></li>
+                        <li><a href="#">디카벌금내역</a></li>
+                        <li><a href="#">수발주일정표</a></li>
+                    </ul>
+                </div>
+                <!-- /수발주 메뉴 -->
+        </div>
+
+        <div id="content">
+            <h3 class="con_tit">SMS 관리</h3>
+            
+            <p class="mt20"></p>
+            
+            <!-- 탭메뉴 -->
+            <ul class="tab_menu">
+                <li class="active"><a href="#">문자보내기</a></li>
+                <li><a href="#">보낸 메세지함</a></li>
+                <li><a href="#">예약 메세지함</a></li>
+                <li><a href="#">화원별 전체내역</a></li>
+            </ul>
+            <!-- /탭메뉴 -->
+
+            <!-- 상세 테이블 -->
+            <table class="list_table">
+            <caption> 상세 테이블</caption>
+            <colgroup>
+                <col width="12%"/>
+                <col width="*"/>
+            </colgroup>
+            <tbody class="text_left">
+                <tr>
+                    <th scope="col">전송건수 / 전송금액</th>
+                    <td>2,000건 / 100,000원</td>
+                </tr>
+                <tr>
+                    <th scope="col">전송건수 / 전송금액</th>
+                    <td>2,000건 / 100,000원</td>
+                </tr>
+                <tr>
+                    <th scope="col">전송건수<br /> / 전송금액</th>
+                    <td>2,000건 / 100,000원</td>
+                </tr>
+                <tr>
+                    <th scope="col">전송건수 / 전송금액</th>
+                    <td>2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원</td>
+                </tr>
+            </tbody>
+            </table>
+        <!-- //상세 테이블 -->
+
+            <!-- 목록 테이블 -->
+            <table class="list_table mt20">
+                <caption>목록 테이블</caption>
+                <colgroup>
+                    <col width="5%"/>
+                    <col width="5%"/>
+                    <col width="5%"/>
+                    <col width="*"/>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="row">NO</th>
+                        <th scope="row">구분</th>
+                        <th scope="row"><input type="checkbox" name="" value="" title="전체선택" /></th>
+                        <th scope="row" class="text_left">메시지 내용</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10</td>
+                        <td>test</td>
+                        <td><input type="checkbox" name="" value="" title="선택" /></td>
+                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>test</td>
+                        <td><input type="checkbox" name="" value="" title="선택" /></td>
+                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>test</td>
+                        <td><input type="checkbox" name="" value="" title="선택" /></td>
+                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터 본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- //목록 테이블 -->
+
+            <!-- 페이징 -->
+            <div class="paging">
+                <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                <ol>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li><a href="#">7</a></li>
+                    <li><a href="#">8</a></li>
+                    <li><a href="#">9</a></li>
+                    <li><a href="#">10</a></li>
+                </ol>
+                <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+            </div>
+            <!-- //페이징 -->
+
+            <select title="필수" class="ship_select">
+                <option class="no_check">미확인</option>
+                <option class="order">주문접수</option>
+                <option class="reject">주문거절</option>
+                <option class="shipping">배송중</option>
+                <option class="delivery">배송완료</option>
+            </select>
+            <!-- //select box -->
+
+            <select>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+            </select>
+            <!-- //select box -->
+
+            <div class="date_pick">
+                Date: <input type="text" id="datepicker" />
+            </div>
+            <!-- //date_pick -->
+
+            <!-- SUMMERNOTE 
+            <iframe src="/summernote/editor.html" width="900" height="600" scrolling="no"></iframe>-->
+            <!-- //SUMMERNOTE -->
+
+            <footer id="footer">
+                <dl class="bank">
+                    <dt>본부 계좌번호 안내</dt>
+                    <dd>농협   301-0139-5751-91 (주)플라시스템</dd>
+                </dl>
+                <div class="address">
+                    <address>(주)플라시스템&nbsp; / 대표 김태진&nbsp; / TEL <a href="tel:1544-6487">1544-6487</a>&nbsp; / FAX 070-8224-6861&nbsp; / 부산광역시 사상구 모라로 22 부산벤처타워 1501호</address>
+                    <p class="copyright">Copyright (주)플라시스템 ©  All rights reserved.</p>
+                    <p class="copyright v2">* 본 사이트 내의 모든 자료와 내용은 저작권에 의해 보호되며 무단 사용을 금합니다.</p>
+                </div>
+            </footer>
+            <!-- /footer -->
+
+        </div><!-- /content -->
+    </div><!-- /container -->
+</div><!-- /wrap -->
+
+<!-- 개발자 가이드 -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.developStatus').load('/status/status01.html');
+    })
+</script>
+<div class="developStatus" style="position:absolute; top:5px; right:10px"></div>
+<!-- //개발자 가이드 -->
+
+</body>
 </html>

@@ -1,5 +1,6 @@
 
 /*main_column*/
+.main {font-size:12px}
 .main .parts {display:inline-block; position:relative; float:left; box-sizing:border-box; width:792px; height:220px; overflow:hidden;}
 
 /* 수발주 정보 */

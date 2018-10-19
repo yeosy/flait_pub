@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 로그인 */
-.login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 141px, #023a63 141px); background-image:-webkit-linear-gradient( #fff 141px, #023a63 141px); background-image:-moz-linear-gradient( #fff 141px, #023a63 141px); background-image:-o-linear-gradient( #fff 141px, #023a63 141px)}
+.login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 141px, #023a63 141px); background-image:-webkit-linear-gradient( #fff 141px, #023a63 141px); background-image:-moz-linear-gradient( #fff 141px, #023a63 141px); background-image:-o-linear-gradient( #fff 141px, #023a63 141px); font-size:13px}
 .login_page #header {box-sizing:border-box; margin:0 auto; padding:0 0 13px; width:1300px; background:#fff}
 .login_page #header .logo {float:left; padding:64px 0 0 0}
 .login_page #container {margin:0 auto; padding:74px 0 45px; width:1300px; min-width:1300px; background:none}
@@ -62,6 +62,8 @@
 
 /* login popup */
 .layer_pop.login {margin:-250px 0 0 -237px; box-sizing:border-box; padding:25px;  width:500px; height:475px; background:#fff}
+.layer_pop.login .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7}
+.layer_pop.login .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
 .layer_pop.login h2 {margin-bottom:15px; padding:0; line-height:30px; font-size:25px}
 .layer_pop.login form {padding:0; width:100%;  border:0}
 .layer_pop.login dl {padding:27px 0 26px}
