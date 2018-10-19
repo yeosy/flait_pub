@@ -59,18 +59,17 @@
                         <!-- 문자전송 폼 -->
                         <div class="sms_send float_left basic_box">
                             <div class="dark_box">
-                                <div class="screen">
-                                    본인께서 받으셨습니다. -전국플라워센터
-                                </div>
-                                <p class="byte">0 / 2,000 byte</p>
+                                <textarea class="screen" row="10" cols="50">
+본인께서 받으셨습니다. -전국플라워센터</textarea>
+                                <p class="byte mt15">0 / 2,000 byte</p>
                             </div>
 
-                            <div class="dark_box">
+                            <div class="dark_box mt10">
                                 <div class="sms_info">
                                     <h4>받는 사람</h4>
                                     <ul>
                                         <li>
-                                            <label><input type="radio" name="" value="" /> 선택</label>
+                                            <label><input type="radio" name="" value="" checked="checked" /> 선택</label>
                                             <div class="float_right">
                                                 <a href="#" class="btn btn_blue btn_s">화원검색</a>
                                                 <a href="#" class="btn btn_blue btn_s">주소록</a>
@@ -84,25 +83,36 @@
                                 </div>
                             </div>
                             
-                            <div class="dark_box">
+                            <div class="dark_box mt10 scroll_y" style="height:166px">
+                                <!-- 선택을 선택할 경우 -->
                                 <ul class="num_list">
-                                    <li><input type="number"><a href="#" class="del">삭제</a></li>
-                                    <li><input type="number"><a href="#" class="del">삭제</a></li>
-                                    <li><input type="number"><a href="#" class="del">삭제</a></li>
-                                    <li><input type="number"><a href="#" class="del">삭제</a></li>
-                                    <li><input type="number"><a href="#" class="del">삭제</a></li>
+                                    <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                </ul>
+                                <!-- 화원전체를 선택할 경우 input disabled="disabled" -->
+                                <ul class="num_list">
+                                    <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                    <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
                                 </ul>
                             </div>
 
-                            <div class="dark_box">
+                            <div class="dark_box mt10">
                                 <div class="sms_info">
                                     <h4>보내는 사람</h4>
                                     <ul>
                                         <li>
-                                            <label><input type="radio" name="" value="" /> 0101234567 <span>인증완료</span></label>
+                                            <label><input type="radio" name="" value="" /> 0101234567 </label>
+                                            <span>인증완료</span>
                                         </li>
                                         <li>
-                                            <label><input type="radio" name="" value="" /> 01023456789<span>미인증</span></label>
+                                            <label><input type="radio" name="" value="" /> 01023456789</label>
+                                            <span class="text_point">미인증</span>
                                             <div class="float_right">
                                                 <a href="#" class="btn btn_blue btn_s">발신번호 인증</a>
                                             </div>
@@ -111,9 +121,9 @@
                                 </div>
                             </div>
 
-                            <div class="btn_area">
-                                <a href="#" class="btn btn_cancle btn_m">예약전송</a>
-                                <a href="#" class="btn btn_confirm btn_m">예약전송</a>
+                            <div class="btn_area mt10 clear">
+                                <a href="#" class="btn btn_cancel btn_m float_left">예약전송</a>
+                                <a href="#" class="btn btn_confirm btn_m float_right text_bold">보내기</a>
                             </div>
                         </div><!-- /sms_send -->
                         <!-- /문자전송 폼 -->
@@ -144,10 +154,10 @@
                                     </select> 월
                                 </div>
                                 
-                                <table class="list_table">
+                                <table class="list_table mt10 mb10">
                                     <caption> 상세 테이블</caption>
                                     <colgroup>
-                                        <col width="12%"/>
+                                        <col width="21.688%"/>
                                         <col width="*"/>
                                     </colgroup>
                                     <tbody class="text_left">
@@ -162,7 +172,7 @@
                                 </table>
                             </div>
 
-                            <div class="basic_box">
+                            <div class="basic_box mt20">
                                 <h3>메시지 템플릿</h3>
                                 <table class="list_table mt20">
                                     <caption>목록 테이블</caption>
@@ -243,28 +253,30 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <div class="btn_area">
-                                    <a href="#" class="btn btn_basic btn_m">선택 삭제</a>
-                                    <a href="#" class="btn btn_basic btn_m">메세지 추가</a>
-                                </div>
+                                <div class="clear mt20">
+                                    <div class="btn_area float_right">
+                                        <a href="#" class="btn btn_basic btn_m">선택 삭제</a>
+                                        <a href="#" class="btn btn_basic ml15 btn_m">메세지 추가</a>
+                                    </div>
 
-                                <div class="paging">
-                                    <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
-                                    <a href="#" class="btn" title="이전 페이지">&lt;</a>
-                                    <ol>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">7</a></li>
-                                        <li><a href="#">8</a></li>
-                                        <li><a href="#">9</a></li>
-                                        <li><a href="#">10</a></li>
-                                    </ol>
-                                    <a href="#" class="btn" title="다음 페이지">&gt;</a>
-                                    <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                                    <div class="paging float_left">
+                                        <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                                        <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                                        <ol>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">6</a></li>
+                                            <li><a href="#">7</a></li>
+                                            <li><a href="#">8</a></li>
+                                            <li><a href="#">9</a></li>
+                                            <li><a href="#">10</a></li>
+                                        </ol>
+                                        <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                                        <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

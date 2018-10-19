@@ -1,12 +1,12 @@
 @charset "utf-8";
 
 /* 로그인 */
-.login_page#wrap {height:100%; background-color:#fff; background-image:linear-gradient( #fff 141px, #023a63 141px); background-image:-webkit-linear-gradient( #fff 141px, #023a63 141px); background-image:-moz-linear-gradient( #fff 141px, #023a63 141px); background-image:-o-linear-gradient( #fff 141px, #023a63 141px)}
+.login_page#wrap {height:100%; background-color:#023a63; background-image:linear-gradient( #fff 141px, #023a63 141px); background-image:-webkit-linear-gradient( #fff 141px, #023a63 141px); background-image:-moz-linear-gradient( #fff 141px, #023a63 141px); background-image:-o-linear-gradient( #fff 141px, #023a63 141px)}
 .login_page #header {box-sizing:border-box; margin:0 auto; padding:0 0 13px; width:1300px; background:#fff}
 .login_page #header .logo {float:left; padding:64px 0 0 0}
 .login_page #container {margin:0 auto; padding:74px 0 45px; width:1300px; min-width:1300px; background:none}
-.login_page #footer {position:relative; margin:0 auto; box-sizing:border-box; padding:2px 0 20px 2px; width:1300px; border:none; color:#fff; font-size:12px}
-.login_page #footer .browser {overflow:hidden; padding:12px 0}
+der-box; padding:2px 0 20px 2px; width:1300px; border:none; color:#fff; font-size:12px}
+.login_page #footer .browser {overflow.login_page #footer {position:relative; margin:0 auto; box-sizing:bor:hidden; padding:12px 0}
 .login_page #footer .browser li {float:left; margin-right:10px}
 .login_page #footer address {width:auto; height:auto; line-height:17px}
 

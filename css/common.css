@@ -16,9 +16,12 @@
 .mt10 {margin-top:10px !important}
 .mt15 {margin-top:15px !important}
 .mt20 {margin-top:20px !important}
+.mt30 {margin-top:30px !important}
 
 .mb10 {margin-bottom:10px !important}
+.mb30 {margin-bottom:30px !important}
 
+.ml15 {margin-left:15px !important}
 .ml20 {margin-left:20px !important}
 
 .pt10 {padding-top:10px !important}
@@ -27,6 +30,7 @@
 .bl0 {border-left:0 !important}
 
 /* font */
+.text_bold {font-weight:bold !important}
 .text_14 {font-size:14px !important}
 .text_warning {color:#e60012 !important}
 .text_point {color:#ff0000 !important}
@@ -38,9 +42,22 @@
 
 .float_left {float:left !important}
 .float_right {float:right !important}
+.clear:after {display:block; content:""; clear:both !important}
+.scroll_x {overflow:hidden; overflow-x:auto}
+.scroll_y {overflow:hidden; overflow-y:auto}
 
 /* button */
-.btn {display:inline-block; box-sizing:border-box}
+.btn_area {overflow:hidden}
+
+.btn {display:inline-block; box-sizing:border-box; text-align:center}
+.btn_s {height:20px; line-height:1.636363em; font-size:0.916666em}
+.btn_m {width:127px; height:30px; line-height:2.33333em; font-size:1.0em}
+.btn_l {min-width:200px; line-height:50px; border-radius:15px; font-size:18px; font-weight:bold}
+
+.btn_basic {background:#eee; border:1px solid #ccc; border-radius:4px;}
+.btn_cancel {background:#fff; border:1px solid #ccc; border-radius:4px;}
+.btn_confirm {background:#023a63; border-radius:4px; color:#fff}
+.btn_blue {padding:0 3px; background:#c5dfe7; border:1px solid #ccc; border-radius:4px}
 
 /* tab */
 .tab_menu {margin-bottom:10px; overflow:hidden}
@@ -50,23 +67,10 @@
 .tab_menu li.active a {background:#023a63; border:1px solid #7d7d7d; color:#fff}
 .tab_menu li a:hover, .tab_menu li a:focus {font-weight:800}
 
-/* layer popup */
-.layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:10}
-.layer .overlay {width:100%; height:100%; background-color:rgba(0,0,0,0.7)}
-.layer .layer_pop {position:absolute; top:50%; left:50%; box-sizing:border-box; padding:25px; width:500px; background:#fff}
-.layer .layer_pop .inner {position:relative; padding:30px 35px 25px; background:#c5dfe7}
-.layer .layer_pop .inner .close {position:absolute; top:0; right:0; margin:0; padding:0; width:30px; height:30px; background:url(/img/common/btn_closeLayer.png) 0 0 no-repeat; text-indent:-5000px}
-
 /* selectbox */
-.ui-selectmenu-menu {font-size:12px}
-.ship_select.ui-button {padding:0 !important; width:76px !important; border:0 !important; background:0 !important}
-.ship_select .ui-selectmenu-icon {display:none !important}
-.ship_select .ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; font-size:12px; background:url(/img/common/bg_select.png) 62px center no-repeat}
-.ui-selectmenu-text.no_check {background-color:#d0e1e8}
-.ui-selectmenu-text.order {background-color:#8bc4ce}
-.ui-selectmenu-text.reject {background-color:#0086b5; color:#fff}
-.ui-selectmenu-text.shipping {background-color:#004378; color:#fff}
-.ui-selectmenu-text.delivery {background-color:#001a40; color:#fff}
+.ui-selectmenu-button.ui-button.ui-widget {padding:3px 6px 4px 10px; width:auto; height:16px; border:1px solid #ccc; background-color:#fff; border-radius:0}
+.ui-selectmenu-button.ui-button .ui-selectmenu-text {margin-right:0 !important}
+.ui-selectmenu-button.ui-button .ui-selectmenu-icon.ui-icon {padding-left:10px; background:url(/img/common/bg_select.png) right center no-repeat}
 
 /* list 정렬 */
 .input_list:after {clear:both; display:block; content:""}
@@ -88,19 +92,19 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 /* 목록 테이블 */
 .list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
 .list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
-.list_table th, .list_table td {line-height:1.45em; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
-.list_table th {background:#ccc; padding:7px 5px 8px; font-weight:500}
+.list_table th, .list_table td {line-height:17px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
+.list_table th {padding:7px 5px 8px; background:#ccc; font-weight:500}
 .list_table tbody th {padding:15px 5px}
-.list_table td {padding:8px 5px 8px}
+.list_table td {padding:8px 5px 9px}
 
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}
 .paging ol, .paging li, .paging a {display:inline-block; height:30px; line-height:30px}
 .paging ol {padding:0 1px}
-.paging li a {padding-left:3px; font-size:12px; letter-spacing:1px}
+.paging li a {padding-left:3px; letter-spacing:1px}
 .paging .btn {padding-left:4px}
 
 /* box */
-div[class$=box] {box-sizing:border-box}
-.basic_box {padding:20px; border:1px solid #ccc}
-.dark_box {border:1px solid #7d7d7d}
+div[class*=box] {box-sizing:border-box}
+.basic_box {padding:20px; width:100%; background:#fff; border:1px solid #ccc}
+.dark_box {padding:9px; width:100%; background:#eee; border:1px solid #7d7d7d}
