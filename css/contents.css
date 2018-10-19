@@ -7,27 +7,7 @@
 .terms_box .terms_chk { text-align:center}
 .terms_chk_all {margin-bottom:49px; text-align:center; color:#e60012; font-size:14px; font-weight:800}
 
-/* 갯수 정렬 */
-.input_list:after {clear:both; display:block; content:""}
-ul.input_list.two li, .input_list.two label {float:left; margin-left:5px; width:calc(50% - 6px)}         /* radio or checkbox : 2 */
-ul.input_list.three li, .input_list.three label {float:left; margin-left:5px; width:calc(33.33% - 6px)}    /* radio or checkbox : 3 */
-ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; width:calc(25% - 6px); letter-spacing:-1px}        /* radio or checkbox : 4 */
+/* SMS관리 */
+.sms_send {padding:9px; width:294px}
 
-/* 입력 테이블 */
-.input_table {margin:20px 0 25px 0; width:100%}
-.input_table th, .input_table td {border:1px solid #000}
-.input_table th {background:#ccc; font-weight:normal}
-.input_table td {padding:10px; line-height:30px}
-.input_table input[type="text"], .input_table input[type="password"] {width:100%; line-height:20px; height:30px}
-.input_table textarea {padding:5px; width:100%}
-.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
-.input_table .btn_delivery {width:150px}
-.input_table .btn_address {width:90px}
-
-/* 목록 테이블 */
-.list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
-.list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
-.list_table th, .list_table td {line-height:1.45em; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
-.list_table th {background:#ccc; padding:7px 5px 8px; font-weight:500}
-.list_table tbody th {padding:15px 5px}
-.list_table td {padding:8px 5px 8px}
+.sms_view .basic_box {padding:19px 49px; width:1036px;}

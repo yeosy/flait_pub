@@ -13815,7 +13815,6 @@ var widgetsSelectable = $.widget( "ui.selectable", $.ui.mouse, {
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/selectmenu.css, ../../themes/base/button.css
 //>>css.theme: ../../themes/base/theme.css
-//여소영
 
 
 var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
@@ -13825,7 +13824,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 		appendTo: null,
 		classes: {
 			"ui-selectmenu-button-open": "ui-corner-top",
-			"ui-selectmenu-button-closed": "ui-corner-all"
+			"ui-selectmenu-button-closed": "ui-corner-all"			
 		},
 		disabled: null,
 		icons: {
@@ -13845,6 +13844,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 		open: null,
 		select: null
 	},
+
 
 	_create: function() {
 		var selectmenuId = this.element.uniqueId().attr( "id" );
@@ -13897,6 +13897,7 @@ var widgetsSelectmenu = $.widget( "ui.selectmenu", [ $.ui.formResetMixin, {
 
 		this._addClass( this.button, "ui-selectmenu-button ui-selectmenu-button-closed",
 			"ui-button ui-widget" );
+		this._addClass( this.button, this.element.attr('class') );
 
 		icon = $( "<span>" ).appendTo( this.button );
 		this._addClass( icon, "ui-selectmenu-icon", "ui-icon " + this.options.icons.button );

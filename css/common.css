@@ -16,7 +16,10 @@
 .mt10 {margin-top:10px !important}
 .mt15 {margin-top:15px !important}
 .mt20 {margin-top:20px !important}
+
 .mb10 {margin-bottom:10px !important}
+
+.ml20 {margin-left:20px !important}
 
 .pt10 {padding-top:10px !important}
 .pb10 {padding-bottom:10px !important}
@@ -37,6 +40,15 @@
 .float_right {float:right !important}
 
 /* button */
+.btn {display:inline-block; box-sizing:border-box}
+
+/* tab */
+.tab_menu {margin-bottom:10px; overflow:hidden}
+.tab_menu li:first-child {margin-left:0}
+.tab_menu li {float:left; margin-left:20px}
+.tab_menu li a {display:block; padding:4px 5px 3px; min-width:135px; line-height:1.5em; text-align:center; background:#fff; border:1px solid #ccc; font-size:14px}
+.tab_menu li.active a {background:#023a63; border:1px solid #7d7d7d; color:#fff}
+.tab_menu li a:hover, .tab_menu li a:focus {font-weight:800}
 
 /* layer popup */
 .layer {display:none; position:fixed; top:0; left:0; width:100%; height:100%; z-index:10}
@@ -47,11 +59,48 @@
 
 /* selectbox */
 .ui-selectmenu-menu {font-size:12px}
-.ui-selectmenu-button.ui-button {padding:0 !important; width:76px !important; border:0 !important; background:0 !important}
-.ui-selectmenu-icon {display:none !important}
-.ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; font-size:12px; background:url(/img/common/bg_select.png) 62px center no-repeat}
+.ship_select.ui-button {padding:0 !important; width:76px !important; border:0 !important; background:0 !important}
+.ship_select .ui-selectmenu-icon {display:none !important}
+.ship_select .ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; font-size:12px; background:url(/img/common/bg_select.png) 62px center no-repeat}
 .ui-selectmenu-text.no_check {background-color:#d0e1e8}
 .ui-selectmenu-text.order {background-color:#8bc4ce}
 .ui-selectmenu-text.reject {background-color:#0086b5; color:#fff}
 .ui-selectmenu-text.shipping {background-color:#004378; color:#fff}
 .ui-selectmenu-text.delivery {background-color:#001a40; color:#fff}
+
+/* list 정렬 */
+.input_list:after {clear:both; display:block; content:""}
+ul.input_list.two li, .input_list.two label {float:left; margin-left:5px; width:calc(50% - 6px)}         /* radio or checkbox : 2 */
+ul.input_list.three li, .input_list.three label {float:left; margin-left:5px; width:calc(33.33% - 6px)}    /* radio or checkbox : 3 */
+ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; width:calc(25% - 6px); letter-spacing:-1px}        /* radio or checkbox : 4 */
+
+/* 입력 테이블 */
+.input_table {margin:20px 0 25px 0; width:100%}
+.input_table th, .input_table td {border:1px solid #000}
+.input_table th {background:#ccc; font-weight:normal}
+.input_table td {padding:10px; line-height:30px}
+.input_table input[type="text"], .input_table input[type="password"] {width:100%; line-height:20px; height:30px}
+.input_table textarea {padding:5px; width:100%}
+.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
+.input_table .btn_delivery {width:150px}
+.input_table .btn_address {width:90px}
+
+/* 목록 테이블 */
+.list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
+.list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
+.list_table th, .list_table td {line-height:1.45em; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
+.list_table th {background:#ccc; padding:7px 5px 8px; font-weight:500}
+.list_table tbody th {padding:15px 5px}
+.list_table td {padding:8px 5px 8px}
+
+/* 페이징 */
+.paging {overflow:hidden; text-align:center; height:30px}
+.paging ol, .paging li, .paging a {display:inline-block; height:30px; line-height:30px}
+.paging ol {padding:0 1px}
+.paging li a {padding-left:3px; font-size:12px; letter-spacing:1px}
+.paging .btn {padding-left:4px}
+
+/* box */
+div[class$=box] {box-sizing:border-box}
+.basic_box {padding:20px; border:1px solid #ccc}
+.dark_box {border:1px solid #7d7d7d}

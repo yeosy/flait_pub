@@ -49,12 +49,12 @@ img {vertical-align:top}
 .lnb h2 {padding:6px 0 6px 30px; line-height:2.0em; background:#ccc}
 .lnb ul {padding:10px}
 .lnb ul li a {display:block; padding:5px 30px 4px; line-height:1.5em}
-.lnb ul li.on a {background:#fff}
+.lnb ul li.on a {background:#fff; font-weight:800}
 .lnb ul li a:hover, .lnb ul li a:focus {font-weight:bold}
 .lnb .my_menu li {padding:5px 30px 4px; line-height:1.5em}
 .lnb .my_menu li a {padding:0; float:right}
 .lnb .my_menu li a span {color:#e60012; font-weight:bold}
-#content {position:relative; float:left;box-sizing:border-box; padding:0 0 140px 20px; width:1624px}
+#content {position:relative; float:left;box-sizing:border-box; padding:0 0 110px 20px; width:1624px}
 #content .con_tit {padding:10px 0 7px; height:21px; line-height:1.5em; border-bottom:2px solid #7d7d7d; font-size:14px}
 
 #footer {position:absolute; bottom:0; left:0; width:100%; border-top:1px solid #eee; color:#000}

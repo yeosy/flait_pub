@@ -19,8 +19,8 @@
 .popup .tit span {float:right; color:#e60012; font-size:16px}
 
 /* button */
-.btn_area {overflow:hidden; text-align:center; margin:30px 0}
-.btn_area .btn {display:inline-block; box-sizing:border-box; margin-left:16px; min-width:200px; line-height:50px; text-align:center; border-radius:15px; font-size:18px; font-weight:800}
+.btn_area {overflow:hidden; margin:30px 0}
+.btn_area .btn {margin-left:16px; min-width:200px; line-height:50px; text-align:center; border-radius:15px; font-size:18px; font-weight:800}
 .btn_area .btn:first-child {margin-left:0}
 
 .btn_confirm {background:#023a63; border:1px solid #023a63; color:#fff}
