@@ -97,6 +97,12 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .list_table tbody th {padding:15px 5px}
 .list_table td {padding:8px 5px 9px}
 
+/* 게시판 테이블 */
+.board_table{width:100%; border:1px solid #ccc}
+.board_table th,.board_table td{line-height:1.45em; border:1px solid #ccc; font-size:12px; text-align:center}
+.board_table th{padding:3px 5px; background:#ccc; font-weight:800}
+.board_table td{padding:3px 5px; line-height:1.5em}
+
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}
 .paging ol, .paging li, .paging a {display:inline-block; height:30px; line-height:30px}

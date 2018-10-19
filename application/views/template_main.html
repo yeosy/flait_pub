@@ -10,6 +10,7 @@
         <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
         <meta property="og:title" content="전국플라워센터">
         <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
         <link rel="stylesheet" type="text/css" href="/css/common.css"/>
         <link rel="stylesheet" type="text/css" href="/css/main.css"/> <!-- 메인에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
@@ -28,7 +29,7 @@
     })
 </script>
 
-        <div id="wrap">
+        <div id="wrap" class="main"> <!-- 메인페이지 일때 사용-->
             <header id="header"></header>
             <!-- /header -->
 
@@ -58,7 +59,7 @@
         </div>
         
 	<!-- 개발자 가이드 -->
-	<script>
+	<script type="text/javascript">
         $(document).ready(function(){
             $('.developStatus').load('/status/status01.html');
         })
