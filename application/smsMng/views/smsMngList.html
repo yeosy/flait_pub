@@ -71,9 +71,46 @@
                                 <li>
                                     <label><input type="radio" name="" value="" checked="checked" /> 선택</label>
                                     <div class="float_right">
-                                        <a href="#" class="btn btn_blue btn_s">화원검색</a>
+                                        <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/memberSearch.html', 'memberSearch', 'width=1200, height=910, top=50, left=300, scrollbars=yes')">회원검색</a>
                                         <a href="#" class="btn btn_blue btn_s">주소록</a>
-                                        <a href="#" class="btn btn_blue btn_s">최근발신</a>
+                                        <div class="layer_over" data="recentNumber" tabindex="0">
+                                            <span class="btn btn_blue btn_s">최근발신</span>
+                                            <div class="layerOver" id="recentNumber" style="left:23px; top:19px">
+                                                <h5 class="layer_tit">최근 발신 번호</h5>
+                                                <ol class="recent_num">
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">홍길동 010-1234-5678</a>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </div><!-- /layerOver -->
                                     </div>
                                 </li>
                                 <li>
@@ -256,14 +293,14 @@
                         <div class="clear mt20">
                             <div class="btn_area float_right">
                                 <a href="#" class="btn btn_basic btn_m">선택 삭제</a>
-                                <a href="#" class="btn btn_basic ml15 btn_m layerOpen" data="messageAdd">메세지 추가</a>
+                                <a href="Javascript:void(0);" class="ml15 btn btn_basic btn_m layerOpen" data="messageAdd">메세지 추가</a>
                             </div>
 
                             <div class="paging float_left">
                                 <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
                                 <a href="#" class="btn" title="이전 페이지">&lt;</a>
                                 <ol>
-                                    <li><a href="#">1</a></li>
+                                    <li><a href="#" class="active" title="현재페이지">1</a></li> <!-- 현재 페이지일 경우 class="active" -->
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -283,26 +320,31 @@
             </div><!-- /Sub Page -->
 
             
-            <!-- 메세지 추가 레이어 팝업 -->
+            <!-- 메세지 등록 레이어 팝업 -->
             <div class="layer" id="messageAdd">
             <div class="overlay"></div>
             <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
                 <div class="inner">
                     <h5 class="layer_tit">메세지등록</h5>
-                    <div class="basic_box pb00 pl10 pr10">
-                        <textarea cols="100" rows="6" style="width:100%"></textarea>
-                        <p class="text_right">
-                            <strong>0</strong>/ 2,000 byte
-                        </p>
-                    </div>
-                    <div class="btn_area text_center mt30">
-                        <a href="#" class="btn btn_confirm btn_m">등록</a>
-                        <a href="#" class="btn btn_cancel btn_m ml05">닫기</a>
-                    </div>
+                    <form name="" action="" method="">
+                    <fieldset>
+                        <legend>메세지 등록</legend>
+                        <div class="basic_box pb00 pl10 pr10">
+                            <textarea cols="100" rows="6" style="width:100%; height:110px" class="block" title="메세지 입력"></textarea>
+                            <p class="byte">
+                                <strong>0</strong>/ 2,000 byte
+                            </p>
+                        </div>
+                        <div class="btn_area text_center mt30">
+                            <a href="#" class="btn btn_confirm btn_m">등록</a>
+                            <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
+                        </div>
+                    </fieldset>
+                    </form>
                 </div>
-            </div><!-- /layer_pop -->
+            </div>
             </div><!-- /layer -->
-            <!-- /메세지 추가 레이어 팝업 -->
+            <!-- /메세지 등록 레이어 팝업 -->
                                 
             <hr />
 

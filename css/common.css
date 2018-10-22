@@ -11,6 +11,7 @@
 
 /* common */
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
+.block {display:block}
 
 /* margin, padding, border */
 .mt10 {margin-top:10px !important}
@@ -99,6 +100,7 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
 .input_table .btn_delivery {width:150px}
 .input_table .btn_address {width:90px}
+.byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
 
 /* 목록 테이블 */
 .list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
@@ -119,6 +121,7 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .paging ol, .paging li, .paging a {display:inline-block; height:30px; line-height:30px}
 .paging ol {padding:0 1px}
 .paging li a {padding-left:3px; letter-spacing:1px}
+.paging li a.active, .paging li a:focus, .paging li a:hover {font-weight:bold}
 .paging .btn {padding-left:4px}
 
 /* box */
