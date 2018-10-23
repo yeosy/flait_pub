@@ -37,7 +37,7 @@ $(document).ready(function () {
 /* jquery ui */
 $(function(){
     //select menu
-    $('select').selectmenu(); 
+    $('.ship_select, .select').selectmenu(); 
 
     //datepicker
     $( "#datepicker" ).datepicker(); 

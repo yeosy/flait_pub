@@ -72,7 +72,7 @@
                                     <label><input type="radio" name="" value="" checked="checked" /> 선택</label>
                                     <div class="float_right">
                                         <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/memberSearch.html', 'memberSearch', 'width=1200, height=910, top=50, left=300, scrollbars=yes')">회원검색</a>
-                                        <a href="#" class="btn btn_blue btn_s">주소록</a>
+                                        <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/addressBook.html', 'addressBook', 'width=560, height=550, top=50, left=300, scrollbars=yes')">주소록</a>
                                         <!-- 최근 발신 번호 -->
                                         <div class="layer_over" id="recentNumber" tabindex="0">
                                             <span class="btn btn_blue btn_s">최근발신</span>
@@ -171,13 +171,13 @@
                     <div class="basic_box">
                         <h3>SMS 월별 통계</h3>
                         <div>
-                            <select title="연도 선택">
+                            <select class="select" title="연도 선택">
                                 <option value="">2018</option>
                                 <option value="">2017</option>
                                 <option value="">2016</option>
                                 <option value="">2015</option>
                             </select> 년
-                            <select title="월 선택">
+                            <select class="select" title="월 선택">
                                 <option value="">1</option>
                                 <option value="">2</option>
                                 <option value="">3</option>

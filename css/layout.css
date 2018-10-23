@@ -28,7 +28,7 @@ img {vertical-align:top}
 .layer.v2 .layer_pop {position:relative; top:0; left:0; width:auto}
 
 /* main, sub 공통 */
-#wrap {min-width:1300px; min-height:100%; line-height:1.46; font-size:12px; color:#000}
+#wrap {min-width:1300px; min-height:100%; line-height:1.46em; font-size:12px; color:#000}
 #header, #container, #footer {position:relative; margin:0 auto}
 #wrap:after, #header:after, #container:after {display:block; content:""; clear:both}
 #header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
@@ -52,7 +52,7 @@ img {vertical-align:top}
 .gnb {width:100%; min-width:1880px; background:#023a63}
 .gnb ul {box-sizing:border-box; margin:0 auto; padding:5px 0; width:1880px}
 .gnb ul:after {display:block; content:""; clear:both}
-.gnb ul li {float:left; width:273px; height:40px; line-height:40pㅋx; text-align:center; border-left:1px solid #fff; font-size:18px; color:#fff; font-weight:bold}
+.gnb ul li {float:left; width:273px; height:40px; line-height:40px; text-align:center; border-left:1px solid #fff; font-size:18px; color:#fff; font-weight:bold}
 .gnb ul li:first-child {box-sizing:border-box; padding-right:20px; width:255px; border:0}
 .gnb ul li:last-child {box-sizing:border-box; padding-left:20px; width:254px}
 
