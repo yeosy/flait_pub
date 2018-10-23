@@ -28,7 +28,9 @@ $(document).ready(function () {
         var layerNm = $(this).attr('id');
         $('#'+layerNm+'Layer').fadeIn();
     }).mouseleave(function(){
-        $('.layerOver').fadeOut();
+        setTimeout(function(){
+            $('.layerOver').fadeOut()
+        }, 300)
     });
 })
 
