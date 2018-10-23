@@ -77,19 +77,30 @@
 .btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
 .btn.btn_round15 {border-radius:15px}
 
-.btn_s {padding:0 3px; height:20px; line-height:1.636363em; font-size:0.916666em}
-.btn_sm {min-width:60px; height:25px; line-height:2.3em; font-size:0.8333334em}
-.btn_m {min-width:127px; height:30px; line-height:2.33333em; font-size:1.0em}
-.btn_ml {min-width:160px; height:38px; line-height:2.12em; font-size:1.5em; font-weight:800}
-.btn_l {min-width:200px; line-height:50px; border-radius:15px; font-size:18px; font-weight:bold}
+.btn_s {padding:2px 3px; height:20px; line-height:16px; font-size:0.916666em} /* font : 11px */
+.btn_sm {padding:4px 0 5px; min-width:60px; height:25px; line-height:16px; font-size:0.8333334em} /* font : 10px */
+.btn_m {padding:7px 0; min-width:127px; height:30px; line-height:16px; font-size:1.0em} /* font : 12px */
+.btn_ml {padding:10px 0; min-width:160px; height:38px; line-height:18px; font-size:1.5em; font-weight:800} /* font : 18px */
+.btn_l {padding:16px 0; min-width:200px; height:50px; line-height:18px; border-radius:15px; font-size:1.5em; font-weight:bold} /* font : 18px */
 
 .btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
 .btn_cancel {background:#fff; border:1px solid #ccc}
-.btn_confirm {background:#023a63; border-radius:5px; color:#fff}
+.btn_confirm {background:#023a63; color:#fff}
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
+
+.btn .ico {display:inline-block; margin-left:4px; width:16px; height:16px; vertical-align:middle; background-image:url("/img/jquery_ui/ui-icons_777777_256x240.png")}
+.btn_confirm .ico {background-image:url("/img/jquery_ui/ui-icons_ffffff_256x240.png") !important}
+
+/* icon */
+.ico_save {}
+.ico_del {}
+.ico_srch {}
+.ico_excel {}
+.ico_more {}
+.ico_cal {}
 
 /* tab */
 .tab_menu {margin-bottom:10px; overflow:hidden}
@@ -118,7 +129,7 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .input_table td {padding:10px; line-height:30px}
 .input_table input[type="text"], .input_table input[type="password"] {width:100%; line-height:20px; height:30px}
 .input_table textarea {padding:5px; width:100%}
-.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; line-height:20px; text-align:center; font-size:13px}
+.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; border-radius:0; line-height:20px; text-align:center; font-size:13px}
 .input_table .btn_delivery {width:150px}
 .input_table .btn_address {width:90px}
 .byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
