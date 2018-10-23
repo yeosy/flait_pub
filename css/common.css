@@ -13,16 +13,24 @@
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
 .block {display:block}
 
-/* margin, padding, border */
+/* margin, padding */
+.mt00 {margin-top:0px !important}
+.mt05 {margin-top:5px !important}
 .mt10 {margin-top:10px !important}
 .mt15 {margin-top:15px !important}
 .mt20 {margin-top:20px !important}
+.mt25 {margin-top:25px !important}
 .mt30 {margin-top:30px !important}
+.mt35 {margin-top:35px !important}
+.mt40 {margin-top:40px !important}
+.mt45 {margin-top:45px !important}
+.mt50 {margin-top:50px !important}
 
 .mb10 {margin-bottom:10px !important}
 .mb30 {margin-bottom:30px !important}
 
 .ml05 {margin-left:5px !important}
+.ml10 {margin-left:10px !important}
 .ml15 {margin-left:15px !important}
 .ml20 {margin-left:20px !important}
 
@@ -33,24 +41,32 @@
 .pb00 {padding-bottom:0px !important}
 .pb10 {padding-bottom:10px !important}
 
-.pl10 {padding-left:10px !important}
-
-.bl0 {border-left:0 !important}
+.pl10 {padding-left:10px !important} /* 제거예정 */
 
 /* font */
 .text_bold {font-weight:bold !important}
+
 .text_14 {font-size:14px !important}
+.text_16 {font-size:16px !important}
+
 .text_warning {color:#e60012 !important}
 .text_point {color:#ff0000 !important}
 
+/* border */
+.bl0 {border-left:0 !important}
+
 /* align, float */
-.text_left, .text_left th, .text_left td {text-align:left !important}
-.text_center, .text_center th, .text_center td {text-align:center !important}
-.text_right, .text_right th, .text_right td {text-align:right !important}
+.text_left {text-align:left !important}
+.text_left th, .text_left td {text-align:left}
+.text_center {text-align:center !important}
+.text_center th, .text_center td {text-align:center}
+.text_right {text-align:right !important}
+.text_right th, .text_right td {text-align:right}
 
 .float_left {float:left !important}
 .float_right {float:right !important}
 .clear:after {display:block; content:""; clear:both !important}
+
 .scroll_x {overflow:hidden; overflow-x:auto}
 .scroll_y {overflow:hidden; overflow-y:auto}
 
@@ -115,6 +131,17 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .board_table th,.board_table td{line-height:1.45em; border:1px solid #ccc; font-size:12px; text-align:center}
 .board_table th{padding:3px 5px; background:#ccc; font-weight:800}
 .board_table td{padding:3px 5px; line-height:1.5em}
+
+/* 목록 옵션 세팅 */
+.option_area{margin:18px 0 10px 0; width:1200px; overflow:hidden}
+.option_area > div{display:inline-block;}
+.option_area .option_srh .btn{margin-left:10px; width:45px; background:#023a63; color:#fff; font-size:1.0em}
+.option_area .option_srh .btn:hover, .option_area .option_srh .btn:focus{background:rgba(2,58,99,0.7)}
+.option_area .option_sort{float:right; font-size:1.2em}
+.option_area .option_sort a{vertical-align:middle}
+.option_area .option_sort .btn{width:90px; line-height:2.14em; border:1px solid #ccc; color:#000; font-size:14px}
+.option_area .ui-selectmenu-button {height:21px !important; line-height:21px !important}
+.option_area .ui-selectmenu-icon{height:21px !important}
 
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}
