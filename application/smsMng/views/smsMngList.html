@@ -74,9 +74,9 @@
                                         <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/memberSearch.html', 'memberSearch', 'width=1200, height=910, top=50, left=300, scrollbars=yes')">회원검색</a>
                                         <a href="#" class="btn btn_blue btn_s">주소록</a>
                                         <!-- 최근 발신 번호 -->
-                                        <div class="layer_over" data="recentNumber" tabindex="0">
+                                        <div class="layer_over" id="recentNumber" tabindex="0">
                                             <span class="btn btn_blue btn_s">최근발신</span>
-                                            <div class="layerOver" id="recentNumber" style="left:23px; top:19px">
+                                            <div class="layerOver" id="recentNumberLayer" style="left:23px; top:19px">
                                                 <h5 class="layer_tit">최근 발신 번호</h5>
                                                 <ol class="recent_num">
                                                     <li>
@@ -295,7 +295,7 @@
                         <div class="clear mt20">
                             <div class="btn_area float_right">
                                 <a href="#" class="btn btn_basic btn_m">선택 삭제</a>
-                                <a href="Javascript:void(0);" class="ml15 btn btn_basic btn_m layerOpen" data="messageAdd">메세지 추가</a>
+                                <a href="Javascript:void(0);" class="ml15 btn btn_basic btn_m layerOpen" id="messageAdd">메세지 추가</a>
                             </div>
 
                             <div class="paging float_left">
@@ -323,7 +323,7 @@
 
             
             <!-- 메세지 등록 레이어 팝업 -->
-            <div class="layer" id="messageAdd">
+            <div class="layer" id="messageAddLayer">
             <div class="overlay"></div>
             <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
                 <div class="inner">

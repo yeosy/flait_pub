@@ -13,8 +13,8 @@ function loginList() {
 $(document).ready(function () {
     // data="layerNm(해당 레이어 팝업 id값)
     $('.layerOpen').click(function () {
-        var layerNm = $(this).attr('data');
-        $('#' + layerNm).fadeIn();
+        var layerNm = $(this).attr('id');
+        $('#'+layerNm+'Layer').fadeIn();
     })
     $('.layer .close, .overlay').click(function () {
         $('.layer').fadeOut();
@@ -25,8 +25,8 @@ $(document).ready(function () {
 $(document).ready(function () {
     // data="layerNm(해당 레이어 팝업 id값)
     $('.layer_over').mouseover(function(){
-        var layerNm = $(this).attr('data');
-        $('#' + layerNm).fadeIn();
+        var layerNm = $(this).attr('id');
+        $('#'+layerNm+'Layer').fadeIn();
     }).mouseleave(function(){
         $('.layerOver').fadeOut();
     });

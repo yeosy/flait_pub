@@ -15,7 +15,7 @@
         <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
         <script type="text/javascript" src="/js/common.js"></script>
     </head>
     <body>
@@ -28,10 +28,10 @@
                     <h2>회원 검색</h2>
                 </div>
                 <div class="map_search">
-                    <a href="Javascript:void(0);" class="layerOpen" data="address1">시/도 선택</a>
-                    
+                    <a href="Javascript:void(0);" class="layerOpen" id="address1">시/도 선택</a>
+
                     <!-- 시/도 선택 팝업 -->
-                    <div class="layer" id="address1">
+                    <div class="layer" id="address1Layer">
                     <div class="overlay"></div>
                     <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
                         <div class="inner">
@@ -43,8 +43,8 @@
                     </div><!-- /layer -->
                     <!-- /시/도 선택 팝업 -->
 
-                    <a href="Javascript:void(0);" class="layerOpen" data="address2">구/군 선택</a>
-                    <a href="Javascript:void(0);" class="layerOpen" data="address3">동/읍/면 선택</a>
+                    <a href="Javascript:void(0);" class="layerOpen" id="address2">구/군 선택</a>
+                    <a href="Javascript:void(0);" class="layerOpen" id="address3">동/읍/면 선택</a>
                 </div>
 
                 <div class="btn_area">
