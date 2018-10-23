@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>주소록</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2>주소록</h2>
+                </div>
+
+                <div class="address_box">
+                    <div class="option_area">
+                        <div class="">
+                            <input type="text" name="" value="" />
+                            <a herf="#" class="btn bnt_m">검색</a><!-- 배송가능지역 상품설정 검색버튼과 동일 -->
+                        </div>
+
+                        <div class="">
+                            <a href="#" class="btn btn_blue">번호추가</a>
+                            <a href="#" class="btn btn_blue">그룹관리</a>
+                        </div>
+                    </div>
+
+                    <!-- 주소록 목록 -->
+                    <div class="address_list">
+                        <h3>주소록</h3>
+                        <div class="clear">
+                            <label><input type="radio" name="" value="" id="byname" checked="checked" />이름별</label>
+                            <label><input type="radio" name="" value="" id="bygroup"/>그룹별</label>
+                        </div>
+                        <div id="byname_list">
+                            <select style="margin:0 auto; padding:15px; border:1px solid red; border-radius:1em; line-height:18px" title="이름별 주소록" size="7">
+                                <option value="">홍길동 010-1111-1111</option>
+                                <option style="backgruond:#eee; height:20px">홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                                <option>홍길동 010-1111-1111</option>
+                            </select>
+                        </div>
+                        <div id="bygroup_list">
+                            <div>
+                                <label><input type="radio" name="" value="" id="group1" checked/>그룹1</label>
+                                <label><input type="radio" name="" value="" id="group2"/>그룹2</label>
+                                <label><input type="radio" name="" value="" id="group3"/>그룹3</label>
+                                <label><input type="radio" name="" value="" id="group4"/>그룹4</label>
+                            </div>
+                            <ul>
+                                <li id="group1_list">
+                                    <select title="그룹1 주소록" size="">
+                                        <option>홍길동 010-1111-1111</option>
+                                    </select>
+                                </li>
+                                <li id="group2_list">
+                                    <select title="그룹2 주소록" size="">
+                                    </select>
+                                </li>
+                                <li id="group3_list">
+                                    <select title="그룹3 주소록" size="">
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                    </select>
+                                </li>
+                                <li id="group4_list">
+                                    <select title="그룹4 주소록" size="">
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                        <option>홍길동 010-1111-1111</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주소록 목록 -->
+
+                    <!-- 이동버튼 -->
+                    <div class="list_move">
+                        <a href="#" class="push_list">받는사람 목록에 추가</a>
+                        <a href="#" class="pull_list">받는사람 목록에서 제거</a>
+                    </div>
+                    <!-- //이동버튼 -->
+
+                    <!-- 받는 사람 목록 -->
+                    <div class="receive_person">
+                        <p>받는사람</p>
+                        <select title="받는사람" size="">
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                            <option>홍길동 010-1111-1111</option>
+                        </select>
+                    </div>
+                    <!-- //받는 사람 목록 -->
+
+                    <div class="address_allchk">
+                        <a href="#" class="btn btn_area btn_blue">전체 선택</a>
+                        <a href="#" class="btn btn_area btn_blue">전체 해제</a>
+                    </div>
+                </div>
+                
+                <div class="btn_area">
+                    <a href="#" class="btn btn_confirm btn_m">확인</a>
+                    <a href="javascript:window.close();" class="btn btn_cancel btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

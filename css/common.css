@@ -74,20 +74,21 @@
 /* button */
 .btn_area {overflow:hidden}
 
-.btn {display:inline-block; box-sizing:border-box; text-align:center}
-.btn_round15 {border-radius:15px} /* 기본 border-radius:4px */
+.btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
+.btn.btn_round15 {border-radius:15px}
 
 .btn_s {height:20px; line-height:1.636363em; font-size:0.916666em}
-.btn_m {width:127px; height:30px; line-height:2.33333em; font-size:1.0em}
+.btn_sm {height:25px; line-height:; font-size:}
+.btn_m {min-width:127px; height:30px; line-height:2.33333em; font-size:1.0em}
 .btn_ml {min-width:160px; height:38px; line-height:2.12em; font-size:1.5em; font-weight:800}
 .btn_l {min-width:200px; line-height:50px; border-radius:15px; font-size:18px; font-weight:bold}
 
-.btn_basic {background:#eee; border:1px solid #ccc; border-radius:4px}
+.btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
-.btn_cancel {background:#fff; border:1px solid #ccc; border-radius:4px}
-.btn_confirm {background:#023a63; border-radius:4px; color:#fff}
+.btn_cancel {background:#fff; border:1px solid #ccc}
+.btn_confirm {background:#023a63; border-radius:5px; color:#fff}
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
-.btn_blue {padding:0 3px; background:#c5dfe7; border:1px solid #ccc; border-radius:4px}
+.btn_blue {padding:0 3px; background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
 
 /* tab */
