@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>회원검색</title>
+        <title>협회가맹 가입신청서</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
         <meta http-equiv="Content-Style-Type" content="text/css">
@@ -15,14 +15,11 @@
         <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
         <script type="text/javascript" src="/js/common.js"></script>
     </head>
     <body>
         <div id="wrap" class="popup">
-            <header id="header">
-            </header><!-- /header -->
-
             <div id="content">
                 <div class="tit">
                     <h2>회원 검색</h2>
@@ -32,8 +29,7 @@
 
                     <!-- 시/도 선택 팝업 -->
                     <div class="layer" id="address1Layer">
-                    <div class="overlay"></div>
-                    <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
+                    <div class="layer_pop">
                         <div class="inner">
                             <div class="btn_area text_right">
                                 <a href="#" class="btn btn_cancel btn_s close">닫기</a>
@@ -47,8 +43,8 @@
                     <a href="Javascript:void(0);" class="layerOpen" id="address3">동/읍/면 선택</a>
                 </div>
 
-                <div class="btn_area">
-                    <a href="javascript:window.close();" class="btn btn_m btn_cancel">닫기</a>
+                <div class="btn_area text_right">
+                    <a href="javascript:window.close();" class="btn btn_confirm btn_m">닫기</a>
                 </div>
             </div>
         </div>
