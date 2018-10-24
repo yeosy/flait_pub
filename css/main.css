@@ -1,5 +1,5 @@
 /* 공통 */
-.btn_more{display:inline-block;padding:2.5px 17.5px; background:#fff; border:1px solid #eee; font-size:11px}
+.btn_more{padding:2px 5px 3px 10px; background:#fff; border:1px solid #eee; border-radius:0; font-size:11px}
 .btn_more:hover,.btn_more:focus{font-weight:500}
 .main .pic_board,
 .main .order_chart,
@@ -31,7 +31,7 @@
 .main_column .personal_note{position:relative; padding-bottom:18px; border:1px solid #ccc}
 .main_column .personal_note h2{display:inline-block; padding:10px 0 10px 31px; line-height:1.45em; font-size:14px; font-weight:800}
 .main_column .personal_note textarea{display:block; margin:0 auto; padding:5px; width:750px; height:160px; background:#f7f7f7; border:1px solid #ccc}
-.main_column .personal_note .btn_save{position:absolute; top:10px; right:20px; padding:2.5px 8px; line-height:1.2em; background:#fff; border:1px solid #ccc; font-size:11px}
+.main_column .personal_note .btn_save{position:absolute; top:10px; right:20px; padding:2.5px 8px; line-height:1.2em; background:#fff; border:1px solid #ccc; border-radius:0; font-size:11px}
 
 /* 광고배너 */
 .ad_banner{display:inline-block; padding:20px 0}
@@ -62,7 +62,7 @@
 .pic_board .btn_more,
 .order_chart .btn_more,
 .promotion_board .btn_more,
-.holiday_board .btn_more{position:absolute; top:20px; right:20px}
+.holiday_board .btn_more{position:absolute; top:20px; right:20px;}
 
 /* 작품사진 게시판 , 수발주 차트 공용*/
 .main .pic_board,
@@ -84,6 +84,7 @@
 
 /* 월별 수발주 차트 */
 .order_chart h3 span{font-size:11px; font-weight:500}
+.order_chart .btn_more {padding:2px 9px 3px 10px;}
 
 /* 업체홍보 게시판 , 경조사 게시판 */
 .promotion_board .board_table,

@@ -91,16 +91,15 @@
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
 
-.btn .ico {display:inline-block; margin-left:4px; width:16px; height:16px; vertical-align:middle; background-image:url("/img/jquery_ui/ui-icons_777777_256x240.png")}
+.btn .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
 .btn_confirm .ico {background-image:url("/img/jquery_ui/ui-icons_ffffff_256x240.png") !important}
 
 /* icon */
-.ico_save {}
-.ico_del {}
-.ico_srch {}
-.ico_excel {}
-.ico_more {}
-.ico_cal {}
+.ico_save {background-position:-96px -112px}
+.ico_del {background-position:-176px -96px}
+.ico_srch {background-position:-160px -112px}
+.ico_more {background-position:-16px -128px}
+.ico_cal {background-position:-112px -112px}
 
 /* tab */
 .tab_menu {margin-bottom:10px; overflow:hidden}

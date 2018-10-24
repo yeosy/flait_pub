@@ -28,7 +28,7 @@ img {vertical-align:top}
 .layer.v2 .layer_pop {position:relative; top:0; left:0; width:auto}
 
 /* main, sub 공통 */
-#wrap {min-width:1300px; min-height:100%; line-height:1.46em; font-size:12px; color:#000}
+#wrap {min-width:1300px; min-height:100%; line-height:1.46; font-size:12px; color:#000}
 #header, #container, #footer {position:relative; margin:0 auto}
 #wrap:after, #header:after, #container:after {display:block; content:""; clear:both}
 #header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
