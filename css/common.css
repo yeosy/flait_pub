@@ -94,7 +94,7 @@
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_blue.btn_m {padding:6px 17px; min-width:auto}
+.btn_blue.btn_m {padding:6px 17px; min-width:50px}
 .btn_search {background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 
 /* icon */
