@@ -10,7 +10,7 @@
 @import url("popup.css"); 팝업 페이지
 */
 
-/* common */
+/* etc */
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
 .block {display:block}
 
@@ -45,6 +45,8 @@
 .pl10 {padding-left:10px !important} /* 제거예정 */
 
 /* font */
+.ellipsis{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+
 .text_bold {font-weight:bold !important}
 
 .text_14 {font-size:14px !important}
@@ -75,25 +77,29 @@
 .btn_area {overflow:hidden}
 
 .btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
+.btn.btn_round00 {border-radius:0}
 .btn.btn_round15 {border-radius:15px}
 
-.btn_s {padding:2px 3px; line-height:16px; font-size:0.916666em} /* font : 11px */
-.btn_sm {padding:4px 5px 5px; min-width:60px;; line-height:16px; font-size:0.8333334em} /* font : 10px */
-.btn_m {padding:7px 5px; min-width:127px; line-height:16px; font-size:1.0em} /* font : 12px */
-.btn_ml {padding:10px 5px; min-width:160px; line-height:18px; font-size:1.5em; font-weight:800} /* font : 18px */
-.btn_l {padding:16px 5px; min-width:200px; line-height:18px; border-radius:15px; font-size:1.5em; font-weight:bold} /* font : 18px */
+.btn_xs {padding:1px 3px; line-height:16px; font-size:0.82em} /* height:20px / font:10px */
+.btn_s {padding:2px 3px; line-height:16px; font-size:0.916666em} /* height:22px / font:11px */
+.btn_sm {padding:3px 5px 4px; min-width:60px;; line-height:16px; font-size:0.8333334em} /* height:25px / font:10px */
+.btn_m {padding:6px 5px; min-width:127px; line-height:16px; font-size:1.0em} /* height:30px / font:12px */
+.btn_ml {padding:9px 5px; min-width:160px; line-height:18px; font-size:1.5em; font-weight:800} /* height:38px / font:18px */
+.btn_l {padding:15px 5px; min-width:200px; line-height:18px; border-radius:15px; font-size:1.5em; font-weight:bold} /* height:50px / font:18px */
 
 .btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
 .btn_cancel {background:#fff; border:1px solid #ccc}
-.btn_confirm {background:#023a63; color:#fff}
+.btn_confirm {background:#023a63; color:#fff; border:1px solid #023a63}
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_search {background:#023a63; border-radius:0; color:#fff}
+.btn_blue.btn_m {padding:6px 17px; min-width:auto}
+.btn_search {background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
+.btn_sm .ico {vertical-align:-4px}
 .btn_search .ico, .btn_confirm .ico {background-image:url("/img/jquery_ui/ui-icons_ffffff_256x240.png") !important}
 
 .ico_save {background-position:-96px -112px}
@@ -101,6 +107,8 @@
 .ico_srch {margin-left:1px; background-position:-160px -112px}
 .ico_more {background-position:-16px -128px}
 .ico_cal {background-position:-112px -112px}
+
+.shop_ico {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:1.6em; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:0.82em}
 
 /* tab */
 .tab_menu {margin-bottom:10px; overflow:hidden}
@@ -153,7 +161,7 @@ ul.input_list.four li, .input_list.four label {float:left; margin-left:5px; widt
 .option_area > div {display:inline-block}
 .option_area .option_srh .ui-selectmenu-button {float:left}
 .option_area .option_srh .btn_search {float:left; padding:7px 5px; height:30px; line-height:16px; font-size:1.0em}
-.option_area.option_srh:after {content:""; clear:both; display:}
+.option_area .option_srh:after {clear:both; content:""; display:block}
 .option_area .option_srh .btn:hover, .option_area .option_srh .btn:focus {background:rgba(2,58,99,0.8)}
 .option_area .option_sort {float:right; line-height:27px}
 .option_area .option_sort span {vertical-align:middle; font-size:14px}

@@ -51,7 +51,7 @@
                 </p>
             </div>
             <div class="adnim_btn">
-                <a class="btn" href="javascript:void(0)" onclick="loginList(); return false;" >로그인이력</a>
+                <a class="btn" href="javascript:void(0)" onclick="window.open('/application/popup/views/loginHistory.html', 'loginList', 'width=500, height=500, top=100, left=540, scrollbars=yes');" >로그인이력</a>
                 <a href="/application/sms/views/" class="btn">SMS</a>
             </div>
         </div>
@@ -282,6 +282,11 @@
             <!-- //페이징 -->
 
             <div class="btn_area mt20">
+                <a class="btn btn_xs btn_basic btn_round00">최근입금내역</a>
+                <a href="#" class="btn btn_xs btn_cancel btn_round00">입금내역</a>
+            </div>
+
+            <div class="btn_area mt20">
                 <a href="#" class="btn btn_blue btn_s">발신번호인증</a>
                 <a href="#" class="btn btn_basic btn_s">발신번호인증</a>
                 <a href="#" class="btn btn_cancel btn_s">발신번호인증</a>
@@ -322,7 +327,8 @@
 
             <!-- 레이어 팝업 -->
             <div class="btn_area mt10">
-                <a href="Javascript:void(0);" class="btn btn_basic btn_m layerOpen" id="layerName">레이어팝업</a><!-- 레이어 팝업 띄우는 id -->
+                <a href="javascript:void(0)" onclick="window.open('popupURL.html','popupName','width=1300, height=590, top=100, left=540')" class="btn btn_basic btn_m">새창팝업</a>
+                <a href="Javascript:void(0);" class="btn btn_basic btn_m layerOpen" id="layerName">레이어팝업</a><!-- 레이어 팝업: class="layerOpen" id="레이어팝업 이름" -->
             </div>
             <div class="layer" id="layerNameLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
                 <div class="overlay"></div>
