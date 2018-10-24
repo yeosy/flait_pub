@@ -34,8 +34,11 @@ img {vertical-align:top}
 #header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
 #header h1 {float:left; padding-top:30px; width:296px}
 #header .unb {position:absolute; top:10px; right:0; min-width:250px; border-right:1px solid #ccc}
-#header .unb li {float:left; padding:0 15px; height:15px; line-height:15px; text-align:center; border-left:1px solid #ccc; font-size:11px}
+#header .unb li {float:left; padding:0 10px; height:16px; line-height:16px; text-align:center; border-left:1px solid #ccc; font-size:11px}
 #header .unb li strong {padding:0 6px}
+#header .unb li .ico {margin-right:2px; background-image:url("/img/jquery_ui/ui-icons_777777_256x240.png")}
+#header .unb li .ico_home {background-position:0 -112px}
+#header .unb li .ico_favorite {background-position:-224px -112px}
 #header .tel {float:left; padding-top:40px; width:234px; font-weight:bold; font-size:16px}
 #header .tel dt {float:left; padding-right:5px}
 #header .user_info {padding-top:40px; overflow:hidden}
