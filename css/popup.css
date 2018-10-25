@@ -16,7 +16,7 @@
 .popup .join_form #content {box-sizing:border-box; padding:51px 60px 0 60px; width:100%; overflow:hidden; border:1px solid #000; border-top:0}
 
 /* 배송가능지역 설정 */
-.popup .shipping_option{width:1200px}
+.popup .shipping_option{width:100%}
 .popup .shipping_option:after {clear:both; display:block; content:""}
 .popup .shipping_option .mapsearch{float:left; box-sizing:border-box; width:340px; height:360px; border:1px solid #7d7d7d}
 .popup .shipping_option .mapsearch h3{padding: 20px 0 12px 20px; line-height:1.5em; font-size:16px; font-weight:800}
@@ -30,14 +30,48 @@
 .popup .shipping_option .input_table .text_left {padding-left:25px}
 
 /* 회원검색 */
-.member_search {width:1140px}
+.member_search {width:1160px}
+.member_search textarea {background:#fff; border:1px solid #ccc}
 .member_search .search_box {padding:10px; background:#023a63}
 .member_search .search_box .btn_select {display:inline-block; padding:6px 10px 6px 20px; width:98px; height:16px; vertical-align:middle;  background:#fff; border:1px solid #ccc}
 .member_search .search_box .btn_select .ico {float:right; padding-left:10px; width:16px; height:16px; vertical-align:0; background:url(/img/common/bg_select.png) right center no-repeat}
 .member_search .search_box .select {padding:6px 6px 6px 10px; vertical-align:top}
 .member_search .search_box .keyword {box-sizing:border-box; height:30px; border:1px solid #ccc}
 
-
 .member_search .zone {float:left; width:430px; margin-right:10px}
+.member_search .zone .search_box {position:relative}
+.member_search .zone .layer.v2 {top:50px; left:0; height:auto; box-shadow:3px 3px 10px -3px #000}
+.member_search .zone .layer .region_list {width:100%; border:1px solid #ccc; table-layout:fixed}
+.member_search .zone .layer .region_list td {padding:5px 5px; width:calc(100% / 3); line-height:18px; text-align:center; vertical-align:middle; background:#fff; border:1px solid #ccc; font-size:11px}
+.member_search .zone .layer .region_list td.active,
+.member_search .zone .layer .region_list td:hover {background:#c5dfe7}
+.member_search .zone .layer .region_list td a {display:block; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.member_search .zone .layer .btn_area {background:#f7f7f7; border:1px solid #ccc; border-top:0}
+.member_search .zone .map_api {width:calc(100% - 2px); height:528px; border:1px solid #ccc}
+.member_search .zone .zone_note textarea {width:100%; height:110px}
+.member_search .zone .zone_note .btn {padding:11px 5px; width:100%}
 
-.member_search .shop {float:right; width:700px}
+.member_search .shop {float:right; width:720px}
+.member_search .shop .search_box .select {width:102px}
+.member_search .shop .search_box .keyword {background:#fff; width:325px}
+.member_search .shop .search_box .btn_m {padding:6px 24px; min-width:auto}
+.member_search .shop .result {height:650px}
+.member_search .shop .result > ol > li {overflow:hidden; box-sizing:border-box; width:100%; margin-bottom:10px; padding:9px; border:1px solid #7d7d7d}
+.member_search .shop .info {float:left; width:456px; margin-right:10px}
+.member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
+.member_search .shop .info .box > div {height:20px; line-height:20px}
+.member_search .shop .result li .box .ellipsis {text-decoration:underline}
+.member_search .shop .tag_list {overflow:hidden; margin-top:12px; padding-left:5px}
+.member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
+.member_search .shop .info .list_table th,
+.member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
+.member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
+.member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
+.member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
+.member_search .shop .result li > table {width:214px}
+.member_search .shop .result li > table thead th {padding:8px 5px 9px}
+.member_search .shop .result li > table td {padding:7px 5px}
+.member_search .shop .result li > table .possible td {background:#d3eed3}
+.member_search .shop .result li > table .impossible td {background:#fbdbde}
+.member_search .shop .result .btn_area {clear:both; padding-top:10px}
+.member_search .shop .result .btn_area .btn {width:100%; border:1px solid #c5dfe7; border-radius:0}

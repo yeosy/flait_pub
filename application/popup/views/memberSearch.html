@@ -23,85 +23,476 @@
             <div id="content">
                 <div class="tit">
                     <h2>회원 검색</h2>
-                </div>
-                <div class="map_search">
-                    <a href="Javascript:void(0);" class="layerOpen" id="address1">시/도 선택</a>
-                    <!-- 시/도 선택 팝업 -->
-                    <div class="layer v2" id="address1Layer">
-                        <div class="layer_pop">
-                            <div class="inner">
-                                <ul class="region_list">
-                                    <li><label><input type="radio" name="" value="" />서울특별시</label></li>
-                                    <li><label><input type="radio" name="" value="" />경기도</label></li>
-                                    <li><label><input type="radio" name="" value="" />인천광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />부산광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />대구광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />광주광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />대전광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />울산광역시</label></li>
-                                    <li><label><input type="radio" name="" value="" />세종특별시</label></li>
-                                    <li><label><input type="radio" name="" value="" />강원도</label></li>
-                                    <li><label><input type="radio" name="" value="" />경상남도</label></li>
-                                    <li><label><input type="radio" name="" value="" />경상북도</label></li>
-                                    <li><label><input type="radio" name="" value="" />전라남도</label></li>
-                                    <li><label><input type="radio" name="" value="" />전라북도</label></li>
-                                    <li><label><input type="radio" name="" value="" />충청남도</label></li>
-                                    <li><label><input type="radio" name="" value="" />충청북도</label></li>
-                                    <li><label><input type="radio" name="" value="" />제주도</label></li>
-                                </ul>
-                                <div class="btn_area text_right">
-                                    <a href="#" class="btn btn_cancel btn_s close">닫기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /layer -->
-                    <!-- // 시/도 선택 팝업 -->
-
-                    <a href="Javascript:void(0);" class="layerOpen" id="address2">구/군 선택</a>
-                    <!-- 구/군 선택 팝업 -->
-                    <div class="layer v2" id="address2Layer">
-                        <div class="layer_pop">
-                            <div class="inner">
-                                <ul class="region_list">
-                                    <li><label><input type="radio" name="" value="" />전체</label></li>
-                                    <li><label><input type="radio" name="" value="" />강남구</label></li>
-                                    <li><label><input type="radio" name="" value="" />강동구</label></li>
-                                    <li><label><input type="radio" name="" value="" />강북구</label></li>
-                                    <li><label><input type="radio" name="" value="" />강서구</label></li>
-                                    <li><label><input type="radio" name="" value="" />관악구</label></li>
-                                    <li><label><input type="radio" name="" value="" />광진구</label></li>
-                                    <li><label><input type="radio" name="" value="" />구로구</label></li>
-                                    <li><label><input type="radio" name="" value="" />금천구</label></li>
-                                    <li><label><input type="radio" name="" value="" />노원구</label></li>
-                                    <li><label><input type="radio" name="" value="" />도봉구</label></li>
-                                    <li><label><input type="radio" name="" value="" />동대문구</label></li>
-                                    <li><label><input type="radio" name="" value="" />동작구</label></li>
-                                    <li><label><input type="radio" name="" value="" />마포구</label></li>
-                                    <li><label><input type="radio" name="" value="" />서대문구</label></li>
-                                    <li><label><input type="radio" name="" value="" />서초구</label></li>
-                                    <li><label><input type="radio" name="" value="" />성동구</label></li>
-                                    <li><label><input type="radio" name="" value="" />성북구</label></li>
-                                    <li><label><input type="radio" name="" value="" />송파구</label></li>
-                                    <li><label><input type="radio" name="" value="" />양천구</label></li>
-                                    <li><label><input type="radio" name="" value="" />영등포구</label></li>
-                                    <li><label><input type="radio" name="" value="" />용산구</label></li>
-                                    <li><label><input type="radio" name="" value="" />은평구</label></li>
-                                    <li><label><input type="radio" name="" value="" />종로구</label></li>
-                                    <li><label><input type="radio" name="" value="" />중구</label></li>
-                                    <li><label><input type="radio" name="" value="" />중랑구</label></li>
-                                    <li><label><input type="radio" name="" value="" />창원시 마산합포구</label></li>
-                                </ul>
-                                <div class="btn_area text_right">
-                                    <a href="#" class="btn btn_cancel btn_s close">닫기</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- /layer -->
-                    <!-- // 구/군 선택 팝업 -->
-                    <a href="Javascript:void(0);" class="layerOpen" id="address3">동/읍/면 선택</a>
+                    <p class="float_right text_14">취약지역 <span>100,000,000</span> / <span>19%</span></p>
                 </div>
 
-                <div class="btn_area text_right">
+                <div class="member_search clear">
+                    <!-- 지역 검색 -->
+                    <div class="zone">
+                        <div class="search_box">
+                            <a href="Javascript:void(0);" class="btn_select ellipsis layerOpen" id="address1"><span class="ico"></span>시/도</a>
+                            <a href="Javascript:void(0);" class="ml05 btn_select ellipsis layerOpen" id="address2"><span class="ico"></span>구/군</a>
+                            <a href="Javascript:void(0);" class="ml05 btn_select ellipsis layerOpen" id="address3"><span class="ico"></span>동/읍/면</a>
+                            
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    //레이어팝업 지역 선택시 팝업 닫히게
+                                    //레이어팝업 지역 선택시 팝업 닫히게
+                                    $('.layer .region_list td a').click(function () {
+                                        $('.layer .region_list td').removeClass('active');
+                                        $(this).closest('td').addClass('active');
+                                        $(this).closest($('.layer')).fadeOut();
+                                    })
+                                })
+                            </script>
+                            <!-- 시,도 팝업 -->
+                            <div class="layer v2" id="address1Layer">
+                                <div class="layer_pop p00">
+                                    <div class="inner p00">
+                                        <table class="region_list">
+                                            <tr>
+                                                <td><a href="#">서울특별시</a></td>
+                                                <td><a href="#">경기도</a></td>
+                                                <td><a href="#">인천광역시</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">부산광역시</a></td>
+                                                <td><a href="#">대구광역시</a></td>
+                                                <td><a href="#">광주광역시</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">대전광역시</a></td>
+                                                <td><a href="#">울산광역시</a></td>
+                                                <td><a href="#">세종특별시</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">강원도</a></td>
+                                                <td><a href="#">경상남도</a></td>
+                                                <td><a href="#">경상북도</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">전라남도</a></td>
+                                                <td><a href="#">전라북도</a></td>
+                                                <td><a href="#">충청남도</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">충청북도</a></td>
+                                                <td><a href="#">제주도</a></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                        <div class="btn_area text_right pt05 pb05 pr10">
+                                            <a href="#" class="btn btn_cancel btn_xs close">닫기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /layer -->
+                            <!-- 구/군 팝업 -->
+                            <div class="layer v2" id="address2Layer">
+                                <div class="layer_pop p00">
+                                    <div class="inner p00">
+                                        <table class="region_list">
+                                            <tr>
+                                                <td><a href="#">전체</a></td>
+                                                <td><a href="#">강남구</a></td>
+                                                <td><a href="#">강동구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">강북구</a></td>
+                                                <td><a href="#">강서구</a></td>
+                                                <td><a href="#">관악구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">광진구</a></td>
+                                                <td><a href="#">구로구</a></td>
+                                                <td><a href="#">금천구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">노원구</a></td>
+                                                <td><a href="#">도봉구</a></td>
+                                                <td><a href="#">동대문구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">동작구</a></td>
+                                                <td><a href="#">마포구</a></td>
+                                                <td><a href="#">서대문구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">서초구</a></td>
+                                                <td><a href="#">성동구</a></td>
+                                                <td><a href="#">성북구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">송파구</a></td>
+                                                <td><a href="#">양천구</a></td>
+                                                <td><a href="#">영등포구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">용산구</a></td>
+                                                <td><a href="#">은평구</a></td>
+                                                <td><a href="#">종로구</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">중구</a></td>
+                                                <td><a href="#">중랑구</a></td>
+                                                <td><a href="#">창원시 마산합포구</a></td>
+                                            </tr>
+                                        </table>
+                                        <div class="btn_area text_right pt05 pb05 pr10">
+                                            <a href="#" class="btn btn_cancel btn_xs close">닫기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /layer -->
+                            <!-- 동,읍,면 팝업 -->
+                            <div class="layer v2" id="address3Layer">
+                                <div class="layer_pop p00">
+                                    <div class="inner p00">
+                                        <table class="region_list">
+                                            <tr>
+                                                <td><a href="#">가산동</a></td>
+                                                <td><a href="#">독산동</a></td>
+                                                <td><a href="#">시흥동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">독산1동</a></td>
+                                                <td><a href="#">독산2동</a></td>
+                                                <td><a href="#">독산3동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">독산4동</a></td>
+                                                <td><a href="#">시흥1동</a></td>
+                                                <td><a href="#">시흥2동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">시흥3동</a></td>
+                                                <td><a href="#">시흥4동</a></td>
+                                                <td><a href="#">시흥5동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">가산동</a></td>
+                                                <td><a href="#">독산동</a></td>
+                                                <td><a href="#">시흥동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">독산1동</a></td>
+                                                <td><a href="#">독산2동</a></td>
+                                                <td><a href="#">독산3동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">독산4동</a></td>
+                                                <td><a href="#">시흥1동</a></td>
+                                                <td><a href="#">시흥2동</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#">시흥3동</a></td>
+                                                <td><a href="#">시흥4동</a></td>
+                                                <td><a href="#">시흥5동</a></td>
+                                            </tr>
+                                        </table>
+                                        <div class="btn_area text_right pt05 pb05 pr10">
+                                            <a href="#" class="btn btn_cancel btn_xs close">닫기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /layer -->
+                        </div>
+
+                        <div class="map_api mt10">지도</div>
+
+                        <div class="zone_note mt10">
+                            <textarea cols="100" rows="7" title="지역별 메모"></textarea>
+                            <div class="btn_area mt10">
+                                <a href="#" class="btn btn_basic btn_m btn_round00">서물 메모저장</a>
+                            </div>
+                        </div>
+
+                    </div><!-- /map -->
+                    <!-- //지역 검색 -->
+                    
+                    <!-- 화원 검색 -->
+                    <div class="shop">
+                        <div class="search_box">
+                            <select title="검색분류" class="select">
+                                <option value="">상호명</option>
+                                <option value="">배송지주소</option>
+                                <option value="">대표자명</option>
+                            </select>
+                            <input type="text" name="" value="" title="검색어 입력" class="ml05 keyword" placeholder="검색어 입력" />
+                            <a href="#" class="ml05 btn btn_m btn_cancel btn_round00 text_bold">검색<span class="ico ico_srch"></span></a>
+                            <a href="#" class="ml05 btn btn_m btn_cancel btn_round00 text_bold">상세검색<span class="ico ico_srch"></span></a>
+                        </div>
+
+                        <div class="option_area">
+                            <div class="option_srh">
+                                서울 개포동 발주 : 80,000,000 / 수주 : 100,000,000 (42%)
+                            </div>
+                            <div class="option_sort">
+                                <select title="정렬" class="select">
+                                    <option value="">기본정렬순</option>
+                                    <option value="">금액 높은순</option>
+                                    <option value="">금액 낮은순</option>
+                                    <option value="">발주율 높은순</option>
+                                    <option value="">발주율 낮은순</option>
+                                    <option value="">수주건수 높은순</option>
+                                    <option value="">수주건수 낮은순</option>
+                                    <option value="">발주건수 높은순</option>
+                                    <option value="">발주건수 낮은순</option>
+                                    <option value="">야간배송</option>
+                                </select>
+                            </div>
+                        </div><!-- /option_area -->
+
+                        <div class="result scroll_y">
+                            <ol>
+                                <li>
+                                    <!-- 화원 정보 -->
+                                    <div class="info">
+                                        <div class="box">
+                                            <div class="clear">
+                                                1. <a href="javascript:void(0)" class="ellipsis" onclick=""><strong>홍길동플라워</strong> (강남구 개봉동)</a>
+                                                <span class="shop_ico">5등급</span>
+                                                <p class="float_right">
+                                                    <a href="#" class="btn btn_xs btn_basic btn_round00">최근배송사진</a>
+                                                    <a href="#" class="btn btn_xs btn_basic btn_round00">입금내역</a>
+                                                </p>
+                                            </div>
+                                            <ul class="tag_list">
+                                                <li><span class="shop_ico">디카</span></li>
+                                                <li><span class="shop_ico">휴일배송</span></li>
+                                                <li><span class="shop_ico">야간배송</span></li>
+                                                <li><span class="shop_ico">무발주</span></li>
+                                                <li><span class="shop_ico">클레임 예치금</span></li>
+                                                <li><span class="shop_ico">물량</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <table class="mt10 list_table"  >
+                                            <caption>월별, 일별 발주 수주 정보</caption>
+                                            <colgroup>
+                                                <col widht="50%" />
+                                                <col widht="*" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col">09월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) / 100%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">08월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) /  50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">07월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) / 100%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">오늘발주 / 오늘수주 / 당월기여액</th>
+                                                    <td>600,000(10) / 100,000(20) / 700,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">발주제한 / 전월잔금 / 수주인센</th>
+                                                    <td>600,000 / 100,000(입금) / 회원약관진행</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">오늘취소(원(건수)) / 당월취소(윈(건수))</th>
+                                                    <td>600,000(10) / 100,000(10)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="shop_note">
+                                            <textarea cols="100" rows="3" title="화원 메모저장"></textarea>
+                                            <a href="#" class="btn">화원 메모저장</a>
+                                        </div>
+                                    </div>
+                                    <!-- //화원 정보 -->
+
+                                    <!-- 재고 및 배송 정보 -->
+                                    <table class="list_table float_right">
+                                        <caption>종류별 가능여부</caption>
+                                        <colgroup>
+                                            <col width="33%" span="2" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">배송</th>
+                                                <th scope="row">%</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="possible"> <!-- 가능 class -->
+                                                <td>동양란</td>
+                                                <td>가능</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="possible">
+                                                <td>서양란</td>
+                                                <td>가능</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="impossible"> <!-- 불가능 class -->
+                                                <td>축하</td>
+                                                <td>불가</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="impossible">
+                                                <td>근조</td>
+                                                <td>불가</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>꽃</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>관엽</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>쌀화환</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //재고 및 배송 정보 -->
+
+                                    <div class="btn_area">
+                                        <a href="#" class="btn btn_m btn_blue">선택</a>
+                                    </div>
+                                </li>
+                                
+                                <li>
+                                    <!-- 화원 정보 -->
+                                    <div class="info">
+                                        <div class="box">
+                                            <div class="clear">
+                                                1. <a href="javascript:void(0)" class="ellipsis" onclick=""><strong>홍길동플라워</strong> (강남구 개봉동)</a>
+                                                <span class="shop_ico">5등급</span>
+                                                <p class="float_right">
+                                                    <a href="#" class="btn btn_xs btn_basic btn_round00">최근배송사진</a>
+                                                    <a href="#" class="btn btn_xs btn_basic btn_round00">입금내역</a>
+                                                </p>
+                                            </div>
+                                            <ul class="tag_list">
+                                                <li><span class="shop_ico">디카</span></li>
+                                                <li><span class="shop_ico">휴일배송</span></li>
+                                                <li><span class="shop_ico">야간배송</span></li>
+                                                <li><span class="shop_ico">무발주</span></li>
+                                                <li><span class="shop_ico">클레임 예치금</span></li>
+                                                <li><span class="shop_ico">물량</span></li>
+                                            </ul>
+                                        </div>
+
+                                        <table class="mt10 list_table"  >
+                                            <caption>월별, 일별 발주 수주 정보</caption>
+                                            <colgroup>
+                                                <col widht="50%" />
+                                                <col widht="*" />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="col">09월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) / 100%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">08월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) /  50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">07월(발주/수주/발주율)</th>
+                                                    <td>600,000(10) / 100,000(20) / 100%</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">오늘발주 / 오늘수주 / 당월기여액</th>
+                                                    <td>600,000(10) / 100,000(20) / 700,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">발주제한 / 전월잔금 / 수주인센</th>
+                                                    <td>600,000 / 100,000(입금) / 회원약관진행</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">오늘취소(원(건수)) / 당월취소(윈(건수))</th>
+                                                    <td>600,000(10) / 100,000(10)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="shop_note">
+                                            <textarea cols="100" rows="3" title="화원 메모저장"></textarea>
+                                            <a href="#" class="btn">화원 메모저장</a>
+                                        </div>
+                                    </div>
+                                    <!-- //화원 정보 -->
+
+                                    <!-- 재고 및 배송 정보 -->
+                                    <table class="list_table float_right">
+                                        <caption>종류별 가능여부</caption>
+                                        <colgroup>
+                                            <col width="33%" span="2" />
+                                            <col width="*" />
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="row">구분</th>
+                                                <th scope="row">배송</th>
+                                                <th scope="row">%</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="possible"> <!-- 가능 class -->
+                                                <td>동양란</td>
+                                                <td>가능</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="possible">
+                                                <td>서양란</td>
+                                                <td>가능</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="impossible"> <!-- 불가능 class -->
+                                                <td>축하</td>
+                                                <td>불가</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr class="impossible">
+                                                <td>근조</td>
+                                                <td>불가</td>
+                                                <td>60</td>
+                                            </tr>
+                                            <tr>
+                                                <td>꽃</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>관엽</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <td>쌀화환</td>
+                                                <td>미취급</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <!-- //재고 및 배송 정보 -->
+
+                                    <div class="btn_area">
+                                        <a href="#" class="btn btn_m btn_blue">선택</a>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <!-- //화원 검색 -->
+                </div> <!-- /member_search -->
+
+                <div class="btn_area text_right mt20">
                     <a href="javascript:window.close();" class="btn btn_confirm btn_m">닫기</a>
                 </div>
             </div>

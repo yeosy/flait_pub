@@ -4,10 +4,11 @@ $(document).ready(function () {
     // data="layerNm(해당 레이어 팝업 id값)
     $('.layerOpen').click(function () {
         var layerNm = $(this).attr('id');
+        $('.layer').hide();
         $('#'+layerNm+'Layer').fadeIn();
     })
     $('.layer .close, .overlay').click(function () {
-        $('.layer').fadeOut();
+        $(this).closest($('.layer')).fadeOut();
     })
 })
 
