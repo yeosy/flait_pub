@@ -35,17 +35,21 @@
 .ml15 {margin-left:15px !important}
 .ml20 {margin-left:20px !important}
 
+.pt05 {padding-top:5px !important}
 .pt10 {padding-top:10px !important}
 
+.pr05 {padding-right:5px !important} 
 .pr10 {padding-right:10px !important} 
  
 .pb00 {padding-bottom:0px !important}
+.pb05 {padding-bottom:5px !important}
 .pb10 {padding-bottom:10px !important}
 
-.pl10 {padding-left:10px !important} /* 제거예정 */
+.pl05 {padding-left:5px !important}
+.pl10 {padding-left:10px !important}
 
 /* font */
-.ellipsis{overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
 .text_bold {font-weight:bold !important}
 
@@ -76,11 +80,11 @@
 /* button */
 .btn_area {overflow:hidden}
 
-.btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
+.btn {display:inline-block; box-sizing:border-box; text-align:center; vertical-align:middle; border-radius:5px} /* 기본 border-radius:5px */
 .btn.btn_round00 {border-radius:0}
 .btn.btn_round15 {border-radius:15px}
 
-.btn_xs {padding:1px 3px; line-height:16px; font-size:0.82em} /* height:20px / font:10px */
+.btn_xs {padding:1px 3px; min-width:40px; line-height:16px; font-size:0.82em} /* height:20px / font:10px */
 .btn_s {padding:2px 3px; line-height:16px; font-size:0.916666em} /* height:22px / font:11px */
 .btn_sm {padding:3px 5px 4px; min-width:60px;; line-height:16px; font-size:0.8333334em} /* height:25px / font:10px */
 .btn_m {padding:6px 5px; min-width:127px; line-height:16px; font-size:1.0em} /* height:30px / font:12px */
