@@ -3,7 +3,7 @@
 /* 검색옵션 */
 .address_box .option_area {width:500px}
 .address_box .option_area .option_srh{float:left; margin-right:10px}
-.address_box .option_area .option_srh input[type="text"]{float:left; width:254px; height:30px}
+.address_box .option_area .option_srh input[type="text"]{float:left; width:253px; height:30px}
 .address_box .option_area .option_right{float:right; line-height:28px}
 .address_box .option_area .option_right .btn{width:85px}
 
@@ -47,6 +47,3 @@ input[type="checkbox"]{display:none}
 /* 체크버튼 */
 .address_box .address_allchk{float:left; margin:9px 0 20px 0}
 .address_box .scroll_y li.active{background:#c5dfe7}
-
-/* 확인취소버튼 */
-.btn_area.address{width:500px}
