@@ -8,21 +8,21 @@
 
 /*main_column*/
 .main {font-size:12px}
-.main .parts {display:inline-block; position:relative; float:left; box-sizing:border-box; width:792px; height:220px; overflow:hidden;}
+.main .parts {position:relative; float:left; box-sizing:border-box; padding:0 20px; width:792px; height:220px; overflow:hidden;}
 
 /* 수발주 정보 */
-.main_column .main_info{margin-right:20px}
-.main_info_table{border-bottom:1px solid #7d7d7d; border-right:1px solid #7d7d7d}
+.main_column .main_info.parts{margin-right:20px; padding:0}
+.main_info_table{width:100%; border-bottom:1px solid #7d7d7d; border-right:1px solid #7d7d7d}
 .main_info_table th,
-.main_info_table td{font-size:12px; padding:4.5px; line-height:1.25em; text-align:center; vertical-align:middle; border-top:1px solid #7d7d7d; border-left:1px solid #7d7d7d}
+.main_info_table td{font-size:12px; padding:4px 5px 5px 4px; line-height:1.25em; text-align:center; vertical-align:middle; border-top:1px solid #7d7d7d; border-left:1px solid #7d7d7d}
 .main_info_table th{background:#eee}
 .main_info_table .bg_th{background:#ccc}
 .main_info_table .bg_date{background:#c5dfe7}
 .main_info_table .date{display:inline-block; margin:0 auto}
-.main_info_table .date li{float:left; padding:3.5px 0; margin-right:5px; line-height:1.5em}
+.main_info_table .date li{float:left; padding:3px 0 4px; margin-right:5px; line-height:1.5em}
 .main_info_table .date li:last-child{margin-right:0}
-.main_info_table .notice_list{box-sizing:border-box; padding:9px 0 0 9px; height:80px; text-align:left}
-.main_info_table .notice_list li{float:left; padding:2.5px 5px; width:470px; line-height:12px; border-bottom:1px solid #ccc}
+.main_info_table .notice_list{box-sizing:border-box; padding:4px 0 0 9px; height:68px; text-align:left}
+.main_info_table .notice_list li{padding:2px 5px 3px; width:470px; line-height:12px; border-bottom:1px solid #ccc}
 .main_info_table .notice_list li a{display:inline-block; width:370px}
 .main_info_table a:hover, .main_info_table a:focus{font-weight:800}
 
@@ -67,12 +67,12 @@
 .main .pic_board,
 .main .order_chart{height:400px}
 .pic_board .pic_list,
-.order_chart .chart{margin:0 auto; padding:20px; width:712px; height:290px; background:#f7f7f7}
+.order_chart .chart{box-sizing:border-box; padding:20px; width:100%; height:330px; background:#f7f7f7}
 
 /* 작품사진 게시판 */
 .main .pic_board,
 .main .promotion_board{margin-right:20px}
-.pic_board .pic_list li{float:left; margin:0 50.66px 20px 0; width:140px; height:135px; text-align:center}
+.pic_board .pic_list li{float:left; margin:0 50px 20px 0; width:140px; height:135px; text-align:center}
 .pic_board .pic_list li:nth-child(4n){margin-right:0}
 .pic_board .pic_list li:nth-child(5),
 .pic_board .pic_list li:nth-child(6),
@@ -86,9 +86,11 @@
 .order_chart .btn_more {padding:2px 9px 3px 10px;}
 
 /* 업체홍보 게시판 , 경조사 게시판 */
-.promotion_board .board_table,
-.holiday_board .board_table{margin:0 20px 24px; width:752px;}
+.main .promotion_board,
+.main .holiday_board{margin-top:20px; padding:0 20px 24px; height:225px}
+.board_table {width:100%; border:1px solid #ccc}
+.board_table th,.board_table td {line-height:1.45em; border:1px solid #ccc; font-size:12px; text-align:center}
+.board_table th {padding:3px 5px; background:#ccc; font-weight:800}
+.board_table td {padding:3px 5px; line-height:1.5em}
 .board_table a{display:block; padding-left:20px; width:310px}
 .board_table a:hover,.board_table a:focus{font-weight:800}
-.main .promotion_board,
-.main .holiday_board{margin-top:20px; height:225px}

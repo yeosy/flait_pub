@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>협회가맹 가입신청서</title>
+        <title>화원검색</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
         <meta http-equiv="Content-Style-Type" content="text/css">
@@ -26,6 +26,23 @@
                     <p class="float_right text_14">취약지역 <span>100,000,000</span> / <span>19%</span></p>
                 </div>
 
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    // 회원검색 : 레이어 오픈 시 해당 버튼 active
+                    $('.search_box .layerOpen').click(function(){
+                        $('.search_box .layerOpen').removeClass('active');
+                        $(this).addClass('active');
+
+                    })
+                    // 회원검색 : 레이어 팝업 close
+                    $('.layer .region_list td a, .layer .btn.close, .layer .btn.apply').click(function () {
+                        $('.layer .region_list td').removeClass('active');
+                        $(this).closest('td').addClass('active');
+                        $(this).closest($('.layer')).fadeOut();
+                        $('.search_box .layerOpen').removeClass('active');
+                    })                    
+                })
+            </script>
                 <div class="member_search clear">
                     <!-- 지역 검색 -->
                     <div class="zone">
@@ -34,17 +51,6 @@
                             <a href="Javascript:void(0);" class="ml05 btn_select ellipsis layerOpen" id="address2"><span class="ico"></span>구/군</a>
                             <a href="Javascript:void(0);" class="ml05 btn_select ellipsis layerOpen" id="address3"><span class="ico"></span>동/읍/면</a>
                             
-                            <script type="text/javascript">
-                                $(document).ready(function () {
-                                    //레이어팝업 지역 선택시 팝업 닫히게
-                                    //레이어팝업 지역 선택시 팝업 닫히게
-                                    $('.layer .region_list td a').click(function () {
-                                        $('.layer .region_list td').removeClass('active');
-                                        $(this).closest('td').addClass('active');
-                                        $(this).closest($('.layer')).fadeOut();
-                                    })
-                                })
-                            </script>
                             <!-- 시,도 팝업 -->
                             <div class="layer v2" id="address1Layer">
                                 <div class="layer_pop p00">
@@ -207,7 +213,7 @@
                             </div>
                         </div>
 
-                    </div><!-- /map -->
+                    </div><!-- /zone -->
                     <!-- //지역 검색 -->
                     
                     <!-- 화원 검색 -->
@@ -220,8 +226,68 @@
                             </select>
                             <input type="text" name="" value="" title="검색어 입력" class="ml05 keyword" placeholder="검색어 입력" />
                             <a href="#" class="ml05 btn btn_m btn_cancel btn_round00 text_bold">검색<span class="ico ico_srch"></span></a>
-                            <a href="#" class="ml05 btn btn_m btn_cancel btn_round00 text_bold">상세검색<span class="ico ico_srch"></span></a>
+                            <a href="#" class="ml05 btn btn_m btn_cancel btn_round00 text_bold layerOpen" id="detailSearch">상세검색<span class="ico ico_srch"></span></a>
                         </div>
+
+                        <!-- 상세검색 레이어 팝업 -->
+                        <div class="layer v2"  id="detailSearchLayer">
+                            <div class="layer_pop p00">
+                                <div class="inner p00">
+                                    <table class="input_table02" summary="회원등급, 취급상품, 그외 선택">
+                                        <caption>상세 검색</caption>
+                                        <colgroup>
+                                            <col widht="10%" />
+                                            <col widht="*" />
+                                        </colgroup>
+                                        <tr>
+                                            <th scope="col">회원등급</th>
+                                            <td>
+                                                <div class="input_list five pl10">
+                                                    <label><input type="checkbox" name="" value="" /> 1등급</label>
+                                                    <label><input type="checkbox" name="" value="" /> 2등급</label>
+                                                    <label><input type="checkbox" name="" value="" /> 3등급</label>
+                                                    <label><input type="checkbox" name="" value="" /> 4등급</label>
+                                                    <label><input type="checkbox" name="" value="" /> 5등급</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">취급상품</th>
+                                            <td>
+                                                <div class="input_list five pl10">
+                                                    <label><input type="checkbox" name="" value="" /> 꽃</label>
+                                                    <label><input type="checkbox" name="" value="" /> 난</label>
+                                                    <label><input type="checkbox" name="" value="" /> 화환</label>
+                                                    <label><input type="checkbox" name="" value="" /> 관엽</label>
+                                                    <label><input type="checkbox" name="" value="" /> 쌀화환</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">그 외</th>
+                                            <td>
+                                                <div class="input_list four pl10">
+                                                    <label><input type="checkbox" name="" value="" /> 디카사용</label>
+                                                    <label><input type="checkbox" name="" value="" /> 휴일배송</label>
+                                                    <label><input type="checkbox" name="" value="" /> 야감배송</label>
+                                                    <label><input type="checkbox" name="" value="" /> 무발주화원</label>
+                                                </div>
+                                                <div class="input_list four pl10">
+                                                    <label><input type="checkbox" name="" value="" /> 연체화원</label>
+                                                    <label><input type="checkbox" name="" value="" /> 쌍화환취급</label>
+                                                    <label><input type="checkbox" name="" value="" /> 클레임예치금</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <div class="btn_area text_center pt05 pb05 pr10">
+                                        <a href="#" class="btn btn_confirm btn_xs apply">적용</a>
+                                        <a href="#" class="ml05 btn btn_cancel btn_xs close">닫기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- /layer -->
+                        <!-- //상세검색 레이어 팝업 -->
 
                         <div class="option_area">
                             <div class="option_srh">
