@@ -18,10 +18,10 @@
 /* 배송가능지역 설정 */
 .popup .shipping_option{width:100%}
 .popup .shipping_option:after {clear:both; display:block; content:""}
-.popup .shipping_option .mapsearch{float:left; box-sizing:border-box; width:340px; height:360px; border:1px solid #7d7d7d}
+.popup .shipping_option .mapsearch{float:left; box-sizing:border-box; width:28%; height:360px; border:1px solid #7d7d7d}
 .popup .shipping_option .mapsearch h3{padding: 20px 0 12px 20px; line-height:1.5em; font-size:16px; font-weight:800}
-.popup .shipping_option .mapsearch .map_api{margin:0 auto; width:300px; height:290px; background:#eee}
-.popup .shipping_option .input_table{float:right; margin:0; width:850px}
+.popup .shipping_option .mapsearch .map_api{margin:0 auto; width:88%; height:290px; background:#eee}
+.popup .shipping_option .input_table{float:right; margin:0; width:71%}
 .popup .shipping_option .input_table th,
 .popup .shipping_option .input_table td{line-height:1.5em}
 .popup .shipping_option .input_table th{padding:10px 0 11px}
