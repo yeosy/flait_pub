@@ -18,10 +18,10 @@
 /* 배송가능지역 설정 */
 .popup .shipping_option{width:100%}
 .popup .shipping_option:after {clear:both; display:block; content:""}
-.popup .shipping_option .mapsearch{float:left; box-sizing:border-box; width:340px; height:360px; border:1px solid #7d7d7d}
+.popup .shipping_option .mapsearch{float:left; box-sizing:border-box; width:28%; height:360px; border:1px solid #7d7d7d}
 .popup .shipping_option .mapsearch h3{padding: 20px 0 12px 20px; line-height:1.5em; font-size:16px; font-weight:800}
-.popup .shipping_option .mapsearch .map_api{margin:0 auto; width:300px; height:290px; background:#eee}
-.popup .shipping_option .input_table{float:right; width:850px}
+.popup .shipping_option .mapsearch .map_api{margin:0 auto; width:88%; height:290px; background:#eee}
+.popup .shipping_option .input_table{float:right; margin:0; width:71%}
 .popup .shipping_option .input_table th,
 .popup .shipping_option .input_table td{line-height:1.5em}
 .popup .shipping_option .input_table th{padding:10px 0 11px}
@@ -67,13 +67,12 @@
 .member_search .shop .result li .box .ellipsis {text-decoration:underline}
 .member_search .shop .tag_list {overflow:hidden; margin-top:12px; padding-left:5px}
 .member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
-.member_search .shop .info .list_table th,
-.member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
+.member_search .shop .info .list_table th, .member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
 .member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
 .member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
 .member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
 .member_search .shop .result li > table {width:214px}
-.member_search .shop .result li > table thead th {padding:8px 5px 9px}
+.member_search .shop .result li > table th {padding:8px 5px 9px}
 .member_search .shop .result li > table td {padding:7px 5px}
 .member_search .shop .result li > table .possible td {background:#d3eed3}
 .member_search .shop .result li > table .impossible td {background:#fbdbde}

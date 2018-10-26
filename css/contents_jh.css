@@ -1,49 +1,95 @@
 @charset "utf-8";
 
 /* 검색옵션 */
-.address_box .option_area {width:500px}
-.address_box .option_area .option_srh{float:left; margin-right:10px}
-.address_box .option_area .option_srh input[type="text"]{float:left; width:253px; height:30px}
+.address_box .option_area {width:100%}
+.address_box .option_area .option_srh{float:left; margin-right:10px; width:62%}
+.address_box .option_area .option_srh input[type="text"]{float:left; width:82%; height:30px}
 .address_box .option_area .option_right{float:right; line-height:28px}
 .address_box .option_area .option_right .btn{width:85px}
 
 /* 주소록, 받는사람 공통 */
-.address_box{width:500px}
+.address_box{width:100%}
 .address_box:after{content:""; clear:both; display:block;}
-.address_box .list li{padding:0 10px; line-height:1.666667em; border-bottom:1px solid #eee}
-.address_list,.receive_person{float:left; width:228px; height:298px}
-.address_list h3,
-.receive_person h3{box-sizing:border-box; width:100%; line-height:2.3em; text-align:center; background:#ccc; border:1px solid #7d7d7d}
 
 /* 주소록 */
-input[type="checkbox"]{display:none}
-.address_list .bylist_name li{float:left}
-.address_list .bylist_name li{display:inline-block; float:left; box-sizing:border-box; width:114px; line-height:2.3em; text-align:center; background:#eee; border:1px solid #7d7d7d; border-top:0}
-.address_list .bylist .byname_list ul{box-sizing:border-box; height:240px; border:1px solid #7d7d7d; border-top:0}
-.address_list .byname_list,
-.address_list .bygroup_list{display:none}
-.address_list .bylist_name li.active {background:#023a63; border:1px solid #023a63; border-top:0; color:#fff}
-.address_list .bylist .visible{display:block;}
-.address_list .byname_list > ul{height:240px}
-.address_list .bylist .bygroup_list .group_list{overflow:hidden; overflow-y:auto; box-sizing:border-box; height:90px; border:1px solid #7d7d7d; border-top:0}
-.address_list .bylist .byname_list .list li{list-style:none}
-.address_list .bylist .bygroup_list .group_list li{list-style:none}
-.address_list .bylist .bygroup_list .group_list li.active{background:#c5dfe7}
-.address_list .bylist .bygroup_list .group_address{position:relative; box-sizing:border-box; margin-top:10px; height:140px; border:1px solid #7d7d7d}
-.address_list .bylist .bygroup_list .group_address .list{display:none; position:absolute; top:0; left:0; width:100%; height:100%}
-.address_list .bylist .bygroup_list .group_address .visible{display:block;}
-.selected{background:#c5dfe7}
+.address_box input[type="checkbox"],.address_box input[type="radio"]{display:none}
+.address_box .list_box{width:46%}
+.address_box .address_list {float:left; height:300px}
+.address_box .address_list h3,
+.address_box .receive_list h3{box-sizing:border-box; width:100%; line-height:2.3em; text-align:center; background:#ccc; border:1px solid #7d7d7d}
+.address_box .address_list .tab_list{position:relative}
+.address_box .address_list .tab_list .tab{float:left; width:50%}
+.address_box .address_list .tab_list .bygroup_tab{position:absolute; top:0; left:0}
+.address_box .address_list .tab_list .bygroup_tab > label {position:absolute; top:0; left:100%}
+.address_box .address_list .tab_list .bylist{display:none}
+.address_box .address_list .tab_list .bylist > li,
+.address_box .receive_list ul > li{padding-left:13px; line-height:18px; border-bottom:1px solid #eee;}
+.address_box .address_list .tab_list .byname_list{box-sizing:border-box; width:200%; height:240px; border:1px solid #7d7d7d; border-top:0}
+.address_box .address_list .tab_list .bygroup_list{position:absolute; top:30px; left:0; box-sizing:border-box; width:200%; height:90px; border:1px solid #7d7d7d; border-top:0}
+.address_box .address_list .tab_list .bygroup_list > li{position:relative; top:0; left:0;}
+.address_box .address_list .tab_list .bygroup_list .group_list > ul{display:none; position:absolute; left:-1px; width:100%; height:139px; border:1px solid #7d7d7d}
+.address_box .address_list .tab_list .bygroup_list .group_list1 > ul{top:100px}
+.address_box .address_list .tab_list .bygroup_list .group_list2 > ul{top:81px}
+.address_box .address_list .tab_list .bygroup_list .group_list3 > ul{top:62px}
+.address_box .address_list .tab_list .bygroup_list .group_list4 > ul{top:43px}
+#byname + label,
+#bygroup + label{display:inline-block; box-sizing:border-box; width:100%; height:30px; line-height:2.5em; text-align:center; background:#eee; border:1px solid #7d7d7d; border-top:0}
+#group1 + label, #group2 + label, #group3 + label, #group4 + label{display:block; margin-left:-13px; padding-left:13px;}
+.address_box .address_list .bylist_name{position:relative; width:230px}
+#byname:checked + label,
+#bygroup:checked + label{background:#023a63; border:none; color:#fff}
+#byname:checked ~ .byname_list,
+#bygroup:checked ~ .bygroup_list,
+#group1:checked ~.group1,
+#group2:checked ~.group2,
+#group3:checked ~.group3,
+#group4:checked ~.group4{display:block}
+.group1 li, .group2 li, .group3 li, .group4 li{box-sizing:border-box; padding-left:13px; width:100%; line-height:18px; border-bottom:1px solid #eee}
+#group1:checked + label, #group2:checked + label, #group3:checked + label, #group4:checked + label{background:#c5dfe7}
+.receive_list{float:right}
 
 /* 추가 삭제 버튼 */
-.list_move{float:left; margin:0 10px; width:22px; height:54px;}
+.list_move{display:inline-block;  margin:0 1.8%; width:22px; height:54px}
 .list_move .btn_move{display:block; width:22px; height:22px}
 .list_move .push_list{margin:128px 0 10px; background:url(/img/popup/btn_push.png)}
 .list_move .pull_list{background:url(/img/popup/btn_pull.png)}
 
 /* 받는사람 */
-.receive_person{float:right}
-.receive_person .receive_list{box-sizing:border-box; height:269px; border:1px solid #7d7d7d; border-top:0}
+.address_box .receive_list > ul {box-sizing:border-box; height:269px; border:1px solid #7d7d7d; border-top:0}
 
 /* 체크버튼 */
-.address_box .address_allchk{float:left; margin:9px 0 20px 0}
+.address_box .address_allchk{display:block; float:left; margin:9px 0 20px; width:100%;}
 .address_box .scroll_y li.active{background:#c5dfe7}
+
+/* 번호추가 레이어팝업 */
+#addNumberLayer .layer_pop,
+#groupMangeLayer .layer_pop{box-shadow:3px 3px 7px 0.03em rgba(0,0,0,0.7)}
+#addNumberLayer .inner .tit,
+#groupMangeLayer .inner .tit{margin-bottom:17px}
+#addNumberLayer .inner .list_table th, #addNumberLayer .inner .list_table td,
+#groupMangeLayer .inner .list_table th, #groupMangeLayer .inner .list_table td{box-sizing:border-box; padding:1px; line-height:2.4em; height:30px}
+#addNumberLayer .inner .list_table td input,
+#groupMangeLayer .inner .list_table td input{padding:0 10px; width:100%; height:100%}
+#addNumberLayer .inner .list_table td select{width:100%}
+#addNumberLayer .inner .btn_area{margin-top:110px}
+#addNumberLayer .inner .btn_area .btn,
+#groupMangeLayer .inner .btn_area .btn{min-width:110px}
+
+/* 그룹관리 레이어팝업 */
+#groupMangeLayer .inner .btn_area{margin-top:20px}
+
+/* 발신번호 사전등록 */
+#content .tit > h3 {margin-bottom:20px; font-size:14px}
+#content .tit > p {width:494px}
+
+/* 기본형 테이블 */
+.basic_table{margin:20px 0 25px 0; width:100%}
+.basic_table th, .basic_table td{border:1px solid #ccc}
+.basic_table td{padding:10px; line-height:9px;}
+
+/*
+인터넷 익스 10+
+ :-ms-input-placeholder { 
+   color:  #e8e8e8;
+} 
+*/
