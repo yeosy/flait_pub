@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>발신번호인증</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+
+            <div id="content">
+                <div class="tit">
+                    <h3>발신번호 사전등록</h3> 
+                    <p>전기통신사업법 제 84조에 의거 발신번호 사전등록제가 2015년 10월 16일부터 시행됨에 다라 문자(SMS/LMS) 전송시 사용 도리 발신번호를 사전에 등록하셔야 하며 신청하신 번호는 수신이 가능한 번호이어야 합니다.</p>
+                </div>
+                
+                <table summary="발신번호 사전등록" class="basic_table">
+                    <caption>발신번호 사전등록</caption>
+                    <colgroup>
+                        <col width="34%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="text_center">아이디</td>
+                            <td>idtest</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text_center">회원명</td>
+                            <td>전국플라워센터</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text_center">사업자번호</td>
+                            <td>11111111112</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" rowspan="2" class="text_center">발신번호</td>
+                            <td>대표전화 020-111-2222 <a href="#" class="btn btn_confirm btn_xs">ARS 인증</a></td>
+                        </tr>
+                        <tr>
+                            <td>핸드폰 010-1111-1111 <a href="#" class="btn btn_cancel btn_xs">인증완료</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="progress_text">
+                    <p>1. 하기 입력 된 번호 우측에 ARS인증 클릭하시면 해당번호로 ARS전화가 수신됩니다.</p>
+                    <p>2. 수신 된 전화 ARS 멘트에서 <strong class="text_warning">인증번호 2자리</strong>를 입력하시면 됩니다.</p>
+                    <p>* 등록하지 않을 경우 2015년 10월 16일부터 모든 문자(SMS/LMS) 전송이 이동통신사에서 자동 차단됩니다.</p>
+                    <p>- 발신번호는 월 3회까지 변경 가능하며 발신번호 변경은 <a href="#"><strong>마이페이지</strong></a>에서 변경 후 재인증 해주시기 바랍니다.</p>
+                </div>
+
+                <div class="btn_area text_center">
+                    <a href="javascript:window.close();" class="btn btn_confirm btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
