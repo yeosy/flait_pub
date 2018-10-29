@@ -79,6 +79,8 @@
 .float_right {float:right !important}
 .clear:after {display:block; content:""; clear:both !important}
 
+.vm {vertical-align:middle !important}
+
 .scroll_x {overflow:hidden; overflow-x:auto}
 .scroll_y {overflow:hidden; overflow-y:auto}
 
@@ -182,7 +184,7 @@
 /* 목록 옵션 세팅 */
 .option_area {overflow:hidden; margin:18px 0 10px 0; height:30px; line-height:30px}
 .option_area .ui-selectmenu-button.select {padding:6px 6px 6px 10px; vertical-align:top}
-.option_area input[type="text"] {height:30px; vertical-align:top; background:#fff; border-color:#ccc}
+.option_area input[type="text"] {height:30px; vertical-align:top; background:#fff; border:1px solid #ccc}
 .option_area .option_srh {float:left}
 .option_area .option_srh .btn_search {padding:7px 5px; height:30px; line-height:16px; font-size:1.0em}
 .option_area .option_sort {float:right}
@@ -190,7 +192,7 @@
 .option_area.v2 {height:25px; line-height:25px; vertical-align:top}
 .option_area.v2 .option_sort {line-height:25px}
 .option_area.v2 .ui-selectmenu-button {margin-right:0; padding:3px 6px 4px 10px}
-.option_area.v2 input[type="text"] {margin-right:5px; height:25px; background:#fff; border-color:#ccc}
+.option_area.v2 input[type="text"] {margin-right:5px; height:25px; background:#fff; border:1px solid #ccc}
 .option_area.v2 .btn {vertical-align:top; padding:2px 5px 3px !important; font-size:1.0em !important;}
 
 /* 페이징 */
