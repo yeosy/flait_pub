@@ -85,16 +85,16 @@
 /* button */
 .btn_area {overflow:hidden}
 
-.btn {display:inline-block; box-sizing:border-box; text-align:center; vertical-align:top; border-radius:5px} /* 기본 border-radius:5px */
+.btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
 .btn.btn_round00 {border-radius:0}
 .btn.btn_round15 {border-radius:15px}
 
-.btn_xs {padding:1px 3px; min-width:40px; line-height:16px; font-size:10px} /* height:20px / font:10px */
-.btn_s {padding:2px 3px; line-height:16px; font-size:11px} /* height:22px / font:11px */
-.btn_sm {padding:3px 5px 4px; min-width:60px;; line-height:16px; font-size:10px} /* height:25px / font:10px */
-.btn_m {padding:6px 5px; min-width:127px; line-height:16px; font-size:12px} /* height:30px / font:12px */
-.btn_ml {padding:9px 5px; min-width:160px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
-.btn_l {padding:15px 5px; min-width:200px; line-height:18px; border-radius:15px; font-size:18px; font-weight:bold} /* height:50px / font:18px */
+.btn_xs {padding:1px 3px; min-width:40px; height:20px; line-height:16px; font-size:10px} /* height:20px / font:10px */
+.btn_s {padding:2px 3px; height:22px; line-height:16px; font-size:11px} /* height:22px / font:11px */
+.btn_sm {padding:3px 5px 4px; min-width:60px; height:25px; line-height:16px; font-size:10px} /* height:25px / font:10px */
+.btn_m {padding:6px 5px; min-width:127px; height:30px; line-height:16px; font-size:12px} /* height:30px / font:12px */
+.btn_ml {padding:9px 5px; min-width:160px; height:38px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
+.btn_l {padding:15px 5px; min-width:200px; height:50px; line-height:18px; border-radius:15px; font-size:18px; font-weight:bold} /* height:50px / font:18px */
 
 .btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
@@ -103,7 +103,8 @@
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7); border:1px solid rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_search {background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
+.btn_search {min-width:auto; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
+.btn_search:hover, .btn_search:focus {background:rgba(2,58,99,0.7)}
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
@@ -179,23 +180,18 @@
 .basic_table .calendar input {background:#eee; border:1px solid #eee}
 
 /* 목록 옵션 세팅 */
-.option_area {margin:18px 0 10px 0; overflow:hidden; line-height:30px; vertical-align:middle}
-.option_area > div {display:inline-block}
-.option_area .option_srh .ui-selectmenu-button {float:left}
-.option_area .option_srh .btn_search {float:left; padding:7px 5px; height:30px; line-height:16px; font-size:1.0em}
-.option_area .option_srh:after {clear:both; content:""; display:block}
-.option_area .option_srh .btn:hover, .option_area .option_srh .btn:focus {background:rgba(2,58,99,0.8)}
-.option_area .option_sort {float:right; line-height:27px}
-.option_area .option_sort span {vertical-align:middle}
-.option_area .option_sort a {vertical-align:middle}
-.option_area .option_sort .btn_change {display:inline-block; box-sizing:border-box; width:90px; line-height:28px; text-align:center; border:1px solid #ccc; color:#000; font-size:14px}
-.option_area .ui-selectmenu-button {margin-right:10px; height:21px !important; line-height:21px !important}
-.option_area .ui-selectmenu-icon {height:21px !important}
-.option_area.v2 {line-height:25px; vertical-align:top}
+.option_area {overflow:hidden; margin:18px 0 10px 0; height:30px; line-height:30px}
+.option_area .ui-selectmenu-button.select {padding:6px 6px 6px 10px; vertical-align:top}
+.option_area input[type="text"] {height:30px; vertical-align:top; background:#fff; border-color:#ccc}
+.option_area .option_srh {float:left}
+.option_area .option_srh .btn_search {padding:7px 5px; height:30px; line-height:16px; font-size:1.0em}
+.option_area .option_sort {float:right}
+
+.option_area.v2 {height:25px; line-height:25px; vertical-align:top}
 .option_area.v2 .option_sort {line-height:25px}
-.option_area.v2 .ui-selectmenu-button {margin-right:0; padding:1px 6px 1px 10px}
+.option_area.v2 .ui-selectmenu-button {margin-right:0; padding:3px 6px 4px 10px}
 .option_area.v2 input[type="text"] {margin-right:5px; height:25px; background:#fff; border-color:#ccc}
-.option_area.v2 .btn {padding:2px 5px 3px !important; font-size:1.0em !important;}
+.option_area.v2 .btn {vertical-align:top; padding:2px 5px 3px !important; font-size:1.0em !important;}
 
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}

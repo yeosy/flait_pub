@@ -39,7 +39,7 @@
 .member_search .search_box .layerOpen.active {background:#c5dfe7}
 .member_search .search_box .btn_select .ico {float:right; padding-left:10px; width:16px; height:16px; vertical-align:0; background:url(/img/common/bg_select.png) right center no-repeat}
 .member_search .search_box .select {padding:6px 6px 6px 10px; vertical-align:top}
-.member_search .search_box .keyword {box-sizing:border-box; height:30px; border:1px solid #ccc}
+.member_search .search_box .keyword {box-sizing:border-box; height:30px; vertical-align:top; border:1px solid #ccc}
 
 .member_search .zone {float:left; width:430px; margin-right:10px}
 .member_search .zone .search_box {position:relative}
@@ -52,7 +52,7 @@
 .member_search .zone .layer .btn_area {background:#f7f7f7; border:1px solid #ccc; border-top:0}
 .member_search .zone .map_api {box-sizing:border-box; width:100%; height:528px; border:1px solid #ccc}
 .member_search .zone .zone_note textarea {width:100%; height:110px}
-.member_search .zone .zone_note .btn {padding:11px 5px; width:100%}
+.member_search .zone .zone_note .btn {padding:11px 5px; height:40px; width:100%}
 
 .member_search .shop {position:relative; float:right; width:720px}
 .member_search .shop .layer.v2 {top:50px; left:137px; width:583px; height:auto}

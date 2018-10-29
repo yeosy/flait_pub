@@ -43,8 +43,8 @@
 .layer_over .recent_num li a:hover, .recent_num li a:focus {text-decoration:underline}
 
 /* 보낸 메세지함 */
-.screen_list {overflow:hidden}
-.screen_list li {float:left; margin:0 40px 19px 0; padding:0 9px 10px; border:1px solid #ccc}
+.screen_list {overflow:hidden; margin-left:-40px}
+.screen_list li {float:left; margin:0 0 19px 40px; padding:0 9px 10px; border:1px solid #ccc}
 .screen_list li input[type="checkbox"] {margin:3px 0;}
 .screen_list li .basic_box {padding:9px 9px 0}
 .screen_list li .screen {box-sizing:border-box; padding:11px; width:240px; height:130px; line-height:1.75em; background:#c5dfe7; border:1px solid #ccc; white-space:pre-wrap}
