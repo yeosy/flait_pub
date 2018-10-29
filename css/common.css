@@ -41,6 +41,7 @@
 
 .pr05 {padding-right:5px !important} 
 .pr10 {padding-right:10px !important} 
+.pr20 {padding-right:20px !important} 
  
 .pb00 {padding-bottom:0px !important}
 .pb05 {padding-bottom:5px !important}
@@ -48,6 +49,7 @@
 
 .pl05 {padding-left:5px !important}
 .pl10 {padding-left:10px !important}
+.pl35 {padding-left:35px !important}
 
 /* font */
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -59,6 +61,8 @@
 
 .text_warning {color:#e60012 !important}
 .text_point {color:#ff0000 !important}
+
+.line_175 {line-height:1.75em}
 
 /* border */
 .bl0 {border-left:0 !important}
@@ -85,21 +89,20 @@
 .btn.btn_round00 {border-radius:0}
 .btn.btn_round15 {border-radius:15px}
 
-.btn_xs {padding:1px 3px; min-width:40px; line-height:16px; font-size:0.82em} /* height:20px / font:10px */
-.btn_s {padding:2px 3px; line-height:16px; font-size:0.916666em} /* height:22px / font:11px */
-.btn_sm {padding:3px 5px 4px; min-width:60px;; line-height:16px; font-size:0.8333334em} /* height:25px / font:10px */
-.btn_m {padding:6px 5px; min-width:127px; line-height:16px; font-size:1.0em} /* height:30px / font:12px */
-.btn_ml {padding:9px 5px; min-width:160px; line-height:18px; font-size:1.5em; font-weight:800} /* height:38px / font:18px */
-.btn_l {padding:15px 5px; min-width:200px; line-height:18px; border-radius:15px; font-size:1.5em; font-weight:bold} /* height:50px / font:18px */
+.btn_xs {padding:1px 3px; min-width:40px; line-height:16px; font-size:10px} /* height:20px / font:10px */
+.btn_s {padding:2px 3px; line-height:16px; font-size:11px} /* height:22px / font:11px */
+.btn_sm {padding:3px 5px 4px; min-width:60px;; line-height:16px; font-size:10px} /* height:25px / font:10px */
+.btn_m {padding:6px 5px; min-width:127px; line-height:16px; font-size:12px} /* height:30px / font:12px */
+.btn_ml {padding:9px 5px; min-width:160px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
+.btn_l {padding:15px 5px; min-width:200px; line-height:18px; border-radius:15px; font-size:18px; font-weight:bold} /* height:50px / font:18px */
 
 .btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
 .btn_cancel {background:#fff; border:1px solid #ccc}
 .btn_confirm {background:#023a63; color:#fff; border:1px solid #023a63}
-.btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7)}
+.btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7); border:1px solid rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_blue.btn_m {padding:6px 17px; min-width:50px}
 .btn_search {background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 
 /* icon */
@@ -112,11 +115,15 @@
 .ico_srch {margin-left:1px; background-position:-160px -112px}
 .ico_more {background-position:-16px -128px}
 .ico_cal {background-position:-112px -112px}
+.ico_store {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:1.6em; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:0.82em}
 
-.shop_ico {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:1.6em; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:0.82em}
+.calendar {position:relative; display:inline-block; box-sizing:border-box; padding-left:20px; width:130px; height:30px}
+.calendar .ico {position:absolute; top:50%; left:0; margin-top:-10px;}
+.calendar input {width:100%; height:100%; background:#fff; border:1px solid #ccc}
+.calendar input:hover, .calendar input:focus {border:1px solid #ccc}
 
 /* tab */
-.tab_menu {margin-bottom:10px; overflow:hidden}
+.tab_menu {overflow:hidden; margin-bottom:10px; padding-bottom:9px; border-bottom:1px solid #ccc}
 .tab_menu li:first-child {margin-left:0}
 .tab_menu li {float:left; margin-left:20px}
 .tab_menu li a {display:block; padding:4px 5px 3px; min-width:135px; line-height:1.5em; text-align:center; background:#fff; border:1px solid #ccc; font-size:14px}
@@ -128,6 +135,8 @@
 .ui-selectmenu-button.ui-button.ui-widget {padding:3px 6px 4px 10px; width:auto; height:16px; border:1px solid #ccc; background-color:#fff; border-radius:0}
 .ui-selectmenu-button.ui-button .ui-selectmenu-text {margin-right:0 !important}
 .ui-selectmenu-button.ui-button .ui-selectmenu-icon.ui-icon {padding-left:10px; background:url(/img/common/bg_select.png) right center no-repeat}
+
+.ui-selectmenu-button.ui-button.ui-widget.v2 {padding:2px 5px; height:16px; background:#eee; border:0; color:#000}
 
 /* list 정렬 */
 .input_list:after {clear:both; display:block; content:""}
@@ -161,8 +170,16 @@
 .list_table tbody th {padding:15px 5px}
 .list_table td {padding:8px 5px 9px}
 
+/* white table (spcial) */
+.basic_table {margin:0; width:100%}
+.basic_table th, .basic_table td {text-align:center; border:1px solid #ccc; font-weight:500}
+.basic_table td {padding:4px 10px 5px; line-height:20px; text-align:left}
+.basic_table .calendar {height:20px; width:100%}
+.basic_table .calendar .ico {margin-top:-8px}
+.basic_table .calendar input {background:#eee; border:1px solid #eee}
+
 /* 목록 옵션 세팅 */
-.option_area {margin:18px 0 10px 0; width:100%; overflow:hidden; line-height:30px; vertical-align:middle}
+.option_area {margin:18px 0 10px 0; overflow:hidden; line-height:30px; vertical-align:middle}
 .option_area > div {display:inline-block}
 .option_area .option_srh .ui-selectmenu-button {float:left}
 .option_area .option_srh .btn_search {float:left; padding:7px 5px; height:30px; line-height:16px; font-size:1.0em}
@@ -174,6 +191,11 @@
 .option_area .option_sort .btn_change {display:inline-block; box-sizing:border-box; width:90px; line-height:28px; text-align:center; border:1px solid #ccc; color:#000; font-size:14px}
 .option_area .ui-selectmenu-button {margin-right:10px; height:21px !important; line-height:21px !important}
 .option_area .ui-selectmenu-icon {height:21px !important}
+.option_area.v2 {line-height:25px; vertical-align:top}
+.option_area.v2 .option_sort {line-height:25px}
+.option_area.v2 .ui-selectmenu-button {margin-right:0; padding:1px 6px 1px 10px}
+.option_area.v2 input[type="text"] {margin-right:5px; height:25px; background:#fff; border-color:#ccc}
+.option_area.v2 .btn {padding:2px 5px 3px !important; font-size:1.0em !important;}
 
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}

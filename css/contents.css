@@ -8,7 +8,7 @@
 .terms_chk_all {margin-bottom:49px; text-align:center; color:#e60012; font-size:14px; font-weight:800}
 
 /* 배송현황 select_menu */
-.ship_select.ui-button {padding:0 !important; width:76px !important; border:0 !important; background:0 !important}
+.ship_select.ui-button {padding:0 !important; height:20px; width:76px !important; border:0 !important; background:0 !important}
 .ship_select .ui-selectmenu-icon {display:none !important}
 .ship_select .ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; background:url(/img/common/bg_select_ship.png) 62px center no-repeat}
 .ui-selectmenu-text.no_check {background-color:#d0e1e8}
@@ -34,11 +34,20 @@
 .sms_view .basic_box h3 {margin-bottom:20px; height:18px; line-height:18px; font-size:14px}
 .sms_view .paging.float_left {box-sizing:border-box; padding-left:240px; width:660px}
 .sms_view .btn_area.float_right {width:275px}
-
-.layer_over {position:relative; display:inline; z-index:10}
-.layer_over .layerOver {display:none; position:absolute; box-sizing:border-box; padding:11px 0; width:200px; line-height:1.5em; text-align:center; background:#fff; border:1px solid rgba(229,229,229,0.9)}
+.layer_over {position:relative; display:inline}
+.layer_over .layerOver {display:none; position:absolute; box-sizing:border-box; padding:11px 0; width:200px; line-height:1.5em; text-align:center; background:#fff; border:1px solid rgba(229,229,229,0.9); z-index:10}
 .layer_over .layerOver .layer_tit {padding:0 5px 10px; line-height:1.5em; font-size:1.0em}
-.layer_over .recent_num li {height:auto; border-top:1px solid rgba(238,238,238,93)} /* layer style */
-.layer_over .recent_num li:first-child {border-top:none} /* layer style */
-.layer_over .recent_num li a {display:block; line-height:19px} /* layer style */
-.layer_over .recent_num li a:hover, .recent_num li a:focus {text-decoration:underline} /* layer style */
+.layer_over .recent_num li {height:auto; border-top:1px solid rgba(238,238,238,93)}
+.layer_over .recent_num li:first-child {border-top:none}
+.layer_over .recent_num li a {display:block; line-height:19px}
+.layer_over .recent_num li a:hover, .recent_num li a:focus {text-decoration:underline}
+
+/* 보낸 메세지함 */
+.screen_list {overflow:hidden}
+.screen_list li {float:left; margin:0 40px 19px 0; padding:0 9px 10px; border:1px solid #ccc}
+.screen_list li input[type="checkbox"] {margin:3px 0;}
+.screen_list li .basic_box {padding:9px 9px 0}
+.screen_list li .screen {box-sizing:border-box; padding:11px; width:240px; height:130px; line-height:1.75em; background:#c5dfe7; border:1px solid #ccc; white-space:pre-wrap}
+.screen_list li dl {overflow:hidden; margin-top:11px}
+.screen_list li dt, .screen_list li dd {padding-left:9px; float:left; line-height:21px}
+.screen_list li dt {clear:both}

@@ -181,10 +181,8 @@
         <div id="content">
             <h3 class="con_tit">SMS 관리</h3>
 
-            <p class="mt20"></p>
-
             <!-- 탭메뉴 -->
-            <ul class="tab_menu">
+            <ul class="tab_menu mt10">
                 <li class="active"><a href="#">문자보내기</a></li>
                 <li><a href="#">보낸 메세지함</a></li>
                 <li><a href="#">예약 메세지함</a></li>
@@ -192,6 +190,25 @@
             </ul>
             <!-- /탭메뉴 -->
 
+            <div class="option_area" style="margin:8px 44px 10px 0">
+                <div class="option_srh">
+                    10월 총 전송 건수 : <span>1,000</span>건
+                </div>
+                <div class="option_sort">
+                    <select title="연도" class="select">
+                        <option value="">2018</option>
+                        <option value="">2018</option>
+                        <option value="">2018</option>
+                    </select> 년
+                    <select title="월" class="select ml10">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select> 월
+                    <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
+                    <a href="#" class="btn btn_sm btn_search">검색<span class="ico ico_srch"></span></a>
+                </div>
+            </div>
             <!-- 상세 테이블 -->
             <table class="list_table">
             <caption> 상세 테이블</caption>
@@ -218,10 +235,29 @@
                 </tr>
             </tbody>
             </table>
-        <!-- //상세 테이블 -->
+            <!-- //상세 테이블 -->
 
+            <div class="option_area v2" style="margin:8px 44px 10px 0">
+                <div class="option_srh">
+                    10월 총 전송 건수 : <span>1,000</span>건
+                </div>
+                <div class="option_sort">
+                    <select title="연도" class="select">
+                        <option value="">2018</option>
+                        <option value="">2018</option>
+                        <option value="">2018</option>
+                    </select> 년
+                    <select title="월" class="select ml10">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select> 월
+                    <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
+                    <a href="#" class="btn btn_sm btn_search">검색<span class="ico ico_srch"></span></a>
+                </div>
+            </div>
             <!-- 목록 테이블 -->
-            <table class="list_table mt20">
+            <table class="list_table">
                 <caption>목록 테이블</caption>
                 <colgroup>
                     <col width="5%"/>
@@ -389,8 +425,12 @@
             </select>
             <!-- //select box -->
 
-            <div class="date_pick">
-                Date: <input type="text" id="datepicker" />
+            <div class="date_pick mt10">
+                Date: 
+                <span class="calendar">
+                    <span class="ico ico_cal"></span>
+                    <input type="text" id="datepicker"/>
+                </span>
             </div>
             <!-- //date_pick -->
 
