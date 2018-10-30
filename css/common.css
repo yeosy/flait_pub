@@ -92,7 +92,7 @@
 .btn.btn_round15 {border-radius:15px}
 
 .btn_xs {padding:1px 3px; min-width:40px; height:20px; line-height:16px; font-size:10px} /* height:20px / font:10px */
-.btn_s {padding:2px 3px; height:22px; line-height:16px; font-size:11px} /* height:22px / font:11px */
+.btn_s {padding:2px 5px; height:22px; line-height:16px; font-size:11px} /* height:22px / font:11px */
 .btn_sm {padding:3px 5px 4px; min-width:60px; height:25px; line-height:16px; font-size:10px} /* height:25px / font:10px */
 .btn_m {padding:6px 5px; min-width:127px; height:30px; line-height:16px; font-size:12px} /* height:30px / font:12px */
 .btn_ml {padding:9px 5px; min-width:160px; height:38px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
@@ -150,15 +150,10 @@
 .input_list.five li, .input_list.five label {width:20%; letter-spacing:-1px}/* radio or checkbox : 5 */
 
 /* 입력 테이블 */
-.input_table {margin:0; width:100%}
-.input_table th, .input_table td {border:1px solid #000}
+.input_table {margin:0; width:100%; border-right:1px solid #000; border-bottom:1px solid #000}
+.input_table th, .input_table td {border-top:1px solid #000; border-left:1px solid #000}
 .input_table th {background:#ccc; font-weight:normal}
-.input_table td {padding:10px; line-height:30px}
-.input_table input[type="text"], .input_table input[type="password"] {width:100%; line-height:20px; height:30px}
-.input_table textarea {padding:5px; width:100%}
-.input_table .btn {display:inline-block; box-sizing:border-box; padding:5px; background:#c5dfe7; border-radius:0; line-height:20px; text-align:center; font-size:13px}
-.input_table .btn_delivery {width:150px}
-.input_table .btn_address {width:90px}
+.input_table th, .input_table td {padding:5px 10px; line-height:1.5em}
 .byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
 
 .input_table02 {margin:0; width:100%; border-right:1px solid #ccc; border-bottom:1px solid #ccc}
@@ -172,6 +167,8 @@
 .list_table th {padding:7px 5px 8px; background:#ccc; font-weight:500}
 .list_table tbody th {padding:15px 5px}
 .list_table td {padding:8px 5px 9px}
+.list_table td a:hover, .list_table td a:focus {text-decoration:underline}
+.list_table td a.btn:hover, .list_table td a.btn:focus {text-decoration:none}
 
 /* white table (spcial) */
 .basic_table {margin:0; width:100%}
@@ -193,7 +190,7 @@
 .option_area.v2 .option_sort {line-height:25px}
 .option_area.v2 .ui-selectmenu-button {margin-right:0; padding:3px 6px 4px 10px}
 .option_area.v2 input[type="text"] {margin-right:5px; height:25px; background:#fff; border:1px solid #ccc}
-.option_area.v2 .btn {vertical-align:top; padding:2px 5px 3px !important; font-size:1.0em !important;}
+.option_area.v2 .btn {vertical-align:top; padding:2px 5px 3px !important; border-radius:5px; font-size:1.0em !important;}
 
 /* 페이징 */
 .paging {overflow:hidden; text-align:center; height:30px}

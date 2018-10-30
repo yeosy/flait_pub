@@ -8,10 +8,12 @@ table, th, td {border-collapse:collapse; border-spacing:0; vertical-align:middle
 li *,dd *,fieldset * {vertical-align:middle}
 caption, legend {display:none}
 span {vertical-align:0}
-textarea, input[type="text"], input[type="password"] {padding:5px; box-sizing:border-box}
+input[type="text"], input[type="password"] {padding:5px; box-sizing:border-box}
+textarea {display:block; box-sizing:border-box; padding:5px; width:100%}
+pre {width:100%; white-space:normal; word-break:break-all; line-height:1.8em}
 td textarea, td input[type="text"], td input[type="password"], td input[type="number"] {box-sizing:border-box; margin:0; padding:4px; vertical-align:middle; background:#eee; border:1px solid #eee}
-td textarea:hover, td textarea:focus, td input[type="text"]:hover, td input[type="text"]:focus, td input[type="password"]:hover, td input[type="password"]:focus {padding:4px; background:#fff; border:1px solid #ccc}
-textarea:disabled, input[type="text"]:disabled {padding:4px 5px !important; background:#ccc !important; border:1px solid #999}
+td textarea:hover, td input[type="text"]:hover, td input[type="password"]:hover {padding:4px; background:#fff; border:1px solid #ccc}
+textarea:disabled, input[type="text"]:disabled {padding:4px!important; background:#ccc !important; border:1px solid #7d7d7d !important}
 input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
 input::placeholder {color:#aaa}
 button {cursor:pointer}

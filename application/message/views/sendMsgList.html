@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<title>전국플라워센터 - 쪽지관리 - 보낸쪽지함</title>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+<meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+<meta property="og:title" content="전국플라워센터">
+<meta property="og:url" content="https://www.flowercenter.co.kr/">
+<meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+<link rel="stylesheet" type="text/css" href="/css/common.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="/css/login.css" /> 로그인 화면에서만 사용 -->
+<!-- <link rel="stylesheet" type="text/css" href="/css/popup.css" /> 팝업 화면에서만 사용 -->
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+<script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.js"></script>        
+<script type="text/javascript" src="/js/common.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    // 레이아웃용
+    $(document).ready(function () {
+        $('#header').load('/application/views/header.html');
+        $('.gnb').load('/application/views/gnb.html');
+        $('.lnb').load('/application/views/lnb.html');
+        $('#footer').load('/application/views/footer.html');
+    })
+</script>
+<div id="wrap">
+    <header id="header"></header>
+    <!-- /header -->
+
+    <hr/>
+
+    <nav class="gnb"></nav>
+    <!-- /gnb -->
+
+    <hr/>
+
+    <div id="container">
+        <div class="lnb"></div>
+
+        <div id="content">
+            <div class="sub">
+                <h3 class="con_tit mb10">쪽지관리</h3>
+                
+                <!-- 탭메뉴 -->
+                <ul class="tab_menu">
+                    <li><a href="/application/message/views/receiveMsgList.html">받은쪽지함</a></li>
+                    <li class="active"><a href="/application/message/views/sendMsgList.html">보낸쪽지함</a></li>
+                </ul>
+                <!-- /탭메뉴 -->
+
+                <div>
+                    <div class="option_area v2 mt10">
+                        <div class="option_sort">
+                            <select title="검색 범위" class="select">
+                                <option value="">내용</option>
+                                <option value="">받는화원</option>
+                            </select>
+                            <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
+                            <a href="#" class="btn btn_sm btn_search">검색<span class="ico ico_srch"></span></a>
+                        </div>
+                    </div>
+
+                    <table class="list_table">
+                        <caption>받은쪽지 목록</caption>
+                        <colgroup>
+                            <col width="5%">
+                            <col width="5%">
+                            <col width="10%">
+                            <col width="10%">
+                            <col width="*">
+                            <col width="15%">
+                            <col width="15%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="row">NO</th>
+                                <th scope="row"><input type="checkbox" name="" value="" title="전체선택" /></th>
+                                <th scope="row">지역</th>
+                                <th scope="row">받는화원</th>
+                                <th scope="row">내용</th>
+                                <th scope="row">보낸일자</th>
+                                <th scope="row">읽은일자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td>홍길동플라워</td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td>홍길동플라워</td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><input type="checkbox" name="" value="" title="선택"></td>
+                                <td>부산 사상구</td>
+                                <td><a href="javascript:void(0)" onclick="window.open('/application/popup/memberInfo.html','memberInfo','width=500, height=500, top=100, left=540')">홍길동플라워</a></td>
+                                <td class="text_left">수정바랍니다.</td>
+                                <td>2018-09-10 12:00:00</td>
+                                <td>2018-09-10 12:00:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="paging mt20">
+                        <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                        <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                        <ol>
+                            <li><a href="#" class="active" title="현재페이지">1</a></li> <!-- 현재 페이지일 경우 class="active" -->
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><a href="#">8</a></li>
+                            <li><a href="#">9</a></li>
+                            <li><a href="#">10</a></li>
+                        </ol>
+                        <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                        <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                    </div>
+                    <div class="btn_area text_right">
+                        <a href="#" class="btn btn_basic btn_m">선택 삭제</a>
+                        <a href="Javascript:void(0);" onclick="window.open('/application/popup/views/messageWrite.html','messageWrite','width=500, height=500, top=100, left=540')" onclick="window.open('/application/popup/views/messageWrite.html','messageWrite','width=500, height=500, top=100, left=540')" class="ml15 btn btn_confirm btn_m">쪽지쓰기</a>
+                    </div>
+                </div>
+            </div><!-- /Sub Page -->
+           
+            <hr />
+
+            <footer id="footer"></footer>
+            <!-- /footer -->
+        </div>
+
+    </div>
+    <!-- /container -->
+</div>
+
+<!-- 개발자 가이드 -->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.developStatus').load('/status/status01.html');
+    })
+</script>
+<div class="developStatus" style="position:absolute; top:5px; right:10px"></div>
+<!-- //개발자 가이드 -->
+    
+</body>
+</html>

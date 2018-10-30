@@ -113,7 +113,9 @@
                                 <th scope="row">
                                     <span title="필수">*</span>배송가능지역</th>
                                 <td>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/shipItemSet.html','shipItemSet','width=1265, height=590, top=100, left=540')" class="btn btn_delivery">배송가능지역 설정</a>
+                                    <div class="btn_area">
+                                        <a href="javascript:void(0)" onclick="window.open('/application/popup/views/shipItemSet.html','shipItemSet','width=1265, height=590, top=100, left=540')" class="btn btn_m btn_blue btn_delivery">배송가능지역 설정</a>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -142,8 +144,8 @@
                                 <th scope="row">
                                     <span title="필수">*</span>화원소재지</th>
                                 <td colspan="3">
-                                    <p>
-                                        <a href="#" class="btn vm">우편번호검색</a>&nbsp;
+                                    <p class="btn_area">
+                                        <a href="#" class="btn btn_m btn_blue vm" style="min-width:90px">우편번호검색</a>&nbsp;
                                         <input type="text" name="" value="" title="우편번호" placeholder="우편번호" style="width:23%" disabled="disabled" />&nbsp;
                                         <input type="text" name="" value="" title="주소" placeholder="주소" style="width:61.8%" disabled="disabled" />
                                     </p>

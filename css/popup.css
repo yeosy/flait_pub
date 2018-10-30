@@ -15,6 +15,8 @@
 .popup .join_form #header .title dd {color:#fff; float:left}
 .popup .join_form #header .title dt {margin-right:16px; font-weight:800}
 .popup .join_form #content {box-sizing:border-box; padding:51px 60px 0 60px; width:100%; overflow:hidden; border:1px solid #000; border-top:0}
+.popup .join_form table td {padding:10px; line-height:30px}
+.popup .join_form table td input[type="text"], .join_form table td input[type="password"] {width:100%; line-height:20px; height:30px}
 
 /* 배송가능지역 설정 */
 .popup .shipping_option{width:100%}
@@ -31,94 +33,84 @@
 .popup .shipping_option .input_table .text_left {padding-left:25px}
 
 /* 회원검색 */
-.member_search {width:1160px}
-.member_search textarea {background:#fff; border:1px solid #ccc}
-.member_search .search_box {padding:10px; background:#023a63}
-.member_search .search_box .btn_select {display:inline-block; padding:6px 10px 6px 20px; width:98px; height:16px; vertical-align:middle;  background:#fff; border:1px solid #ccc}
-.member_search .search_box .layerOpen.active {background:#c5dfe7}
-.member_search .search_box .btn_select .ico {float:right; padding-left:10px; width:16px; height:16px; vertical-align:0; background:url(/img/common/bg_select.png) right center no-repeat}
-.member_search .search_box .select {padding:6px 6px 6px 10px; vertical-align:top}
-.member_search .search_box .keyword {box-sizing:border-box; height:30px; vertical-align:top; border:1px solid #ccc}
-.member_search .zone {float:left; width:430px; margin-right:10px}
-.member_search .zone .search_box {position:relative}
-.member_search .zone .layer.v2 {top:50px; left:0; height:auto}
-.member_search .zone .layer .region_list {width:100%; border:1px solid #ccc; table-layout:fixed}
-.member_search .zone .layer .region_list td {padding:0; width:33.3333%; line-height:18px; text-align:center; vertical-align:middle; background:#fff; border:1px solid #ccc; font-size:11px}
-.member_search .zone .layer .region_list td.active,
-.member_search .zone .layer .region_list td:hover {background:#c5dfe7}
-.member_search .zone .layer .region_list td a {display:block; padding:5px 5px; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
-.member_search .zone .layer .btn_area {background:#f7f7f7; border:1px solid #ccc; border-top:0}
-.member_search .zone .map_api {box-sizing:border-box; width:100%; height:528px; border:1px solid #ccc}
-.member_search .zone .zone_note textarea {display:block; width:100%; height:110px}
-.member_search .zone .zone_note .btn {padding:11px 5px; height:40px; width:100%}
-.member_search .shop {position:relative; float:right; width:720px}
-.member_search .shop .layer.v2 {top:50px; left:137px; width:583px; height:auto}
-.member_search .shop .search_box .select {width:102px}
-.member_search .shop .search_box .keyword {background:#fff; width:325px}
-.member_search .shop .search_box .btn_m {padding:6px 29px; min-width:inherit}
-.member_search .shop .result {height:650px}
-.member_search .shop .result > ol > li {overflow:hidden; box-sizing:border-box; width:100%; margin-bottom:10px; padding:9px; border:1px solid #7d7d7d}
-.member_search .shop .info {float:left; width:456px; margin-right:10px}
-.member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
-.member_search .shop .info .box > div {height:20px; line-height:20px}
-.member_search .shop .result li .box .ellipsis {text-decoration:underline}
-.member_search .shop .tag_list {overflow:hidden; margin-top:11px; padding-left:5px}
-.member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
-.member_search .shop .tag_list li span {vertical-align:top}
-.member_search .shop .info .list_table th, .member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
-.member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
-.member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
-.member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
-.member_search .shop .result li > table {width:214px}
-.member_search .shop .result li > table th {padding:8px 5px 9px}
-.member_search .shop .result li > table td {padding:7px 5px}
-.member_search .shop .result li > table .possible td {background:#d3eed3}
-.member_search .shop .result li > table .impossible td {background:#fbdbde}
-.member_search .shop .result .btn_area {clear:both; padding-top:10px}
-.member_search .shop .result .btn_area .btn {width:100%; border:1px solid #c5dfe7; border-radius:0}
+.popup .member_search {width:1160px}
+.popup .member_search textarea {background:#fff; border:1px solid #ccc}
+.popup .member_search .search_box {padding:10px; background:#023a63}
+.popup .member_search .search_box .btn_select {display:inline-block; padding:6px 10px 6px 20px; width:98px; height:16px; vertical-align:middle;  background:#fff; border:1px solid #ccc}
+.popup .member_search .search_box .layerOpen.active {background:#c5dfe7}
+.popup .member_search .search_box .btn_select .ico {float:right; padding-left:10px; width:16px; height:16px; vertical-align:0; background:url(/img/common/bg_select.png) right center no-repeat}
+.popup .member_search .search_box .select {padding:6px 6px 6px 10px; vertical-align:top}
+.popup .member_search .search_box .keyword {box-sizing:border-box; height:30px; vertical-align:top; border:1px solid #ccc}
+.popup .member_search .zone {float:left; width:430px; margin-right:10px}
+.popup .member_search .zone .search_box {position:relative}
+.popup .member_search .zone .layer.v2 {top:50px; left:0; height:auto}
+.popup .member_search .zone .layer .region_list {width:100%; border:1px solid #ccc; table-layout:fixed}
+.popup .member_search .zone .layer .region_list td {padding:0; width:33.3333%; line-height:18px; text-align:center; vertical-align:middle; background:#fff; border:1px solid #ccc; font-size:11px}
+.popup .member_search .zone .layer .region_list td.active,
+.popup .member_search .zone .layer .region_list td:hover {background:#c5dfe7}
+.popup .member_search .zone .layer .region_list td a {display:block; padding:5px 5px; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.popup .member_search .zone .layer .btn_area {background:#f7f7f7; border:1px solid #ccc; border-top:0}
+.popup .member_search .zone .map_api {box-sizing:border-box; width:100%; height:528px; border:1px solid #ccc}
+.popup .member_search .zone .zone_note textarea {display:block; width:100%; height:110px}
+.popup .member_search .zone .zone_note .btn {padding:11px 5px; height:40px; width:100%}
+.popup .member_search .shop {position:relative; float:right; width:720px}
+.popup .member_search .shop .layer.v2 {top:50px; left:137px; width:583px; height:auto}
+.popup .member_search .shop .search_box .select {width:102px}
+.popup .member_search .shop .search_box .keyword {background:#fff; width:325px}
+.popup .member_search .shop .search_box .btn_m {padding:6px 29px; min-width:inherit}
+.popup .member_search .shop .result {height:650px}
+.popup .member_search .shop .result > ol > li {overflow:hidden; box-sizing:border-box; width:100%; margin-bottom:10px; padding:9px; border:1px solid #7d7d7d}
+.popup .member_search .shop .info {float:left; width:456px; margin-right:10px}
+.popup .member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
+.popup .member_search .shop .info .box > div {height:20px; line-height:20px}
+.popup .member_search .shop .result li .box .ellipsis {text-decoration:underline}
+.popup .member_search .shop .tag_list {overflow:hidden; margin-top:11px; padding-left:5px}
+.popup .member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
+.popup .member_search .shop .tag_list li span {vertical-align:top}
+.popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
+.popup .member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
+.popup .member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
+.popup .member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
+.popup .member_search .shop .result li > table {width:214px}
+.popup .member_search .shop .result li > table th {padding:8px 5px 9px}
+.popup .member_search .shop .result li > table td {padding:7px 5px}
+.popup .member_search .shop .result li > table .possible td {background:#d3eed3}
+.popup .member_search .shop .result li > table .impossible td {background:#fbdbde}
+.popup .member_search .shop .result .btn_area {clear:both; padding-top:10px}
+.popup .member_search .shop .result .btn_area .btn {width:100%; border:1px solid #c5dfe7; border-radius:0}
 
 /* 주소록 */
-.address_box input[type="radio"], .address_box input[type="checkbox"] {position:absolute; top:-3000px; left:0; opacity:0; width:1px; height:1px; font-size:1px}
-.address_box .bylist li label:hover, .address_box .bylist li label.active,.group li label:hover, .group li label.active{background:#c5dfe7}
-.address_box .list_box li label {display:block; padding-left:13px; height:18px; line-height:18px}
-.address_box .option_area .option_srh{width:62%}
-.address_box .option_area .option_srh input[type="text"]{float:left; width:80%}
-.address_box .option_area .btn_m {padding:6px 17px; min-width:50px}
-.address_box .list_box{width:46%}
-.address_box .list_box h3 {box-sizing:border-box; line-height:28px; text-align:center; background:#ccc; border:1px solid #7d7d7d}
-.address_box .address_list {float:left; height:300px}
-.address_box .tab_list {position:relative}
-.address_box .tab_list > li {float:left; width:50%}
-.address_box .tab_list > li > label {box-sizing:border-box; padding:6px 0 5px; width:100%; height:30px; line-height:1.5em; text-align:center; background:#eee; border:1px solid #7d7d7d; border-top:none}
-.address_box .tab_list > li > input:checked ~ label {background:#023a63; border-color:#023a63; color:#fff}
-.address_box .tab_list > li input:checked ~ .bylist {display:block}
-.address_box .tab_list .bylist {display:none; position:absolute; top:30px; left:0; box-sizing:border-box; width:100%; height:240px; border:1px solid #7d7d7d; border-top:0}
-.address_box .tab_list .bylist li {border-top:1px solid #eee}
-.address_box .tab_list .bylist li:first-child {border-top:0}
-.address_box .tab_list .bylist.group_list {height:90px}
-.address_box .tab_list .bylist.group_list li {border:0}
-.address_box .address_list .tab_list .group {display:none; position:absolute; top:130px; left:0; box-sizing:border-box; width:100%; height:140px; border:1px solid #7d7d7d}
-.address_box .address_list .tab_list .group ul {display:none}
-.address_box .address_list .tab_list .group_tab > input:checked ~ .group {display:block;}
-.list_move{display:inline-block;  margin:0 1.8%; width:22px; height:54px}
-.list_move a{display:block; width:22px; height:22px}
-.list_move .push_list{margin:128px 0 10px; background:url(/img/popup/btn_push.png)}
-.list_move .pull_list{background:url(/img/popup/btn_pull.png)}
-.address_box .receive_list{float:right}
-.address_box .receive_list > ul {box-sizing:border-box; height:269px; border:1px solid #7d7d7d; border-top:0}
-/* 주소록-번호추가 레이어팝업 */
-.addNumberLayer .tit, .groupMangeLayer .tit {margin-bottom:17px}
-.addNumberLayer .list_table th, .addNumberLayer .inner .list_table td,
-.groupMangeLayer .list_table th, .groupMangeLayer .list_table td{box-sizing:border-box; padding:1px; line-height:2.4em; height:30px}
-.addNumberLayer .list_table td input[type="text"],.groupMangeLayer .list_table td input[type="text"]{padding:0 10px; width:100%; height:100%; background:#fff}
-.addNumberLayer .list_table td input:hover, .groupMangeLayer .list_table td input:hover,
-.addNumberLayer .list_table tbody tr:first-child td{background:#eee}
-.addNumberLayer .list_table td select{width:100%; background:#eee}
-.addNumberLayer .btn_area{margin-top:110px}
-.addNumberLayer .btn_area .btn, .groupMangeLayer .btn_area .btn{min-width:110px}
-/* 주소록-그룹관리 레이어팝업 */
-.groupMangeLayer .list_table td .btn{vertical-align:middle}
-.groupMangeLayer .list_table{border-bottom:0}
-.groupMangeLayer .group_list{height:150px; border:1px solid #7d7d7d; border-left:0}
-.groupMangeLayer .group_list .list_table{border-left:1px solid #7d7d7d}
-.groupMangeLayer .group_list .list_table tr:first-child td{border-top:0}
+.popup .address_box input[type="radio"], .popup .address_box input[type="checkbox"] {position:absolute; top:-3000px; left:0; opacity:0; width:1px; height:1px; font-size:1px}
+.popup .address_box .bylist li label:hover, .popup .address_box .bylist li label.active,.group li label:hover, .group li label.active{background:#c5dfe7}
+.popup .address_box .list_box li label {display:block; padding-left:13px; height:18px; line-height:18px}
+.popup .address_box .option_area .option_srh{width:62%}
+.popup .address_box .option_area .option_srh input[type="text"]{float:left; width:80%}
+.popup .address_box .option_area .btn_m {padding:6px 17px; min-width:50px}
+.popup .address_box .list_box{width:46%}
+.popup .address_box .list_box h3 {box-sizing:border-box; line-height:28px; text-align:center; background:#ccc; border:1px solid #7d7d7d}
+.popup .address_box .address_list {float:left; height:300px}
+.popup .address_box .tab_list {position:relative}
+.popup .address_box .tab_list > li {float:left; width:50%}
+.popup .address_box .tab_list > li > label {box-sizing:border-box; padding:6px 0 5px; width:100%; height:30px; line-height:1.5em; text-align:center; background:#eee; border:1px solid #7d7d7d; border-top:none}
+.popup .address_box .tab_list > li > input:checked ~ label {background:#023a63; border-color:#023a63; color:#fff}
+.popup .address_box .tab_list > li input:checked ~ .bylist {display:block}
+.popup .address_box .tab_list .bylist {display:none; position:absolute; top:30px; left:0; box-sizing:border-box; width:100%; height:240px; border:1px solid #7d7d7d; border-top:0}
+.popup .address_box .tab_list .bylist li {border-top:1px solid #eee}
+.popup .address_box .tab_list .bylist li:first-child {border-top:0}
+.popup .address_box .tab_list .bylist.group_list {height:90px}
+.popup .address_box .tab_list .bylist.group_list li {border:0}
+.popup .address_box .address_list .tab_list .group {display:none; position:absolute; top:130px; left:0; box-sizing:border-box; width:100%; height:140px; border:1px solid #7d7d7d}
+.popup .address_box .address_list .tab_list .group ul {display:none}
+.popup .address_box .address_list .tab_list .group_tab > input:checked ~ .group {display:block;}
+.popup .list_move{display:inline-block;  margin:0 1.8%; width:22px; height:54px}
+.popup .list_move a{display:block; width:22px; height:22px}
+.popup .list_move .push_list{margin:128px 0 10px; background:url(/img/popup/btn_push.png)}
+.popup .list_move .pull_list{background:url(/img/popup/btn_pull.png)}
+.popup .address_box .receive_list{float:right}
+.popup .address_box .receive_list > ul {box-sizing:border-box; height:269px; border:1px solid #7d7d7d; border-top:0}
+.popup table.p00 td {padding:0}
+.popup .scroll_y {border-right:1px solid #000; border-bottom:1px solid #000}
+.popup .scroll_y > table {border:0}
+.popup .scroll_y > table tr:first-child td {border-top:0}
+.popup .scroll_y > table tr td:last-child {border-right:0}
+.popup .scroll_y > table tr:last-child td {border-bottom:0}
