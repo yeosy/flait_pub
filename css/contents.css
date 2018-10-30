@@ -8,14 +8,14 @@
 .terms_chk_all {margin-bottom:49px; text-align:center; color:#e60012; font-size:14px; font-weight:800}
 
 /* 배송현황 select_menu */
-.ship_select.ui-button {padding:0 !important; height:20px; width:76px !important; border:0 !important; background:0 !important}
-.ship_select .ui-selectmenu-icon {display:none !important}
-.ship_select .ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:20px; line-height:20px; background:url(/img/common/bg_select_ship.png) 62px center no-repeat}
-.ui-selectmenu-text.no_check {background-color:#d0e1e8}
-.ui-selectmenu-text.order {background-color:#8bc4ce}
-.ui-selectmenu-text.reject {background-color:#0086b5; color:#fff}
-.ui-selectmenu-text.shipping {background-color:#004378; color:#fff}
-.ui-selectmenu-text.delivery {background-color:#001a40; color:#fff}
+.ship_select.ui-selectmenu-button.ui-button.ui-widget {padding:0; width:78px; height:23px; border-color:#7d7d7d}
+.ship_select.ui-selectmenu-button .ui-selectmenu-icon {display:none !important}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text {padding-left:5px; margin-right:0 !important; height:23px; line-height:23px; background:url(/img/common/bg_select.png) 62px center no-repeat}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.no_check {background-color:#fcbec4}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.check {background-color:#b0d7fa}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.order {background-color:#f4f1cc}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.shipping {background-color:#d3eed3}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.delivery {background-color:#dcdcdc}
 
 /* SMS관리 */
 .sms_send.basic_box {padding:9px; width:294px}
