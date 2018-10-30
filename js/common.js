@@ -31,7 +31,7 @@ $(function(){
     $('.ship_select, .select').selectmenu(); 
 
     //datepicker
-    $( "#datepicker" ).datepicker(); 
+    $( ".datepicker" ).datepicker(); 
 
     //sortable(SMS 주소록)
     $( ".sortable" ).sortable();

@@ -63,8 +63,8 @@ a {text-decoration:none}
 .gnb ul li:first-child {box-sizing:border-box; padding-right:20px; width:255px; border:0}
 .gnb ul li:last-child {box-sizing:border-box; padding-left:20px; width:254px}
 
-#container {margin-top:20px; padding:0; width:1880px; background-image:linear-gradient(to right, #edf1f2 256px, #fff 256px); background-image:-webkit-linear-gradient(left, #edf1f2 256px, #fff 256px)}
-.lnb {float:left; width:256px; height:100%; background:#edf1f2; font-size:14px}
+#container {margin-top:20px; padding:0; width:1900px; background-image:linear-gradient(to right, #edf1f2 276px, #fff 276px); background-image:-webkit-linear-gradient(left, #edf1f2 276px, #fff 276px)}
+.lnb {float:left; width:276px; height:100%; background:#edf1f2; font-size:14px}
 .lnb h2 {padding:6px 0 6px 30px; line-height:2.0em; background:#ccc}
 .lnb ul {padding:10px}
 .lnb ul li a {display:block; padding:5px 30px 4px; line-height:1.5em}

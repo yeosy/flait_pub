@@ -12,6 +12,7 @@
 
 /* etc */
 .ir {overflow:hidden; text-indent:-99999px; position:absolute; top:0; left:-99999px; width:1px; height:1px; opacity:0}
+.hr {background:#ccc; width:100%; height:1px}
 .block {display:block}
 
 /* margin, padding */
@@ -150,12 +151,15 @@
 .input_list.four li, .input_list.four label {width:25%; letter-spacing:-1px}/* radio or checkbox : 4 */
 .input_list.five li, .input_list.five label {width:20%; letter-spacing:-1px}/* radio or checkbox : 5 */
 
+/* 테이블 전체 */
+table th.bg_blue, table.bg_blue th {background:#c5dfe7 !important} /* th background-color:blue */
+.byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
+
 /* 입력 테이블 */
 .input_table {margin:0; width:100%; border-right:1px solid #000; border-bottom:1px solid #000}
 .input_table th, .input_table td {border-top:1px solid #000; border-left:1px solid #000}
 .input_table th {background:#ccc; font-weight:normal}
 .input_table th, .input_table td {padding:5px 10px; line-height:1.5em}
-.byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
 
 .input_table02 {margin:0; width:100%; border-right:1px solid #ccc; border-bottom:1px solid #ccc}
 .input_table02 th, .input_table02 td {padding:3px 5px 4px; line-height:2.1em; border-top:1px solid #ccc; border-left:1px solid #ccc; font-size:0.95em}

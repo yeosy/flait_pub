@@ -40,260 +40,311 @@
         <div class="lnb"></div>
 
         <div id="content">
-            <h3 class="con_tit">SMS 관리</h3>
+            <h3 class="con_tit">전체 수발주 리스트</h3>
 
-            <!-- 탭메뉴 -->
-            <ul class="tab_menu mt10">
-                <li class="active"><a href="#">문자보내기</a></li>
-                <li><a href="#">보낸 메세지함</a></li>
-                <li><a href="#">예약 메세지함</a></li>
-                <li><a href="#">화원별 전체내역</a></li>
-            </ul>
-            <!-- /탭메뉴 -->
-
-            <div class="option_area" style="margin:8px 44px 10px 0">
+            <div class="option_area mt10" style="width:1520px">
                 <div class="option_srh">
-                    10월 총 전송 건수 : <span>1,000</span>건
+                    <label><input type="radio" name="" value="" /> 주문일</label>
+                    <label><input type="radio" name="" value="" /> 배송일</label>                     
+                    <span class="calendar">
+                        <span class="ico ico_cal"></span>
+                        <input type="text" class="datepicker" title="시작일자" />
+                    </span> ~
+                    <span class="calendar">
+                        <span class="ico ico_cal"></span>
+                        <input type="text" class="datepicker" title="종료일자" />
+                    </span>
+                    <span class="btn_area month">
+                        <button href="#" class="btn btn_m btn_cancel">4월</button>
+                        <button href="#" class="btn btn_m btn_cancel">4월</button>
+                        <button href="#" class="btn btn_m btn_blue">6월</button>
+                        <button href="#" class="btn btn_m btn_cancel">7월</button>
+                    </span>
                 </div>
+
                 <div class="option_sort">
-                    <select title="연도" class="select">
-                        <option value="">2018</option>
-                        <option value="">2018</option>
-                        <option value="">2018</option>
-                    </select> 년
-                    <select title="월" class="select ml10">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select> 월
+                    <select title="배송상태" class="select">
+                        <option value="">배송상태선택</option>
+                        <option value="">미확인</option>
+                        <option value="">미확인(본부화원사)</option>
+                        <option value="">본부확인</option>
+                        <option value="">주문접수</option>
+                        <option value="">배송완료</option>
+                    </select>
+                    <select title="검색범위" class="select ml10">
+                        <option value="">발주화원명</option>
+                        <option value="">수주화원명</option>
+                        <option value="">주문자</option>
+                        <option value="">받는분</option>
+                        <option value="">배달장소</option>
+                        <option value="">보내는분</option>
+                        <option value="">인수자명</option>
+                        <option value="">주문번호</option>
+                        <option value="">상품명</option>
+                        <option value="">상품코드</option>
+                        <option value="">중계담당자</option>
+                        <option value="">주문자연락처</option>
+                        <option value="">받는분연락처</option>
+                        <option value="">지정화원사</option>
+                        <option value="">주문작성자</option>
+                        <option value="">발주아이디</option>
+                        <option value="">수주아이디</option>
+                    </select>
                     <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
                     <a href="#" class="btn btn_m btn_search">검색<span class="ico ico_srch"></span></a>
                 </div>
-            </div>
-            <!-- 상세 테이블 -->
-            <table class="list_table">
-            <caption> 상세 테이블</caption>
-            <colgroup>
-                <col width="12%"/>
-                <col width="*"/>
-            </colgroup>
-            <tbody class="text_left">
-                <tr>
-                    <th scope="col">전송건수 / 전송금액</th>
-                    <td>2,000건 / 100,000원</td>
-                </tr>
-                <tr>
-                    <th scope="col">전송건수 / 전송금액</th>
-                    <td>2,000건 / 100,000원</td>
-                </tr>
-                <tr>
-                    <th scope="col">전송건수<br /> / 전송금액</th>
-                    <td>2,000건 / 100,000원</td>
-                </tr>
-                <tr>
-                    <th scope="col">전송건수 / 전송금액</th>
-                    <td>2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원2,000건 / 100,000원</td>
-                </tr>
-            </tbody>
-            </table>
-            <!-- //상세 테이블 -->
+            </div><!-- option_area -->
 
-            <div class="option_area v2" style="margin:8px 44px 10px 0">
-                <div class="option_srh">
-                    10월 총 전송 건수 : <span>1,000</span>건
-                </div>
-                <div class="option_sort">
-                    <select title="연도" class="select">
-                        <option value="">2018</option>
-                        <option value="">2018</option>
-                        <option value="">2018</option>
-                    </select> 년
-                    <select title="월" class="select ml10">
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                    </select> 월
-                    <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
-                    <a href="#" class="btn btn_sm btn_search">검색<span class="ico ico_srch"></span></a>
-                </div>
-            </div>
-            <!-- 목록 테이블 -->
-            <table class="list_table">
-                <caption>목록 테이블</caption>
-                <colgroup>
-                    <col width="5%"/>
-                    <col width="5%"/>
-                    <col width="5%"/>
-                    <col width="*"/>
-                </colgroup>
-                <thead>
-                    <tr>
-                        <th scope="row">NO</th>
-                        <th scope="row">구분</th>
-                        <th scope="row"><input type="checkbox" name="" value="" title="전체선택" /></th>
-                        <th scope="row" class="text_left">메시지 내용</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>10</td>
-                        <td>test</td>
-                        <td><input type="checkbox" name="" value="" title="선택" /></td>
-                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>test</td>
-                        <td><input type="checkbox" name="" value="" title="선택" /></td>
-                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>test</td>
-                        <td><input type="checkbox" name="" value="" title="선택" /></td>
-                        <td class="text_left">본인께서 받으셨습니다. - 전국플라워센터 본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센본인께서 받으셨습니다. - 전국플라워센</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- //목록 테이블 -->
+            <hr class="hr" /> <!-- 라인 효과-->
 
-            <!-- 페이징 -->
-            <div class="paging mt20">
-                <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
-                <a href="#" class="btn" title="이전 페이지">&lt;</a>
-                <ol>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li><a href="#">6</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">10</a></li>
-                </ol>
-                <a href="#" class="btn" title="다음 페이지">&gt;</a>
-                <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
-            </div>
-            <!-- //페이징 -->
+            <div style="width:1520px">
+                <table class="list_table bg_blue mt10" style="width:1248px">
+                    <caption>건수별 정보</caption>
+                    <colgroup>
+                        <col width="156px" span="8" />
+                        <col width="*"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">총주문건수 / 금액</th>
+                            <th scope="row">주문결제건수 / 금액</th>
+                            <th scope="row">미배송건수 / 금액</th>
+                            <th scope="row">취소건수 / 금액</th>
+                            <th scope="row">배송완료건수 / 금액</th>
+                            <th scope="row">전일주문건수 / 금액</th>
+                            <th scope="row">금일주문건수 / 금액</th>
+                            <th scope="row">팩스 미전송 건수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>100,000 /  1,000,000,000</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <div class="btn_area">
-                <a class="btn btn_xs btn_basic btn_round00">최근입금내역</a>
-                <a href="#" class="btn btn_xs btn_cancel btn_round00">입금내역</a>
-            </div>
+                <table class="list_table bg_blue mt10">
+                    <caption>발주 건수별 정보</caption>
+                    <colgroup>
+                        <col width="156px" span="9" />
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">총발주건수 / 금액</th>
+                            <td>10,000 / 1,111,111,111</td>
+                            <th scope="row">본부발주건수 / 금액</th>
+                            <td>10,000 / 1,111,111,111</td>
+                            <th scope="row">직발주건수 / 금액</th>
+                            <td>10,000 / 1,111,111,111</td>
+                            <th scope="row">지정발주 건수 / 지정율</th>
+                            <td>10,000 / 5%</td>
+                            <th scope="row">취약지역금액 / 취약율</th>
+                            <td>111,111,000 / 20%</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-            <div class="btn_area mt20">
-                <a href="#" class="btn btn_blue btn_s">발신번호인증</a>
-                <a href="#" class="btn btn_basic btn_s">발신번호인증</a>
-                <a href="#" class="btn btn_cancel btn_s">발신번호인증</a>
-                <a href="#" class="btn btn_confirm btn_s">발신번호인증</a>
-            </div>
+                <!-- 목록 테이블 -->
+                
+                <table class="list_table bg_blue mt10" style="width:1248px">
+                    <caption>건수별 정보</caption>
+                    <colgroup>
+                        <col width="4.6%" />
+                        <col width="3.289%" />
+                        <col width="4.6%" />
+                        <col width="12.17%" />
+                        <col width="5.921%" />
+                        <col width="10.3289%" span="2" />
+                        <col width="21.8421%" />
+                        <col width="5%" />
+                        <col width="12.82895%" />
+                        <col width="*"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">주문번호</th>
+                            <th scope="row">구분</th>
+                            <th scope="row">주문확인</th>
+                            <th scope="row">주문접수일<br />희망배송일</th>
+                            <th scope="row">받는분</th>
+                            <th scope="row">발주화원</th>
+                            <th scope="row">수주화원</th>
+                            <th scope="row">상품명<br />배송지</th>
+                            <th scope="row">원청금액<br />결제금액</th>
+                            <th scope="row">인수자</th>
+                            <th scope="row">기타정보</th>
+                            <th scope="row">배송상태</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">000111</a><br />
+                                <span class="warning_text">주문거절</span>
+                            </td>
+                            <td>본부</td>
+                            <td>
+                                <a href="javascript:void(0)"></a>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- /목록 테이블 -->
 
-            <div class="btn_area mt20">
-                <a href="#" class="btn btn_confirm btn_sm">확인</a>
-                <a href="#" class="ml15 btn btn_confirm btn_sm">저장<span class="ico ico_save"></span></a>
-                <a href="#" class="ml15 btn btn_cancel btn_sm">취소</a>
-                <a href="#" class="ml15 btn btn_cancel btn_sm">삭제<span class="ico ico_del"></span></a>
-                <a href="#" class="ml15 btn btn_basic btn_sm">메세지 추가</a>
-                <a href="#" class="ml15 btn btn_basic btn_sm">저장<span class="ico ico_save"></span></a>
-            </div>
-
-            <div class="btn_area mt20">
-                <a href="#" class="btn btn_confirm btn_m">확인</a>
-                <a href="#" class="ml15 btn btn_confirm btn_m">저장<span class="ico ico_save"></span></a>
-                <a href="#" class="ml15 btn btn_cancel btn_m">취소</a>
-                <a href="#" class="ml15 btn btn_cancel btn_m">삭제<span class="ico ico_del"></span></a>
-                <a href="#" class="ml15 btn btn_basic btn_m">메세지 추가</a>
-                <a href="#" class="ml15 btn btn_basic btn_m">저장<span class="ico ico_save"></span></a>
-            </div>
-
-            <div class="btn_area mt20">
-                <a href="#" class="btn btn_confirm btn_ml">저장</a>
-                <a href="#" class="ml15 btn btn_cancel btn_ml">저장</a>
-                <a href="#" class="ml15 btn btn_basic btn_ml">저장</a>
-            </div>
-
-            <div class="btn_area mt20">
-                <a href="#" class="btn btn_confirm btn_l">저장</a>
-                <a href="#" class="ml15 btn btn_cancel btn_l">저장</a>
-                <a href="#" class="ml15 btn btn_basic btn_l">저장</a>
-            </div>
-            
-
-
-            <!-- 레이어 팝업 -->
-            <div class="btn_area mt10">
-                <a href="javascript:void(0)" onclick="window.open('popupURL.html','popupName','width=1300, height=590, top=100, left=540')" class="btn btn_basic btn_m">새창팝업</a>
-                <a href="Javascript:void(0);" class="btn btn_basic btn_m layerOpen" id="layerName">레이어팝업</a><!-- 레이어 팝업: class="layerOpen" id="레이어팝업 이름" -->
-            </div>
-            <div class="layer" id="layerNameLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
-                <div class="overlay"></div>
-                <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                    <div class="inner">
-                        <h4 class="layer_tit">메세지등록</h4>
-                        <form name="" action="" method="">
-                        <fieldset>
-                            <legend>메세지 등록</legend>
-                            <div class="basic_box pb00 pl10 pr10">
-                                <textarea cols="100" rows="6" style="width:100%; height:110px" class="block" title="메세지 입력"></textarea>
-                                <p class="byte">
-                                    <strong>0</strong>/ 2,000 byte
-                                </p>
-                            </div>
-                            <div class="btn_area text_center mt30">
-                                <a href="#" class="btn btn_confirm btn_m">등록</a>
-                                <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                            </div>
-                        </fieldset>
-                        </form>
-                    </div>
-                </div>
-            </div><!-- /layer -->
-            <!-- /레이어 팝업 -->
-
-            <!-- 마우스 오버 시 레이어 -->
-            <div class="layer_over block float_left mt20" id="qwer">
-                <span class="btn btn_blue btn_m">마우스오버 레이어</span>
-                <div class="layerOver" id="qwerLayer">
-                    <h4 class="layer_tit">마우스 오버 레이어</h4>
+                <!-- 페이징 -->
+                <div class="paging mt20">
+                    <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                    <a href="#" class="btn" title="이전 페이지">&lt;</a>
                     <ol>
-                        <li>
-                            <a href="#">010-1234-5678</a>
-                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
                     </ol>
+                    <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                    <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
                 </div>
-            </div><!-- /layerOver -->
-            <!-- /마우스 오버 시 레이어 -->
+                <!-- //페이징 -->
 
-            <div class="mb10 clear"></div>
+                <div class="btn_area">
+                    <a class="btn btn_xs btn_basic btn_round00">최근입금내역</a>
+                    <a href="#" class="btn btn_xs btn_cancel btn_round00">입금내역</a>
+                </div>
 
-            <select title="필수" class="ship_select">
-                <option class="no_check">미확인</option>
-                <option class="order">주문접수</option>
-                <option class="reject">주문거절</option>
-                <option class="shipping">배송중</option>
-                <option class="delivery">배송완료</option>
-            </select>
-            <!-- //select box -->
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_blue btn_s">발신번호인증</a>
+                    <a href="#" class="btn btn_basic btn_s">발신번호인증</a>
+                    <a href="#" class="btn btn_cancel btn_s">발신번호인증</a>
+                    <a href="#" class="btn btn_confirm btn_s">발신번호인증</a>
+                </div>
 
-            <select class="select">
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-                <option>2015</option>
-                <option>홍길동 플라워</option>
-            </select>
-            <!-- //select box -->
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_confirm btn_sm">확인</a>
+                    <a href="#" class="ml15 btn btn_confirm btn_sm">저장<span class="ico ico_save"></span></a>
+                    <a href="#" class="ml15 btn btn_cancel btn_sm">취소</a>
+                    <a href="#" class="ml15 btn btn_cancel btn_sm">삭제<span class="ico ico_del"></span></a>
+                    <a href="#" class="ml15 btn btn_basic btn_sm">메세지 추가</a>
+                    <a href="#" class="ml15 btn btn_basic btn_sm">저장<span class="ico ico_save"></span></a>
+                </div>
 
-            <div class="date_pick mt10">
-                Date: 
-                <span class="calendar">
-                    <span class="ico ico_cal"></span>
-                    <input type="text" id="datepicker"/>
-                </span>
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_confirm btn_m">확인</a>
+                    <a href="#" class="ml15 btn btn_confirm btn_m">저장<span class="ico ico_save"></span></a>
+                    <a href="#" class="ml15 btn btn_cancel btn_m">취소</a>
+                    <a href="#" class="ml15 btn btn_cancel btn_m">삭제<span class="ico ico_del"></span></a>
+                    <a href="#" class="ml15 btn btn_basic btn_m">메세지 추가</a>
+                    <a href="#" class="ml15 btn btn_basic btn_m">저장<span class="ico ico_save"></span></a>
+                </div>
+
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_confirm btn_ml">저장</a>
+                    <a href="#" class="ml15 btn btn_cancel btn_ml">저장</a>
+                    <a href="#" class="ml15 btn btn_basic btn_ml">저장</a>
+                </div>
+
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_confirm btn_l">저장</a>
+                    <a href="#" class="ml15 btn btn_cancel btn_l">저장</a>
+                    <a href="#" class="ml15 btn btn_basic btn_l">저장</a>
+                </div>
+                
+
+
+                <!-- 레이어 팝업 -->
+                <div class="btn_area mt10">
+                    <a href="javascript:void(0)" onclick="window.open('popupURL.html','popupName','width=1300, height=590, top=100, left=540')" class="btn btn_basic btn_m">새창팝업</a>
+                    <a href="Javascript:void(0);" class="btn btn_basic btn_m layerOpen" id="layerName">레이어팝업</a><!-- 레이어 팝업: class="layerOpen" id="레이어팝업 이름" -->
+                </div>
+                <div class="layer" id="layerNameLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
+                    <div class="overlay"></div>
+                    <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
+                        <div class="inner">
+                            <h4 class="layer_tit">메세지등록</h4>
+                            <form name="" action="" method="">
+                            <fieldset>
+                                <legend>메세지 등록</legend>
+                                <div class="basic_box pb00 pl10 pr10">
+                                    <textarea cols="100" rows="6" style="width:100%; height:110px" class="block" title="메세지 입력"></textarea>
+                                    <p class="byte">
+                                        <strong>0</strong>/ 2,000 byte
+                                    </p>
+                                </div>
+                                <div class="btn_area text_center mt30">
+                                    <a href="#" class="btn btn_confirm btn_m">등록</a>
+                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
+                                </div>
+                            </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- /layer -->
+                <!-- /레이어 팝업 -->
+
+                <!-- 마우스 오버 시 레이어 -->
+                <div class="layer_over block float_left mt20" id="qwer">
+                    <span class="btn btn_blue btn_m">마우스오버 레이어</span>
+                    <div class="layerOver" id="qwerLayer">
+                        <h4 class="layer_tit">마우스 오버 레이어</h4>
+                        <ol>
+                            <li>
+                                <a href="#">010-1234-5678</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div><!-- /layerOver -->
+                <!-- /마우스 오버 시 레이어 -->
+
+                <div class="mb10 clear"></div>
+
+                <select title="필수" class="ship_select">
+                    <option class="no_check">미확인</option>
+                    <option class="order">주문접수</option>
+                    <option class="reject">주문거절</option>
+                    <option class="shipping">배송중</option>
+                    <option class="delivery">배송완료</option>
+                </select>
+                <!-- //select box -->
+
+                <select class="select">
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>홍길동 플라워</option>
+                </select>
+                <!-- //select box -->
+
+                <div class="date_pick mt10">
+                    Date: 
+                    <span class="calendar">
+                        <span class="ico ico_cal"></span>
+                        <input type="text" id="datepicker"/>
+                    </span>
+                </div>
+                <!-- //date_pick -->
             </div>
-            <!-- //date_pick -->
 
             <hr />
 
