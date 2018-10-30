@@ -13,7 +13,7 @@ textarea {display:block; box-sizing:border-box; padding:5px; width:100%}
 pre {width:100%; white-space:normal; word-break:break-all; line-height:1.8em}
 td textarea, td input[type="text"], td input[type="password"], td input[type="number"] {box-sizing:border-box; margin:0; padding:4px; vertical-align:middle; background:#eee; border:1px solid #eee}
 td textarea:hover, td input[type="text"]:hover, td input[type="password"]:hover {padding:4px; background:#fff; border:1px solid #ccc}
-textarea:disabled, input[type="text"]:disabled {padding:4px!important; background:#ccc !important; border:1px solid #7d7d7d !important}
+textarea:disabled, input[type="text"]:disabled {padding:4px!important; background:#ccc !important; border:1px solid #ccc !important}
 input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
 input::placeholder {color:#aaa}
 button {cursor:pointer}
@@ -35,7 +35,7 @@ a {text-decoration:none}
 #wrap {min-width:1300px; min-height:100%; line-height:1.46; font-size:12px; color:#000}
 #header, #container, #footer {position:relative; margin:0 auto}
 #wrap:after, #header:after, #container:after {display:block; content:""; clear:both}
-#header {box-sizing:border-box; padding:0 20px 10px; width:1880px}
+#header {box-sizing:border-box; padding:0 0 10px; width:1880px}
 #header h1 {float:left; padding-top:30px; width:296px}
 #header .unb {position:absolute; top:10px; right:0; min-width:250px; border-right:1px solid #ccc}
 #header .unb li {float:left; padding:0 10px; height:16px; line-height:16px; text-align:center; border-left:1px solid #ccc; font-size:11px}

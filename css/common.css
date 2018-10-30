@@ -56,6 +56,7 @@
 
 .text_bold {font-weight:bold !important}
 
+.text_11, .text_11 * {font-size:11px !important}
 .text_14 {font-size:14px !important}
 .text_16 {font-size:16px !important}
 
@@ -163,10 +164,10 @@
 /* 목록 테이블 */
 .list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
 .list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
-.list_table th, .list_table td {line-height:17px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
-.list_table th {padding:7px 5px 8px; background:#ccc; font-weight:500}
+.list_table th, .list_table td {padding:9px 5px 10px; line-height:14px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
+.list_table th {background:#ccc; font-weight:500}
 .list_table tbody th {padding:15px 5px}
-.list_table td {padding:8px 5px 9px}
+.list_table td {padding-top:10px}
 .list_table td a:hover, .list_table td a:focus {text-decoration:underline}
 .list_table td a.btn:hover, .list_table td a.btn:focus {text-decoration:none}
 
