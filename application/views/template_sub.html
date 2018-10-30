@@ -317,6 +317,132 @@
             </div>
             <!-- //페이징 -->
 
+            <!-- 문자전송 폼 -->
+            <div class="sms_send float_left basic_box" style="margin-right:10px;">
+                <div class="dark_box">
+                    <textarea class="screen" row="10" cols="50">
+                        본인께서 받으셨습니다. -전국플라워센터
+                    </textarea>
+                    <p class="byte mt15"><strong>0</strong> / 2,000 byte</p>
+                </div>
+
+                <div class="dark_box mt10">
+                    <div class="sms_info">
+                        <h4>받는 사람</h4>
+                        <ul>
+                            <li>
+                                <label><input type="radio" name="" value="" checked="checked" /> 선택</label>
+                                <div class="float_right">
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/memberSearch.html', 'memberSearch', 'width=1220, height=910, top=50, left=300, scrollbars=yes')">회원검색</a>
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/addressBook.html', 'addressBook', 'width=600, height=580, top=50, left=300, scrollbars=yes')">주소록</a>
+                                    <!-- 최근 발신 번호 -->
+                                    <div class="layer_over" id="recentNumber" tabindex="0">
+                                        <span class="btn btn_blue btn_s">최근발신</span>
+                                        <div class="layerOver" id="recentNumberLayer" style="left:23px; top:19px">
+                                            <h5 class="layer_tit">최근 발신 번호</h5>
+                                            <ol class="recent_num">
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div><!-- /layerOver -->
+                                    <!-- /최근 발신 번호 -->
+                                </div>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="" value="" /> 화원전체</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="dark_box mt10 scroll_y" style="height:166px">
+                    <!-- 선택을 선택할 경우 -->
+                    <ul class="num_list">
+                        <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                    </ul>
+                    <!-- 화원전체를 선택할 경우 input disabled="disabled"
+                    <ul class="num_list">
+                        <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                        <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                    </ul> -->
+                </div>
+
+                <div class="dark_box mt10">
+                    <div class="sms_info scroll_y" style="height:95px">
+                        <h4>보내는 사람</h4>
+                        <ul>
+                            <li>
+                                <label><input type="radio" name="" value="" /> 01012345678 </label>
+                                <span>인증완료</span>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="" value="" /> 01023456789</label>
+                                <span class="text_point">미인증</span>
+                                <div class="btn_area">
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                </div>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="" value="" /> 01023456789</label>
+                                <span class="text_point">미인증</span>
+                                <div class="btn_area">
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                </div>
+                            </li>
+                            <li>
+                                <label><input type="radio" name="" value="" /> 01023456789</label>
+                                <span class="text_point">미인증</span>
+                                <div class="btn_area">
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="btn_area mt10 clear">
+                    <a href="#" id="reservationSend" class="btn btn_cancel btn_m float_left layerOpen">예약전송</a>
+                    <a href="#" class="btn btn_confirm btn_m float_right text_bold">보내기</a>
+                </div>
+            </div><!-- /sms_send -->
+            <!-- /문자전송 폼 -->
+
             <div class="btn_area">
                 <a class="btn btn_xs btn_basic btn_round00">최근입금내역</a>
                 <a href="#" class="btn btn_xs btn_cancel btn_round00">입금내역</a>
@@ -429,7 +555,7 @@
                 Date: 
                 <span class="calendar">
                     <span class="ico ico_cal"></span>
-                    <input type="text" id="datepicker"/>
+                    <input type="text" class="datepicker"/>
                 </span>
             </div>
             <!-- //date_pick -->

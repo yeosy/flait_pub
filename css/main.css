@@ -45,15 +45,13 @@
 .order_list .order_receipt{position:relative; float:left; padding-top:16px; width:772px; height:274px}
 .order_list .ordering{margin:0 20px}
 .order_list h3{margin-bottom:13px; font-size:16px}
-.order_list .list_table{width:772px; height:240px}
+.order_list .list_table{table-layout:fixed; width:772px; height:240px}
 .order_list .list_table th,
 .order_list .list_table td{padding:2px 5px; line-height:1.25em; font-size:12px}
 .order_list .list_table .ellipsis p{overflow:hidden; white-space:nowrap; text-overflow:ellipsis}
 .order_list .list_table .pl30{padding-left:30px}
 .order_list .list_table .pl15{padding-left:15px}
 .order_list .list_table .pl10{padding-left:10px}
-.order_list .list_table .pl15 p{width:160px}
-.order_list .list_table .pl10 p{width:80px}
 .order_list .btn_more{position:absolute; top:16px; right:0}
 
 /* h3 태그 , 더보기 버튼 공용 */
@@ -88,9 +86,9 @@
 /* 업체홍보 게시판 , 경조사 게시판 */
 .main .promotion_board,
 .main .holiday_board{margin-top:20px; padding:0 20px 24px; height:225px}
-.board_table {width:100%; border:1px solid #ccc}
+.board_table {table-layout:fixed; width:100%; border:1px solid #ccc}
 .board_table th,.board_table td {line-height:1.45em; border:1px solid #ccc; font-size:12px; text-align:center}
 .board_table th {padding:3px 5px; background:#ccc; font-weight:800}
 .board_table td {padding:3px 5px; line-height:1.5em}
-.board_table a{display:block; padding-left:20px; width:310px}
+.board_table a{display:block; padding-left:20px}
 .board_table a:hover,.board_table a:focus{font-weight:800}
