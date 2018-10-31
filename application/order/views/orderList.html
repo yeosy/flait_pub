@@ -154,8 +154,8 @@
 
                 <!-- 목록 테이블 -->
                 
-                <table class="list_table bg_blue mt10" style="width:1248px">
-                    <caption>건수별 정보</caption>
+                <table class="list_table bg_blue mt10" summary="주문번호, 주문확인, 주문접수일, 희망배송일, 받는 분 등의 정보를 제공">
+                    <caption>주문 정보</caption>
                     <colgroup>
                         <col width="4.6%" />
                         <col width="3.289%" />
@@ -192,16 +192,110 @@
                             </td>
                             <td>본부</td>
                             <td>
-                                <a href="javascript:void(0)"></a>
+                                <a href="javascript:void(0)" class="ico_order" title="수주화원 확인시간 2018-09-17 10:00:00"> 
+                                     수주확인
+                                </a>
                             </td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                <p>18-04-20 13:20</p>
+                                <p>
+                                    18-06-07
+                                    <span class="text_warning">13시 행사</span>
+                                </p>
+                            </td>
+                            <td>홍길동</td>
+                            <td>
+                                <p class="ellipsis">경상남도 창원시 마산합포구</p>
+                                <!-- 마우스 오버 시 레이어 -->
+                                <div class="layer_over" id="order01"> <!-- id값은 01,02,03 순으로 늘어남-->
+                                    <a href="javascript:void(0)" class="ellipsis">홍길동플라워</a>
+                                    <div class="layerOver" id="order01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
+                                        <h4 class="layer_tit">[경상남도 창원시 마산합포구] 홍길동플라워</h4>
+                                        <dl>
+                                            <dt class="ir">이름</dt>
+                                            <dd>홍길동</dd>
+                                            <dt class="ir">연락처</dt>
+                                            <dd>
+                                                <strong>T</strong> 053-111-2222
+                                                <strong>F</strong> 053-111-2222
+                                            </dd>
+                                            <dt class="ir">핸드폰</dt>
+                                            <dd>
+                                                <strong>H</strong> 053-111-2222
+                                            </dd>
+                                            <dt class="ir">이메일</dt>
+                                            <dd>
+                                                <strong>E</strong> test@hanmail.net
+                                            </dd>
+                                            <dt class="ir">계좌</dt>
+                                            <dd>대구은행 111-222-3333-1111 홍길동</dd>
+                                        </dl>
+                                    </div>
+                                </div><!-- /layerOver -->
+                                <!-- /마우스 오버 시 레이어 -->
+                            </td>
+                            <td>
+                                <p class="ellipsis">경상남도 창원시 마산합포구</p>
+                                <!-- 마우스 오버 시 레이어 -->
+                                <div class="layer_over" id="winorder01"> <!-- id값은 01,02,03 순으로 늘어남-->
+                                    <a href="javascript:void(0)" class="ellipsis">고성화원</a>
+                                    <div class="layerOver" id="winorder01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
+                                        <h4 class="layer_tit">[경상남도 창원시 마산합포구] 고성화원</h4>
+                                        <dl>
+                                            <dt class="ir">이름</dt>
+                                            <dd>홍길동</dd>
+                                            <dt class="ir">연락처</dt>
+                                            <dd>
+                                                <strong>T</strong> 053-111-2222
+                                                <strong>F</strong> 053-111-2222
+                                            </dd>
+                                            <dt class="ir">핸드폰</dt>
+                                            <dd>
+                                                <strong>H</strong> 053-111-2222
+                                            </dd>
+                                            <dt class="ir">이메일</dt>
+                                            <dd>
+                                                <strong>E</strong> test@hanmail.net
+                                            </dd>
+                                            <dt class="ir">계좌</dt>
+                                            <dd>대구은행 111-222-3333-1111 홍길동</dd>
+                                        </dl>
+                                    </div>
+                                </div><!-- /layerOver -->
+                                <!-- /마우스 오버 시 레이어 -->
+                            </td>
+                            <td>
+                                <p>
+                                    축하3단
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods01">image</a>
+                                    <div class="layer" id="veiwGoods01Layer">
+                                        <div class="overlay"></div>
+                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
+                                            <div class="inner">
+                                                <h4 class="layer_tit">축하3단</h4>
+                                                <div class="basic_box">
+                                                    <img src="" alt="축하3단 이미지" />
+                                                </div>
+                                                <div class="btn_area ac mt30">
+                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- /layer -->
+                                    <!-- /레이어 팝업 -->
+                                    <span href="#" class="ico_order">option</span>
+                                </p>
+                                <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3</p>
+                            </td>
+                            <td>
+                                <p>100,000</p>
+                                <p class="bold">60,000</p>
+                            </td>
+                            <td>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                            </td>
+                            <td>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -291,7 +385,7 @@
                                         <strong>0</strong>/ 2,000 byte
                                     </p>
                                 </div>
-                                <div class="btn_area text_center mt30">
+                                <div class="btn_area ac mt30">
                                     <a href="#" class="btn btn_confirm btn_m">등록</a>
                                     <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
                                 </div>
@@ -303,7 +397,7 @@
                 <!-- /레이어 팝업 -->
 
                 <!-- 마우스 오버 시 레이어 -->
-                <div class="layer_over block float_left mt20" id="qwer">
+                <div class="layer_over block fl mt20" id="qwer">
                     <span class="btn btn_blue btn_m">마우스오버 레이어</span>
                     <div class="layerOver" id="qwerLayer">
                         <h4 class="layer_tit">마우스 오버 레이어</h4>
@@ -320,8 +414,8 @@
 
                 <select title="필수" class="ship_select">
                     <option class="no_check">미확인</option>
+                    <option class="check">본부확인</option>
                     <option class="order">주문접수</option>
-                    <option class="reject">주문거절</option>
                     <option class="shipping">배송중</option>
                     <option class="delivery">배송완료</option>
                 </select>

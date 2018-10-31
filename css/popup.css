@@ -30,7 +30,7 @@
 .popup .shipping_option .input_table th{padding:10px 0 11px}
 .popup .shipping_option .input_table td{padding:7px 0}
 .popup .shipping_option .input_table td .ui-selectmenu-button {min-width:62px}
-.popup .shipping_option .input_table .text_left {padding-left:25px}
+.popup .shipping_option .input_table .al {padding-left:25px}
 
 /* 회원검색 */
 .popup .member_search {width:1160px}
@@ -44,11 +44,11 @@
 .popup .member_search .zone {float:left; width:430px; margin-right:10px}
 .popup .member_search .zone .search_box {position:relative}
 .popup .member_search .zone .layer.v2 {top:50px; left:0; height:auto}
-.popup .member_search .zone .layer .region_list {width:100%; border:1px solid #ccc; table-layout:fixed}
+.popup .member_search .zone .layer .region_list {width:100%; border:1px solid #ccc}
 .popup .member_search .zone .layer .region_list td {padding:0; width:33.3333%; line-height:18px; text-align:center; vertical-align:middle; background:#fff; border:1px solid #ccc; font-size:11px}
 .popup .member_search .zone .layer .region_list td.active,
 .popup .member_search .zone .layer .region_list td:hover {background:#c5dfe7}
-.popup .member_search .zone .layer .region_list td a {display:block; padding:5px 5px; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.popup .member_search .zone .layer .region_list td a {display:block;box-sizing:border-box; padding:5px 5px; width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 .popup .member_search .zone .layer .btn_area {background:#f7f7f7; border:1px solid #ccc; border-top:0}
 .popup .member_search .zone .map_api {box-sizing:border-box; width:100%; height:528px; border:1px solid #ccc}
 .popup .member_search .zone .zone_note textarea {display:block; width:100%; height:110px}
@@ -64,16 +64,16 @@
 .popup .member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
 .popup .member_search .shop .info .box > div {height:20px; line-height:20px}
 .popup .member_search .shop .result li .box .ellipsis {text-decoration:underline}
-.popup .member_search .shop .tag_list {overflow:hidden; margin-top:11px; padding-left:5px}
+.popup .member_search .shop .tag_list {overflow:hidden; margin-top:12px; padding-left:5px}
 .popup .member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
 .popup .member_search .shop .tag_list li span {vertical-align:top}
-.popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:1px 10px; text-align:left; font-size:0.82em}
+.popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:2px 10px 3px; text-align:left; font-size:10px}
 .popup .member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
 .popup .member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
 .popup .member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
 .popup .member_search .shop .result li > table {width:214px}
-.popup .member_search .shop .result li > table th {padding:8px 5px 9px}
-.popup .member_search .shop .result li > table td {padding:7px 5px}
+.popup .member_search .shop .result li > table th {padding:9px 5px 10px}
+.popup .member_search .shop .result li > table td {padding:8px 5px}
 .popup .member_search .shop .result li > table .possible td {background:#d3eed3}
 .popup .member_search .shop .result li > table .impossible td {background:#fbdbde}
 .popup .member_search .shop .result .btn_area {clear:both; padding-top:10px}
@@ -109,8 +109,8 @@
 .popup .address_box .receive_list{float:right}
 .popup .address_box .receive_list > ul {box-sizing:border-box; height:269px; border:1px solid #7d7d7d; border-top:0}
 .popup table.p00 td {padding:0}
-.popup .scroll_y {border-right:1px solid #000; border-bottom:1px solid #000}
-.popup .scroll_y > table {border:0}
-.popup .scroll_y > table tr:first-child td {border-top:0}
-.popup .scroll_y > table tr td:last-child {border-right:0}
-.popup .scroll_y > table tr:last-child td {border-bottom:0}
+.popup .layer table +.scroll_y {border-right:1px solid #000; border-bottom:1px solid #000}
+.popup .layer table + .scroll_y > table {border:0}
+.popup .layer table + .scroll_y > table tr:first-child td {border-top:0}
+.popup .layer table + .scroll_y > table tr td:last-child {border-right:0}
+.popup .layer table + .scroll_y > table tr:last-child td {border-bottom:0}

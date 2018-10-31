@@ -55,7 +55,7 @@
 /* font */
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 
-.text_bold {font-weight:bold !important}
+.bold {font-weight:bold !important}
 
 .text_11, .text_11 * {font-size:11px !important}
 .text_14 {font-size:14px !important}
@@ -70,15 +70,15 @@
 .bl0 {border-left:0 !important}
 
 /* align, float */
-.text_left {text-align:left !important}
-.text_left th, .text_left td {text-align:left}
-.text_center {text-align:center !important}
-.text_center th, .text_center td {text-align:center}
-.text_right {text-align:right !important}
-.text_right th, .text_right td {text-align:right}
+.al {text-align:left !important}
+.al th, .al td {text-align:left}
+.ac {text-align:center !important}
+.ac th, .ac td {text-align:center}
+.ar {text-align:right !important}
+.ar th, .ar td {text-align:right}
 
-.float_left {float:left !important}
-.float_right {float:right !important}
+.fl {float:left !important}
+.fr {float:right !important}
 .clear:after {display:block; content:""; clear:both !important}
 
 .vm {vertical-align:middle !important}
@@ -120,8 +120,19 @@
 .ico_srch {margin-left:1px; background-position:-160px -112px}
 .ico_more {background-position:-16px -128px}
 .ico_cal {background-position:-112px -112px}
-.ico_store {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:1.6em; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:0.82em}
+.ico_store {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:16px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px} /* 회원정보 아이콘 */
+.ico_order {display:inline-block; box-sizing:border-box; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px} /* 협회 수발주 */
+.ico_order.v2 {padding:2px 1px; line-height:12px; color:#023a63} /* 협회 수발주 2줄 아이콘 */
 
+/* selectbox */
+.ui-selectmenu-menu {font-size:12px}
+.ui-selectmenu-button.ui-button.ui-widget {padding:3px 6px 4px 10px; width:auto; height:16px; border:1px solid #ccc; background-color:#fff; border-radius:0}
+.ui-selectmenu-button.ui-button .ui-selectmenu-text {margin-right:0 !important}
+.ui-selectmenu-button.ui-button .ui-selectmenu-icon.ui-icon {padding-left:10px; background:url(/img/common/bg_select.png) right center no-repeat}
+
+.ui-selectmenu-button.ui-button.ui-widget.v2 {padding:2px 5px; height:16px; background:#eee; border:0; color:#000}
+
+/* datepicker */
 .calendar {position:relative; display:inline-block; box-sizing:border-box; padding-left:20px; width:130px; height:30px}
 .calendar .ico {position:absolute; top:50%; left:0; margin-top:-10px;}
 .calendar input {width:100%; height:100%; background:#fff; border:1px solid #ccc}
@@ -135,14 +146,6 @@
 .tab_menu li.active a {background:#023a63; border:1px solid #7d7d7d; color:#fff}
 .tab_menu li a:hover, .tab_menu li a:focus {font-weight:800}
 
-/* selectbox */
-.ui-selectmenu-menu {font-size:12px}
-.ui-selectmenu-button.ui-button.ui-widget {padding:3px 6px 4px 10px; width:auto; height:16px; border:1px solid #ccc; background-color:#fff; border-radius:0}
-.ui-selectmenu-button.ui-button .ui-selectmenu-text {margin-right:0 !important}
-.ui-selectmenu-button.ui-button .ui-selectmenu-icon.ui-icon {padding-left:10px; background:url(/img/common/bg_select.png) right center no-repeat}
-
-.ui-selectmenu-button.ui-button.ui-widget.v2 {padding:2px 5px; height:16px; background:#eee; border:0; color:#000}
-
 /* list 정렬 */
 .input_list:after {clear:both; display:block; content:""}
 .input_list li, .input_list label {float:left; padding-left:5px; box-sizing:border-box;}
@@ -151,8 +154,9 @@
 .input_list.four li, .input_list.four label {width:25%; letter-spacing:-1px}/* radio or checkbox : 4 */
 .input_list.five li, .input_list.five label {width:20%; letter-spacing:-1px}/* radio or checkbox : 5 */
 
-/* 테이블 전체 */
-table th.bg_blue, table.bg_blue th {background:#c5dfe7 !important} /* th background-color:blue */
+/* 테이블 공통 */
+table {table-layout:fixed}
+th.bg_blue, .bg_blue th {background:#c5dfe7 !important} /* th background-color:blue */
 .byte {height:19px; line-height:1.9em; font-size:0.72em; text-align:right}
 
 /* 입력 테이블 */
@@ -167,7 +171,7 @@ table th.bg_blue, table.bg_blue th {background:#c5dfe7 !important} /* th backgro
 
 /* 목록 테이블 */
 .list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
-.list_table .text_left, .list_table .text_left td, .list_table .text_left th {padding-left:40px}
+.list_table .al, .list_table .al td, .list_table .al th {padding-left:40px}
 .list_table th, .list_table td {padding:9px 5px 10px; line-height:14px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
 .list_table th {background:#ccc; font-weight:500}
 .list_table tbody th {padding:15px 5px}
