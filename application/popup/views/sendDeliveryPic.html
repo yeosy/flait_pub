@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>배송사진 전송</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="/css/contents_jh.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="text_14">배송사진 전송</h2>
+                </div>
+                <div class="clear">
+                    <div class="product_photo fl mt20">
+                        <div class="send_select bb">
+                            <h4>전송방법</h4>
+                            <label><input type="radio" value="" name="" />문자</label>
+                            <label class="ml10"><input type="radio" value="" name="" />이메일</label>
+                        </div>
+                        <div class="photo_select mt10 bb">
+                            <h4>배송사진 선택</h4>
+                            <div class="photo mt10"></div>
+                            <ul class="thumnail_list clear">
+                                <li>
+                                    <label><input type="checkbox" value="" name="" /><div class="mt05">썸네일 이미지</div></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name="" /><div class="mt05">썸네일 이미지</div></label>
+                                </li>
+                                <li>
+                                    <label><input type="checkbox" value="" name="" /><div class="mt05">썸네일 이미지</div></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="manual mt10">
+                            <p>*배송사진 URL은<br />
+                                입력 내용 맨 뒤에 자동으로<br />
+                                추가 되어 전송됩니다.</p>
+                            <p>*문자사용료<br />90byte 까지 : 30원<br />90byte 이상 : 50원</p>
+                        </div>
+                    </div>
+
+                        <!-- 문자전송 폼 -->
+                    <div class="sms_send ml10 fl basic_box mt20">
+                        <div class="dark_box v2">
+                            <textarea class="screen" row="10" cols="50">
+                                본인께서 받으셨습니다. -전국플라워센터
+                            </textarea>
+                            <p class="byte mt15"><strong>0</strong> / 2,000 byte</p>
+                        </div>
+        
+                        <div class="dark_box mt08">
+                            <div class="sms_info v2">
+                                <h4>받는 사람</h4> 
+                                <div class="fr">
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/memberSearch.html', 'memberSearch', 'width=1220, height=910, top=50, left=300, scrollbars=yes')">회원검색</a>
+                                    <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/addressBook.html', 'addressBook', 'width=600, height=580, top=50, left=300, scrollbars=yes')">주소록</a>
+                                    <!-- 최근 발신 번호 -->
+                                    <div class="layer_over" id="recentNumber" tabindex="0">
+                                        <span class="btn btn_blue btn_s">최근발신</span>
+                                        <div class="layerOver" id="recentNumberLayer" style="left:-113px; top:19px">
+                                            <h5 class="layer_tit">최근 발신 번호</h5>
+                                            <ol class="recent_num">
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">홍길동 010-1234-5678</a>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div><!-- /layerOver -->
+                                    <!-- /최근 발신 번호 -->
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="dark_box scroll_y mt08" style="height:108px">
+                            <!-- 선택을 선택할 경우 -->
+                            <ul class="num_list">
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                            </ul>
+                            <!-- 화원전체를 선택할 경우 input disabled="disabled"
+                            <ul class="num_list">
+                                <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                                <li><input type="text" disabled="disabled" name="" value="" /><a href="#" class="del" title="삭제">x</a></li>
+                            </ul> -->
+                        </div>
+        
+                        <div class="dark_box mt08">
+                            <div class="sms_info scroll_y" style="height:95px">
+                                <h4>보내는 사람</h4>
+                                <ul>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01012345678 </label>
+                                        <span>인증완료</span>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01023456789</label>
+                                        <span class="text_point">미인증</span>
+                                        <div class="btn_area">
+                                            <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01023456789</label>
+                                        <span class="text_point">미인증</span>
+                                        <div class="btn_area">
+                                            <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01023456789</label>
+                                        <span class="text_point">미인증</span>
+                                        <div class="btn_area">
+                                            <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01023456789</label>
+                                        <span class="text_point">미인증</span>
+                                        <div class="btn_area">
+                                            <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label><input type="radio" name="" value="" /> 01023456789</label>
+                                        <span class="text_point">미인증</span>
+                                        <div class="btn_area">
+                                            <a href="#" class="btn btn_blue btn_s" onclick="window.open('/application/popup/views/callCertification.html', 'callCertification', 'width=600, height=540, top=50, left=300, scrollbars=yes')">발신번호인증</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="btn_area mt10">
+                            <a href="#" id="reservationSend" class="btn btn_cancel btn_m fl layerOpen">예약전송</a>
+                            <a href="#" class="btn btn_confirm btn_m fr bold">보내기</a>
+                        </div>
+                    </div><!-- /sms_send -->
+                        <!-- /문자전송 폼 -->
+                </div>
+                <div class="btn_area v2 ar mt20">
+                    <a href="javascript:windown.close();" class="btn btn_confirm btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
