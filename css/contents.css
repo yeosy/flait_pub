@@ -57,7 +57,7 @@
 /* 협회전체 수발주 */
 .option_area .month .btn {margin-left:5px; width:40px; min-width:inherit}
 .option_area .month .btn:first-child {margin-left:0}
-.list_table .ico_order {display:inline-block; box-sizing:border-box; margin-top:1px; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px !important; text-decoration:none !important}
+.list_table .ico_order {display:inline-block; box-sizing:border-box; margin-bottom:1px; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px !important; text-decoration:none !important}
 .list_table .ico_order.v2 {padding:2px 1px; line-height:12px; color:#023a63} /* 2줄 아이콘 */
 .shop_info_ico {position:relative; top:1px; overflow:hidden; width:175px; height:18px; background:url(/img/order/bg_shop_info.gif) 0 0 no-repeat}
 .shop_info_ico span, .shop_info_ico a {position:absolute; top:0; left:0; width:25px; height:18px; background-image:url(/img/order/bg_shop_info.gif); text-indent:-5000px}
@@ -71,3 +71,8 @@
 .shop_info_ico .take {left:125px; background-position:-125px -18px}
 .shop_info_ico .photo {left:150px; background-position:-150px -18px}
 
+.layerOver[id*="order"] {padding:10px; width:340px; line-height:1.5em; text-align:left; border-width:5px}
+.layer_over .layerOver[id*="order"] .layer_tit {padding-left:0}
+.layerOver[id*="order"] dd {line-height:1.5em; font-size:12px !important}
+.layerOver[id*="order"] dd strong {margin-right:5px}
+.layerOver[id*="order"] dd strong + strong {margin-left:10px}

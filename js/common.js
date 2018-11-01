@@ -17,11 +17,9 @@ $(document).ready(function () {
     // data="layerNm(해당 레이어 팝업 id값)
     $('.layer_over').mouseover(function(){
         var layerNm = $(this).attr('id');
-        $('#'+layerNm+'Layer').fadeIn();
+        $('#'+layerNm+'Layer').show();
     }).mouseleave(function(){
-        setTimeout(function(){
-            $('.layerOver').fadeOut()
-        }, 300)
+        $('.layerOver').hide();
     });
 })
 

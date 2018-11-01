@@ -26,7 +26,7 @@
     })
 </script>
 <div id="wrap">
-    <header id="header"></header>
+    <header id="header"></header>                      
     <!-- /header -->
 
     <hr/>
@@ -200,12 +200,12 @@
                     <tbody class="text_11 pt05 pb05">
                         <tr>
                             <td>
-                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">0000111</a></p>
-                                <p class="al"><span class="text_warning">주문거절</span></p>
+                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=800, top=100, left=540')">0000111</a></p>
+                                <p><span class="text_warning">주문거절</span></p>
                             </td>
                             <td>본부</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="수주화원 확인시간 2018-09-17 10:00:00">수주확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="수주화원 확인시간 2018\-09\-17 10:00:00">수주확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -221,7 +221,7 @@
                                 <div class="layer_over" id="order01"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동플라워</a></p>
                                     <div class="layerOver" id="order01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경상남도 창원시 마산합포구] 홍길동플라워</h4>
+                                        <h4 class="layer_tit al">[경상남도 창원시 마산합포구] 홍길동플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -251,7 +251,7 @@
                                 <div class="layer_over" id="winorder01"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원</a></p>
                                     <div class="layerOver" id="winorder01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경상남도 창원시 마산합포구] 고성화원</h4>
+                                        <h4 class="layer_tit al">[경상남도 창원시 마산합포구] 고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -278,22 +278,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods01">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span href="#" class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods01Layer">
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3</p>
                             </td>
@@ -319,32 +305,18 @@
                                         <a href="#" class="sms">sms전송완료</a>
                                         <span class="sms">sms전송실패</span> 전송 실패시 a링크가 아닌 span
                                         <a href="#" class="order">주문처리내역</a>
-                                        <a href="#" class="take">인수자정보등록완료</a>
+                                        <a href="#" class="take">인수증</a>
                                         <a href="#" class="photo layerOpen">배송사진업로드완료</a>
                                     </div>
                                     -->
 
                                     <span class="interlock">쇼핑몰 발주연동</span>
                                     <span class="mobile">모바일 인트라넷발주</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/faxSendList.html','faxSendList','width=1300, height=590, top=100, left=540')" class="fax">팩스전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/transHistory.html','transHistory','width=1300, height=590, top=100, left=540')" class="fax">팩스전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                     <a href="javascript:void(0)" class="photo layerOpen" id="shipPhoto01">배송사진업로드완료</a>
-                                    <div class="layer" id="shipPhoto01Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">배송사진</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="배송사진 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
                                 </div>
                             </td>
                             <td>
@@ -359,7 +331,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">0000112</a></p>
+                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=800, top=100, left=540')">0000112</a></p>
                             </td>
                             <td>직거래</td>
                             <td>
@@ -379,7 +351,7 @@
                                 <div class="layer_over" id="order02"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order02Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -409,7 +381,7 @@
                                 <div class="layer_over" id="winorder02"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder02Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -436,22 +408,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods02">image</a>
-                                    <div class="layer" id="veiwGoods02Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -466,7 +423,7 @@
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
                                     <span class="sms fail">sms전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
                                 </div>
                             </td>
                             <td>
@@ -481,13 +438,13 @@
                         </tr>
                         <tr>
                             <td>
-                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">0000113</a></p>
-                                <p class="al"><span class="text_warning">보류</span></p>
+                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=800, top=100, left=540')">0000113</a></p>
+                                <p><span class="text_warning">보류</span></p>
                             </td>
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="수주화원 확인시간 2018-09-17 10:00:00">수주확인</a></p>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="수주화원 확인시간 2018\-09\-17 10:00:00">수주확인</a>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -503,7 +460,7 @@
                                 <div class="layer_over" id="order03"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order03Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -533,7 +490,7 @@
                                 <div class="layer_over" id="winorder03"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder03Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -560,22 +517,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods03">image</a>
-                                    <div class="layer" id="veiwGoods03Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -602,12 +544,12 @@
                         </tr>
                         <tr>
                             <td>
-                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">0000114</a></p>
-                                <p class="al"><span class="text_warning">버림</span></p>
+                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=800, top=100, left=540')">0000114</a></p>
+                                <p><span class="text_warning">버림</span></p>
                             </td>
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -623,7 +565,7 @@
                                 <div class="layer_over" id="order04"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order04Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -653,7 +595,7 @@
                                 <div class="layer_over" id="winorder04"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder04Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -680,22 +622,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods04">image</a>
-                                    <div class="layer" id="veiwGoods04Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -709,10 +636,10 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="interlock">쇼핑몰 발주연동</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/faxSendList.html','faxSendList','width=1300, height=590, top=100, left=540')" class="fax">팩스전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/transHistory.html','transHistory','width=1300, height=590, top=100, left=540')" class="fax">팩스전송완료</a>
                                     <span class="sms fail">sms전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                     <a href="javascript:void(0)" class="photo layerOpen" id="shipPhoto01">배송사진업로드완료</a>
                                 </div>
                             </td>
@@ -728,12 +655,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=80, top=100, left=540')">0000115</a></p>
+                                <p><a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderInfo.html','orderInfo','width=800, height=800, top=100, left=540')">0000115</a></p>
                             </td>
                             <td>직거래</td>
-                            <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
-                            </td>
+                            <td>-</td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
                                 <p>
@@ -747,28 +672,6 @@
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
-                                    <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
-                                        <dl>
-                                            <dt class="ir">이름</dt>
-                                            <dd>홍길동</dd>
-                                            <dt class="ir">연락처</dt>
-                                            <dd>
-                                                <strong>T</strong> 053-111-2222
-                                                <strong>F</strong> 053-111-2222
-                                            </dd>
-                                            <dt class="ir">핸드폰</dt>
-                                            <dd>
-                                                <strong>H</strong> 053-111-2222
-                                            </dd>
-                                            <dt class="ir">이메일</dt>
-                                            <dd>
-                                                <strong>E</strong> test@hanmail.net
-                                            </dd>
-                                            <dt class="ir">계좌</dt>
-                                            <dd>대구은행 111-222-3333-1111 홍길동</dd>
-                                        </dl>
-                                    </div>
                                 </div><!-- /layerOver -->
                                 <!-- /마우스 오버 시 레이어 -->
                             </td>
@@ -778,7 +681,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -805,23 +708,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
-                                    <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -835,9 +722,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -854,9 +741,7 @@
                             <td>0000116</td>
                             
                             <td>직거래</td>
-                            <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
-                            </td>
+                            <td>-</td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
                                 <p>
@@ -871,7 +756,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -901,7 +786,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -928,23 +813,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
-                                    <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -958,9 +827,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -977,9 +846,7 @@
                             <td>0000117</td>
                             
                             <td>직거래</td>
-                            <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
-                            </td>
+                            <td>-</td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
                                 <p>
@@ -994,7 +861,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1024,7 +891,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1051,23 +918,7 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
-                                    <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1081,9 +932,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1100,9 +951,7 @@
                             <td>0000118</td>
                             
                             <td>직거래</td>
-                            <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
-                            </td>
+                            <td>-</td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
                                 <p>
@@ -1117,7 +966,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1147,7 +996,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1174,23 +1023,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1204,9 +1038,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1224,7 +1058,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1240,7 +1074,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1270,7 +1104,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1297,23 +1131,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1327,9 +1146,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1347,7 +1166,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1363,7 +1182,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1393,7 +1212,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1420,23 +1239,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1450,9 +1254,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1470,7 +1274,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1486,7 +1290,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1516,7 +1320,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1543,23 +1347,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1573,9 +1362,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1593,7 +1382,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1609,7 +1398,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1639,7 +1428,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1666,23 +1455,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1696,9 +1470,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1716,7 +1490,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1732,7 +1506,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1762,7 +1536,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1789,23 +1563,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1819,9 +1578,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1839,7 +1598,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1855,7 +1614,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1885,7 +1644,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -1912,23 +1671,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -1942,9 +1686,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -1962,7 +1706,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -1978,7 +1722,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2008,7 +1752,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2035,23 +1779,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2065,9 +1794,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2085,7 +1814,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -2101,7 +1830,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2131,7 +1860,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2158,23 +1887,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2188,9 +1902,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2208,7 +1922,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -2224,7 +1938,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2254,7 +1968,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2281,23 +1995,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2311,9 +2010,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2331,7 +2030,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -2347,7 +2046,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2377,7 +2076,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2404,23 +2103,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2434,9 +2118,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2454,7 +2138,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -2470,7 +2154,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2500,7 +2184,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2527,23 +2211,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2557,9 +2226,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2577,7 +2246,7 @@
                             
                             <td>직거래</td>
                             <td>
-                                <p><a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a></p>
+                                <a href="javascript:void(0)" class="ico_order" title="본부에서 등록한 메세지 내용">본부확인</a>
                             </td>
                             <td class="al pl15">
                                 <p>18-04-20 13:20</p>
@@ -2593,7 +2262,7 @@
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
+                                        <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2623,7 +2292,7 @@
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
                                     <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                        <h4 class="layer_tit">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
+                                        <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
                                             <dt class="ir">이름</dt>
                                             <dd>홍길동</dd>
@@ -2650,23 +2319,8 @@
                             <td class="al pl15">
                                 <p>
                                     축하3단 특대&nbsp;&nbsp;&nbsp;
-                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods05">image</a>
+                                    <a href="javascript:void(0)" class="ico_order layerOpen" id="veiwGoods">image</a>
                                     <span class="ico_order">option</span>
-                                    <div class="layer" id="veiwGoods05Layer">
-                                        <div class="overlay"></div>
-                                        <div class="layer_pop" style="margin:-155px 0 0 -250px; width:500px; height:310px">
-                                            <div class="inner">
-                                                <h4 class="layer_tit">축하3단</h4>
-                                                <div class="basic_box">
-                                                    <img src="" alt="축하3단 이미지" />
-                                                </div>
-                                                <div class="btn_area ac mt30">
-                                                    <a href="#" class="btn btn_cancel btn_m ml05 close">닫기</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!-- /layer -->
-                                    <!-- /레이어 팝업 -->
                                 </p>
                                 <p class="ellipsis" title="부산광역시 연제구 명륜로 3">부산광역시 연제구 명륜로 3명륜로명륜로명륜로</p>
                             </td>
@@ -2680,9 +2334,9 @@
                             <td>
                                 <div class="shop_info_ico">
                                     <span class="fax fail">팩스전송 실패</span>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsSendList.html','smsSendList','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
-                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderList.html','orderList','width=1300, height=590, top=100, left=540')" class="take">인수자정보등록완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=1300, height=590, top=100, left=540')" class="sms">sms전송완료</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=1300, height=590, top=100, left=540')" class="order">주문처리내역</a>
+                                    <a href="javascript:void(0)" onclick="window.open('/application/popup/views/acceptance.html','acceptance','width=1300, height=590, top=100, left=540')" class="take">인수증</a>
                                 </div>
                             </td>
                             <td>
@@ -2719,6 +2373,34 @@
                     <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
                 </div>
                 <!-- //페이징 -->
+                
+                <!-- 상품명 이미지 클릭시 레이어팝업 -->
+                <div class="layer" id="veiwGoodsLayer">
+                    <div class="overlay"></div>
+                    <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-170px 0 0 -140px; width:280px; height:340px">
+                        <div class="inner">
+                                <img src="/img/order/sample_img.gif" alt="축하3단 이미지"  width="260" height="260" />
+                            <div class="btn_area ar mt20">
+                                <a href="javascript:void(0)" class="btn btn_confirm btn_m ml05 close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /layer -->
+                <!-- /상품명 이미지 클릭시 레이어팝업 -->
+
+                <!-- 배송사진 클릭시 레이어팝업 -->
+                <div class="layer" id="shipPhoto01Layer">
+                    <div class="overlay"></div>
+                    <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-170px 0 0 -140px; width:280px; height:340px">
+                        <div class="inner">
+                            <img src="/img/order/sample_img.gif" alt="축하3단 이미지" width="260" height="260" />
+                            <div class="btn_area ar mt20">
+                                <a href="javascript:void(0)" class="btn btn_confirm btn_m ml05 close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /layer -->
+                <!-- /배송사진 클릭시 레이어팝업 -->
 
             <hr />
 

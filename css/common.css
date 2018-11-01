@@ -177,7 +177,6 @@ th.bg_blue, .bg_blue th {background:#c5dfe7 !important} /* th background-color:b
 
 /* 목록 테이블 */
 .list_table {width:100%; border-right:1px solid #7d7d7d; border-bottom:1px solid #7d7d7d}
-.list_table .al, .list_table .al td, .list_table .al th {padding-left:40px}
 .list_table th, .list_table td {padding:9px 5px 10px; line-height:14px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
 .list_table th {background:#ccc; font-weight:500}
 .list_table th.line2, .list_table .line2 th {padding:6px}
