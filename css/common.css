@@ -28,6 +28,8 @@
 .mt45 {margin-top:45px !important}
 .mt50 {margin-top:50px !important}
 
+.mr10 {margin-right:10px !important}
+
 .mb10 {margin-bottom:10px !important}
 .mb30 {margin-bottom:30px !important}
 
@@ -35,9 +37,11 @@
 .ml10 {margin-left:10px !important}
 .ml15 {margin-left:15px !important}
 .ml20 {margin-left:20px !important}
+.ml30 {margin-left:30px !important}
 
 .p00 {padding:0 !important}
 .pt05 {padding-top:5px !important}
+.pt05 td {padding-top:5px !important}
 .pt10 {padding-top:10px !important}
 
 .pr05 {padding-right:5px !important} 
@@ -46,11 +50,15 @@
  
 .pb00 {padding-bottom:0px !important}
 .pb05 {padding-bottom:5px !important}
+.pb05 td {padding-bottom:5px !important}
 .pb10 {padding-bottom:10px !important}
 
 .pl05 {padding-left:5px !important}
 .pl10 {padding-left:10px !important}
+.pl15 {padding-left:15px !important}
+.pl20 {padding-left:20px !important}
 .pl35 {padding-left:35px !important}
+.pl40 {padding-left:40px !important}
 
 /* font */
 .ellipsis {overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
@@ -107,11 +115,12 @@
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7); border:1px solid rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_search {min-width:auto; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
+.btn_search {min-width:inherit; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 .btn_search:hover, .btn_search:focus {background:rgba(2,58,99,0.7)}
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
+.ico02 {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_777777_256x240.png")}
 .btn_sm .ico {vertical-align:-4px}
 .btn_search .ico, .btn_confirm .ico {background-image:url("/img/jquery_ui/ui-icons_ffffff_256x240.png") !important}
 
@@ -119,10 +128,7 @@
 .ico_del {background-position:-176px -97px}
 .ico_srch {margin-left:1px; background-position:-160px -112px}
 .ico_more {background-position:-16px -128px}
-.ico_cal {background-position:-112px -112px}
 .ico_store {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:16px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px} /* 회원정보 아이콘 */
-.ico_order {display:inline-block; box-sizing:border-box; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px} /* 협회 수발주 */
-.ico_order.v2 {padding:2px 1px; line-height:12px; color:#023a63} /* 협회 수발주 2줄 아이콘 */
 
 /* selectbox */
 .ui-selectmenu-menu {font-size:12px}
@@ -133,8 +139,8 @@
 .ui-selectmenu-button.ui-button.ui-widget.v2 {padding:2px 5px; height:16px; background:#eee; border:0; color:#000}
 
 /* datepicker */
-.calendar {position:relative; display:inline-block; box-sizing:border-box; padding-left:20px; width:130px; height:30px}
-.calendar .ico {position:absolute; top:50%; left:0; margin-top:-10px;}
+.calendar {position:relative; display:inline-block; box-sizing:border-box; padding-left:26px; width:156px; height:30px}
+.calendar .ico {position:absolute; top:50%; left:0; margin-top:-8px; width:17px; height:17px; background:url(/img/common/ico_calendar.png) 0 0 no-repeat}
 .calendar input {width:100%; height:100%; background:#fff; border:1px solid #ccc}
 .calendar input:hover, .calendar input:focus {border:1px solid #ccc}
 
@@ -174,6 +180,7 @@ th.bg_blue, .bg_blue th {background:#c5dfe7 !important} /* th background-color:b
 .list_table .al, .list_table .al td, .list_table .al th {padding-left:40px}
 .list_table th, .list_table td {padding:9px 5px 10px; line-height:14px; text-align:center; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
 .list_table th {background:#ccc; font-weight:500}
+.list_table th.line2, .list_table .line2 th {padding:6px}
 .list_table tbody th {padding:15px 5px}
 .list_table td {padding-top:10px}
 .list_table td a:hover, .list_table td a:focus {text-decoration:underline}
@@ -184,7 +191,6 @@ th.bg_blue, .bg_blue th {background:#c5dfe7 !important} /* th background-color:b
 .basic_table th, .basic_table td {text-align:center; border:1px solid #ccc; font-weight:500}
 .basic_table td {padding:4px 10px 5px; line-height:20px; text-align:left}
 .basic_table .calendar {height:20px; width:100%}
-.basic_table .calendar .ico {margin-top:-8px}
 .basic_table .calendar input {background:#eee; border:1px solid #eee}
 
 /* 목록 옵션 세팅 */

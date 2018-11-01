@@ -53,3 +53,21 @@
 .screen_list li dl {overflow:hidden; margin-top:11px}
 .screen_list li dt, .screen_list li dd {padding-left:9px; float:left; line-height:21px}
 .screen_list li dt {clear:both}
+
+/* 협회전체 수발주 */
+.option_area .month .btn {margin-left:5px; width:40px; min-width:inherit}
+.option_area .month .btn:first-child {margin-left:0}
+.list_table .ico_order {display:inline-block; box-sizing:border-box; margin-top:1px; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px !important; text-decoration:none !important}
+.list_table .ico_order.v2 {padding:2px 1px; line-height:12px; color:#023a63} /* 2줄 아이콘 */
+.shop_info_ico {position:relative; top:1px; overflow:hidden; width:175px; height:18px; background:url(/img/order/bg_shop_info.gif) 0 0 no-repeat}
+.shop_info_ico span, .shop_info_ico a {position:absolute; top:0; left:0; width:25px; height:18px; background-image:url(/img/order/bg_shop_info.gif); text-indent:-5000px}
+.shop_info_ico .interlock {background-position:0 -18px}
+.shop_info_ico .mobile {left:25px; background-position:-25px -18px}
+.shop_info_ico .fax {left:50px; background-position:-50px -18px}
+.shop_info_ico .fax.fail {left:50px; background-position:-50px -36px}
+.shop_info_ico .sms {left:75px; background-position:-75px -18px}
+.shop_info_ico .sms.fail {left:75px; background-position:-75px -36px}
+.shop_info_ico .order {left:100px; background-position:-100px -18px}
+.shop_info_ico .take {left:125px; background-position:-125px -18px}
+.shop_info_ico .photo {left:150px; background-position:-150px -18px}
+
