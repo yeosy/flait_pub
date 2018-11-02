@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>FAX, SMS, 이메일 전송 내역</title>
+        <title>FAX / SMS / 이메일 전송 내역</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
         <meta http-equiv="Content-Style-Type" content="text/css">
@@ -10,7 +10,7 @@
         <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
         <meta property="og:title" content="전국플라워센터">
         <meta property="og:url" content="https://www.flowercenter.co.kr/">
-        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" type="text/css" href="/css/common.css"/>
         <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
@@ -25,259 +25,150 @@
                     <h2 class="h2">FAX / SMS / 이메일 전송 내역</h2>
                 </div>
 
-                <div>
-                    현재<span>[직원명]</span>님께서 
-                </div>
-                <table summary="본부확인" class="input_table mt10">
+                <table summary="발주, 수주 화원정보" class="list_table">
+                    <caption>화원정보</caption>
                     <colgroup>
-                        <col width="15%"/>
-                        <col width="35%"/>
-                        <col width="15%"/>
-                        <col width="15%"/>
-                        <col width="*"/>
+                        <col width="20%" />
+                        <col width="*" />
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th scope="colgroup">주문등록일</th>
-                            <td>2018-06-25 11:11:11</td>
-                            <th>주문확인시간</th>
-                            <td>2018-06-25 11:11:11</td>
+                            <th scope="col">발주화원</th>
+                            <td class="al pl15">[부산 사상구]홍길동플라워  TEL 061-111-2222  FAX 061-222-3333</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">주문상태</th>
-                            <td colspan="4">
-                                <input type="checkbox" value="" name="" />불가
-                                <input type="checkbox" value="" name="" />지정주문
-                                <input type="checkbox" value="" name="" />보류
-                                <input type="checkbox" value="" name="" />버림
-                                <input type="checkbox" value="" name="" />주문확인중
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">발주화원</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">화원선택</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">회원정보</a>
-                                <a href="#" class="btn btn_sm btn_cancel">입금내역</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">수주화원</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">화원선택</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">회원정보</a>
-                                <a href="#" class="btn btn_sm btn_cancel">입금내역</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">상품정보</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">상품수정</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup" rowspan="2">상품이미지</th>
-                            <td colspan="4">
-                                <input type="file" value="" name="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">검색등록</a>
-                                <input type="text" name="" id="" placeholder="URL 직접입력">
-                                <a href="#" class="btn btn_sm btn_cancel">미리보기</a>
-                                <a href="#" class="btn btn_s btn_cancel">+</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">원청금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <span>십만원</span>
-                                <a href="#" class="btn btn_s btn_cancel">10만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5만</a>
-                                <a href="#" class="btn btn_s btn_cancel">1만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5천</a>
-                                <a href="#" class="btn btn_s btn_basic">정정</a>
-                                <input type="checkbox" value="" name="" />원청금액 미노출
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">화훼결제금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <span></span>원
-                                <a href="#" class="btn btn_s btn_cancel">10만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5만</a>
-                                <a href="#" class="btn btn_s btn_cancel">1만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5천</a>
-                                <a href="#" class="btn btn_s btn_basic">정정</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">옵션금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />원
-                                <span>케익 40,000원, 꽃사지 20,000원</span>
-                                <a href="#" class="btn btn_s btn_cancel">수정</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">총결제금액(옵션포함)</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />원
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup" rowspan="2">주문고객정보</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="checkbox" value="" name="" />안심번호사용
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="#" class="btn btn_sm btn_cancel">안심번호</a>
-                                일반전화<span>02-1111-1111</span>
-                                핸드폰<span>010-1111-2222</span>
-                                <span>(유효기간 2018-06-29 까지)</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">받는고객정보</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="checkbox" value="" name="" />안심번호사용
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">배송일시</th>
-                            <td>
-                                <span class="calendar">
-                                    <span class="ico ico_cal"></span>
-                                    <input type="text" class="datepicker"/>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup" rowspan="2">배송장소</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">주소검색</a>
-                                <span class="fr">
-                                    <a href="#" class="btn btn_sm btn_cancel">NAVER 지도</a>
-                                    <a href="#" class="btn btn_sm btn_cancel">신주소변환</a>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">배송사진</th>
-                            <td>
-                                <input type="radio" value="" name="" />요청
-                                <input type="radio" value="" name="" />요청안함
-                                <input type="checkbox" value="" name="" />미등록시 벌금부과
-                            </td>
-                            <th scope="colgroup">해피콜</th>
-                            <td>
-                                <input type="radio" value="" name="" />요청
-                                <input type="checkbox" value="" name="" />배송사진URL 전송
-                                <input type="radio" value="" name="" />요청안함
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">경조사어</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">경조사어 복사</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">보내는분</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">보내는분 복사</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">카드메세지</th>
-                            <td colspan="4">
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">요구사항</th>
-                            <td colspan="4">
-                                <textarea class="text_warning bold"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">관리자메모</th>
-                            <td colspan="4">
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">인수자(관계)</th>
-                            <td>홍길동(상주)</td>
-                            <th scope="colgroup">배달여부(인수시간)</th>
-                            <td>배송완료(2018-05-05 09:00:00)</td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">배송사진</th>
-                            <td colspan="4">
-                                <span>http://test.co.kr/1111</span>
-                                <a href="#" class="btn btn_sm btn_cancel">배송사진 전송</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">전할메세지</th>
-                            <td>전하는 말~~~</td>
-                            <th scope="colgroup">주문작성자</th>
-                            <td>홍길동</td>
+                            <th scope="col">수주화원</th>
+                            <td class="al pl15">[부산 사상구]홍길동플라워  TEL 061-111-2222  FAX 061-222-3333</td>
                         </tr>
                     </tbody>
                 </table>
 
-                <div class="btn_area mt20">
-                    <span>
-                        <a href="#" class="btn btn_cancel btn_m">수주화원변경</a>
-                        <a href="#" class="btn btn_cancel btn_m">주문원장재전송(인수증출력)</a>
-                        <a href="#" class="btn btn_cancel btn_m">주문거절</a>
-                        <a href="#" class="btn btn_cancel btn_m">본부확인</a>
-                    </span>
-                    <span class="fr">
-                        <a href="#" class="btn btn_cancel btn_m">복사</a>
-                        <a href="#" class="btn btn_cancel btn_m">삭제</a>
-                        <a href="#" class="btn btn_cancel btn_m">수정</a>
-                        <a href="javascript:windown.close();" class="btn btn_cancel btn_m">닫기</a>
-                    </span>
+                <p class="mt20">발주화원 -> 수주화원 (전송정보) : 발주건 2018-09-17 10:00:00</p>
+                <table class="list_table mt05">
+                    <caption>발주화원 팩스전송 정보</caption>
+                    <colgroup>
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="20%" span="4" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="colgroup" rowspan="6" class="bg_blue">FAX</th>
+                            <th scope="rowgroup">시도차수</th>
+                            <th scope="row">1차</th>
+                            <th scope="row">2차</th>
+                            <th scope="row">3차</th>
+                            <th scope="row">4차</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송시작</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송종료</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">소요시간</th>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송상태</th>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">상태설명</th>
+                            <td><span class="text_warning">무응답</span></td>
+                            <td><span class="text_warning">통화중</span></td>
+                            <td><span class="text_warning">미연결</span></td>
+                            <td>정상처리</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">SMS</th>
+                            <td colspan="2">010-1111-2222(전송완료)</td>
+                            <th scope="col" class="bg_blue">이메일</th>
+                            <td colspan="2">test@hanmail.net(미전송)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="mt20">수주화원 -> 발주화원 (전송정보) : 배송완료건 2018-09-17 10:00:00</p>
+                <table class="list_table mt05">
+                    <caption>수주화원 팩스전송 정보</caption>
+                    <colgroup>
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="20%" span="4" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="colgroup" rowspan="6" class="bg_blue">FAX</th>
+                            <th scope="rowgroup">시도차수</th>
+                            <th scope="row">1차</th>
+                            <th scope="row">2차</th>
+                            <th scope="row">3차</th>
+                            <th scope="row">4차</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송시작</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송종료</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">소요시간</th>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송상태</th>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">상태설명</th>
+                            <td><span class="text_warning">무응답</span></td>
+                            <td><span class="text_warning">통화중</span></td>
+                            <td><span class="text_warning">미연결</span></td>
+                            <td>정상처리</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">SMS</th>
+                            <td colspan="2">010-1111-2222(전송완료)</td>
+                            <th scope="col" class="bg_blue">이메일</th>
+                            <td colspan="2">test@hanmail.net(미전송)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="btn_area ar mt20">
+                    <a href="javascript:window.close();" class="btn btn_m btn_confirm">닫기</a>
                 </div>
-                <div class="btn_area mt10">
-                    <a href="#" class="btn btn_cancel btn_m">배송처리</a>
-                    <a href="#" class="btn btn_cancel btn_m">클레임처리</a>
-                    <a href="#" class="btn btn_cancel btn_m">부재중문자전송</a>
-                    <a href="#" class="btn btn_cancel btn_m">처리불가 문자전송</a>
-                </div>
+                
             </div>
         </div>
     </body>

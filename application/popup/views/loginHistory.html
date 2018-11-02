@@ -10,7 +10,6 @@
         <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
         <meta property="og:title" content="전국플라워센터">
         <meta property="og:url" content="https://www.flowercenter.co.kr/">
-        <link rel="stylesheet" type="text/css" href="print.css" media="print" /> <!-- 프린트 화면에서만 사용 -->
         <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" type="text/css" href="/css/common.css"/>
         <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
@@ -26,259 +25,236 @@
                     <h2 class="h2">관리자 로그인 현황</h2>
                 </div>
 
-                <div>
-                    현재<span>[직원명]</span>님께서 
+                <div class="option_area">
+                    <div class="option_sort">
+                        <span class="calendar">
+                            <label>
+                                <span class="ico"></span>
+                                <input type="text" class="datepicker" title="시작일자" />
+                            </label>
+                        </span> ~
+                        <span class="calendar">
+                            <label>
+                                <span class="ico"></span>
+                                <input type="text" class="datepicker" title="종료일자" />
+                            </label>
+                        </span>
+                        <select title="검색 구분" class="select">
+                            <option value="">아이디</option>
+                            <option value="">직원명</option>
+                            <option value="">아이피</option>
+                        </select>
+                        <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml10" />
+                        <a href="#" class="btn btn_m btn_search">검색<span class="ico ico_srch"></span></a>
+                    </div>
                 </div>
-                <table summary="본부확인" class="input_table mt10">
+
+                <table summary="일자, 아이디, 화원명, 접속 IP, 접속 디바이스 정보제공" class="list_table">
+                    <caption>로그인 이력</caption>
                     <colgroup>
-                        <col width="15%"/>
-                        <col width="35%"/>
-                        <col width="15%"/>
-                        <col width="15%"/>
-                        <col width="*"/>
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="16%" span="4" />
                     </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">NO</th>
+                            <th scope="row">일자</th>
+                            <th scope="row">아이디</th>
+                            <th scope="row">화원명</th>
+                            <th scope="row">접속IP</th>
+                            <th scope="row">접속디바이스</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr>
-                            <th scope="colgroup">주문등록일</th>
-                            <td>2018-06-25 11:11:11</td>
-                            <th>주문확인시간</th>
-                            <td>2018-06-25 11:11:11</td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">주문상태</th>
-                            <td colspan="4">
-                                <input type="checkbox" value="" name="" />불가
-                                <input type="checkbox" value="" name="" />지정주문
-                                <input type="checkbox" value="" name="" />보류
-                                <input type="checkbox" value="" name="" />버림
-                                <input type="checkbox" value="" name="" />주문확인중
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">발주화원</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">화원선택</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">회원정보</a>
-                                <a href="#" class="btn btn_sm btn_cancel">입금내역</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">수주화원</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">화원선택</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">회원정보</a>
-                                <a href="#" class="btn btn_sm btn_cancel">입금내역</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">상품정보</th>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">상품수정</a>
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup" rowspan="2">상품이미지</th>
-                            <td colspan="4">
-                                <input type="file" value="" name="" />
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <td colspan="4">
-                                <a href="#" class="btn btn_sm btn_cancel">검색등록</a>
-                                <input type="text" name="" id="" placeholder="URL 직접입력">
-                                <a href="#" class="btn btn_sm btn_cancel">미리보기</a>
-                                <a href="#" class="btn btn_s btn_cancel">+</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">원청금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <span>십만원</span>
-                                <a href="#" class="btn btn_s btn_cancel">10만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5만</a>
-                                <a href="#" class="btn btn_s btn_cancel">1만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5천</a>
-                                <a href="#" class="btn btn_s btn_basic">정정</a>
-                                <input type="checkbox" value="" name="" />원청금액 미노출
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">화훼결제금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <span></span>원
-                                <a href="#" class="btn btn_s btn_cancel">10만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5만</a>
-                                <a href="#" class="btn btn_s btn_cancel">1만</a>
-                                <a href="#" class="btn btn_s btn_cancel">5천</a>
-                                <a href="#" class="btn btn_s btn_basic">정정</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">옵션금액</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />원
-                                <span>케익 40,000원, 꽃사지 20,000원</span>
-                                <a href="#" class="btn btn_s btn_cancel">수정</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">총결제금액(옵션포함)</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />원
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup" rowspan="2">주문고객정보</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="checkbox" value="" name="" />안심번호사용
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <td>
-                                <a href="#" class="btn btn_sm btn_cancel">안심번호</a>
-                                일반전화<span>02-1111-1111</span>
-                                핸드폰<span>010-1111-2222</span>
-                                <span>(유효기간 2018-06-29 까지)</span>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">받는고객정보</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="text" value="" name="" />
-                                <input type="checkbox" value="" name="" />안심번호사용
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">배송일시</th>
-                            <td>
-                                <span class="calendar">
-                                    <span class="ico ico_cal"></span>
-                                    <input type="text" class="datepicker"/>
-                                </span>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup" rowspan="2">배송장소</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">주소검색</a>
-                                <span class="fr">
-                                    <a href="#" class="btn btn_sm btn_cancel">NAVER 지도</a>
-                                    <a href="#" class="btn btn_sm btn_cancel">신주소변환</a>
-                                </span>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>Mobile</td>
                         </tr>
                         <tr>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">배송사진</th>
-                            <td>
-                                <input type="radio" value="" name="" />요청
-                                <input type="radio" value="" name="" />요청안함
-                                <input type="checkbox" value="" name="" />미등록시 벌금부과
-                            </td>
-                            <th scope="colgroup">해피콜</th>
-                            <td>
-                                <input type="radio" value="" name="" />요청
-                                <input type="checkbox" value="" name="" />배송사진URL 전송
-                                <input type="radio" value="" name="" />요청안함
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">경조사어</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">경조사어 복사</a>
-                            </td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                         <tr>
-                            <th scope="colgroup">보내는분</th>
-                            <td colspan="4">
-                                <input type="text" value="" name="" />
-                                <a href="#" class="btn btn_sm btn_cancel">보내는분 복사</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">카드메세지</th>
-                            <td colspan="4">
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">요구사항</th>
-                            <td colspan="4">
-                                <textarea class="text_warning bold"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">관리자메모</th>
-                            <td colspan="4">
-                                <textarea></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">인수자(관계)</th>
-                            <td>홍길동(상주)</td>
-                            <th scope="colgroup">배달여부(인수시간)</th>
-                            <td>배송완료(2018-05-05 09:00:00)</td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">배송사진</th>
-                            <td colspan="4">
-                                <span>http://test.co.kr/1111</span>
-                                <a href="#" class="btn btn_sm btn_cancel">배송사진 전송</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="colgroup">전할메세지</th>
-                            <td>전하는 말~~~</td>
-                            <th scope="colgroup">주문작성자</th>
-                            <td>홍길동</td>
+                            <td>10</td>
+                            <td>2018-08-28 14:00:00</td>
+                            <td>TEST</td>
+                            <td> 홍길동[주임]</td>
+                            <td>14.111.111.11</td>
+                            <td>PC</td>
                         </tr>
                     </tbody>
                 </table>
+                
+                <!-- 페이징 -->
+                <div class="paging mt20">
+                    <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                    <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                    <ol>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                    </ol>
+                    <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                    <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                </div>
+                <!-- //페이징 -->
 
-                <div class="btn_area mt20">
-                    <span>
-                        <a href="#" class="btn btn_cancel btn_m">수주화원변경</a>
-                        <a href="#" class="btn btn_cancel btn_m">주문원장재전송(인수증출력)</a>
-                        <a href="#" class="btn btn_cancel btn_m">주문거절</a>
-                        <a href="#" class="btn btn_cancel btn_m">본부확인</a>
-                    </span>
-                    <span class="fr">
-                        <a href="#" class="btn btn_cancel btn_m">복사</a>
-                        <a href="#" class="btn btn_cancel btn_m">삭제</a>
-                        <a href="#" class="btn btn_cancel btn_m">수정</a>
-                        <a href="javascript:windown.close();" class="btn btn_cancel btn_m">닫기</a>
-                    </span>
+                <div class="btn_area ar">
+                    <a href="javascript:window.close();" class="btn btn_m btn_confirm">닫기</a>
                 </div>
-                <div class="btn_area mt10">
-                    <a href="#" class="btn btn_cancel btn_m">배송처리</a>
-                    <a href="#" class="btn btn_cancel btn_m">클레임처리</a>
-                    <a href="#" class="btn btn_cancel btn_m">부재중문자전송</a>
-                    <a href="#" class="btn btn_cancel btn_m">처리불가 문자전송</a>
-                </div>
+                
             </div>
         </div>
     </body>
