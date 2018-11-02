@@ -42,58 +42,66 @@
         <div id="content">
             <h3 class="con_tit">전체 수발주 리스트</h3>
 
-            <div class="option_area mt10" style="width:1560px">
-                <div class="option_srh">
-                    <label><input type="radio" name="" value="" checked="checked" /> 주문일</label>
-                    <label class="ml10"><input type="radio" name="" value="" /> 배송일</label>                     
-                    <span class="calendar ml30 mr10">
-                        <span class="ico"></span>
-                        <input type="text" class="datepicker" title="시작일자" />
-                    </span> ~
-                    <span class="calendar ml10">
-                        <span class="ico"></span>
-                        <input type="text" class="datepicker" title="종료일자" />
-                    </span>
-                    <span class="btn_area month ml30">
-                        <button href="#" class="btn btn_m btn_cancel">4월</button>
-                        <button href="#" class="btn btn_m btn_cancel">5월</button>
-                        <button href="#" class="btn btn_m btn_blue">6월</button>
-                        <button href="#" class="btn btn_m btn_cancel">7월</button>
-                    </span>
-                </div>
+            <div style="width:1560px">
+                <span class="fr">
+                    <span class="ico_member ml05">직발주 허용 회원</span>
+                    <span class="ico_member ml05">불량회원</span>
+                    <span class="ico_member ml05">발주차감회원</span>
+                </span>
 
-                <div class="option_sort">
-                    <select title="배송상태" class="select">
-                        <option value="">배송상태선택</option>
-                        <option value="">미확인</option>
-                        <option value="">미확인(본부화원사)</option>
-                        <option value="">본부확인</option>
-                        <option value="">주문접수</option>
-                        <option value="">배송완료</option>
-                    </select>
-                    <select title="검색범위" class="select ml10">
-                        <option value="">발주화원명</option>
-                        <option value="">수주화원명</option>
-                        <option value="">주문자</option>
-                        <option value="">받는분</option>
-                        <option value="">배달장소</option>
-                        <option value="">보내는분</option>
-                        <option value="">인수자명</option>
-                        <option value="">주문번호</option>
-                        <option value="">상품명</option>
-                        <option value="">상품코드</option>
-                        <option value="">중계담당자</option>
-                        <option value="">주문자연락처</option>
-                        <option value="">받는분연락처</option>
-                        <option value="">지정화원사</option>
-                        <option value="">주문작성자</option>
-                        <option value="">발주아이디</option>
-                        <option value="">수주아이디</option>
-                    </select>
-                    <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml05" style="width:330px" />
-                    <a href="#" class="btn btn_m btn_search pl20 pr20">검색<span class="ico ico_srch ml05"></span></a>
-                </div>
-            </div><!-- option_area -->
+                <div class="option_area mt10">
+                    <div class="option_srh">
+                        <label><input type="radio" name="" value="" checked="checked" /> 주문일</label>
+                        <label class="ml10"><input type="radio" name="" value="" /> 배송일</label>                     
+                        <span class="calendar ml30 mr10">
+                            <span class="ico"></span>
+                            <input type="text" class="datepicker" title="시작일자" />
+                        </span> ~
+                        <span class="calendar ml10">
+                            <span class="ico"></span>
+                            <input type="text" class="datepicker" title="종료일자" />
+                        </span>
+                        <span class="btn_area month ml30 onChg">
+                            <button href="#" class="btn btn_m btn_cancel">4월</button>
+                            <button href="#" class="btn btn_m btn_cancel">5월</button>
+                            <button href="#" class="btn btn_m btn_cancel on">6월</button>
+                            <button href="#" class="btn btn_m btn_cancel">7월</button>
+                        </span>
+                    </div>
+
+                    <div class="option_sort">
+                        <select title="배송상태" class="select">
+                            <option value="">배송상태선택</option>
+                            <option value="">미확인</option>
+                            <option value="">미확인(본부화원사)</option>
+                            <option value="">본부확인</option>
+                            <option value="">주문접수</option>
+                            <option value="">배송완료</option>
+                        </select>
+                        <select title="검색범위" class="select ml10">
+                            <option value="">발주화원명</option>
+                            <option value="">수주화원명</option>
+                            <option value="">주문자</option>
+                            <option value="">받는분</option>
+                            <option value="">배달장소</option>
+                            <option value="">보내는분</option>
+                            <option value="">인수자명</option>
+                            <option value="">주문번호</option>
+                            <option value="">상품명</option>
+                            <option value="">상품코드</option>
+                            <option value="">중계담당자</option>
+                            <option value="">주문자연락처</option>
+                            <option value="">받는분연락처</option>
+                            <option value="">지정화원사</option>
+                            <option value="">주문작성자</option>
+                            <option value="">발주아이디</option>
+                            <option value="">수주아이디</option>
+                        </select>
+                        <input type="text" name="" value="" title="검색 키워드" placeholder="검색 키워드" class="ml05" style="width:330px" />
+                        <a href="#" class="btn btn_m btn_search pl20 pr20">검색<span class="ico ico_srch ml05"></span></a>
+                    </div>
+                </div><!-- option_area -->
+            </div>
 
             <hr class="hr" /> <!-- 라인 효과-->
 
@@ -219,7 +227,7 @@
                                 <p class="ellipsis">경상남도 창원시 마산합포구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order01"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동플라워</a></p>
                                     <div class="layerOver" id="order01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경상남도 창원시 마산합포구] 홍길동플라워</h4>
                                         <dl>
@@ -249,7 +257,7 @@
                                 <p class="ellipsis">경상남도 창원시 마산합포구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder01"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원</a></p>
                                     <div class="layerOver" id="winorder01Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경상남도 창원시 마산합포구] 고성화원</h4>
                                         <dl>
@@ -288,7 +296,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=955, height=400, top=50, left=50')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -349,7 +357,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order02"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order02Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -379,7 +387,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder02"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder02Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -417,7 +425,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=955, height=400, top=50, left=50')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -458,7 +466,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order03"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order03Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -488,7 +496,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder03"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder03Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -526,7 +534,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=955, height=400, top=50, left=50')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -563,7 +571,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order04"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order04Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -593,7 +601,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder04"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder04Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -631,7 +639,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=955, height=400, top=50, left=50')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -671,7 +679,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                 </div><!-- /layerOver -->
                                 <!-- /마우스 오버 시 레이어 -->
                             </td>
@@ -679,7 +687,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -717,7 +725,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -754,7 +762,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -784,7 +792,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -822,7 +830,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -859,7 +867,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -889,7 +897,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -927,7 +935,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -964,7 +972,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -994,7 +1002,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1033,7 +1041,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1072,7 +1080,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1102,7 +1110,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1141,7 +1149,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1180,7 +1188,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1210,7 +1218,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1249,7 +1257,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1288,7 +1296,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1318,7 +1326,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1357,7 +1365,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1396,7 +1404,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1426,7 +1434,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1465,7 +1473,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1504,7 +1512,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1534,7 +1542,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1573,7 +1581,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1612,7 +1620,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1642,7 +1650,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1681,7 +1689,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1720,7 +1728,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1750,7 +1758,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1789,7 +1797,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1828,7 +1836,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1858,7 +1866,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -1897,7 +1905,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -1936,7 +1944,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -1966,7 +1974,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -2005,7 +2013,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -2044,7 +2052,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -2074,7 +2082,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -2113,7 +2121,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -2152,7 +2160,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -2182,7 +2190,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -2221,7 +2229,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">
@@ -2260,7 +2268,7 @@
                                 <p class="ellipsis">경기 고양시</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="order05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">홍길동 플라워 홍길동 플라워홍길동 플라워</a></p>
                                     <div class="layerOver" id="order05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[경기 고양시] 홍길동 플라워 홍길동 플라워홍길동 플라워</h4>
                                         <dl>
@@ -2290,7 +2298,7 @@
                                 <p class="ellipsis">울산 북구</p>
                                 <!-- 마우스 오버 시 레이어 -->
                                 <div class="layer_over" id="winorder05"> <!-- id값은 01,02,03 순으로 늘어남-->
-                                    <p class="ellipsis"><a href="javascript:void(0)">고성화원 고성화원고성화원고성화원고성화원</a></p>
+                                    <p class="ellipsis"><a href="javascript:void(0)" onclick="window.open('/application/popup/views/memberInfo.html','memberInfo','width=955, height=900, top=50, left=50')">고성화원 고성화원고성화원고성화원고성화원</a></p>
                                     <div class="layerOver" id="winorder05Layer"> <!-- id값은 01,02,03 순으로 늘어남-->
                                         <h4 class="layer_tit al">[울산 북구] 고성화원 고성화원고성화원고성화원고성화원</h4>
                                         <dl>
@@ -2329,7 +2337,7 @@
                                 <p class="bold">60,000</p>
                             </td>
                             <td>
-                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipReg.html','shipReg','width=1300, height=590, top=100, left=540')">홍길동</a>
+                                <a href="javascript:void(0);" onclick="window.open('/application/popup/views/shipRegister.html','shipRegister','width=1300, height=590, top=100, left=540')">홍길동</a>
                             </td>
                             <td>
                                 <div class="shop_info_ico">

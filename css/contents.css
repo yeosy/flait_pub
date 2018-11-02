@@ -57,6 +57,7 @@
 /* 협회전체 수발주 */
 .option_area .month .btn {margin-left:5px; width:40px; min-width:inherit}
 .option_area .month .btn:first-child {margin-left:0}
+.option_area .month .btn_cancel.on {background:#c5dfe7}
 .list_table .ico_order {display:inline-block; box-sizing:border-box; margin-bottom:1px; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px !important; text-decoration:none !important}
 .list_table .ico_order.v2 {padding:2px 1px; line-height:12px; color:#023a63} /* 2줄 아이콘 */
 .shop_info_ico {position:relative; top:1px; overflow:hidden; width:175px; height:18px; background:url(/img/order/bg_shop_info.gif) 0 0 no-repeat}

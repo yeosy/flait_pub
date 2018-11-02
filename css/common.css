@@ -96,6 +96,7 @@
 
 /* button */
 .btn_area {overflow:hidden}
+.btn_area.w_100 .btn {min-width:100%}
 
 .btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
 .btn.btn_round00 {border-radius:0}
@@ -118,6 +119,7 @@
 .btn_search {min-width:inherit; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 .btn_search:hover, .btn_search:focus {background:rgba(2,58,99,0.7)}
 
+
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
 .ico02 {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_777777_256x240.png")}
@@ -129,6 +131,7 @@
 .ico_srch {margin-left:1px; background-position:-160px -112px}
 .ico_more {background-position:-16px -128px}
 .ico_store {display:inline-block; box-sizing:border-box; padding:0 7px; min-width:55px; height:18px; line-height:16px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px} /* 회원정보 아이콘 */
+.ico_member {display:inline-block; box-sizing:border-box; width:120px; height:25px; line-height:23px; text-align:center; background:#f7f7f7; border:1px solid #7d7d7d; border-radius:5px}
 
 /* selectbox */
 .ui-selectmenu-menu {font-size:12px}
