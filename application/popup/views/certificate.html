@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>인수증</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+        <style type="text/css">
+            @media print{
+                * {color:#000;  page-break-after: avoid}
+                ul, img {page-break-inside: avoid}
+                img {max-width:100%}
+                .btn_area {display:none}
+                @page {margin:2cm}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="certificate">
+            <div class="btn_area ar">
+                <a href="#" class="btn btn_confirm btn_xs">팩스전송</a>
+                <a href="#" class="btn btn_confirm btn_xs">인쇄</a>
+                <a href="javascript:window.close();" class="btn btn_confirm btn_xs">닫기</a>
+            </div>
+
+            <div class="content">
+                <div class="top">
+                    <h2 class="tit">주문서</h2>
+                    <dl>
+                        <dt>본부 TEL</dt>
+                        <dd>1544-6487</dd>
+                        <dt>본부 FAX</dt>
+                        <dd>070-8224-6861</dd>
+                        <dt class="ir">홈페이지 주소</dt>
+                        <dd>www.theflowercenter.co.kr</dd>
+                    </dl>
+                    <h1 class="logo"><img src="" alt="전국플라워센터 로고" /></h1>
+                </div>
+                <table>
+                    <colgroup>
+                        <col width="" />
+                        <col width="" />
+                        <col width="" />
+                        <col width="" />
+                        <col width="" />
+                        <col width="" />
+                        <col width="" />
+                    </colgroup>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
