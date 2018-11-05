@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+/* 배송사진전송 > 문자 */
 .product_photo {width:216px}
 .product_photo .send_select {padding:10px 10px 11px 10px}
 .product_photo .send_select > h4 {display:inline-block; margin-right:30px; font-weight:500}
@@ -17,3 +19,25 @@
 .dark_box.v2 {padding:7px 9px}
 .dark_box.v2 .screen{height:175px}
 .mt08{margin-top:8px}
+
+
+
+
+
+/* 옵션수정 */
+.btn_sm.v2 {min-width:auto; width:45px}
+.btn_m.v2 {min-width:auto; width:110px}
+.product_opt_box .input_table input[type="text"] {width:75px}
+.product_opt_box .input_table th, .product_opt_box .input_table td {line-height:28px}
+
+
+
+/* 상품이미지 검색 */
+.option_area.v3 .btn {width:80px}
+.option_area.v3 input[type="text"] {width:250px; background:#eee; border-color:#eee}
+.option_area.v3 input[type="text"]:hover, .option_area.v3 input[type="text"]:focus {background:#fff;}
+.product_image_list ul li{float:left; box-sizing:border-box; width:23.72%}
+.product_image_list ul li img{width:100%; height:120px}
+
+/* 상품검색 */
+.product_image_search .list_table th, .product_image_search .list_table td {line-height:19px}
