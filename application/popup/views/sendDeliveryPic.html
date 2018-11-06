@@ -29,9 +29,10 @@
                     <div class="product_photo fl mt20">
                         <div class="send_select bb">
                             <h4>전송방법</h4>
-                            <label><input type="radio" value="" name="" />문자</label>
+                            <label><input type="radio" value="" name="" class/>문자</label>
                             <label class="ml10"><input type="radio" value="" name="" />이메일</label>
                         </div>
+
                         <div class="photo_select mt10 bb">
                             <h4>배송사진 선택</h4>
                             <div class="photo mt10"></div>
@@ -190,6 +191,84 @@
                         </div>
                     </div><!-- /sms_send -->
                         <!-- /문자전송 폼 -->
+
+                        <!-- email_send -->
+                    <div class="email_send fr basic_box mt20">
+                        <table summary="보내는사람" class="list_table">
+                            <caption>보내는 사람</caption>
+                            <colgroup>
+                                <col width="100%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">보내는사람</th>
+                                </tr>
+                                <tr>
+                                    <td>jjh7355@nate.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table summary="받는사람" class="list_table mt10">
+                            <caption>받는 사람</caption>
+                            <colgroup>
+                                <col width="100%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">받는사람</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" value="" name="" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="explain_text mt10">
+                            <p>2명 이상에게 보내실 경우 콤마(,)로 구분하여 입력해주세요</p>
+                            <p>예 : test@aaa.com , test@bbb.com</p>
+                        </div>
+                        <table summary="제목" class="list_table mt10 ">
+                            <caption>제목</caption>
+                            <colgroup>
+                                <col width="100%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">제목</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" value="" name="" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table summary="내용" class="list_table mt10">
+                            <caption>내용</caption>
+                            <colgroup>
+                                <col width="100%"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">내용</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea style="height:161px">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ducimus nam optio tempore perferendis inventore maxime, excepturi delectus sunt nemo, id deleniti voluptate! Aspernatur saepe, praesentium esse dolorem reiciendis recusandae!
+                                        </textarea>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn_area ac mt10">
+                            <a href="#" class="btn btn_confirm btn_m">이메일 전송</a>
+                        </div>
+                    </div>
+                        <!-- /email_send -->
                 </div>
                 <div class="btn_area v2 ar mt20">
                     <a href="javascript:windown.close();" class="btn btn_confirm btn_m">닫기</a>
