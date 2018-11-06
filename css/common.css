@@ -104,12 +104,12 @@
 .btn.btn_round00 {border-radius:0}
 .btn.btn_round15 {border-radius:15px}
 
-.btn_xs {padding:1px 3px; width:40px; height:20px; line-height:16px; font-size:10px} /* height:20px / font:10px */
+.btn_xs {padding:1px 3px; min-width:40px; height:20px; line-height:16px; font-size:10px} /* height:20px / font:10px */
 .btn_s {padding:2px 5px; height:22px; line-height:16px; font-size:11px} /* height:22px / font:11px */
-.btn_sm {padding:3px 5px 4px; width:60px; height:25px; line-height:16px; font-size:10px} /* height:25px / font:10px */
-.btn_m {padding:6px 5px; width:127px; height:30px; line-height:16px; font-size:12px} /* height:30px / font:12px */
-.btn_ml {padding:9px 5px; width:160px; height:38px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
-.btn_l {padding:15px 5px; width:200px; height:50px; line-height:18px; border-radius:15px; font-size:18px; font-weight:bold} /* height:50px / font:18px */
+.btn_sm {padding:3px 5px 4px; min-width:60px; height:25px; line-height:16px; font-size:10px} /* height:25px / font:10px */
+.btn_m {padding:6px 5px; min-width:127px; height:30px; line-height:16px; font-size:12px} /* height:30px / font:12px */
+.btn_ml {padding:9px 5px; min-width:160px; height:38px; line-height:18px; font-size:18px; font-weight:800} /* height:38px / font:18px */
+.btn_l {padding:15px 5px; min-width:200px; height:50px; line-height:18px; border-radius:15px; font-size:18px; font-weight:bold} /* height:50px / font:18px */
 
 .btn_basic {background:#eee; border:1px solid #ccc}
 .btn_basic:hover, .btn_basic:focus {background:rgba(238,238,238,0.7)}
@@ -118,16 +118,16 @@
 .btn_confirm:hover, .btn_confirm:focus {background:rgba(2,58,99,0.7); border:1px solid rgba(2,58,99,0.7)}
 .btn_blue {background:#c5dfe7; border:1px solid #ccc}
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
-.btn_search {width:auto; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
+.btn_search {min-width:inherit; width:auto; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 .btn_search:hover, .btn_search:focus {background:rgba(2,58,99,0.7)}
 
 /* size(input, btn) */
-.w45 {width:45px !important}
-.w70 {width:70px !important}
-.w90 {width:90px !important}
-.w100 {width:100px !important}
-.w110 {width:110px !important}
-.w_100 {width:100% !important} /* 단위 % */
+.w45 {min-width:inherit; width:45px !important}
+.w70 {min-width:inherit; width:70px !important}
+.w90 {min-width:inherit; width:90px !important}
+.w100 {min-width:inherit; width:100px !important}
+.w110 {min-width:inherit; width:110px !important}
+.w_100 {min-width:inherit; width:100% !important} /* 단위 % */
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
