@@ -9,6 +9,7 @@
         .developStatus th, #developStatus td {margin:0; padding:5px; text-align:left; border:1px solid #ccc}
         .developStatus .btn_pub {position:absolute; top:0; right:0; padding:5px; width:100px; background:#555; color:#fff; font-weight:bold}
         .developStatus th {background:#eee}
+        .developStatus .confirm td {background:#d3eed3}
     </style>
 
     <button type="button" class="btn_pub" onclick="$('#developStatus').toggle();">퍼블리싱 가이드</button>
@@ -98,7 +99,7 @@
                 </tr>
                 <tr>
                     <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/memberInfoModify.html','memberInfoModify','width=1220, height=910, top=50, left=50, scrollbars=yes');">문자보내기 &gt; 회원검색 &gt; 회원정보 수정</a></td>
-                    <td></td>
+                    <td>디자인필요</td>
                 </tr>
                 <tr>
                     <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/callCertification.html','callCertification','width=600, height=540, top=50, left=50, scrollbars=yes');">문자보내기 &gt; 발신번호 사전등록 팝업(600*540)</a></td>
@@ -172,8 +173,12 @@
                     <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/orderInfo.html','orderInfo','width=1470, height=900, top=50, left=50, scrollbars=yes');">주문정보(1470 * 900)</a></td>
                     <td>2018-11-06</td>
                 </tr>
-                <tr>
+                <tr class="confirm">
                     <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/depositDetail.html','depositDetail','width=1250, height=430, top=50, left=50, scrollbars=yes');">주문정보 &gt; 회원별 입금관리(1250 * 430)</a></td>
+                    <td>2018-11-06</td>
+                </tr>
+                <tr class="confirm">
+                    <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');">주문정보 &gt; 회원별 입금관리 &gt;입출금처리 (850 * 430)</a></td>
                     <td>2018-11-06</td>
                 </tr>
                 <tr>
@@ -260,7 +265,7 @@
                     <td>마크업</td>
                 </tr>
                 <tr>
-                    <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/transHistory.html','transHistory','width=800, height=550, top=50, left=50, scrollbars=yes');">FAX / SMS / 이메일 전송 내역(800 * 550)</a></td>
+                    <td><a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/transHistory.html','transHistory','width=830, height=795, top=50, left=50, scrollbars=yes');">FAX / SMS / 이메일 전송 내역(830 * 795)</a></td>
                     <td>마크업</td>
                 </tr>
                 <tr>

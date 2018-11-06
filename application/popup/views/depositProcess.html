@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>입출금처리</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+               <!-- 타이틀 -->
+                <div class="tit">
+                    <h2 class="h2">입출금처리</h2>
+                    <span>(홍길동플라워 2018년 06월분)</span>
+                </div>
+               <!-- /타이틀 -->
+
+                <table summary="등록일, 입출금 확인자, 일자, 금액 등 정보 제공" class="list_table mt10">
+                    <caption>입출금 정보</caption>
+                    <colgroup>
+                        <col width="7%" />
+                        <col width="12%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="10%" />
+                        <col width="8%" />
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="12%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">NO</th>
+                            <th scope="row">등록일</th>
+                            <th scope="row">입출금확인자</th>
+                            <th scope="row">입출금일자</th>
+                            <th scope="row">입출금액</th>
+                            <th scope="row">은행</th>
+                            <th scope="row">종류</th>
+                            <th scope="row">비고</th>
+                            <th scope="row">수정 / 삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1차</td>
+                            <td>2018-07-02 11:00:00</td>
+                            <td>홍길동[팀장]</td>
+                            <td>2018-07-02</td>
+                            <td>12,000,000</td>
+                            <td>농협</td>
+                            <td></td>
+                            <td></td>
+                            <td class="ac p00"><a href="#" class="btn btn_blue btn_sm w70">수정 / 삭제</a></td>
+                        </tr>
+                        <tr>
+                            <td>1차</td>
+                            <td>2018-07-02 11:00:00</td>
+                            <td>홍길동[팀장]</td>
+                            <td>2018-07-02</td>
+                            <td>12,000,000</td>
+                            <td>농협</td>
+                            <td></td>
+                            <td></td>
+                            <td class="ac p00"><a href="#" class="btn btn_blue btn_sm w70">수정 / 삭제</a></td>
+                        </tr>
+                        <tr>
+                            <td>1차</td>
+                            <td>2018-07-02 11:00:00</td>
+                            <td>홍길동[팀장]</td>
+                            <td>2018-07-02</td>
+                            <td>12,000,000</td>
+                            <td>농협</td>
+                            <td></td>
+                            <td></td>
+                            <td class="ac p00"><a href="#" class="btn btn_blue btn_sm w70">수정 / 삭제</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="input_table mt15" summary="입금처리 정보 입력 및 수정">
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">화원정보</th>
+                            <td>부산 부산진구 / 홍길동플라워 / 홍길동 / 1000-2222 / 010-1111-2222</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">입출금일자</th>
+                            <td>
+                                <select class="select" title="년도 선택">
+                                    <option value="">2018</option>
+                                </select>년
+                                <select class="select ml05" title="월 선택">
+                                    <option value="">11</option>
+                                </select>월
+                                <select class="select ml05" title="일자 선택">
+                                    <option value="">31</option>
+                                </select>일
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">입출금 은행</th>
+                            <td>
+                                <select class="select" title="은행">
+                                    <option value="">농협</option>
+                                    <option value="">국민</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">정산금액 / 잔금</th>
+                            <td>100,000,000원 / 100,000,000원</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">입출금 금액</th>
+                            <td>
+                                <input type="text" name="" value="" title="금액" />
+                                <a href="#" class="btn btn_sm btn_blue w110">전체금액 처리</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">비고</th>
+                            <td><input type="text" name="" value="" title="비고란" class="w_100" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area ac mt20">
+                    <a href="#" class="btn btn_confirm btn_m">입출금처리</a>
+                    <a href="javascript:window.close();" class="btn btn_cancel btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
