@@ -29,12 +29,9 @@
                 <div class="order_info_box">
                     <table summary="주문정보" class="input_table">
                         <colgroup>
-                            <col width="7.5%"/>
-                            <col width="57%"/>
-                            <col width="7.5%"/>
-                            <col width="7.5%"/>
-                            <col width="7.5%"/>
-                            <col width="*"/>
+                            <col width="2.5%" />
+                            <col width="*" />
+                            <col width="2.5%" span="4" />
                         </colgroup>
                         <tbody>
                             <tr>
@@ -51,13 +48,13 @@
                             <tr>
                                 <th scope="col">발주화원</th>
                                 <td>
-                                    <a href="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" style="width:165px"/>
                                     <input type="text" value="" name="" class="ml05" style="width:85px"/>
                                     <input type="text" value="" name="" class="ml05" style="width:85px"/>
-                                    <a href="#" class="btn btn_blue btn_sm w70 ml05">화원정보</a>
-                                    <a href="#" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
+                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/memberInfoModify.html','memberInfoModify','width=955, height=900, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70 ml05">회원정보</a>
+                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/depositDetail.html','depositDetail','width=1250, height=430, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
                                 </td>
                                 <th scope="col">주문등록일</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">2018-06-25 10:11:11</td>
@@ -65,13 +62,13 @@
                             <tr>
                                 <th scope="col">수주화원</th>
                                 <td>
-                                    <a href="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" style="width:165px" />
                                     <input type="text" value="" name="" class="ml05" style="width:85px" />
                                     <input type="text" value="" name="" class="ml05" style="width:85px" />
-                                    <a href="#" class="btn btn_blue btn_sm w70 ml05">화원정보</a>
-                                    <a href="#" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
+                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/memberInfoModify.html','memberInfoModify','width=955, height=900, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70 ml05">회원정보</a>
+                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/depositDetail.html','depositDetail','width=1250, height=430, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
                                 </td>
                                 <th scope="col">주문확인시간</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">2018-06-25 11:11:11</td>
@@ -79,7 +76,7 @@
                             <tr>
                                 <th scope="col">상품정보</th>
                                 <td>
-                                    <a href="javascript:window.open('/application/popup/views/productSearch.html','productSearch','width=370, height=550, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">상품수정</a>
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('/application/popup/views/productSearch.html','productSearch','width=370, height=550, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">상품수정</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" style="width:165px" />
                                     <input type="text" value="" name="" class="ml05" style="width:85px" /> EA
@@ -113,11 +110,11 @@
                             <tr>
                                 <td style="border-top:none">
                                     <div>
-                                        <a href="javascript:window.open('/application/popup/views/productPhotoSearch.html','productPhotoSearch','width=670, height=820, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w70">검색등록</a>
+                                        <a href="javascript:void(0);" onclick="javascript:window.open('/application/popup/views/productPhotoSearch.html','productPhotoSearch','width=670, height=820, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w70">검색등록</a>
                                         <input type="text" value="" name="" placeholder="URL 직접입력" class="ml05" style="width:370px" />
                                         <a href="#" id="shipPhoto01" class="btn btn_blue btn_sm w70 ml05 layerOpen">미리보기</a>
-                                        <a href="#" class="btn_plus"><img src="/img/popup/btn_plus.png" alt="plus" /></a>
-                                        <a href="#" class="btn_minus"><img src="/img/popup/btn_minus.png" alt="minus" /></a>
+                                        <a href="#" class="btn_plus"><img src="/img/popup/btn_plus.png" alt="이미지 추가" /></a>
+                                        <a href="#" class="btn_minus"><img src="/img/popup/btn_minus.png" alt="이미지 제거" /></a>
                                     </div>
                                 </td>
                                 <th scope="col">배송사진</th>
@@ -186,7 +183,7 @@
                                 <th scope="col">배송사진</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
                                     <span>http://test.co.kr/11</span>
-                                    <a href="javascript:window.open('/application/popup/views/sendDeliveryPic.html','sendDeliveryPic','width=590, height=760, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w100 ml20">배송사진 전송</a>
+                                    <a href="javascript:void(0);" onclick="javascript:window.open('/application/popup/views/sendDeliveryPic.html','sendDeliveryPic','width=590, height=760, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w100 ml20">배송사진 전송</a>
                                 </td>
                             </tr>
                             <tr>
