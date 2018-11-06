@@ -57,7 +57,7 @@
 .popup .member_search .shop .layer.v2 {top:50px; left:137px; width:583px; height:auto}
 .popup .member_search .shop .search_box .select {width:102px}
 .popup .member_search .shop .search_box .keyword {background:#fff; width:325px}
-.popup .member_search .shop .search_box .btn_m {padding:6px 29px}
+.popup .member_search .shop .search_box .btn_m {padding:6px 29px; min-width:inherit}
 .popup .member_search .shop .result {height:650px}
 .popup .member_search .shop .result > ol > li {overflow:hidden; box-sizing:border-box; width:100%; margin-bottom:10px; padding:9px; border:1px solid #7d7d7d}
 .popup .member_search .shop .info {float:left; width:456px; margin-right:10px}
