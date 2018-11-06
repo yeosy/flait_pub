@@ -57,7 +57,7 @@
 .popup .member_search .shop .layer.v2 {top:50px; left:137px; width:583px; height:auto}
 .popup .member_search .shop .search_box .select {width:102px}
 .popup .member_search .shop .search_box .keyword {background:#fff; width:325px}
-.popup .member_search .shop .search_box .btn_m {padding:6px 29px; min-width:inherit}
+.popup .member_search .shop .search_box .btn_m {padding:6px 29px}
 .popup .member_search .shop .result {height:650px}
 .popup .member_search .shop .result > ol > li {overflow:hidden; box-sizing:border-box; width:100%; margin-bottom:10px; padding:9px; border:1px solid #7d7d7d}
 .popup .member_search .shop .info {float:left; width:456px; margin-right:10px}
@@ -85,7 +85,7 @@
 .popup .address_box .list_box li label {display:block; padding-left:13px; height:18px; line-height:18px}
 .popup .address_box .option_area .option_srh{width:62%}
 .popup .address_box .option_area .option_srh input[type="text"]{float:left; width:80%}
-.popup .address_box .option_area .btn_m {padding:6px 17px; min-width:50px}
+.popup .address_box .option_area .btn_m {padding:6px 17px; width:50px}
 .popup .address_box .list_box{width:46%}
 .popup .address_box .list_box h3 {box-sizing:border-box; line-height:28px; text-align:center; background:#ccc; border:1px solid #7d7d7d}
 .popup .address_box .address_list {float:left; height:300px}
@@ -143,7 +143,7 @@
 .order_info_box .input_table .btn_list.v2 li:first-child{margin:0;}
 .order_info_box .input_table .btn_list.v2,
 .order_info_box .input_table .btn_list.v2 li {border:0}
-.order_info_box .input_table .btn_list .btn_confirm{min-width:auto; width:108px; height:32px;}
+.order_info_box .input_table .btn_list .btn_confirm{width:108px; height:32px;}
 .order_info_box .input_table input[type="file"]{width:0; height:0; overflow:hidden}
 .order_info_box .input_table img{vertical-align:middle}
 /* 주문정보 > 상품검색 */

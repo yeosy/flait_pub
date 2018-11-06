@@ -55,7 +55,7 @@
 .screen_list li dt {clear:both}
 
 /* 협회전체 수발주 */
-.option_area .month .btn {margin-left:5px; width:40px; min-width:inherit}
+.option_area .month .btn {margin-left:5px; width:40px}
 .option_area .month .btn:first-child {margin-left:0}
 .option_area .month .btn_cancel.on {background:#c5dfe7}
 .list_table .ico_order {display:inline-block; box-sizing:border-box; margin-bottom:1px; padding:0 1px; width:45px; line-height:13px; text-align:center; background:#fff; border:1px solid #ccc; border-radius:5px; font-size:10px !important; text-decoration:none !important}
