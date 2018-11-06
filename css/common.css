@@ -18,6 +18,7 @@
 /* margin, padding */
 .mt00 {margin-top:0px !important}
 .mt05 {margin-top:5px !important}
+.mt08 {margin-top:8px !important}
 .mt10 {margin-top:10px !important}
 .mt15 {margin-top:15px !important}
 .mt20 {margin-top:20px !important}
@@ -118,7 +119,11 @@
 .btn_blue:hover, .btn_blue:focus {background:rgba(197,223,231,0.7)}
 .btn_search {min-width:inherit; background:#023a63; border:1px solid #023a63; border-radius:0; color:#fff}
 .btn_search:hover, .btn_search:focus {background:rgba(2,58,99,0.7)}
-
+/* button-size */
+.w45 {min-width:inherit; width:45px}
+.w70 {min-width:inherit; width:70px}
+.w110 {min-width:inherit; width:110px}
+.w100 {min-width:inherit; width:100px}
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
@@ -221,3 +226,7 @@ th.bg_blue, .bg_blue th {background:#c5dfe7 !important} /* th background-color:b
 div[class*=box] {box-sizing:border-box}
 .basic_box {padding:20px; width:100%; background:#fff; border:1px solid #ccc}
 .dark_box {padding:9px; width:100%; background:#eee; border:1px solid #7d7d7d}
+.sms_info.v2 > h4{display:inline-block; margin-bottom:0}
+.sms_info.v2 {line-height:25px;}
+.dark_box.v2 {padding:7px 9px}
+.dark_box.v2 .screen{height:175px}

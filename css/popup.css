@@ -115,3 +115,41 @@
 .popup .layer table + .scroll_y > table tr:first-child td {border-top:0}
 .popup .layer table + .scroll_y > table tr td:last-child {border-right:0}
 .popup .layer table + .scroll_y > table tr:last-child td {border-bottom:0}
+
+
+/* 배송사진전송 */
+.product_photo {width:216px}
+.product_photo .send_select {padding:10px 10px 11px 10px}
+.product_photo .send_select > h4 {display:inline-block; margin-right:30px; font-weight:500}
+.product_photo .bb {border:1px solid #7d7d7d}
+.product_photo .photo_select{box-sizing:border-box; height:342px}
+.product_photo .photo_select .photo{margin:10px; width:196px; height:195px; background:#eee}
+.product_photo .photo_select > h4 {padding:10px 1px 2px 10px; font-weight:500}
+.product_photo .thumnail_list li {float:left; box-sizing:border-box; padding:10px 10px 15px 10px; width:33.33%; height:96px; border-left:1px solid #7d7d7d; border-top:1px solid #7d7d7d}
+.product_photo .thumnail_list li:first-child{border-left:0}
+.product_photo .thumnail_list li div{width:52px; height:52px; background:#eee}
+.product_photo .manual {border:1px solid #ccc}
+.product_photo .manual p {padding:20px 10px; line-height:20px;}
+.product_photo .manual p:first-child{padding-top:19px; line-height:18px; border-bottom:1px solid #ccc}
+
+/* 주문정보 */
+.order_info_box .input_table {border:0}
+.order_info_box .input_table .info{padding:11px 27px 12px; width:100%; background:#023a63; color:#fff}
+.order_info_box .input_table td{padding:6px 10px}
+.order_info_box .input_table .btn_list{margin:0 auto; width:450px; height:32px; border-bottom:1px solid #ccc}
+.order_info_box .input_table .btn_list li{float:left; width:111px; height:25px; line-height:25px; border-left:1px solid #ccc}
+.order_info_box .input_table .btn_list li:first-child{margin:0; border:0}
+.order_info_box .input_table .btn_list.v2 li{width:108px; margin-left:6px}
+.order_info_box .input_table .btn_list.v2 li:first-child{margin:0;}
+.order_info_box .input_table .btn_list.v2,
+.order_info_box .input_table .btn_list.v2 li {border:0}
+.order_info_box .input_table .btn_list .btn_confirm{min-width:auto; width:108px; height:32px;}
+.order_info_box .input_table input[type="file"]{width:0; height:0; overflow:hidden}
+.order_info_box .input_table img{vertical-align:middle}
+/* 주문정보 > 상품검색 */
+.product_image_search .list_table th, .product_image_search .list_table td {line-height:19px}
+/* 주문정보 > 옵션수정 */
+.product_opt_box .input_table input[type="text"] {width:75px}
+.product_opt_box .input_table th, .product_opt_box .input_table td {line-height:28px}
+.product_image_list ul li{float:left; box-sizing:border-box; width:23.72%}
+.product_image_list ul li img{width:100%; height:120px}

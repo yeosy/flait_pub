@@ -39,12 +39,17 @@
                         <tbody>
                             <tr>
                                 <td colspan="6" class="info" style="border-right:1px solid #023a63">
-                                    현재<span>[직원명]</span>님께서 열람중인 주문서입니다.
-                                    <span>[2018-06-25 15:04:10]</span>
+                                    <div style="display:block">
+                                        현재<span>[직원명]</span>님께서 열람중인 주문서입니다.
+                                        <span>[2018-06-25 15:04:10]</span>
+                                    </div>
+                                    <div style="display:none">
+                                        주문거절 요청한 주문건입니다.  다른 수주화원으로 재발주 하시기 바랍니다.
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">발주화원</th>
+                                <th scope="col">발주화원</th>
                                 <td>
                                     <a href="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
@@ -54,11 +59,11 @@
                                     <a href="#" class="btn btn_blue btn_sm w70 ml05">화원정보</a>
                                     <a href="#" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
                                 </td>
-                                <th scope="colgroup">주문등록일</th>
+                                <th scope="col">주문등록일</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">2018-06-25 10:11:11</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">수주화원</th>
+                                <th scope="col">수주화원</th>
                                 <td>
                                     <a href="javascript:window.open('/application/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">화원선택</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
@@ -68,18 +73,18 @@
                                     <a href="#" class="btn btn_blue btn_sm w70 ml05">화원정보</a>
                                     <a href="#" class="btn btn_blue btn_sm w70 ml05">입금내역</a>
                                 </td>
-                                <th scope="colgroup">주문확인시간</th>
+                                <th scope="col">주문확인시간</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">2018-06-25 11:11:11</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">상품정보</th>
+                                <th scope="col">상품정보</th>
                                 <td>
                                     <a href="javascript:window.open('/application/popup/views/productSearch.html','productSearch','width=370, height=550, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w70">상품수정</a>
                                     <input type="text" value="" name="" class="ml05" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" style="width:165px" />
                                     <input type="text" value="" name="" class="ml05" style="width:85px" /> EA
                                 </td>
-                                <th scope="colgroup">주문상태</th>
+                                <th scope="col">주문상태</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
                                     <input type="checkbox" value="" name="" /> 불가
                                     <input type="checkbox" value="" name="" class="ml15" /> 지정주문
@@ -89,14 +94,14 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup" rowspan="2">상품이미지</th>
+                                <th scope="col" rowspan="2">상품이미지</th>
                                 <td>
                                     <label for="file_select" class="btn btn_blue btn_sm w70">파일선택</label>
                                     <input type="file" value="" name="" id="file_select" class="file_select"/>
                                     <input type="text" value="" name="" placeholder="선택된 파일 없음" style="width:150px" />
                                     PC에서 선택
                                 </td>
-                                <th scope="colgroup">해피콜</th>
+                                <th scope="col">해피콜</th>
                                 <td colspan="2">
                                     <input type="radio" value="" name="happycall" /> 요청
                                     <input type="checkbox" value="" name="" class="ml05" /> 배송사진 URL 전송
@@ -110,12 +115,12 @@
                                     <div>
                                         <a href="javascript:window.open('/application/popup/views/productPhotoSearch.html','productPhotoSearch','width=670, height=820, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w70">검색등록</a>
                                         <input type="text" value="" name="" placeholder="URL 직접입력" class="ml05" style="width:370px" />
-                                        <a href="#" class="btn btn_blue btn_sm w70 ml05">미리보기</a>
-                                        <a href="#" class="btn_plus"></a>
-                                        <a href="#" class="btn_minus"></a>
+                                        <a href="#" id="shipPhoto01" class="btn btn_blue btn_sm w70 ml05 layerOpen">미리보기</a>
+                                        <a href="#" class="btn_plus"><img src="/img/popup/btn_plus.png" alt="plus" /></a>
+                                        <a href="#" class="btn_minus"><img src="/img/popup/btn_minus.png" alt="minus" /></a>
                                     </div>
                                 </td>
-                                <th scope="colgroup">배송사진</th>
+                                <th scope="col">배송사진</th>
                                 <td>
                                     <input type="radio" value="" name="deliveryPhoto" /> 요청
                                 </td>
@@ -127,7 +132,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">원청금액</th>
+                                <th scope="col">원청금액</th>
                                 <td>
                                     <input type="text" value="" name="" style="width:100px" />
                                     <strong class="ml15">십만원</strong>
@@ -138,11 +143,11 @@
                                     <a href="#" class="btn btn_blue btn_sm">정정</a>
                                     <input type="checkbox" value="" name="" class="ml20" /> 원천금액 미노출
                                 </td>
-                                <th scope="colgroup">인수자(관계)</th>
+                                <th scope="col">인수자(관계)</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">홍길동(상주)</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">화훼결제금액</th>
+                                <th scope="col">화훼결제금액</th>
                                 <td>
                                     <input type="text" value="" name="" style="width:100px" />
                                     <strong class="ml15">육만원</strong>
@@ -152,36 +157,36 @@
                                     <a href="#" class="btn btn_cancel btn_sm">5천</a>
                                     <a href="#" class="btn btn_blue btn_sm">정정</a>
                                 </td>
-                                <th scope="colgroup">배달여부<br />(인수시간)</th>
+                                <th scope="col">배달여부<br />(인수시간)</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">배송완료 (2018-05-05 09:00:00)</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">옵션금액</th>
+                                <th scope="col">옵션금액</th>
                                 <td>
                                     <input type="text" value="" name="" style="width:100px" />
                                     <strong class="ml15">칠만원</strong>
-                                    <a href="#" class="btn btn_blue btn_sm ml15">옵션수정</a>
+                                    <a href="javascript:void(0)" id="optionModify" class="btn btn_blue btn_sm ml15 layerOpen">옵션수정</a>
                                     <a href="#" class="btn btn_cancel btn_sm">케이크 40,000원</a>
                                     <a href="#" class="btn btn_cancel btn_sm">코사지 20,000원</a>
                                 </td>
-                                <th scope="colgroup"><strong>총 결제금액<br />(옵션포함)</strong></th>
+                                <th scope="col"><strong>총 결제금액<br />(옵션포함)</strong></th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
                                     <input type="text" value="" name="" class="bold" style="width:100px" />
                                     <strong>십이만원</strong>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup" rowspan="2">주문고객정보</th>
+                                <th scope="col" rowspan="2">주문고객정보</th>
                                 <td>
                                     <input type="text" value="" name="" placeholder="주문자명" style="width:100px" />
                                     <input type="text" value="" name="" class="ml05" placeholder="일반전화" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" placeholder="핸드폰" style="width:140px" />
                                     <input type="checkbox" value="" name="" class="ml05" /> 안심번호 사용
                                 </td>
-                                <th scope="colgroup">배송사진</th>
+                                <th scope="col">배송사진</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
                                     <span>http://test.co.kr/11</span>
-                                    <a href="#" class="btn btn_blue btn_sm w100 ml20">배송사진 전송</a>
+                                    <a href="javascript:window.open('/application/popup/views/sendDeliveryPic.html','sendDeliveryPic','width=590, height=760, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w100 ml20">배송사진 전송</a>
                                 </td>
                             </tr>
                             <tr>
@@ -191,37 +196,37 @@
                                     <span>핸드폰 010-1111-1111</span>
                                     <span>(유효기간 2018-06-29까지)</span>
                                 </td>
-                                <th scope="colgroup">전할메세지</th>
+                                <th scope="col">전할메세지</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">전할메세지</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">받는고객정보</th>
+                                <th scope="col">받는고객정보</th>
                                 <td>
                                     <input type="text" value="" name="" placeholder="주문자명" style="width:100px" />
                                     <input type="text" value="" name="" class="ml05" placeholder="일반전화" style="width:140px" />
                                     <input type="text" value="" name="" class="ml05" placeholder="핸드폰" style="width:140px" />
                                     <input type="checkbox" value="" name="" class="ml05" /> 안심번호 사용
                                 </td>
-                                <th scope="colgroup">주문작성자</th>
+                                <th scope="col">주문작성자</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">홍길동</td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">배송일시</th>
+                                <th scope="col">배송일시</th>
                                 <td>
-                                    <span class="calenda">
+                                    <span class="calendar">
                                         <input type="text" class="datepicker" style="width:100px" />
                                         <span class="ico"></span>
                                     </span>
                                     <span class="ml05">토요일</span>
                                     <input type="text" value="" name="" class="ml05" style="width:320px" />
                                 </td>
-                                <th scope="colgroup" rowspan="3">요구사항</th>
+                                <th scope="col" rowspan="3">요구사항</th>
                                 <td rowspan="3" colspan="3" style="border-right:1px solid #7d7d7d">
                                     <textarea class="bold text_warning" style="height:101px">볼드처리 및 텍스트 색상처리 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum totam dolores ad officia, reiciendis consectetur natus consequatur eveniet rerum provident, placeat dolorem! Delectus quidem placeat sunt alias voluptas? Maiores, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam est alias enim ut iure sed aspernatur, distinctio, recusandae laudantium mollitia magnam doloribus perspiciatis repellat itaque porro, voluptatem aut? In, ex.</textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup" rowspan="2">배송장소</th>
+                                <th scope="col" rowspan="2">배송장소</th>
                                 <td>
                                     <a href="#" class="btn btn_sm btn_blue w100">주소검색</a>
                                     <input type="text" value="" name="" placeholder="우편번호" style="margin-left:5px; width:100px" />
@@ -238,25 +243,25 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">경조사어</th>
+                                <th scope="col">경조사어</th>
                                 <td>
                                     <input type="text" value="" name="" style="width:635px" />
                                     <a href="#" class="btn btn_blue btn_sm ml05 w100">경조사어 복사</a>
                                 </td>
-                                <th scope="colgroup" rowspan="2">관리자메모</th>
+                                <th scope="col" rowspan="2">관리자메모</th>
                                 <td rowspan="2" colspan="3" style="border-right:1px solid #000">
                                     <textarea style="height:64px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, architecto. Nostrum quaerat, a quisquam asperiores placeat velit sed omnis enim sit doloremque beatae amet explicabo praesentium sunt laboriosam repellendus eius!</textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup">보내는분</th>
+                                <th scope="col">보내는분</th>
                                 <td>
                                     <input type="text" value="" name="" style="width:635px" />
                                     <a href="#" class="btn btn_blue btn_sm ml05 w100">보내는분 복사</a>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="colgroup" rowspan="3" style="border-bottom:1px solid #000">카드메세지</th>
+                                <th scope="col" rowspan="3" style="border-bottom:1px solid #000">카드메세지</th>
                                 <td rowspan="3" style="border-bottom:1px solid #000">
                                     <textarea style="height:105px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id error eaque est amet fuga saepe officia? Veritatis illum qui a sit deserunt dolore doloremque? Cupiditate ipsa laudantium porro. Corporis, eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo corporis similique! Illum non voluptate recusandae veritatis aspernatur unde minus ipsa mollitia earum, beatae labore inventore. Non facere ut sequi!</textarea>
                                 </td>
@@ -316,6 +321,122 @@
                         </tbody>
                     </table>
                 </div>
+
+                <!-- 옵션수정 레이어팝업 -->
+                <div class="layer" id="optionModifyLayer">
+                    <div class="overlay"></div>
+                    <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-175px 0 0 -300px; width:600px; height:350px">
+                        <div class="inner">
+                            <div class="tit">
+                                <h2 class="h3">옵션수정</h2>
+                            </div>
+
+                            <div class="product_opt_box">
+                                <table summary="옵션수정" class="input_table mt10">
+                                    <caption>옵션수정</caption>
+                                    <colgroup>
+                                        <col width="19%"/>
+                                        <col widht="*"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="row">옵션상품</th>
+                                            <th scope="row">금액</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="ac">
+                                                <input type="checkbox" value="" name="" /> 케이크
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" name="" /> 원
+                                                <a href="#" class="btn btn_sm v2 btn_cancel ml20">10만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5천</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1천</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">
+                                                <input type="checkbox" value="" name="" /> 코사지
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" name="" /> 원
+                                                <a href="#" class="btn btn_sm v2 btn_cancel ml20">10만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5천</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1천</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">
+                                                <input type="checkbox" value="" name="" /> 케이크
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" name="" /> 원
+                                                <a href="#" class="btn btn_sm v2 btn_cancel ml20">10만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5천</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1천</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">
+                                                <input type="checkbox" value="" name="" /> 코사지
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" name="" /> 원
+                                                <a href="#" class="btn btn_sm v2 btn_cancel ml20">10만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5천</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1천</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">
+                                                <input type="checkbox" value="" name="" /> 케이크
+                                            </td>
+                                            <td>
+                                                <input type="text" value="" name="" /> 원
+                                                <a href="#" class="btn btn_sm v2 btn_cancel ml20">10만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1만</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">5천</a>
+                                                <a href="#" class="btn btn_sm v2 btn_cancel">1천</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="btn_area ar mt20">
+                                <a href="#" class="btn btn_confirm btn_m v2">수정</a>
+                                <a href="#" class="btn btn_cancel btn_m v2 ml05 close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /옵션수정 레이어팝업 -->
+
+                
+                <!-- 배송사진 클릭시 레이어팝업 -->
+                <div class="layer" id="shipPhoto01Layer">
+                    <div class="overlay"></div>
+                    <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-170px 0 0 -140px; width:280px; height:340px">
+                        <div class="inner">
+                            <img src="/img/order/sample_img.gif" alt="축하3단 이미지" width="260" height="260" />
+                            <div class="btn_area ar mt20">
+                                <a href="javascript:void(0)" class="btn btn_confirm btn_m ml05 close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /layer -->
+                <!-- /배송사진 클릭시 레이어팝업 -->
             </div>
         </div>
     </body>
