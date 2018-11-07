@@ -67,7 +67,9 @@
 
 .bold {font-weight:bold !important}
 
+.text_10, .text_10 * {font-size:10px !important}
 .text_11, .text_11 * {font-size:11px !important}
+.text_12 {font-size:12px !important}
 .text_14 {font-size:14px !important}
 .text_16 {font-size:16px !important}
 

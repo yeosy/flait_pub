@@ -53,18 +53,18 @@
                     <div class="option_srh">
                         <label><input type="radio" name="" value="" checked="checked" /> 주문일</label>
                         <label class="ml10"><input type="radio" name="" value="" /> 배송일</label>                     
-                        <span class="calendar ml30 mr10">
+                        <label class="calendar ml30 mr10">
                             <label>
                                 <span class="ico"></span>
                                 <input type="text" class="datepicker" title="시작일자" />
                             </label>
-                        </span> ~
-                        <span class="calendar ml10">
+                        </label> ~
+                        <label class="calendar ml10">
                             <label>
                                 <span class="ico"></span>
                                 <input type="text" class="datepicker" title="종료일자" />
                             </label>
-                        </span>
+                        </label>
                         <span class="btn_area month ml30 onChg">
                             <button href="#" class="btn btn_m btn_cancel">4월</button>
                             <button href="#" class="btn btn_m btn_cancel">5월</button>
@@ -312,13 +312,13 @@
                                     <div class="shop_info_ico">
                                         <span class="interlock">쇼핑몰 발주연동</span>
                                         <span class="mobile">모바일 인트라넷발주</span>
-                                        <a href="#" class="fax">팩스전송완료</a>
+                                        <a href="javascript:void(0)" onclick="window.open('/application/popup/views/transHistory.html','transHistory','width=800, height=550, top=50, left=50')" class="fax">팩스전송완료</a>
                                         <span class="fax fail">팩스전송실패</span> 전송 실패시 a링크가 아닌 span
-                                        <a href="#" class="sms">sms전송완료</a>
+                                        <a href="javascript:void(0)" onclick="window.open('/application/popup/views/smsHistory.html','smsHistory','width=800, height=520, top=50, left=50')" class="sms">sms전송완료</a>
                                         <span class="sms">sms전송실패</span> 전송 실패시 a링크가 아닌 span
-                                        <a href="#" class="order">주문처리내역</a>
+                                        <a href="javascript:void(0)" onclick="window.open('/application/popup/views/orderProcessHistory.html','orderList','width=800, height=390, top=50, left=50')" class="order">주문처리내역</a>
                                         <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/certificate.html','certificate','width=750, height=900, top=50, left=50, scrollbars=yes');" class="take">인수증</a>
-                                        <a href="#" class="photo layerOpen">배송사진업로드완료</a>
+                                        <a href="javascript:void(0)" id="shipPhoto01"class="photo layerOpen">배송사진업로드완료</a>
                                     </div>
                                     -->
 
@@ -2391,7 +2391,7 @@
                     <div class="overlay"></div>
                     <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-170px 0 0 -140px; width:280px; height:340px">
                         <div class="inner">
-                                <img src="/img/sample_img01.gif" alt="축하3단 이미지"  width="260" height="260" />
+                            <img src="/img/sample_img01.gif" alt="축하3단 이미지"  width="260" height="260" />
                             <div class="btn_area ar mt20">
                                 <a href="javascript:void(0)" class="btn btn_confirm btn_m ml05 close">닫기</a>
                             </div>

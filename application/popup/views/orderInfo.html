@@ -131,14 +131,16 @@
                             <tr>
                                 <th scope="col">원청금액</th>
                                 <td>
-                                    <input type="text" value="" name="" style="width:100px" />
-                                    <strong class="ml15">십만원</strong>
-                                    <a href="#" class="btn btn_cancel btn_sm ml15">10만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">5만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">1만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">5천</a>
-                                    <a href="#" class="btn btn_blue btn_sm">정정</a>
-                                    <input type="checkbox" value="" name="" class="ml20" /> 원천금액 미노출
+                                    <div class="btn_hover">
+                                        <input type="text" value="" name="" style="width:100px" />
+                                        <strong class="ml15">십만원</strong>
+                                        <a href="#" class="btn btn_cancel btn_sm ml15">10만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">5만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">1만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">5천</a>
+                                        <a href="#" class="btn btn_blue btn_sm">정정</a>
+                                        <input type="checkbox" value="" name="" class="ml20" /> 원천금액 미노출
+                                    </div>
                                 </td>
                                 <th scope="col">인수자(관계)</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">홍길동(상주)</td>
@@ -146,13 +148,15 @@
                             <tr>
                                 <th scope="col">화훼결제금액</th>
                                 <td>
-                                    <input type="text" value="" name="" style="width:100px" />
-                                    <strong class="ml15">육만원</strong>
-                                    <a href="#" class="btn btn_cancel btn_sm ml15">10만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">5만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">1만</a>
-                                    <a href="#" class="btn btn_cancel btn_sm">5천</a>
-                                    <a href="#" class="btn btn_blue btn_sm">정정</a>
+                                   <div class="btn_hover">
+                                        <input type="text" value="" name="" style="width:100px" />
+                                        <strong class="ml15">육만원</strong>
+                                        <a href="#" class="btn btn_cancel btn_sm ml15">10만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">5만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">1만</a>
+                                        <a href="#" class="btn btn_cancel btn_sm">5천</a>
+                                        <a href="#" class="btn btn_blue btn_sm">정정</a>
+                                    </div>
                                 </td>
                                 <th scope="col">배달여부<br />(인수시간)</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">배송완료 (2018-05-05 09:00:00)</td>
@@ -160,11 +164,13 @@
                             <tr>
                                 <th scope="col">옵션금액</th>
                                 <td>
-                                    <input type="text" value="" name="" style="width:100px" />
-                                    <strong class="ml15">칠만원</strong>
-                                    <a href="javascript:void(0)" id="optionModify" class="btn btn_blue btn_sm ml15 layerOpen">옵션수정</a>
-                                    <a href="#" class="btn btn_cancel btn_sm w100">케이크 40,000원</a>
-                                    <a href="#" class="btn btn_cancel btn_sm w100">코사지 20,000원</a>
+                                    <div class="btn_hover">
+                                        <input type="text" value="" name="" style="width:100px" />
+                                        <strong class="ml15">칠만원</strong>
+                                        <a href="javascript:void(0)" id="optionModify" class="btn btn_blue btn_sm ml15 layerOpen">옵션수정</a>
+                                        <a href="#" class="btn btn_cancel btn_sm w100">케이크 40,000원</a>
+                                        <a href="#" class="btn btn_cancel btn_sm w100">코사지 20,000원</a>
+                                    </div>
                                 </td>
                                 <th scope="col"><strong>총 결제금액<br />(옵션포함)</strong></th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
@@ -210,10 +216,10 @@
                             <tr>
                                 <th scope="col">배송일시</th>
                                 <td>
-                                    <span class="calendar">
+                                    <label class="calendar">
                                         <input type="text" class="datepicker" style="width:100px" />
                                         <span class="ico"></span>
-                                    </span>
+                                    </label>
                                     <span class="ml05">토요일</span>
                                     <input type="text" value="" name="" class="ml05" style="width:320px" />
                                 </td>
@@ -324,9 +330,7 @@
                     <div class="overlay"></div>
                     <div class="layer_pop pt05 pr05 pb05 pl05" style="margin:-175px 0 0 -300px; width:600px; height:350px">
                         <div class="inner">
-                            <div class="tit">
-                                <h2 class="h3">옵션수정</h2>
-                            </div>
+                            <h3 class="layer_tit">옵션수정</h3>
 
                             <div class="product_opt_box">
                                 <table summary="옵션수정" class="input_table mt10">

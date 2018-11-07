@@ -55,7 +55,7 @@
                                 <th scope="col">관계</th>
                                 <td>
                                     <input type="text" value="" name="" title="관계" style="width:160px" placeholder="필수입력" />
-                                    <a href="#" class="btn btn_s btn_cancel">관계</a>
+                                    <a href="javascript:void(0)" class="btn btn_s btn_cancel layerOpen" id="relation">관계</a>
                                 </td>
                             </tr>
                             <tr>
@@ -205,10 +205,36 @@
                 <div class="btn_area mt20">
                     <a href="javascript:void(0)" class="btn btn_cancel btn_m w100" onclick="javascript:window.open('/application/popup/views/relativeOrderInfo.html','relativeOrderInfo','width=620, height=700, top=50, left=50, scrollbars=yes')">해당 주문정보</a>
                     <span class="fr">
-                        <a href="javascript:window.close();" class="btn btn_confirm btn_m w100" onclick="javascript:window.open('/application/popup/views/shipComplete.html','shipComplete','width=420, height=300, top=50, left=50')">배송완료처리</a>
+                        <a href="javascript:void(0);" class="btn btn_confirm btn_m w100" onclick="javascript:window.open('/application/popup/views/shipComplete.html','shipComplete','width=420, height=300, top=50, left=50')">배송완료처리</a>
                         <a href="javascript:window.close();" class="btn btn_cancel btn_m w100">닫기</a>
                     </span>
                 </div>
+
+                <div class="layer" id="relationLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
+                   <div class="overlay"></div>
+                    <div class="layer_pop pt10 pl10 pb10 pr10" style="margin:-110px 0 0 -175px; width:350px; height:220px">
+                        <h4 class="layer_tit text_12">인수자 관계</h4>
+                        <ul class="input_list five text_10">
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">본인</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">남편</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">부인</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">아들</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">직원</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">동료</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">언니</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">동생</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">가족</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">경비실</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">상주님</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">회사동료</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">회사직원</a></li>
+                            <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100 mt10">옆집</a></li>
+                        </ul>
+                        <div class="btn_area ar mt20">
+                            <a href="#" class="btn btn_confirm btn_m ml05 w110 close">닫기</a>
+                        </div>
+                    </div>
+                </div><!-- /layer -->
             </div>
         </div>
     </body>
