@@ -165,3 +165,16 @@
 .upload_photo .input_table th{padding:10px 10px 11px}
 .upload_photo .file_select {width:0; height:0; overflow:hidden}
 
+/* 주문서, 인수증 */
+.certificate {padding:45pt 60pt 0}
+.certificate .btn_area {position:absolute; top:20pt; right:60pt}
+.certificate .top {padding:6.2pt; border-top:1pt solid #000; overflow:hidden}
+.certificate .top .tit {float:left; padding:0 22.3pt 0 13pt; line-height:17.8pt; font-size:15.6pt; font-weight:bold}
+.certificate .top dl, .certificate .top dt, .certificate .top dd {float:left; padding-right:5.5pt; font-size:7.2pt; line-height:8.9pt}
+.certificate .top dl dd:last-child {clear:both}
+.certificate .top .logo {float:right}
+.certificate table {width:100%; border:1pt solid #000}
+.certificate table th, .certificate table td {line-height:1.5em; border:1pt solid #000}
+.certificate table th {font-size:10.32pt; font-weight:bold}
+.certificate table td {padding:0.85pt 8pt; font-size:9.6pt}
+.certificate .cut_line {margin:87.8pt 0 41.3pt; height:4.92pt; text-align:center; font-size:7.92pt; border-bottom:1px dotted #000}

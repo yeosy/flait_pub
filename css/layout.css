@@ -84,3 +84,15 @@ a {text-decoration:none}
 #footer address {height:25px; line-height:25px; font-style:normal}
 #footer .copyright {height:25px; line-height:25px}
 #footer .copyright.v2 {color:#e60012}
+
+/* print layout */
+
+@media print{
+    * {color:#000;  page-break-after: avoid}
+    ul, img {page-break-inside: avoid}
+    img {max-width:100%}
+    @page {size:A4; margin:auto auto}
+    #print {box-sizing:border-box; width:210mm; padding:0}
+    #print .btn_area {display:none}
+}
+#print {box-sizing:border-box; width:100%}
