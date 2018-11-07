@@ -1,8 +1,5 @@
 @charset "utf-8";
 
 
-
-
-/* 상품이미지 검색 레이어팝업 */
-.upload_photo .input_table th{padding:10px 10px 11px}
-.upload_photo .file_select {width:0; height:0; overflow:hidden}
+.ship_photoBox .input_table th{padding:10px 10px 11px;}
+.rela_orderBox .list_table td{padding:10px; text-align:left}

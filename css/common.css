@@ -236,3 +236,7 @@ div[class*=box] {box-sizing:border-box}
 .sms_info.v2 {line-height:25px;}
 .dark_box.v2 {padding:7px 9px}
 .dark_box.v2 .screen{height:175px}
+
+/* 다운로드 버튼 */
+.down_ico {display:inline-block; width:22px; height:22px; vertical-align:middle; background:url('/img/popup/down_ico.png') no-repeat; background-size:100% 100%}
+.down_text:hover, .down_text:focus{text-decoration:underline}
