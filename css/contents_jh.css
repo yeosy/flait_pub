@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-.email_send.basic_box {padding:9px; width:294px}
-.email_send .list_table tbody th{padding:12px}
-.email_send .list_table tbody td{padding:7px 12px 7px;}
-.email_send .list_table input[type="text"] {width:100%; height:25px}
-.email_send .explain_text{padding:5px 0; line-height:1.5em; font-size:10px}
-.email_send{display:none}
+
+
+
+/* 상품이미지 검색 레이어팝업 */
+.upload_photo .input_table th{padding:10px 10px 11px}
+.upload_photo .file_select {width:0; height:0; overflow:hidden}
