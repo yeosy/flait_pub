@@ -3,3 +3,6 @@
 
 .ship_photoBox .input_table th{padding:10px 10px 11px;}
 .rela_orderBox .list_table td{padding:10px; text-align:left}
+
+.claim_procBox .list_table td{padding:5px 10px; text-align:left;}
+.claim_procBox .list_table input[type="file"] {width:0; height:0; overflow:hidden;}
