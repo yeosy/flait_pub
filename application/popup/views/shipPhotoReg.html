@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ko">
     <head>
-        <title>배송사진/ 인수자 등록</title>
+        <title>배송사진 등록</title>
         <meta charset="UTF-8">
         <meta http-equiv="Content-Script-Type" content="text/javascript">
         <meta http-equiv="Content-Style-Type" content="text/css">
@@ -15,14 +15,26 @@
         <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
         <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
         <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="/js/jquery-ui.js"></script>        
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
         <script type="text/javascript" src="/js/common.js"></script>
     </head>
     <body>
         <div id="wrap" class="popup">
             <div id="content">
                 <div class="tit mb10">
-                    <h2 class="h2">배송사진 / 인수자 등록</h2>
+                    <h2 class="h2">배송사진 등록</h2>
+                </div>
+                <div class="basic_box">
+                    <dl>
+                        <dt>배송지 :</dt>
+                        <dd>서울시 구로구 구로동 1111</dd>
+                        <dt>경조사어 :</dt>
+                        <dd>축발전</dd>
+                        <dt>보내는분 :</dt>
+                        <dd>홍길동</dd>
+                        <dt>카드메세지 :</dt>
+                        <dd>하이하이</dd>
+                    </dl>
                 </div>
 
                 <div class="ship_photoBox">
@@ -37,7 +49,7 @@
                             <tr>
                                 <th scope="col">배송사진</th>
                                 <td colspan="3">
-                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/shipPhotoReg.html','shipPhotoReg','width=560, height=600, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_s">배송사진 업로드</a>
+                                    <a href="#" class="btn btn_blue btn_s">배송사진 업로드</a>
                                     <div class="upload scroll_y" style="display:none">
                                         <p>
                                             <a href="#" class="down_text"><span class="down_ico"></span>file1.jpg</a>
@@ -210,9 +222,9 @@
                     </span>
                 </div>
 
-                <!-- 관계 선택 레이어 -->
-                <div class="layer v2" id="relationLayer" style="margin:50px 200px; width:350px; height:220px"><!-- 레이어 팝업 띄우는 id + Layer -->
-                    <div class="layer_pop pt10 pl10 pb10 pr10">
+                <div class="layer" id="relationLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
+                   <div class="overlay"></div>
+                    <div class="layer_pop pt10 pl10 pb10 pr10" style="margin:-110px 0 0 -175px; width:350px; height:220px">
                         <h4 class="layer_tit text_12">인수자 관계</h4>
                         <ul class="input_list five text_10">
                             <li><a href="javascript:void(0)" class="btn btn_m btn_cancel w_100">본인</a></li>
@@ -235,8 +247,6 @@
                         </div>
                     </div>
                 </div><!-- /layer -->
-                <!-- /관계 선택 레이어 -->
-
             </div>
         </div>
     </body>

@@ -26,7 +26,7 @@ a {text-decoration:none}
 .layer_pop .layer_tit {padding:4px 0 18px 10px; line-height:1.3em; font-size:14px}
 .layer_pop .inner textarea {background:#fff; border:1px solid #ccc}
 
-.layer.v2 {position:absolute; top:0; left:0; box-shadow:3px 3px 7px 0.03em #000}
+.layer.v2 {position:absolute; top:0; left:0; background:#fff; box-shadow:3px 3px 7px 0.03em #000}
 .layer.v2 .layer_pop {position:relative; top:0; left:0}
 
 /* main, sub 공통 */
@@ -62,8 +62,8 @@ a {text-decoration:none}
 .gnb ul li:first-child {box-sizing:border-box; padding-right:20px; width:255px; border:0}
 .gnb ul li:last-child {box-sizing:border-box; padding-left:20px; width:254px}
 
-#container {margin-top:20px; padding:0; width:1900px; background-image:linear-gradient(to right, #edf1f2 276px, #fff 276px); background-image:-webkit-linear-gradient(left, #edf1f2 276px, #fff 276px)}
-.lnb {float:left; width:276px; height:100%; background:#edf1f2; font-size:14px}
+#container {margin-top:20px; padding:0; width:1900px; background-image:linear-gradient(to right, #edf1f2 265px, #fff 265px); background-image:-webkit-linear-gradient(left, #edf1f2 265px, #fff 265px)}
+.lnb {float:left; width:265px; height:100%; background:#edf1f2; font-size:14px}
 .lnb h2 {padding:6px 0 6px 30px; line-height:2.0em; background:#ccc}
 .lnb ul {padding:10px}
 .lnb ul li a {display:block; padding:5px 30px 4px; line-height:1.5em}
@@ -92,7 +92,7 @@ a {text-decoration:none}
     ul, img {page-break-inside: avoid}
     img {max-width:100%}
     @page {size:A4; margin:auto auto}
-    #print {box-sizing:border-box; width:210mm; padding:0}
+    #print {box-sizing:border-box; width:210mm; padding:40pt; height:100%}
     #print .btn_area {display:none}
 }
 #print {box-sizing:border-box; width:100%}

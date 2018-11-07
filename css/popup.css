@@ -153,7 +153,7 @@
 .order_info_box .input_table .btn_list .btn {min-width:110px; height:32px}
 .order_info_box .input_table input[type="file"]{width:0; height:0; overflow:hidden}
 .order_info_box .input_table img{vertical-align:middle}
-.order_info_box td.btn_hover .btn:click, .order_info_box td.btn_hover .btn:active {background:#c5dfe7}
+.order_info_box .btn_active .btn:active {background:rgba(197,223,231,0.7)}
 /* 주문정보 > 상품검색 */
 .product_image_search .list_table th, .product_image_search .list_table td {line-height:19px}
 /* 주문정보 > 옵션수정 */
@@ -161,16 +161,17 @@
 .product_opt_box .input_table th, .product_opt_box .input_table td {line-height:28px}
 
 /* 상품이미지검색 */
-.product_image_list ul li{float:left; box-sizing:border-box; width:23.72%}
-.product_image_list ul li img{width:120px; height:120px}
+.product_image_list ul li{float:left; box-sizing:border-box; width:23.72%; padding:7px 9px 9px}
+.product_image_list ul li img{display:block; margin:0 auto; width:120px; height:120px}
 .upload_photo .input_table th{padding:10px 10px 11px}
 .upload_photo .file_select {width:0; height:0; overflow:hidden}
 
 /* 주문서, 인수증 */
-.certificate {padding:45pt 60pt 0}
-.certificate .btn_area {position:absolute; top:20pt; right:60pt}
-.certificate .top {padding:6.2pt; border-top:1pt solid #000; overflow:hidden}
-.certificate .top .tit {float:left; padding:0 22.3pt 0 13pt; line-height:17.8pt; font-size:15.6pt; font-weight:bold}
+.certificate {padding:40pt 60pt; height:100%}
+.certificate .content {position:relative; height:100%}
+.certificate .btn_area {position:absolute; top:15pt; right:60pt}
+.certificate .top {padding:6.2pt 0; border-top:1pt solid #000; overflow:hidden}
+.certificate .top .tit {float:left; padding:0 18.3pt 0 11pt; line-height:17.8pt; font-size:15.6pt; font-weight:bold}
 .certificate .top dl, .certificate .top dt, .certificate .top dd {float:left; padding-right:5.5pt; font-size:7.2pt; line-height:8.9pt}
 .certificate .top dl dd:last-child {clear:both}
 .certificate .top .logo {float:right}
@@ -178,4 +179,5 @@
 .certificate table th, .certificate table td {line-height:1.5em; border:1pt solid #000}
 .certificate table th {font-size:10.32pt; font-weight:bold}
 .certificate table td {padding:0.85pt 8pt; font-size:9.6pt}
-.certificate .cut_line {margin:87.8pt 0 41.3pt; height:4.92pt; text-align:center; font-size:7.92pt; border-bottom:1px dotted #000}
+.certificate .cut_line {position:absolute; top:50%; left:0; width:100%; height:4.92pt; text-align:center; font-size:7.92pt; border-bottom:1px dotted #000}
+.certificate .print_sec2 {position:absolute; left:0; top:55%}

@@ -20,6 +20,8 @@
 /* SMS관리 */
 .sms_send.basic_box {padding:9px; width:294px}
 .sms_send .screen {display:block; box-sizing:border-box; width:254px; height:174px; padding:7px; line-height:1.66666em; background:#c5dfe7; border:1px solid #ccc}
+.sms_send .dark_box.v2 .screen{height:175px}
+
 .sms_send .byte {line-height:15px; text-align:right}
 .sms_send .sms_info {box-sizing:border-box; padding:10px 9px 9px; background:#fff; border:1px solid #ccc}
 .sms_info h4 {height:17px; margin-bottom:9px}
