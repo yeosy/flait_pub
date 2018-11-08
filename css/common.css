@@ -238,7 +238,7 @@ div[class*=box] {box-sizing:border-box}
 .dark_box.v2 {padding:7px 9px}
 
 /* 다운로드 */
-.upload .file_name:hover, .upload .file_name:focus{text-decoration:underline}
-.upload .file_name .ico_down {margin-right:3px; width:22px; height:22px; vertical-align:middle}
-.upload .file_nameInput:disabled {width:130px; height:25px; line-height:23px; vertical-align:-1px}
-.upload .btn_file {position:absolute; width:0; height:0; overflow:hidden}
+.attach_file .download .file_name:hover, .attach_file .download .file_name:focus{text-decoration:underline}
+.attach_file .dow .file_name .ico_down {margin-right:3px; width:22px; height:22px; vertical-align:middle}
+.attach_file .upload .file_nameInput:disabled {width:130px; height:25px; line-height:23px; vertical-align:-1px}
+.attach_file .upload .btn_file {position:absolute; width:0; height:0; overflow:hidden}
