@@ -38,10 +38,14 @@
                         <tbody>
                             <tr>
                                 <td colspan="6" class="p00" style="border-right:1px solid #023a63">
+                                   <!-- 주문거절이 없을 경우  -->
                                     <div class="info">
                                         현재<span>[직원명]</span>님께서 열람중인 주문서입니다.
                                         <span>[2018-06-25 15:04:10]</span>
                                     </div>
+                                    <!-- /주문 거절이 없을 경우 -->
+
+                                    <!-- 주문거절이 있을 경우 -->
                                     <div class="info refuse">
                                         주문거절 요청한 주문건입니다.  다른 수주화원으로 재발주 하시기 바랍니다.
                                         <span class="btn_area fr">
@@ -49,6 +53,7 @@
                                             <a href="#" class="btn btn_cancel btn_m ml05">주문거절취소</a>
                                         </span>
                                     </div>
+                                    <!-- /주문거절이 있을 경우 -->
                                    <!--
                                     *주문 거절시
                                     .order_info_box .input_table .info {display:none}
