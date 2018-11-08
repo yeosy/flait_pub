@@ -24,7 +24,6 @@
                 <div class="tit mb10">
                     <h2 class="h2">배송사진 / 인수자 등록</h2>
                 </div>
-
                 <div class="ship_photoBox">
                     <table summary="배송사진, 인수자 등록" class="input_table">
                         <colgroup>
@@ -221,6 +220,7 @@
                         </tbody>
                     </table>
                 </div>
+                <!-- 기본 상태 -->
                 <div class="btn_area mt20">
                     <a href="javascript:void(0)" class="btn btn_cancel btn_m w100" onclick="javascript:window.open('/html/popup/views/relativeOrderInfo.html','relativeOrderInfo','width=620, height=700, top=50, left=50, scrollbars=yes')">해당 주문정보</a>
                     <span class="fr">
@@ -228,6 +228,19 @@
                         <a href="javascript:window.close();" class="btn btn_cancel btn_m w100">닫기</a>
                     </span>
                 </div>
+                <!-- /기본 상태 -->
+
+                <!-- 배송 상태가 배송 완료인 경우 -->
+                <div class="btn_area mt20">
+                    <a href="javascript:void(0)" class="btn btn_cancel btn_m w100" onclick="javascript:window.open('/html/popup/views/relativeOrderInfo.html','relativeOrderInfo','width=620, height=700, top=50, left=50, scrollbars=yes')">해당 주문정보</a>
+                    <a href="javascript:void(0)" class="btn btn_cancel btn_m w100" onclick="javascript:window.open('/html/popup/views/certificate.html','certificate','width=750, height=900, top=50, left=50, scrollbars=yes');">인수증</a>
+                    <span class="fr">
+                        <a href="#" class="btn btn_confirm btn_m w100">배송취소</a>
+                        <a href="#" class="btn btn_confirm btn_m w100">수정</a>
+                        <a href="javascript:window.close();" class="btn btn_cancel btn_m w100">닫기</a>
+                    </span>
+                </div>
+                <!-- /배송 상태가 배송 완료인 경우 -->
 
                 <!-- 관계 선택 레이어 -->
                 <div class="layer v2" id="relationLayer" style="margin:50px 200px; width:350px; height:220px"><!-- 레이어 팝업 띄우는 id + Layer -->

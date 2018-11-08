@@ -15,7 +15,7 @@
 .ship_select.ui-selectmenu-button .ui-selectmenu-text.check {background-color:#b0d7fa}
 .ship_select.ui-selectmenu-button .ui-selectmenu-text.order {background-color:#f4f1cc}
 .ship_select.ui-selectmenu-button .ui-selectmenu-text.shipping {background-color:#d3eed3}
-.ship_select.ui-selectmenu-button .ui-selectmenu-text.delivery {background-color:#dcdcdc}
+.ship_select.ui-selectmenu-button .ui-selectmenu-text.delivery {background-color:#f6f1f6}
 
 /* SMS관리 */
 .sms_send.basic_box {padding:9px; width:294px}

@@ -64,10 +64,10 @@
 .popup .member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
 .popup .member_search .shop .info .box > div {height:20px; line-height:20px}
 .popup .member_search .shop .result li .box .ellipsis {text-decoration:underline}
-.popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:2px 10px 3px; text-align:left; font-size:10px}
+.popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:2px 10px 3px; text-align:left; font-size:11px}
 .popup .member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
 .popup .member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
-.popup .member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:0.82em}
+.popup .member_search .shop .info .shop_note .btn {float:left; width:79px; height:40px; line-height:40px; background:#eee; border:1px solid #ccc; border-left:0; border-radius:0; font-size:11px}
 .popup .member_search .shop .result li > table {width:214px}
 .popup .member_search .shop .result li > table th {padding:9px 5px 10px}
 .popup .member_search .shop .result li > table td {padding:8px 5px}

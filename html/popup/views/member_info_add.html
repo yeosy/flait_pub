@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>회원 추가정보</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit mb10">
+                    <h2 class="h2">홍길동플라워 추가정보</h2>
+                </div>
+
+                <table summary="경력, 이메일, 결혼정보, 직원, 자격증 등의 정보를 제공" class="input_table">
+                  <caption>추가 정보</caption>
+                   <colgroup>
+                       <col widht="20%" />
+                       <col widht="30%" />
+                       <col widht="20%" />
+                       <col widht="30%" />
+                   </colgroup>
+                   <tbody>
+                       <tr>
+                           <th scope="col">화원경력</th>
+                           <td>15년  06개월</td>
+                           <th scope="col">이메일</th>
+                           <td>test@nate.com</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">결혼여부</th>
+                           <td>미혼</td>
+                           <th scope="col">결혼기념일</th>
+                           <td>2018-10-27</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">직원인원</th>
+                           <td>2</td>
+                           <th scope="col">자격증</th>
+                           <td>없음</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">매장형태</th>
+                           <td>독립</td>
+                           <th scope="col">매장면적</th>
+                           <td>30평</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">꽃냉장고</th>
+                           <td>있음</td>
+                           <th scope="col">인터넷</th>
+                           <td>가능</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">리본출력</th>
+                           <td>가능</td>
+                           <th scope="col">붓글씨</th>
+                           <td>가능</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">전용팩스</th>
+                           <td>있음</td>
+                           <th scope="col">매장상품</th>
+                           <td>동양란</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">배송차량</th>
+                           <td>1대</td>
+                           <th scope="col">월간발주가능</th>
+                           <td>150만원</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">타단체활동</th>
+                           <td colspan="3">없음</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">경쟁력상품</th>
+                           <td colspan="3">없음</td>
+                       </tr>
+                       <tr>
+                           <th scope="col">홈페이지</th>
+                           <td colspan="3"><a href="http://www.text.co.kr" target="_blank">http://www.text.co.kr</a></td>
+                       </tr>
+                   </tbody>
+                </table>
+                <div class="btn_area ar mt30">
+                    <a href="javascript:window.close()" class="btn btn_confirm btn_m close">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
