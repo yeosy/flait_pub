@@ -29,19 +29,25 @@
                 <div class="order_info_box">
                     <table summary="주문정보" class="input_table">
                         <colgroup>
-                            <col width="2.5%" />
+                            <col width="7.5%" />
+                            <col width="57.1%" />
+                            <col width="7.5%" />
+                            <col width="7%" span="2" />
                             <col width="*" />
-                            <col width="2.5%" span="4" />
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td colspan="6" class="info" style="border-right:1px solid #023a63">
-                                    <div style="display:block">
+                                <td colspan="6" class="p00" style="border-right:1px solid #023a63">
+                                    <div class="info">
                                         현재<span>[직원명]</span>님께서 열람중인 주문서입니다.
                                         <span>[2018-06-25 15:04:10]</span>
                                     </div>
-                                    <div style="display:none">
+                                    <div class="info refuse">
                                         주문거절 요청한 주문건입니다.  다른 수주화원으로 재발주 하시기 바랍니다.
+                                        <span class="btn_area fr">
+                                            <a href="#" class="btn btn_cancel btn_m">주문처리내역</a>
+                                            <a href="#" class="btn btn_cancel btn_m ml05">주문거절취소</a>
+                                        </span>
                                     </div>
                                 </td>
                             </tr>
@@ -92,8 +98,8 @@
                             </tr>
                             <tr>
                                 <th scope="col" rowspan="2">상품이미지</th>
-                                <td>
-                                    <div class="attach_file mt10">
+                                <td rowspan="2">
+                                    <div class="attach_file">
                                         <div class="download" style="display:none">
                                             <a href="#" class="file_name"><span class="ico ico_down"></span>file1.jpg</a>
                                             <a href="#" class="btn btn_cancel btn_sm ml05">수정</a>
@@ -106,20 +112,7 @@
                                             <input type="text" value="" name="" placeholder="선택된 파일 없음" style="margin-left:5px; width:150px" disabled="disabled" /> PC에서 선택
                                         </div>
                                     </div>
-
-                                </td>
-                                <th scope="col">해피콜</th>
-                                <td colspan="2">
-                                    <input type="radio" value="" name="happycall" /> 요청
-                                    <input type="checkbox" value="" name="" class="ml05" /> 배송사진 URL 전송
-                                </td>
-                                <td style="border-right:1px solid #7d7d7d">
-                                    <input type="radio" value="" name="happycall" /> 미요청
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="border-top:none">
-                                    <div>
+                                    <div class="mt05">
                                         <a href="javascript:void(0);" onclick="javascript:window.open('/html/popup/views/productPhotoSearch.html','productPhotoSearch','width=670, height=825, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm w70">검색등록</a>
                                         <input type="text" value="" name="" placeholder="URL 직접입력" class="ml05" style="width:370px" />
                                         <a href="#" id="shipPhoto01" class="btn btn_blue btn_sm w70 ml05 layerOpen">미리보기</a>
@@ -127,14 +120,24 @@
                                         <a href="#" class="btn_minus"><img src="/img/popup/btn_minus.png" alt="이미지 제거" /></a>
                                     </div>
                                 </td>
+                                <th scope="col">해피콜</th>
+                                <td colspan="2" class="text_11">
+                                    <input type="radio" value="" name="happycall" /> 요청
+                                    <input type="checkbox" value="" name="" class="ml05" /> 배송사진 URL 전송
+                                </td>
+                                <td style="border-right:1px solid #7d7d7d" class="text_11">
+                                    <input type="radio" value="" name="happycall" /> 미요청
+                                </td>
+                            </tr>
+                            <tr>
                                 <th scope="col">배송사진</th>
-                                <td>
+                                <td class="text_11">
                                     <input type="radio" value="" name="deliveryPhoto" /> 요청
                                 </td>
-                                <td>
+                                <td class="text_11">
                                     <input type="radio" value="" name="deliveryPhoto" /> 미요청
                                 </td>
-                                <td style="border-right:1px solid #7d7d7d">
+                                <td style="border-right:1px solid #7d7d7d" class="text_11">
                                     <input type="checkbox" value="" name="" /> 미등록시 벌금부과
                                 </td>
                             </tr>
@@ -184,11 +187,19 @@
                             </tr>
                             <tr>
                                 <th scope="col" rowspan="2">주문고객정보</th>
-                                <td>
-                                    <input type="text" value="" name="" placeholder="주문자명" style="width:100px" />
-                                    <input type="text" value="" name="" class="ml05" placeholder="일반전화" style="width:140px" />
-                                    <input type="text" value="" name="" class="ml05" placeholder="핸드폰" style="width:140px" />
-                                    <input type="checkbox" value="" name="" class="ml05" /> 안심번호 사용
+                                <td rowspan="2">
+                                    <div>
+                                        <input type="text" value="" name="" placeholder="주문자명" style="width:100px" />
+                                        <input type="text" value="" name="" class="ml05" placeholder="일반전화" style="width:140px" />
+                                        <input type="text" value="" name="" class="ml05" placeholder="핸드폰" style="width:140px" />
+                                        <input type="checkbox" value="" name="" class="ml05" /> 안심번호 사용
+                                    </div>
+                                    <div class="mt05">
+                                        <a href="#" class="btn btn_blue btn_sm w100">안심번호</a>
+                                        <span>일반전화 02-1111-1111</span>
+                                        <span>핸드폰 010-1111-1111</span>
+                                        <span>(유효기간 2018-06-29까지)</span>
+                                    </div>
                                 </td>
                                 <th scope="col">배송사진</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">
@@ -197,12 +208,6 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border-top:none">
-                                    <a href="#" class="btn btn_blue btn_sm w100">안심번호</a>
-                                    <span>일반전화 02-1111-1111</span>
-                                    <span>핸드폰 010-1111-1111</span>
-                                    <span>(유효기간 2018-06-29까지)</span>
-                                </td>
                                 <th scope="col">전할메세지</th>
                                 <td colspan="3" style="border-right:1px solid #7d7d7d">전할메세지</td>
                             </tr>
@@ -227,26 +232,26 @@
                                     <span class="ml05">토요일</span>
                                     <input type="text" value="" name="" class="ml05" style="width:320px" />
                                 </td>
-                                <th scope="col" rowspan="3">요구사항</th>
-                                <td rowspan="3" colspan="3" style="border-right:1px solid #7d7d7d">
+                                <th scope="col" rowspan="2">요구사항</th>
+                                <td rowspan="2" colspan="3" style="border-right:1px solid #7d7d7d">
                                     <textarea class="bold text_warning" style="height:101px">볼드처리 및 텍스트 색상처리 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum totam dolores ad officia, reiciendis consectetur natus consequatur eveniet rerum provident, placeat dolorem! Delectus quidem placeat sunt alias voluptas? Maiores, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam est alias enim ut iure sed aspernatur, distinctio, recusandae laudantium mollitia magnam doloribus perspiciatis repellat itaque porro, voluptatem aut? In, ex.</textarea>
                                 </td>
                             </tr>
                             <tr>
-                                <th scope="col" rowspan="2">배송장소</th>
+                                <th scope="col">배송장소</th>
                                 <td>
-                                    <a href="#" class="btn btn_sm btn_blue w100">주소검색</a>
-                                    <input type="text" value="" name="" placeholder="우편번호" style="margin-left:5px; width:100px" />
-                                    <span class="fr">
-                                        <a href="#" class="btn btn_sm btn_blue w100">NAVER 지도</a>
-                                        <a href="#" class="btn btn_sm btn_blue w100 ml05">신주소 변환</a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="border-top:none">
-                                    <input type="text" value="" name="" placeholder="직접입력" style="width:367px" />
-                                    <input type="text" value="" name="" placeholder="직접입력" style="margin-left:5px; width:367px" />
+                                    <div>
+                                        <a href="#" class="btn btn_sm btn_blue w100">주소검색</a>
+                                        <input type="text" value="" name="" placeholder="우편번호" style="margin-left:5px; width:100px" />
+                                        <span class="fr">
+                                            <a href="#" class="btn btn_sm btn_blue w100">NAVER 지도</a>
+                                            <a href="#" class="btn btn_sm btn_blue w100 ml05">신주소 변환</a>
+                                        </span>
+                                    </div>
+                                    <div class="mt05">
+                                        <input type="text" value="" name="" placeholder="직접입력" style="width:367px" />
+                                        <input type="text" value="" name="" placeholder="직접입력" style="margin-left:5px; width:367px" />
+                                    </div>
                                 </td>
                             </tr>
                             <tr>

@@ -138,8 +138,9 @@
 
 /* 주문정보 */
 .order_info_box .input_table {border:0}
-.order_info_box .input_table .info{padding:11px 27px 12px; width:100%; background:#023a63; color:#fff}
-.order_info_box .input_table td{padding:6px 10px}
+.order_info_box .input_table .info{display:block; padding:5px 27px 6px; line-height:30px; background:#023a63; color:#fff}
+.order_info_box .input_table .info.refuse{display:none; background:#e60012}
+.order_info_box .input_table .info.refuse .btn_area{color:#000}
 .order_info_box .input_table .btn_list{margin:0 auto; width:460px; height:32px; border-bottom:1px solid #ccc}
 .order_info_box .input_table .btn_list li{float:left; width:114px; height:25px; line-height:25px; border-left:1px solid #ccc}
 .order_info_box .input_table .btn_list li:first-child{margin:0; border:0}
