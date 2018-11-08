@@ -86,7 +86,6 @@ a {text-decoration:none}
 #footer .copyright.v2 {color:#e60012}
 
 /* print layout */
-
 @media print{
     * {color:#000;  page-break-after: avoid}
     ul, img {page-break-inside: avoid}

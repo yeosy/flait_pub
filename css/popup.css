@@ -64,9 +64,6 @@
 .popup .member_search .shop .info .box {padding:13px; border:1px solid #7d7d7d}
 .popup .member_search .shop .info .box > div {height:20px; line-height:20px}
 .popup .member_search .shop .result li .box .ellipsis {text-decoration:underline}
-.popup .member_search .shop .tag_list {overflow:hidden; margin-top:12px; padding-left:5px}
-.popup .member_search .shop .tag_list li {float:left; margin-left:10px; height:20px; line-height:20px}
-.popup .member_search .shop .tag_list li span {vertical-align:top}
 .popup .member_search .shop .info .list_table th, .popup .member_search .shop .info .list_table td {padding:2px 10px 3px; text-align:left; font-size:10px}
 .popup .member_search .shop .info .shop_note {margin-top:9px; overflow:hidden}
 .popup .member_search .shop .info .shop_note textarea {float:left; width:377px; height:40px}
@@ -153,7 +150,6 @@
 .order_info_box .input_table .btn_list .btn {min-width:110px; height:32px}
 .order_info_box .input_table input[type="file"]{width:0; height:0; overflow:hidden}
 .order_info_box .input_table img{vertical-align:middle}
-.order_info_box .btn_active .btn:active {background:rgba(197,223,231,0.7)}
 /* 주문정보 > 상품검색 */
 .product_image_search .list_table th, .product_image_search .list_table td {line-height:19px}
 /* 주문정보 > 옵션수정 */
@@ -180,3 +176,12 @@
 .certificate table td {padding:0.85pt 8pt; font-size:9.6pt}
 .certificate .cut_line {position:absolute; top:50%; left:0; width:100%; height:4.92pt; text-align:center; font-size:7.92pt; border-bottom:1px dotted #000}
 .certificate .print_sec2 {position:absolute; left:0; top:55%}
+@media print{
+    .certificate table td {padding:3.5pt 8pt}
+}
+
+/* 배송사진 등록 */
+.img_ratate {overflow:hidden; margin-left:-5px; width:calc( 100% + 5px )}
+.btn_rotateLeft {}
+.btn_rotateRight {}
+

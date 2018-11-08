@@ -102,7 +102,6 @@
 
 /* button */
 .btn_area {overflow:hidden}
-.btn_area.w_100 .btn {min-width:100%}
 
 .btn {display:inline-block; box-sizing:border-box; text-align:center; border-radius:5px} /* 기본 border-radius:5px */
 .btn.btn_round00 {border-radius:0}
@@ -132,6 +131,14 @@
 .w100 {min-width:inherit; width:100px !important}
 .w110 {min-width:inherit; width:110px !important}
 .w_100 {min-width:inherit; width:100% !important} /* 단위 % */
+.w_100.btn_area .btn {min-width:100%}
+.w_90 {min-width:inherit; width:90% !important}
+.w_80 {min-width:inherit; width:80% !important}
+.w_70 {min-width:inherit; width:70% !important}
+.w_60 {min-width:inherit; width:60% !important}
+.w_50 {min-width:inherit; width:50% !important}
+.w_45 {min-width:inherit; width:45% !important}
+.w_40 {min-width:inherit; width:40% !important}
 
 /* icon */
 .ico {display:inline-block; width:16px; height:16px; vertical-align:-3px; background-image:url("/img/jquery_ui/ui-icons_444444_256x240.png")}
@@ -176,6 +183,10 @@
 .input_list.three li, .input_list.three label {width:33.33%}/* radio or checkbox : 3 */
 .input_list.four li, .input_list.four label {width:25%; letter-spacing:-1px}/* radio or checkbox : 4 */
 .input_list.five li, .input_list.five label {width:20%; letter-spacing:-1px}/* radio or checkbox : 5 */
+
+.dl_list:after {clear:both; display:block; content:""}
+.dl_list dt, .dl_list dd {float:left}
+.dl_list dt {padding-right:5px; clear:both; font-weight:bold}
 
 /* 테이블 공통 */
 table {table-layout:fixed}
@@ -238,7 +249,8 @@ div[class*=box] {box-sizing:border-box}
 .dark_box.v2 {padding:7px 9px}
 
 /* 다운로드 */
-.attach_file .download .file_name:hover, .attach_file .download .file_name:focus{text-decoration:underline}
-.attach_file .download .file_name .ico_down {margin-right:3px; width:22px; height:22px; vertical-align:middle}
-.attach_file .upload .file_nameInput:disabled {width:130px; height:25px; line-height:23px; vertical-align:-1px}
-.attach_file .upload .btn_file {position:absolute; width:0; height:0; overflow:hidden}
+.attach_file * {vertical-align:middle}
+.attach_file .file_name:hover, .attach_file .download .file_name:focus{text-decoration:underline}
+.attach_file .file_name .ico_down {margin-right:3px; width:22px; height:22px; vertical-align:middle}
+.attach_file .file_nameInput:disabled {width:130px; height:25px}
+.attach_file .btn_file {position:absolute; top:9999px; left:0; width:0; height:0; overflow:hidden}
