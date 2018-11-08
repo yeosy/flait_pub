@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>FAX / SMS / 이메일 전송 내역</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="h2">FAX / SMS / 이메일 전송 내역</h2>
+                </div>
+
+                <table summary="발주, 수주 화원정보" class="list_table mt10">
+                    <caption>화원정보</caption>
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="*" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">발주화원</th>
+                            <td class="al pl15">[부산 사상구]홍길동플라워  TEL 061-111-2222  FAX 061-222-3333</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">수주화원</th>
+                            <td class="al pl15">[부산 사상구]홍길동플라워  TEL 061-111-2222  FAX 061-222-3333</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="mt20">발주화원 -> 수주화원 (전송정보) : 발주건 2018-09-17 10:00:00</p>
+                <table class="input_table mt05">
+                    <caption>발주화원 팩스전송 정보</caption>
+                    <colgroup>
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="20%" span="4" />
+                    </colgroup>
+                    <tbody class="ac">
+                        <tr>
+                            <th scope="colgroup" rowspan="6" class="bg_blue">FAX</th>
+                            <th scope="rowgroup">시도차수</th>
+                            <th scope="row">1차</th>
+                            <th scope="row">2차</th>
+                            <th scope="row">3차</th>
+                            <th scope="row">4차</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송시작</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송종료</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">소요시간</th>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송상태</th>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">상태설명</th>
+                            <td><span class="text_warning">무응답</span></td>
+                            <td><span class="text_warning">통화중</span></td>
+                            <td><span class="text_warning">미연결</span></td>
+                            <td>정상처리</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">SMS</th>
+                            <td colspan="5" class="al pl35">010-1111-2222(전송완료)</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">이메일</th>
+                            <td colspan="5" class="al pl35">test@hanmail.net(미전송)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="mt20">수주화원 -> 발주화원 (전송정보) : 배송완료건 2018-09-17 10:00:00</p>
+                <table class="input_table mt05">
+                    <caption>수주화원 팩스전송 정보</caption>
+                    <colgroup>
+                        <col width="8%" />
+                        <col width="*" />
+                        <col width="20%" span="4" />
+                    </colgroup>
+                    <tbody class="ac">
+                        <tr>
+                            <th scope="colgroup" rowspan="6" class="bg_blue">FAX</th>
+                            <th scope="rowgroup">시도차수</th>
+                            <th scope="row">1차</th>
+                            <th scope="row">2차</th>
+                            <th scope="row">3차</th>
+                            <th scope="row">4차</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송시작</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송종료</th>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                            <td>2018-09-17 10:00:00</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">소요시간</th>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                            <td>1분 4초</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">전송상태</th>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                            <td>발송완료</td>
+                        </tr>
+                        <tr>
+                            <th scope="col">상태설명</th>
+                            <td><span class="text_warning">무응답</span></td>
+                            <td><span class="text_warning">통화중</span></td>
+                            <td><span class="text_warning">미연결</span></td>
+                            <td>정상처리</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">SMS</th>
+                            <td colspan="5" class="al pl35">010-1111-2222(전송완료)</td>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="bg_blue">이메일</th>
+                            <td colspan="5" class="al pl35">test@hanmail.net(미전송)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area ar mt20">
+                    <a href="javascript:window.close();" class="btn btn_m btn_confirm">닫기</a>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

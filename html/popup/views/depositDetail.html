@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>회원별 입금관리</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+               <!-- 타이틀 -->
+                <div class="tit">
+                    <h2 class="h2">회원별 입금관리</h2>
+                </div>
+               <!-- /타이틀 -->
+
+                <!-- 검색 폼 -->
+                <div class="option_area">
+                    <div class="option_srh">
+                       <a href="#" class="btn btn_m btn_basic">엑셀다운로드</a>
+                    </div>
+
+                    <div class="option_sort" style="width:1000px">
+                        <table summary="지역명, 화원명 정보 입력" class="input_table fl" style="width:500px">
+                            <colgroup>
+                                <col width="20%" />
+                                <col width="30%" />
+                                <col width="20%" />
+                                <col width="*" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="col">지역명</th>
+                                    <td>부산 사상구</td>
+                                    <th scope="col">화원명</th>
+                                    <td>홍길동 플라워</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="javascript:void(0)" onclick="window.open('/html/popup/views/memberSearch.html', 'memberSearch', 'width=1220, height=910, top=50, left=300, scrollbars=yes')" class="btn btn_m btn_search ml05 mr10">회원 검색<span class="ico ico_srch"></span></a>
+
+                        <select class="select" title="시작 년도">
+                            <option value="">2018</option>
+                            <option value="">2019</option>
+                        </select> 년
+                        <select class="select" title="시작 월">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select> 월 ~
+
+                        <select class="select" title="종료 년도">
+                            <option value="">2018</option>
+                            <option value="" selected="selected">2019</option>
+                        </select> 년
+                        <select class="select" title="종료 월">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select> 월
+                        <a href="#" class="btn btn_m btn_search ml05">검색<span class="ico ico_srch"></span></a>
+                    </div>
+                </div>
+                <!-- /검색 폼 -->
+
+                <table summary="가맹점 가입신청 정보" class="list_table mt10">
+                    <caption>입금관리 정보</caption>
+                    <colgroup>
+                        <col width="6%" />
+                        <col width="7%" span="2" />
+                        <col width="5%" />
+                        <col width="7%" />
+                        <col width="6.2%" />
+                        <col width="6%" span="2" />
+                        <col width="7%" span="2" />
+                        <col width="*" />
+                        <col width="5%" span="2" />
+                        <col width="7%" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">일자</th>
+                            <th scope="row">발주액</th>
+                            <th scope="row">수주액</th>
+                            <th scope="row">발주율</th>
+                            <th scope="row">수주수수료</th>
+                            <th scope="row">적용요율(%)</th>
+                            <th scope="row">공제액</th>
+                            <th scope="row">문자</th>
+                            <th scope="row">정산액</th>
+                            <th scope="row">입출금액</th>
+                            <th scope="row">내역</th>
+                            <th scope="row">입금</th>
+                            <th scope="row">수정</th>
+                            <th scope="row">잔금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2018-03</td>
+                            <td>2,000,000</td>
+                            <td>3,100,000</td>
+                            <td>100%</td>
+                            <td>100,000</td>
+                            <td>5.50</td>
+                            <td>28,000</td>
+                            <td>28,000</td>
+                            <td>-700,000</td>
+                            <td>-700,000</td>
+                            <td>[농협]2018-04-25 : -700,000원</td>
+                            <td>완료</td>
+                            <td class="ac p00"><a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w45">수정</a></td>
+                            <td><span>0</span></td>
+                        </tr>
+                        <tr>
+                            <td>2018-03</td>
+                            <td>2,000,000</td>
+                            <td>3,100,000</td>
+                            <td>100%</td>
+                            <td>100,000</td>
+                            <td>5.50</td>
+                            <td>28,000</td>
+                            <td>28,000</td>
+                            <td>-700,000</td>
+                            <td>-700,000</td>
+                            <td>[농협]2018-04-25 : -700,000원</td>
+                            <td>완료</td>
+                            <td class="ac p00"><a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w45">수정</a></td>
+                            <td><span>0</span></td>
+                        </tr>
+                        <tr>
+                            <td>2018-03</td>
+                            <td>2,000,000</td>
+                            <td>3,100,000</td>
+                            <td>100%</td>
+                            <td>100,000</td>
+                            <td>5.50</td>
+                            <td>28,000</td>
+                            <td>28,000</td>
+                            <td>-700,000</td>
+                            <td>-700,000</td>
+                            <td>[농협]2018-04-25 : -700,000원</td>
+                            <td>완료</td>
+                            <td class="ac p00"><a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w45">수정</a></td>
+                            <td><span class="text_blue">-200,000</span></td>
+                        </tr>
+                        <tr>
+                            <td>2018-03</td>
+                            <td>2,000,000</td>
+                            <td>3,100,000</td>
+                            <td>100%</td>
+                            <td>100,000</td>
+                            <td>5.50</td>
+                            <td>28,000</td>
+                            <td>28,000</td>
+                            <td>-700,000</td>
+                            <td>-700,000</td>
+                            <td>[농협]2018-04-25 : -700,000원</td>
+                            <td>완료</td>
+                            <td class="ac p00"><a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w45">수정</a></td>
+                            <td><span class="text_warning">21,000</span></td>
+                        </tr>
+                        <tr>
+                            <td>2018-03</td>
+                            <td>2,000,000</td>
+                            <td>3,100,000</td>
+                            <td>100%</td>
+                            <td>100,000</td>
+                            <td>5.50</td>
+                            <td>28,000</td>
+                            <td>28,000</td>
+                            <td>-700,000</td>
+                            <td>-700,000</td>
+                            <td>[농협]2018-04-25 : -700,000원</td>
+                            <td>완료</td>
+                            <td class="ac p00"><a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/depositProcess.html','depositProcess','width=850, height=570, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm w45">수정</a></td>
+                            <td><span>-600,000</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area mt20">
+                    <a href="#" class="btn btn_basic btn_m fl">엑셀 다운로드</a>
+                    <a href="javascript:window.close();" class="btn btn_confirm btn_m fr">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

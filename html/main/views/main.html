@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>전국플라워센터 - template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/main.css"/> <!-- 메인에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            // 레이아웃용
+            $(document).ready(function () {
+                $('#header').load('/html/views/header.html');
+                $('.gnb').load('/html/views/gnb.html');
+                $('.lnb').load('/html/views/lnb.html');
+                $('#footer').load('/html/views/footer.html');
+            })
+        </script>
+        <div id="wrap" class="main"> <!-- 메인페이지 일때 class="main" -->
+            <header id="header"></header>
+            <!-- /header -->
+
+            <hr/>
+
+            <nav class="gnb"></nav>
+            <!-- /gnb -->
+
+            <hr/>
+
+            <div id="container">
+                <div class="lnb"></div>
+
+                <div id="content">
+                    <div class="main_column">
+                        <div class="main_info parts">
+                            <!-- main_info , import_info -->
+                            <table class="main_info_table">
+                                <caption>나의 주요 정보 목록</caption>
+                                <colgroup>
+                                    <col width="18%" />
+                                    <col span="5" width="16.414141%" />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="bg_date">
+                                            <ul class="date text_14">
+                                                <li>2018년
+                                                </li>
+                                                <li>04월
+                                                </li>
+                                                <li>23일</li>
+                                            </ul>
+                                        </th>
+                                        <td colspan="5">
+                                            <div class="weather_api">지역 및 날씨 정보</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup" rowspan="2" class="bg_th text_14">오늘의 수발주</th>
+                                        <th scope="row">미확인</th>
+                                        <th scope="row">미배송</th>
+                                        <th scope="row">배송완료</th>
+                                        <th scope="row">수주</th>
+                                        <th scope="row">발주</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">1</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">3</strong>건
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup" rowspan="2" class="bg_th text_14">이달의 수발주</th>
+                                        <th scope="row" colspan="2">수주</th>
+                                        <th scope="row" colspan="2">발주</th>
+                                        <th scope="row">발주율</th>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <a href="#">
+                                                <strong class="text_point">0</strong>건
+                                            </a>
+                                        </td>
+                                        <td colspan="2">
+                                            <a href="#">
+                                                <strong class="text_point">3</strong>건
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="#">
+                                                <strong class="text_point">1</strong>%
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup" class="bg_th text_14">공지사항</th>
+                                        <td colspan="4">
+                                            <ul class="notice_list">
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#" class="ellipsis">
+                                                        화원사 계산서 발행안내
+                                                    </a>
+                                                    <span class="ar">2018-01-01</span>
+                                                </li>
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#" class="ellipsis">
+                                                        화원사 계산서 발행안내 계산서 발행안내계산서 발행안내계산서 발행안내계산서 발행안내계산서 발행안내
+                                                    </a>
+                                                    <span class="ar">2018-01-01</span>
+                                                </li>
+                                                <li>
+                                                    <strong class="text_point">new</strong>
+                                                    <a href="#" class="ellipsis">
+                                                        화원사 계산서 발행안내
+                                                    </a>
+                                                    <span class="ar">2018-01-01</span>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="bl0">
+                                            <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="personal_note parts"> <!-- 개인 메모장 -->
+                            <form action="" name="">
+                                <fieldset>
+                                    <legend>개인 메모장</legend>
+                                    <h2>개인 메모장</h2>
+                                    <textarea name="" cols="30" rows="10" title="">개인메모장 Lorem ipsum, dolor sit amet
+                                        consectetur adipisicing elit. Quis, laudantium adipisci? Culpa maiores nobis
+                                        veniam sequi sapiente inventore quos non atque mollitia omnis magni a explicabo
+                                        quas nisi, autem repudiandae? Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit. Natus ipsa, a provident architecto sapiente aperiam officiis
+                                        adipisci? Ab debitis tempora quis modi aliquam placeat nobis. Recusandae
+                                        doloribus adipisci molestias perferendis. Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit. Totam et similique repudiandae commodi harum
+                                        dolorem quod at earum assumenda impedit quasi unde quibusdam incidunt tenetur,
+                                        perspiciatis inventore voluptate quidem adipisci. Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. A accusantium, veritatis et numquam saepe
+                                        exercitationem impedit mollitia, velit repellendus perferendis atque. Laborum
+                                        eos, quaerat sequi iusto dolor consequuntur nobis aut. Lorem ipsum dolor, sit
+                                        amet consectetur adipisicing elit. Nostrum porro minus ad inventore accusantium?
+                                        Illum nobis exercitationem ipsam fugiat et numquam adipisci aperiam accusantium.
+                                        Quibusdam, quisquam ab! Eos, voluptate explicabo. Lorem ipsum dolor sit amet
+                                        consectetur, adipisicing elit. Excepturi neque doloribus, nostrum officia dolore
+                                        dicta itaque consequatur aut quibusdam ipsum dolorum accusantium saepe
+                                        laudantium fuga rerum ad delectus iste! Nam!
+                                    </textarea>
+                                    <input type="submit" value="저장" class="btn btn_save" />
+                                </fieldset>
+                            </form>
+                        </div> <!-- 개인 메모장 끝 -->
+                    </div> <!-- 메인 1 컬럼 -->
+                    <ul class="ad_banner"> <!-- 광고배너 -->
+                        <li>
+                            <a href="#">
+                                <img src="/img/common/logo.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/img/common/logo.png" alt=""/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="/img/common/logo.png" alt=""/>
+                            </a>
+                        </li>
+                    </ul> <!--광고 배너 끝 -->
+                    <div class="order_list"> <!-- 전체 수주 목록 -->
+                        <div class="ordering">
+                            <h3>[<span>4월</span>] 전체
+                                <span class="text_warning">수주</span>
+                                목록
+                            </h3>
+                            <table class="list_table">
+                                <caption>전체수주목록</caption>
+                                <colgroup>
+                                    <col width="14%"/>
+                                    <col width="22%"/>
+                                    <col width="13%"/>
+                                    <col width="24.5%"/>
+                                    <col width="13%"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">주문번호</th>
+                                        <th scope="row">주문접수일<br/>배송요구일</th>
+                                        <th scope="row">발주화원</th>
+                                        <th scope="row">상품명<br/>배송지</th>
+                                        <th scope="row">원청금액<br/>수주금액</th>
+                                        <th scope="row">배송현황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구 남구로 어디어디어디" class="ellipsis">부산 부산진구 남구로 어디어디어디</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는총각" class="ellipsis">꽃파는총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                        </div> <!-- 전체 수주 목록 -->
+                        <div class="order_receipt"> <!-- 전체 발주 목록 -->
+                            <h3>[<span>12월</span>] 전체<span class="text_warning">발주</span>목록</h3>
+                            <table class="list_table">
+                                <caption>전체발주목록</caption>
+                                <colgroup>
+                                    <col width="14%"/>
+                                    <col width="22%"/>
+                                    <col width="13%"/>
+                                    <col width="24.5%"/>
+                                    <col width="13%"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">주문번호</th>
+                                        <th scope="row">주문접수일<br/>배송요구일</th>
+                                        <th scope="row">발주화원</th>
+                                        <th scope="row">상품명<br/>배송지</th>
+                                        <th scope="row">원청금액<br/>수주금액</th>
+                                        <th scope="row">배송현황</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구 남구로 어디어디어디" class="ellipsis">부산 부산진구 남구로 어디어디어디</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는총각" class="ellipsis">꽃파는총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td>
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>138066</td>
+                                        <td class="al pl30">
+                                            <p>18-04-09 13:00</p>
+                                            <p>18-04-09
+                                                <span class="text_warning">빠른배송</span>
+                                            </p>
+                                        </td>
+                                        <td class="al pl10">
+                                            <p title="부산 부산진구" class="ellipsis">부산 부산진구</p>
+                                            <p title="꽃파는 총각" class="ellipsis">꽃파는 총각</p>
+                                        </td>
+                                        <td class="al pl15">
+                                            <p class="text_warning">3단화환</p>
+                                            <p title="정읍 아산병원 장례식장 20180808 몇층 어디" class="ellipsis">정읍 아산병원 장례식장 20180808 몇층 어디</p>
+                                        </td>
+                                        <td >
+                                            <p>59,000원</p>
+                                            <p class="text_warning">60,000원</p>
+                                        </td>
+                                        <td>
+                                            <select class="ship_select" title="배송현황">
+                                                <option class="no_check">미확인</option>
+                                                <option class="check">본부확인</option>
+                                                <option class="order">주문접수</option>
+                                                <option class="shipping">배송중</option>
+                                                <option class="delivery">배송완료</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                        </div> <!-- 전체 발주 목록 끝-->
+                    </div> <!-- 메인 2 칼럼  끝 -->
+                    <div class="pic_board parts"> <!-- 작품사진 게시판 -->
+                        <h3>작품사진 게시판</h3>
+                        <ul class="pic_list">
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="/img/common/logo.png" alt=""/>
+                                    목화안개
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                    </div> <!-- 작품 사진 게시판 끝 -->
+                    <div class="order_chart parts"> <!-- 월별  수발주 차트 -->
+                        <h3>월별 수발주 차트
+                            <span> (단위:만원)</span>
+                        </h3>
+                        <div class="chart"></div>
+                        <a href="#" class="btn btn_more">보기</a>
+                    </div> <!-- 월별 수발주 차트 끝 -->
+                    <div class="promotion_board parts"> <!-- 업체 홍보 게시판 -->
+                        <h3>업체홍보 게시판</h3>
+                        <table class="board_table">
+                            <caption>홍보목록</caption>
+                            <colgroup>
+                                <col width="25%"/>
+                                <col width="50%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">작성자</th>
+                                    <th scope="row">제목</th>
+                                    <th scope="row">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라마바사아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아ㅏㅇ아ㅏ아아아아아ㅏㅇ아</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                    </div> <!-- 업체 홍보 게시판 끝 -->
+                    <div class="holiday_board parts"> <!-- 경조사 게시판 -->
+                        <h3>경조사 게시판</h3>
+                        <table class="board_table">
+                            <caption>경조사 게시판</caption>
+                            <colgroup>
+                                <col width="25%"/>
+                                <col width="50%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row">작성자</th>
+                                    <th scope="row">제목</th>
+                                    <th scope="row">작성일</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>홍길동 </td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">
+                                            가나다라마사아 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione
+                                            possimus ipsum, aliquid ipsam rerum similique harum dolor natus error ut iusto
+                                            voluptatum facere! Sapiente, illum laboriosam. Velit, quaerat qui!
+                                        </a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라마바사아아아아아</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                                <tr>
+                                    <td>홍길동</td>
+                                    <td class="al">
+                                        <a href="#" class="ellipsis">가나다라</a>
+                                    </td>
+                                    <td>2018-04-23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn_more">더보기<span class="ico ico_more"></span></a>
+                    </div> <!-- 경조사 게시판 끝 -->
+
+                    <footer id="footer"></footer>
+                    <!-- /footer -->
+                </div>
+                <!-- /Main Page -->
+            </div>
+            <!-- /container -->
+        </div>
+
+        <!-- 개발자 가이드 -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('.developStatus').load('/status/status01.html');
+            })
+        </script>
+        <div class="developStatus" style="position:absolute; top:5px; right:10px"></div>
+        <!-- //개발자 가이드 -->
+    </body>
+</html>

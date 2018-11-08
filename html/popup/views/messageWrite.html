@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>쪽지쓰기</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="h2">쪽지쓰기</h2>
+                </div>
+                <table class="input_table v2 mt20" summary="받는화원, 내용 등의 정보 제공">
+                    <caption>쪽지쓰기</caption>
+                    <colgroup>
+                        <col width="20%" />
+                        <col width="80%" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="col">받는화원</th>
+                            <td>
+                                <p>
+                                    <label><input type="radio" name="" value="" /> 화원검색</label>
+                                    <label><input type="radio" name="" value="" /> 전체화원</label>
+                                    <label><input type="radio" name="" value="" /> 본부</label>
+                                </p>
+                                <p class="mt05">
+                                    <a href="javascript:void(0)" onclick="window.open('/html/popup/views/memberSearch.html','memberSearch','width=1220, height=910, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_s">화원검색</a>
+                                    <input type="text" name="" value="" class="ml05" style="width:130px" />
+                                    <input type="text" name="" value="" class="ml05" style="width:130px" />
+                                    <input type="text" name="" value="" class="ml05" style="width:100px" />
+                                    <input type="text" name="" value="" class="ml05" style="width:150px" />
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="col">내용</th>
+                            <td>
+                                <div class="basic_box pt05 pr05 pb05 pl05">
+                                    <pre>내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. 내용을 채우자. </pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="btn_area ac mt20">
+                    <a href="#" class="btn btn_confirm btn_m">쪽지전송</a>
+                    <a href="javascript:window.close();" class="ml15 btn btn_cancel btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

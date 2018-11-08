@@ -1,0 +1,36 @@
+            <ul>
+                <li><a href="#">본부발주</a></li>
+                <li><a href="javascript:void(0)" class="layerOpen" id="dO">화원간직발주</a></li>
+                <li><a href="#">수주리스트</a></li>
+                <li><a href="#">발주리스트</a></li>
+                <li><a href="#">배송사진리스트</a></li>
+                <li><a href="#">정산내역</a></li>
+                <li><a href="#">플라트상품</a></li>
+            </ul>
+
+            <!-- 화원간직발주 -->
+            <div class="layer" id="dOLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
+                <div class="overlay"></div>
+                <div class="layer_pop" style="margin:-155px 0 0 -250px; padding:5px; width:200px; height:75px">
+                    <div class="btn_area w_100">
+                        <a href="javascript:void(0)" class="btn btn_basic btn_m close layerOpen" id="NotDO">직발주 불가능 상태 계정인 경우</a>
+                        <a href="/html/" class="btn btn_basic btn_m mt05">직발주 가능상태인 경우</a>
+                    </div>
+                </div>
+            </div><!-- /layer -->
+            <!-- /화원간직발주 -->
+
+            <!-- 직발주 불가능 상태 계정인 경우 -->
+            <div class="layer" id="NotDOLayer"><!-- 레이어 팝업 띄우는 id + Layer -->
+                <div class="overlay"></div>
+                <div class="layer_pop" style="margin:-155px 0 0 -250px; padding:5px; width:300px; height:150px">
+                    <div class="ac">
+                        발주 불가능한 계정 또는 시간대입니다.<br /><br />
+                        직발주 허용시간<br /><br />
+                        평일/토요일/공휴일 : 22:30 ~ 08:00<br />
+                        일요일 : 21:00 ~ 08:00<br /><br />
+                        기타사항은 관리자에게 문의 바랍니다.
+                    </div>
+                </div>
+            </div><!-- /layer -->
+            <!-- /직발주 불가능 상태 계정인 경우 -->

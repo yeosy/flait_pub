@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>주소록</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <link rel="stylesheet" type="text/css" href="/css/contents_jh.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="h2">주소록</h2>
+                </div>
+
+                <div class="address_box">
+                    <div class="option_area clear">
+                        <div class="option_srh">
+                            <input type="text" name="" value="" />
+                            <a herf="#" class="btn btn_search">검색 <span class="ico ico_srch"></span></a>
+                        </div>
+
+                        <div class="option_sort">
+                            <a href="#" id="addNumber" class="btn btn_blue btn_m w90 layerOpen">번호추가</a>
+                            <a href="#" id="groupMng" class="btn btn_blue btn_m w90 ml05 layerOpen">그룹관리</a>
+                        </div>
+                    </div>
+
+                    <!-- 주소록 목록 -->
+                    <div class="clear">
+                        <div class="address_list list_box">
+                            <h3>주소록</h3>
+                            <ul class="tab_list clear">
+                                <li class="tab">
+                                    <input type="radio" name="list" value="이름별" checked="checked" id="byname"/><label for="byname">이름별</label>
+                                    <ul class="bylist scroll_y">
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                    </ul>
+                                </li>
+                                <li class="tab group_tab">
+                                    <input type="radio" name="list" value="그룹별" id="bygroup"/><label for="bygroup">그룹별</label>
+                                    <ul class="bylist group_list scroll_y">
+                                        <li>
+                                            <input type="radio" name="group" value="" checked="checked" id="group1"/><label for="group1">그룹1</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group2"/><label for="group2">그룹2</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group3"/><label for="group3">그룹3</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹4</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹5</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹6</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹7</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹8</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="group" value="" id="group4"/><label for="group4">그룹9</label>
+                                        </li>
+                                    </ul>
+                                    <div class="group scroll_y">
+                                        <ul>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        </ul>
+                                        <ul>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        </ul>
+                                        <ul>
+                                        </ul>
+                                        <ul>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                            <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //주소록 목록 -->
+
+                        <!-- 이동버튼 -->
+                        <div class="list_move">
+                            <a href="#" class="push_list btn_move"></a> <!-- 받는 사람 목록에서 추가 -->
+                            <a href="#" class="pull_list btn_move"></a> <!-- 받는 사람 목록에서 제거 -->
+                        </div>
+                        <!-- //이동버튼 -->
+
+                        <!-- 받는 사람 목록 -->
+                        <div class="receive_list list_box">
+                            <h3>받는사람</h3>
+                            <ul class="scroll_y clear bylist">
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                                <li><label><input type="checkbox" name="" value=""/>홍길동 010-1111-1111</label></li>
+                            </ul>
+                        </div>
+                        <!-- //받는 사람 목록 -->
+                    </div>
+
+                    <div class="btn_area mt10">
+                        <a href="#" class="btn btn_area btn_sm btn_basic btn_allchk">전체 선택</a>
+                        <a href="#" class="btn btn_area btn_sm btn_basic btn_allchkN">전체 해제</a>
+                    </div>
+                </div>
+
+                <div class="btn_area ac mt20">
+                    <a href="#" class="btn btn_confirm btn_m">확인</a>
+                    <a href="javascript:window.close();" class="btn btn_cancel btn_m">닫기</a>
+                </div>
+
+                <script type="text/javascript">
+                $(document).ready(function(){
+                //그룹 선택시 주소록 보이고 그룹박스 선택시 배경색 변경
+                    var group_chk = $('.group_tab .group_list li label');
+                    group_chk.each(function(index){
+                        $(this).attr('data-index', index);
+                    }).click(function(){
+                        var i = $(this).attr('data-index');
+                        $('.group_tab .group ul').css('display','none');
+                        $('.group_tab .group ul').eq(i).css('display','block');
+                        $('.group_list li label').removeClass('active');
+                        $(this).addClass('active');
+                    });
+                    $('.group_tab .group ul').each(function(index){
+                        $(this).attr('data-index', index);
+                    });
+
+                //체크박스 클릭시 배경색
+                    var chk_list = $('.address_box input[type="checkbox"]');
+                    chk_list.click(function(){
+                        $(this).parent().toggleClass('active');
+                    });
+
+                //전체선택
+                    $('.address_box .btn_allchk').click(function(){
+                        $('.address_list input[type="checkbox"]').parent().addClass('active');
+                    });
+
+                //전체해제
+                    $('.address_box .btn_allchkN').click(function(){
+                        $('.address_list input[type="checkbox"]').parent().removeClass('active');
+                    });
+                });
+                </script>
+
+                <!-- 번호추가 레이어팝업 -->
+                <div class="layer v2" id="addNumberLayer" style="top:110px; left:169px; width:400px; height:309px">
+                    <div class="layer_pop">
+                        <div class="inner">
+                            <h4 class="layer_tit pb00">번호추가</h4>
+
+                            <table summary="번호추가" class="input_table mt10 p00">
+                                <caption>번호추가</caption>
+                                <colgroup>
+                                    <col width="33%"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="colgroup">그룹</th>
+                                        <td class="pl10">
+                                            <select title="그룹" class="select">
+                                                <option value="">미분류</option>
+                                                <option value="">그룹1</option>
+                                                <option value="">그룹2</option>
+                                                <option value="">그룹3</option>
+                                                <option value="">그룹4</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup">이름</th>
+                                        <td><input type="text" name="" value="" style="width:100%; height:24px;" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="colgroup">전화번호</th>
+                                        <td><input type="text" name="" value="" placeholder="숫자만 입력" style="width:100%; height:24px;" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="btn_area ar mt50">
+                                <a href="#" class="btn btn_confirm btn_m">번호추가</a>
+                                <a href="#" class="btn btn_cancel btn_m close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /번호추가 레이어팝업 -->
+                <!-- 그룹추가 레이어팝업 -->
+                <div class="layer v2" id="groupMngLayer" style="top:118px; left:169px; width:400px; height:341px">
+                    <div class="layer_pop" >
+                        <div class="inner">
+                            <h4 class="layer_tit pb00">그룹관리</h4>
+
+                            <table summary="그룹관리 상단" class="input_table mt10">
+                                <caption>그룹관리</caption>
+                                <colgroup>
+                                    <col width="61px"/>
+                                    <col width="160px"/>
+                                    <col width="*"/>
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">NO</th>
+                                        <th scope="row">그룹명</th>
+                                        <th scope="row">저장 / 삭제</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="scroll_y" style="height:150px">
+                                <table summary="그룹관리 하단" class="input_table p00">
+                                    <caption>그룹목록</caption>
+                                    <colgroup>
+                                        <col width="61px"/>
+                                        <col width="160px"/>
+                                        <col width="*"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="ac">1</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">2</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">3</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">4</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">5</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="ac">6</td>
+                                            <td><input type="text" name="" value="" style="width:100%; height:24px" /></td>
+                                            <td class="ac">
+                                                <a href="#" class="btn btn_cancel btn_xs">저장</a>
+                                                <a href="#" class="btn btn_cancel btn_xs">삭제</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="btn_area ar mt20">
+                                <a href="#" class="btn btn_confirm btn_m close">닫기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /그룹관리 레이어팝업 -->
+            </div>
+        </div>
+    </body>
+</html>

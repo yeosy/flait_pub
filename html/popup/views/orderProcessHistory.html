@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>주문처리내역</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="h2">주문처리내역</h2>
+                    <p class="fr">
+                        <strong class="text_blue">홍길동플라워(발주화원)</strong>
+                        <strong class="text_green ml10">홍길동플라워(발주화원)</strong>
+                    </p>
+                </div>
+
+                <table summary="주문처리내역" class="list_table mt10">
+                    <colgroup>
+                        <col width="10%"/>
+                        <col span="2" width="25%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">NO</th>
+                            <th scope="row">처리시간</th>
+                            <th scope="row">등록/변경 처리자</th>
+                            <th scope="row">변경내용</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>2018-09-10 14:00:10</td>
+                            <td>홍길동</td>
+                            <td class="al pl15">주문등록 - 본부발주</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>2018-09-10 14:00:10</td>
+                            <td>홍길동</td>
+                            <td class="al pl15">발주화원 변경 (꽃파는사람들)</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>2018-09-10 14:00:10</td>
+                            <td>홍길동</td>
+                            <td class="al pl15">주문등록 - 본부발주</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>2018-09-10 14:00:10</td>
+                            <td>홍길동</td>
+                            <td class="al pl15">발주화원 변경 (꽃파는사람들)</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>2018-09-10 14:00:10</td>
+                            <td>홍길동</td>
+                            <td class="al pl15">주문등록 - 본부발주</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="paging mt20">
+                    <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                    <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                    <ol>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                    </ol>
+                    <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                    <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                </div>
+
+                <div class="btn_area ar">
+                    <a href="javascript:window.close();" class="btn btn_m btn_confirm">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

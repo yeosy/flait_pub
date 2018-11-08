@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>회원정보(기본)</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit">
+                    <h2 class="h2">회원정보(홍길동플라워)</h2>
+                    <span class="fr">
+                        <a href="#" class="btn btn_sm btn_cancel">닫기</a>
+                    </span>
+                </div>
+
+                <div class="member_info">
+                    <div class="inner_box basic_box clear">
+                        <a href="#" class="main"><img src="/img/common/logo.png" alt="" /></a>
+                        <ul class="thum">
+                            <li><a href="#"><img src="/img/common/logo.png" alt="" /></a></li>
+                            <li><a href="#"><img src="/img/common/logo.png" alt="" /></a></li>
+                            <li><a href="#"><img src="/img/common/logo.png" alt="" /></a></li>
+                            <li><a href="#"><img src="/img/common/logo.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="inner_table">
+                        <table summary="회원정보" class="list_table fl">
+                            <caption>회원정보</caption>
+                            <colgroup>
+                                <col width="30%"/>
+                                <col width="*"/>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="colgroup">상호명</th>
+                                    <td>홍길동플라워</td>
+                                </tr>
+                                <tr>
+                                    <th scope="colgroup">대표자명</th>
+                                    <td>홍길동</td>
+                                </tr>
+                                <tr>
+                                    <th scope="colgroup">전화번호</th>
+                                    <td>031-1111-2222</td>
+                                </tr>
+                                <tr>
+                                    <th scope="colgroup">핸드폰번호</th>
+                                    <td>010-2222-1111</td>
+                                </tr>
+                                <tr>
+                                    <th scope="colgroup">주소</th>
+                                    <td>서울시 구로구 구로동 197-13 벤쳐타워 5차~~~~~~</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                <div class="btn_area mt10">
+                    <a href="#" class="btn btn_cancel btn_m">쪽지쓰기</a>
+                    <a href="#" class="btn btn_cancel btn_m">SMS 전송</a>
+                    <span class="fr">
+                        <a href="#" class="btn btn_cancel btn_m">회원 추가정보</a>
+                        <a href="#" class="btn btn_cancel btn_m">수발주 거래내역</a>
+                    </span>
+                </div>
+
+                <table summary="화원소개" class="input_table mt10">
+                    <caption>화원소개</caption>
+                    <colgroup>
+                        <col width="10%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="colgroup">화원소개</th>
+                            <td>
+                                <textarea></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <table summary="최근 배송사진" class="list_table mt10">
+                    <caption>최근배송사진</caption>
+                    <colgroup>
+                        <col width="10%"/>
+                        <col width="*"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="colgroup">화환</th>
+                            <td>
+                                <ul>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="colgroup">꽃</th>
+                            <td>
+                                <ul>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="colgroup">동서양란</th>
+                            <td>
+                                <ul>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="colgroup">관엽</th>
+                            <td>
+                                <ul>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="colgroup">기타</th>
+                            <td>
+                                <ul>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                    <li><a href="#"><img src="" alt="" /></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btn_area ar mt20">
+                        <a href="javascript:window.close();" class="btn btn_cancel btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
