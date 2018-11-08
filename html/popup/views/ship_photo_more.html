@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <title>배송사진 더보기</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="Keywords" content="Flower, flasystem, '플라시스템'">
+        <meta name="Description" content="전국플라워센터에서 손쉽게 주문,발주 관리를 해보세요">
+        <meta property="og:title" content="전국플라워센터">
+        <meta property="og:url" content="https://www.flowercenter.co.kr/">
+        <meta name="format-detection" content="telephone=no"> <!-- edge에서 숫자나열시 전화번호로 인식하는 문제 해결 -->
+        <link rel="stylesheet" type="text/css" href="/css/common.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/popup.css" /><!-- 팝업 화면에서만 사용 -->
+        <link rel="stylesheet" type="text/css" href="/css/jquery-ui.css" />
+        <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui.js"></script>
+        <script type="text/javascript" src="/js/common.js"></script>
+    </head>
+    <body>
+        <div id="wrap" class="popup">
+            <div id="content">
+                <div class="tit mb10">
+                    <h2 class="h2">배송사진(홍길동플라워)</h2>
+                </div>
+
+                <div class="option_area v2" style="margin:8px 44px 10px 0">
+                    <div class="option_srh">
+                        10월 총 전송 건수 : <span>1,000</span>건
+                    </div>
+                    <div class="option_sort">
+                        <select title="연도" class="select">
+                            <option value="">2018</option>
+                            <option value="">2017</option>
+                            <option value="">2016</option>
+                            <option value="">2015</option>
+                            <option value="">2014</option>
+                            <option value="">2013</option>
+                        </select> 년
+                        <select title="월" class="select ml10">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                        </select> 월
+                        <select title="꽃종류" class="select ml10">
+                            <option value="">전체</option>
+                            <option value="">화환</option>
+                            <option value="">꽃상품</option>
+                            <option value="">동서양란</option>
+                            <option value="">관엽</option>
+                            <option value="">기타</option>
+                        </select>
+                        <a href="#" class="btn btn_sm btn_search">검색<span class="ico ico_srch"></span></a>
+                    </div>
+                </div>
+
+                <!-- 페이징 -->
+                <div class="paging mt20">
+                    <a href="#" class="btn" title="처음 페이지">&lt;&lt;</a>
+                    <a href="#" class="btn" title="이전 페이지">&lt;</a>
+                    <ol>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                        <li><a href="#">10</a></li>
+                    </ol>
+                    <a href="#" class="btn" title="다음 페이지">&gt;</a>
+                    <a href="#" class="btn" title="마지막 페이지">&gt;&gt;</a>
+                </div>
+                <!-- /페이징 -->
+
+                <div class="btn_area ar mt20">
+                        <a href="javascript:window.close();" class="btn btn_confirm btn_m">닫기</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
