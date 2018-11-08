@@ -37,13 +37,32 @@
                             <tr>
                                 <th scope="col">배송사진</th>
                                 <td colspan="3">
-                                    <div class="attach_file scroll_y">
-                                        <a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/shipPhotoReg.html','shipPhotoReg','width=560, height=600, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm">배송사진 업로드</a>
-                                        <div class="download" style="display:none">
-                                            <a href="#" class="down_text"><span class="down_ico"></span>file1.jpg</a>
-                                            <a href="#" class="btn btn_cancel btn_s ml05">수정</a>
-                                            <a href="#" class="btn btn_cancel btn_s">삭제</a>
+                                    <div class="attach_file">
+                                        <!-- 등록된 사진이 없을 경우 -->
+                                        <div style="display:none">
+                                            <a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/shipPhotoReg.html','shipPhotoReg','width=560, height=600, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm">배송사진 업로드</a>
                                         </div>
+                                        <!-- 등록된 사진이 없을 경우 -->
+
+                                        <!-- 등록된 사진이 있을 경우 -->
+                                        <div class="download" style="display:block">
+                                            <div>
+                                                <a href="#" class="file_name"><span class="ico ico_down"></span>file1.jpg</a>
+                                                <a href="#" class="btn btn_cancel btn_s ml05">삭제</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="file_name"><span class="ico ico_down"></span>file1.jpg</a>
+                                                <a href="#" class="btn btn_cancel btn_s ml05">삭제</a>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="file_name"><span class="ico ico_down"></span>file1.jpg</a>
+                                                <a href="#" class="btn btn_cancel btn_s ml05">삭제</a>
+                                            </div>
+                                            <div style="position:absolute; top:50%; right:0; margin-top:-13px">
+                                                <a href="javascript:void(0)" onclick="javascript:window.open('/html/popup/views/sendDeliveryPic.html','sednDeliveryPic','width=590, height=760, top=50, left=50, scrollbars=yes');" class="btn btn_blue btn_sm">배송사진 업로드</a>
+                                            </div>
+                                        </div>
+                                        <!-- 등록된 사진이 있을 경우 -->
                                     </div>
                                 </td>
                             </tr>
