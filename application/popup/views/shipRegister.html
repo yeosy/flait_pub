@@ -37,13 +37,13 @@
                             <tr>
                                 <th scope="col">배송사진</th>
                                 <td colspan="3">
-                                    <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/shipPhotoReg.html','shipPhotoReg','width=560, height=600, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_s">배송사진 업로드</a>
-                                    <div class="upload scroll_y" style="display:none">
-                                        <p>
+                                    <div class="attach_file scroll_y">
+                                        <a href="javascript:void(0)" onclick="javascript:window.open('/application/popup/views/shipPhotoReg.html','shipPhotoReg','width=560, height=600, top=50, left=50, scrollbars=yes')" class="btn btn_blue btn_sm">배송사진 업로드</a>
+                                        <div class="download" style="display:none">
                                             <a href="#" class="down_text"><span class="down_ico"></span>file1.jpg</a>
                                             <a href="#" class="btn btn_cancel btn_s ml05">수정</a>
                                             <a href="#" class="btn btn_cancel btn_s">삭제</a>
-                                        </p>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -205,7 +205,7 @@
                 <div class="btn_area mt20">
                     <a href="javascript:void(0)" class="btn btn_cancel btn_m w100" onclick="javascript:window.open('/application/popup/views/relativeOrderInfo.html','relativeOrderInfo','width=620, height=700, top=50, left=50, scrollbars=yes')">해당 주문정보</a>
                     <span class="fr">
-                        <a href="javascript:void(0);" class="btn btn_confirm btn_m w100" onclick="javascript:window.open('/application/popup/views/shipComplete.html','shipComplete','width=420, height=300, top=50, left=50')">배송완료처리</a>
+                        <a href="javascript:close();" class="btn btn_confirm btn_m w100" onclick="javascript:window.open('/application/popup/views/shipComplete.html','shipComplete','width=420, height=300, top=50, left=50')">배송완료처리</a>
                         <a href="javascript:window.close();" class="btn btn_cancel btn_m w100">닫기</a>
                     </span>
                 </div>

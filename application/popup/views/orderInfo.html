@@ -93,10 +93,20 @@
                             <tr>
                                 <th scope="col" rowspan="2">상품이미지</th>
                                 <td>
-                                    <label for="file_select" class="btn btn_blue btn_sm w70">파일선택</label>
-                                    <input type="file" value="" name="" id="file_select" class="file_select"/>
-                                    <input type="text" value="" name="" placeholder="선택된 파일 없음" style="width:150px" />
-                                    PC에서 선택
+                                    <div class="attach_file mt10">
+                                        <div class="download" style="display:none">
+                                            <a href="#" class="file_name"><span class="ico ico_down"></span>file1.jpg</a>
+                                            <a href="#" class="btn btn_cancel btn_sm ml05">수정</a>
+                                            <a href="#" class="btn btn_cancel btn_sm">삭제</a>
+                                        </div>
+                                        <div class="upload">
+                                            <label class="btn btn_blue btn_sm w70">
+                                                <input type="file" value="" name="" class="btn_file" title="첨부파일" />첨부파일
+                                            </label>
+                                            <input type="text" value="" name="" placeholder="선택된 파일 없음" style="margin-left:5px; width:150px" disabled="disabled" /> PC에서 선택
+                                        </div>
+                                    </div>
+                                    
                                 </td>
                                 <th scope="col">해피콜</th>
                                 <td colspan="2">
