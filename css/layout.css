@@ -11,7 +11,7 @@ textarea {display:block; box-sizing:border-box; padding:5px; width:100%}
 pre {width:100%; white-space:normal; word-break:break-all; line-height:1.8em}
 td textarea, td input[type="text"], td input[type="password"], td input[type="number"] {box-sizing:border-box; margin:0; padding:4px; vertical-align:middle; background:#eee; border:1px solid #eee}
 td textarea:hover, td input[type="text"]:hover, td input[type="password"]:hover {padding:4px; background:#fff; border:1px solid #ccc}
-textarea:disabled, input[type="text"]:disabled {padding:4px!important; background:#ccc !important; border:1px solid #ccc !important}
+textarea:disabled, input[type="text"]:disabled {padding:4px!important; background:#eee !important; border:1px solid #d7d7d7 !important}
 input[type="radio"], input[type="checkbox"] {vertical-align:-2px; border-color:#808080}
 input::placeholder {color:#aaa}
 button {cursor:pointer}
